@@ -1,0 +1,255 @@
+@import "base";
+
+/*STYLE.CONTENT.CSS*/
+
+/*MAIN LOGO*/
+
+#main-logo {
+  float: left;
+  display: block;
+  padding: 1em;
+  max-width: 160px;
+}
+
+/*Basic Menu Hover feature*/
+
+li.expanded > ul {
+  display: none;
+}
+
+li.expanded:hover > ul {
+  //display: block;
+}
+
+/*MAIN MENU*/
+
+.region-content-navigation {
+  
+  
+  #block-system-main-menu, #block-user-login, #block-system-user-menu {
+  
+    h3 {
+      display: none;
+    }
+    
+    & > .content {
+      padding: 0.5rem 1rem;
+      
+      & > ul.menu {
+        li {
+          float: left;
+          position: relative;
+          //width: 100%;
+
+          a {
+            font-family: $header_font;
+            color: white;
+            font-weight: normal;
+            font-size: 1rem;
+
+            padding: 0.2em 1.5em;
+            //margin: 0.5em 1em 0.5em 0;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    
+    width: 100%;
+    float: left;
+    //@include panda-linear-gradient($color_pri_light, $color_pri);
+    //border: 1px solid $color_pri;
+    border-radius: 2px;
+    box-sizing: border-box;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.5);
+    
+    background: $color_pri;
+    background-image: url(/sites/all/themes/panda/images/tissue-paper.png);
+    
+  }
+  
+  ul.menu {
+    
+    li {
+      float: left;
+      position: relative;
+
+      a {
+        
+      }
+
+      /*Expandable menus*/
+
+      & > ul {
+        position: absolute;
+        border-top: 1px solid #005689; /*Overlay nav border since it overlaps with .region-content-navigation border*/
+        background-color: #FFFFFF;
+        min-width: 15em;
+        padding: 0.618em;
+        box-shadow: 0 3px 5px 1px rgba(0, 0, 0, 0.3);
+        border-radius: 0 0 2px 2px;
+
+        /*Layer ontop of the shadow (which has z-index of 10) so that shadow doesn't break hover*/
+        &:before {
+          content: "";
+          position: absolute;
+          width: 100%;
+          height: 8px;
+          top: -1px;
+          left: 0;
+          z-index: 20;
+        }
+
+        li {
+          padding: 0.618em;
+
+          &.last {
+            background: none;
+          }
+
+          &:nth-child(odd) {
+            background-color: #F3F3F1;
+          }
+
+          &:nth-child(even) {
+            background-color: #FBFBFB;
+          }
+        }
+
+        a {
+          font-size: 1em;
+          white-space: nowrap;
+        }
+      }
+
+      @media only screen and (max-width: 800px) {
+        &.last > ul {
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+// USER MENU
+
+
+// USER LOGIN
+
+.region-content-navigation #block-user-login {
+  background: #FFFFFF;
+
+}
+
+
+/*Mini Menu (for responsive)*/
+.mini-menu {
+  @include panda-linear-gradient(#01b5f4, #0079c2);
+  
+  border-top: 1px solid #7CD9FA;
+  border-bottom: 1px solid #005689;
+  
+  clear: left;
+  cursor: pointer;
+  
+  .mm-main-menu {
+    position: relative;
+    //padding-left: 2em;
+    
+    &:after {
+      position: absolute;
+      content: url('/sites/all/themes/panda/images/expand-icon-white.png');
+      top: 0.7em;
+      left: 0.7em;
+    }
+
+    &.active {
+      background: none;
+
+      &:after {
+        content: url('/sites/all/themes/panda/images/contract-icon-2.png');
+        top: 0.4em;
+      }
+    }
+  }
+  
+  & > div {
+    display: block;
+    padding: 1em * panda-gn(-1) 1em * panda-gn(1);
+
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+}
+
+#page .block div.block-title {
+  /*height: 100%; *//*Required by IE7 to show a gradient*/
+
+  //border-radius: 2px 2px 0 0; /*soft corners*/
+
+  h3 {
+    color: #666666;
+    font-size: 1.5em;
+    //padding: 0.5em 1em;
+    //margin: 0;
+  }
+}
+
+//Comments
+.comment-form {
+  display: none;
+}
+
+//show new comment button
+#comments {
+  margin-top: 0;
+  padding-top: 1em;
+  clear: left;
+  
+  ul.inline li.comment-add {
+    display: block;
+  }
+}
+
+//hide conditional comment button
+ul.inline li.comment-add {
+  display: none;
+}
+
+// Product Pages
+
+.product-description {
+  margin-bottom: 1.62em;
+}
+
+.product-image {
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+.product-thumbnail .product-image {
+  margin: 1em 1em 1em 0;
+}
+
+.product-shape {
+  display: inline-block;
+  margin: 0 1.7em 0 0;
+  text-align: center;
+
+  
+  .shape-term {
+    font-weight: normal;
+    font-family: $header_font;
+    font-size: 0.8em;
+    font-size: 0.8rem;
+    
+    color: $color_sec;
+    
+    border-bottom: 1px dotted $color_sec;
+    display: inline-block;
+  }
+  
+  .shape-icon {
+    
+  }
+}

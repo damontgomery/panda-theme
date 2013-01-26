@@ -1,0 +1,165 @@
+/*STRUCTURE.CSS*/
+/* line 8, ../../scss/core/structure.scss */
+body {
+  margin: 0;
+}
+
+/* line 12, ../../scss/core/structure.scss */
+.region-header {
+  position: relative;
+}
+/* line 15, ../../scss/core/structure.scss */
+.responsive-full-page .region-header .region-content-header {
+  width: 1024px;
+}
+/* line 19, ../../scss/core/structure.scss */
+.region-header #block-search-form {
+  float: right;
+  clear: right;
+}
+
+/* line 25, ../../scss/core/structure.scss */
+.region-navigation {
+  width: 100%;
+  position: relative;
+}
+/* line 30, ../../scss/core/structure.scss */
+.responsive-full-page .region-navigation {
+  min-width: 1024px;
+}
+
+/* line 35, ../../scss/core/structure.scss */
+.region-navigation-pane {
+  display: none;
+}
+
+/* line 39, ../../scss/core/structure.scss */
+.region-content-navigation {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+/* line 43, ../../scss/core/structure.scss */
+.responsive-full-page .region-content-navigation {
+  width: 1024px;
+}
+/* line 47, ../../scss/core/structure.scss */
+.region-content-navigation #block-system-main-menu {
+  float: left;
+}
+/* line 51, ../../scss/core/structure.scss */
+.region-content-navigation #block-search-form {
+  float: right;
+  margin-right: 2em;
+}
+
+/* line 57, ../../scss/core/structure.scss */
+#page-wrapper {
+  width: 100%;
+}
+
+/* line 61, ../../scss/core/structure.scss */
+#page {
+  margin: 0 auto;
+  /*Used for positioning*/
+  max-width: 1024px;
+  position: relative;
+}
+/* line 67, ../../scss/core/structure.scss */
+.responsive-full-page #page {
+  width: 1024px;
+}
+
+/* line 72, ../../scss/core/structure.scss */
+.region-over-main {
+  float: left;
+  width: 100%;
+}
+
+/* line 77, ../../scss/core/structure.scss */
+.region-sidebar-first {
+  float: left;
+  width: 25%;
+}
+/* line 81, ../../scss/core/structure.scss */
+.region-sidebar-first > .content {
+  margin: 0.5em;
+  margin: 0.5rem;
+}
+
+/* line 87, ../../scss/core/structure.scss */
+.region-sidebar-second {
+  float: left;
+  width: 25%;
+}
+/* line 91, ../../scss/core/structure.scss */
+.region-sidebar-second > .content {
+  margin: 0.5em;
+  margin: 0.5rem;
+}
+
+/* line 97, ../../scss/core/structure.scss */
+.region-main {
+  float: left;
+  width: 75%;
+}
+/* line 101, ../../scss/core/structure.scss */
+.region-main > .content {
+  margin: 0.5em;
+  margin: 0.5rem;
+}
+
+/* line 107, ../../scss/core/structure.scss */
+.no-sidebars .region-main {
+  width: 100%;
+}
+
+/* line 111, ../../scss/core/structure.scss */
+#block-system-main {
+  float: none;
+}
+
+/* line 115, ../../scss/core/structure.scss */
+.region-content-under {
+  clear: left;
+}
+/* line 118, ../../scss/core/structure.scss */
+.region-content-under .block > .content {
+  min-height: 15em;
+}
+
+/* Footer */
+/* line 124, ../../scss/core/structure.scss */
+#footer-wrapper {
+  width: 100%;
+}
+
+/* line 128, ../../scss/core/structure.scss */
+.region-footer {
+  margin: 0 auto;
+  /*Used for positioning*/
+  max-width: 1024px;
+  position: relative;
+}
+/* line 133, ../../scss/core/structure.scss */
+.responsive-full-page .region-footer {
+  width: 1024px;
+}
+/* line 137, ../../scss/core/structure.scss */
+.region-footer > .content {
+  padding: 0 1em;
+}
+
+/*RESPONSIVE*/
+/* line 152, ../../scss/core/structure.scss */
+.responsive-mobile {
+  display: none;
+}
+/* line 155, ../../scss/core/structure.scss */
+.responsive-mobile .block-menu-block {
+  display: none;
+}
+
+/* line 160, ../../scss/core/structure.scss */
+.mini-menu {
+  display: none;
+}

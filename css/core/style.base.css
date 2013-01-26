@@ -1,0 +1,724 @@
+/*STYLE.BASE.CSS*/
+/*FONTS*/
+/* line 7, ../../scss/core/style.base.scss */
+body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 90%;
+  /*Set base font size.  Use em units after this.*/
+  line-height: 1.618;
+  /*using ratios means they are relative to each element, not to the parent value*/
+  margin: 0;
+}
+
+/* line 14, ../../scss/core/style.base.scss */
+p {
+  margin: 1em 0em;
+}
+
+/* line 18, ../../scss/core/style.base.scss */
+blockquote {
+  margin: 1.618em;
+  padding: 1.618em;
+  border: 1px solid #DEDEDE;
+}
+/* line 23, ../../scss/core/style.base.scss */
+blockquote p {
+  margin-top: 0;
+}
+
+/* line 28, ../../scss/core/style.base.scss */
+.legal {
+  color: #A3A3A3;
+  font-size: 0.61805em;
+  /* 10px */
+}
+
+/* line 33, ../../scss/core/style.base.scss */
+img {
+  border: 0;
+  max-width: 100%;
+  display: block;
+}
+
+/* line 39, ../../scss/core/style.base.scss */
+iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 44, ../../scss/core/style.base.scss */
+object {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* line 50, ../../scss/core/style.base.scss */
+div.block-title > h3 {
+  margin: 0;
+}
+
+/* line 54, ../../scss/core/style.base.scss */
+h1, h2, h3, h4, h5, h6, pre, ul, ol, dl, hr, table, fieldset {
+  margin: 1em 0;
+}
+
+/*HEADERS*/
+/* line 60, ../../scss/core/style.base.scss */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0.61805em 0;
+  font-weight: normal;
+  font-family: "Rambla", sans-serif;
+  line-height: 1.38177;
+  clear: left;
+}
+
+/* line 69, ../../scss/core/style.base.scss */
+h1 {
+  font-size: 2em;
+  color: #a60000;
+  text-transform: capitalize;
+  margin: 0 0 0.4em 0;
+}
+
+/* line 77, ../../scss/core/style.base.scss */
+h2 {
+  font-size: 1.618em;
+  color: #606060;
+}
+
+/* line 82, ../../scss/core/style.base.scss */
+h3, h4, h5 {
+  font-size: 1.25em;
+  color: #606060;
+}
+
+/* line 95, ../../scss/core/style.base.scss */
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+}
+
+/*LINKS*/
+/* line 100, ../../scss/core/style.base.scss */
+a {
+  color: #a60000;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+/* line 106, ../../scss/core/style.base.scss */
+a:hover {
+  color: #a60000;
+}
+
+/*Drupal Links*/
+/* line 113, ../../scss/core/style.base.scss */
+ul.inline li {
+  padding: 0;
+}
+
+/* line 119, ../../scss/core/style.base.scss */
+ul.links a,
+ul.links a:hover,
+.form-actions input {
+  color: white;
+  background: #b21818;
+  background: -moz-linear-gradient(top, #bf3030 0%, #a60000 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #bf3030), color-stop(100%, #a60000));
+  background: -webkit-linear-gradient(top, #bf3030 0%, #a60000 100%);
+  background: -o-linear-gradient(top, #bf3030 0%, #a60000 100%);
+  background: -ms-linear-gradient(top, #bf3030 0%, #a60000 100%);
+  background: linear-gradient(top, #bf3030 0%, #a60000 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#bf3030', endColorstr='#a60000',GradientType=0 );
+  border: 1px solid #a60000;
+  border-radius: 2px;
+  font-weight: normal;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+  padding: 0.2em 1.5em;
+  margin: 0.5em 1em 0.5em 0;
+  display: inline-block;
+}
+/* line 131, ../../scss/core/style.base.scss */
+.comments ul.links a, .comments
+ul.links a:hover, .comments
+.form-actions input {
+  font-size: 0.62em;
+}
+
+/* line 138, ../../scss/core/style.base.scss */
+html body span.ext {
+  background: url("/sites/all/themes/panda/images/extlink.png") right center no-repeat;
+  padding-right: 12px;
+}
+@media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
+  /* line 138, ../../scss/core/style.base.scss */
+  html body span.ext {
+    /* on retina, use image that's scaled by 2 */
+    background-image: url("/sites/all/themes/panda/images/extlink-2x.png");
+    background-size: 10px 10px;
+  }
+}
+
+/*LIST ITEMS*/
+/* line 145, ../../scss/core/style.base.scss */
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 150, ../../scss/core/style.base.scss */
+ul {
+  list-style-type: none;
+}
+
+/* line 161, ../../scss/core/style.base.scss */
+.region-content-main ul,
+.region-content-main ol, .fancybox-overlay ul,
+.fancybox-overlay ol {
+  padding-left: 2em;
+  /* LTR */
+  margin-bottom: 1em;
+}
+/* line 167, ../../scss/core/style.base.scss */
+.region-content-main li > ul,
+.region-content-main li > ol, .fancybox-overlay li > ul,
+.fancybox-overlay li > ol {
+  margin: 0;
+}
+/* line 171, ../../scss/core/style.base.scss */
+.region-content-main ul, .fancybox-overlay ul {
+  list-style-image: url("/sites/all/themes/panda/images/li-swirl.png");
+}
+/* line 183, ../../scss/core/style.base.scss */
+.region-content-main ol, .fancybox-overlay ol {
+  list-style-type: decimal;
+}
+/* line 186, ../../scss/core/style.base.scss */
+.region-content-main ol ol, .fancybox-overlay ol ol {
+  list-style-type: lower-alpha;
+}
+/* line 189, ../../scss/core/style.base.scss */
+.region-content-main ol ol ol, .fancybox-overlay ol ol ol {
+  list-style-type: lower-roman;
+}
+
+/*LI OVERRIDES*/
+/* line 198, ../../scss/core/style.base.scss */
+.item-list ul {
+  margin: 1.5em 0;
+  padding: 0 0 0 2em;
+  /* LTR */
+}
+
+/* line 204, ../../scss/core/style.base.scss */
+.item-list ul ul, .item-list ul ol,
+.item-list ol ol, .item-list ol ul {
+  margin: 0;
+}
+
+/* line 212, ../../scss/core/style.base.scss */
+.item-list ul li,
+ul.menu li,
+li.expanded,
+li.collapsed,
+li.leaf {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/*Selections*/
+/* line 221, ../../scss/core/style.base.scss */
+::selection {
+  background-color: #bf3030;
+  color: white;
+}
+
+/*fancybox overrides*/
+/* line 227, ../../scss/core/style.base.scss */
+.fancybox-overlay ul li {
+  list-style-image: inherit;
+}
+
+/*TABLES*/
+/* line 233, ../../scss/core/style.base.scss */
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+
+/* line 239, ../../scss/core/style.base.scss */
+table .active {
+  /* system theme override */
+  background: none;
+}
+
+/* line 243, ../../scss/core/style.base.scss */
+thead {
+  border: 1px solid #0097DB;
+}
+/* line 246, ../../scss/core/style.base.scss */
+thead tr {
+  background: #0097db;
+  background: -moz-linear-gradient(top, #01b5f4 0%, #0079c2 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #01b5f4), color-stop(100%, #0079c2));
+  background: -webkit-linear-gradient(top, #01b5f4 0%, #0079c2 100%);
+  background: -o-linear-gradient(top, #01b5f4 0%, #0079c2 100%);
+  background: -ms-linear-gradient(top, #01b5f4 0%, #0079c2 100%);
+  background: linear-gradient(top, #01b5f4 0%, #0079c2 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01b5f4', endColorstr='#0079c2',GradientType=0 );
+}
+/* line 249, ../../scss/core/style.base.scss */
+thead tr th {
+  padding: 0.38198em 0.8em;
+  border-top: none;
+  border-bottom: none;
+  border-right: 2px solid #1275b4;
+  border-left: 2px solid #109ded;
+  font-weight: normal;
+  text-decoration: none;
+  color: #FFFFFF;
+}
+/* line 261, ../../scss/core/style.base.scss */
+thead tr th:first-child {
+  border-left: none;
+}
+/* line 265, ../../scss/core/style.base.scss */
+thead tr th:last-child {
+  border-right: none;
+}
+/* line 269, ../../scss/core/style.base.scss */
+thead tr th img {
+  margin: 0 0 0 10px;
+}
+/* line 277, ../../scss/core/style.base.scss */
+thead tr th.active a,
+thead tr th a,
+thead tr th a:hover,
+thead tr th a:visited {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: normal;
+}
+
+/* line 286, ../../scss/core/style.base.scss */
+tbody {
+  background: #fff;
+  color: #606060;
+}
+
+/* line 294, ../../scss/core/style.base.scss */
+tr,
+tr.even,
+tr.odd {
+  padding: 0;
+  background: url("/sites/all/themes/panda/images/table-row-bottom-border.png") center bottom no-repeat white;
+  border: none;
+}
+
+/* line 300, ../../scss/core/style.base.scss */
+tbody tr:last-child {
+  background: none;
+}
+
+/* line 304, ../../scss/core/style.base.scss */
+td {
+  padding: 0.61805em 1em;
+  border: none;
+}
+
+/* line 310, ../../scss/core/style.base.scss */
+td.active {
+  color: #0193D5;
+}
+
+/*FORMS*/
+/* line 316, ../../scss/core/style.base.scss */
+.element-invisible {
+  padding: 0px;
+  margin: 0px;
+}
+
+/* line 321, ../../scss/core/style.base.scss */
+form {
+  margin: 1em 0;
+  padding: 0;
+}
+
+/* line 326, ../../scss/core/style.base.scss */
+fieldset {
+  padding: 1em;
+  border: 1px solid #A0A0A0;
+  border-radius: 2px;
+  margin: 1em 0;
+}
+/* line 332, ../../scss/core/style.base.scss */
+fieldset.collapsed {
+  border: none;
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+/* line 347, ../../scss/core/style.base.scss */
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+  vertical-align: baseline;
+  /* 3 */
+  *vertical-align: middle;
+  /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+/* line 360, ../../scss/core/style.base.scss */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+/* line 373, ../../scss/core/style.base.scss */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+/* line 382, ../../scss/core/style.base.scss */
+textarea {
+  overflow: auto;
+  /* 1 */
+  vertical-align: top;
+  /* 2 */
+}
+
+/* line 388, ../../scss/core/style.base.scss */
+.resizable-textarea .grippie {
+  display: none;
+}
+
+/* line 392, ../../scss/core/style.base.scss */
+div.text-wrap {
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
+  border-radius: 2px;
+  padding: 0.2rem 0.5rem;
+  margin: 0.5rem 0 0.5rem;
+  width: auto;
+  max-width: 400px;
+  -webkit-transition: border linear 0.3s, box-shadow linear 0.3s;
+  -moz-transition: border linear 0.3s, box-shadow linear 0.3s;
+  -ms-transition: border linear 0.3s, box-shadow linear 0.3s;
+  -o-transition: border linear 0.3s, box-shadow linear 0.3s;
+  transition: border linear 0.3s, box-shadow linear 0.3s;
+}
+/* line 408, ../../scss/core/style.base.scss */
+div.text-wrap.focused {
+  box-shadow: 0 0 7px 1px rgba(10, 147, 213, 0.6);
+  border: 1px solid #0193D5;
+}
+
+/* line 418, ../../scss/core/style.base.scss */
+input[type=text],
+input[type=search],
+textarea,
+input[type=password],
+input[type=email] {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  font-size: 100%;
+  line-height: 1.618em;
+}
+
+/* line 429, ../../scss/core/style.base.scss */
+label {
+  display: block;
+  color: #17396C;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+
+/* line 437, ../../scss/core/style.base.scss */
+div.form-item label {
+  display: block;
+  font-weight: normal;
+  margin: 1em 0;
+  text-transform: capitalize;
+  color: #525252;
+}
+
+/* line 445, ../../scss/core/style.base.scss */
+.form-item label.option {
+  display: inline;
+  font-weight: normal;
+  color: #525252;
+}
+
+/* line 451, ../../scss/core/style.base.scss */
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 2.7em;
+}
+
+/* line 455, ../../scss/core/style.base.scss */
+div.form-item input.form-radio {
+  vertical-align: top;
+}
+
+/* line 459, ../../scss/core/style.base.scss */
+.form-required {
+  color: #909090;
+}
+
+/* line 463, ../../scss/core/style.base.scss */
+.form-item .description {
+  font-size: 0.85em;
+  color: #999;
+}
+
+/* line 469, ../../scss/core/style.base.scss */
+.form-checkboxes .form-item,
+.form-radios .form-item {
+  margin: 0;
+  /* Drupal core uses "0.4em 0" */
+}
+
+/* line 473, ../../scss/core/style.base.scss */
+form.webform-client-form input#edit-submit.form-submit {
+  border-radius: 4px;
+}
+
+/* line 478, ../../scss/core/style.base.scss */
+.container-inline div,
+.container-inline label {
+  display: inline;
+}
+
+/* line 482, ../../scss/core/style.base.scss */
+.label-inline {
+  font-weight: bold;
+  display: inline;
+}
+
+/**
+ * ezMark jQuery Plugin
+ **/
+/* line 491, ../../scss/core/style.base.scss */
+.ez-hide {
+  opacity: 0;
+  filter: alpha(opacity=0);
+}
+
+/* line 496, ../../scss/core/style.base.scss */
+.ez-checkbox,
+.ez-radio {
+  display: inline-block;
+  margin-bottom: -4px;
+  /*for win*/
+  vertical-align: top;
+  /*for osx*/
+  height: 15px;
+  width: 15px;
+  border: 1px solid #D0D0D0;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+/* line 507, ../../scss/core/style.base.scss */
+.ez-checkbox {
+  border-radius: 2px;
+}
+
+/* line 511, ../../scss/core/style.base.scss */
+.ez-radio {
+  border-radius: 15px;
+}
+
+/* line 516, ../../scss/core/style.base.scss */
+.ez-checked,
+.ez-selected {
+  border: 1px solid #0193D5;
+  background: #32bef2;
+  background: -moz-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #64c8f0), color-stop(100%, #01b5f4));
+  background: -webkit-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+  background: -o-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+  background: -ms-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+  background: linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+}
+
+/*View Grids*/
+/* line 532, ../../scss/core/style.base.scss */
+.grid-block {
+  width: 33%;
+  float: left;
+}
+/* line 536, ../../scss/core/style.base.scss */
+.grid-block h1, .grid-block h2, .grid-block h3, .grid-block h4, .grid-block h5, .grid-block h6 {
+  margin-top: 1em;
+}
+/* line 540, ../../scss/core/style.base.scss */
+.grid-block > .content {
+  padding: 1.618em;
+}
+/* line 543, ../../scss/core/style.base.scss */
+.grid-block > .content img {
+  border-radius: 2px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+}
+
+/* line 550, ../../scss/core/style.base.scss */
+.grid-block-wide {
+  width: 50%;
+  float: left;
+}
+/* line 554, ../../scss/core/style.base.scss */
+.grid-block-wide > .content {
+  padding: 1.618em;
+}
+
+/*Modals*/
+/* line 560, ../../scss/core/style.base.scss */
+.fancybox-skin {
+  border-radius: 0;
+  margin: 2em 0 3.5em 0;
+}
+/* line 564, ../../scss/core/style.base.scss */
+.fancybox-skin .fancybox-title {
+  font-family: "Rambla", sans-serif;
+  font-size: 1.618em;
+  color: #17396C;
+  margin-right: 40px;
+}
+/* line 574, ../../scss/core/style.base.scss */
+.fancybox-skin .fancybox-outer {
+  margin-top: 2em;
+}
+/* line 578, ../../scss/core/style.base.scss */
+.fancybox-skin .fancybox-nav {
+  width: 55px;
+}
+/* line 588, ../../scss/core/style.base.scss */
+.fancybox-skin .fancybox-close {
+  top: -4px;
+  right: 11px;
+}
+/* line 593, ../../scss/core/style.base.scss */
+.fancybox-skin .fancybox-nav span {
+  visibility: visible;
+}
+/* line 597, ../../scss/core/style.base.scss */
+.fancybox-skin .fancybox-prev {
+  left: -65px;
+}
+/* line 601, ../../scss/core/style.base.scss */
+.fancybox-skin .fancybox-next {
+  right: -65px;
+}
+
+/* line 607, ../../scss/core/style.base.scss */
+.modal-popup-wrapper {
+  display: none;
+}
+
+/* line 613, ../../scss/core/style.base.scss */
+.views-row {
+  padding: 1em;
+  background-image: url("/sites/all/themes/panda/images/diode-divider-yellow-4px.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+}
+/* line 620, ../../scss/core/style.base.scss */
+.views-row.views-row-odd {
+  background-color: #F9F9F9;
+}
+/* line 624, ../../scss/core/style.base.scss */
+.views-row.views-row-even {
+  background-color: #FFFCF1;
+}
+/* line 632, ../../scss/core/style.base.scss */
+.views-row.views-row-last {
+  background-image: none;
+}
+
+/* line 638, ../../scss/core/style.base.scss */
+.view-header .views-row, .view-footer .views-row {
+  padding: 0;
+  background: none;
+}
+/* line 643, ../../scss/core/style.base.scss */
+.view-header .views-row.views-row-odd, .view-footer .views-row.views-row-odd {
+  background: none;
+}
+/* line 647, ../../scss/core/style.base.scss */
+.view-header .views-row.views-row-even, .view-footer .views-row.views-row-even {
+  background: none;
+}
+
+/*Admin Editing*/
+/* line 656, ../../scss/core/style.base.scss */
+.region-main ul.primary {
+  border: none;
+  padding-left: 0;
+  position: fixed;
+  z-index: 4;
+  top: 4em;
+  right: 2em;
+}
+/* line 667, ../../scss/core/style.base.scss */
+.region-main ul.primary li a,
+.region-main ul.primary li.active a,
+.region-main ul.primary li a:hover,
+.region-main ul.primary li.active a:hover {
+  background: none;
+  color: white;
+  background: #787878;
+  background: -moz-linear-gradient(top, #909090 0%, #606060 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #909090), color-stop(100%, #606060));
+  background: -webkit-linear-gradient(top, #909090 0%, #606060 100%);
+  background: -o-linear-gradient(top, #909090 0%, #606060 100%);
+  background: -ms-linear-gradient(top, #909090 0%, #606060 100%);
+  background: linear-gradient(top, #909090 0%, #606060 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#909090', endColorstr='#606060',GradientType=0 );
+  border: 1px solid #606060;
+  border-radius: 2px;
+  font-weight: normal;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+  padding: 0.2em 1.5em;
+}
+/* line 678, ../../scss/core/style.base.scss */
+.region-main ul.primary li.active a {
+  display: none;
+}
+
+/* line 683, ../../scss/core/style.base.scss */
+.filter-wrapper {
+  display: none;
+}

@@ -1,0 +1,148 @@
+/**
+ * @file
+ * CSS targeted specifically for Internet Explorer 7 (and earlier) for Windows.
+ *
+ * Any CSS in this file will apply to all versions of IE before IE 8. You can
+ * target specific versions of IE by using conditional comments. See your
+ * sub-theme's .info file for an easy way to use them.
+ */
+
+
+/*
+ * Tabs
+ */
+
+ul.primary li a,
+ul.primary li a .tab,
+ul.secondary li a,
+ul.secondary li a .tab {
+  cursor: pointer;
+}
+
+/*
+ * Drupal nodes
+ */
+
+.node-unpublished>* {
+  position: relative; /* Otherwise these elements will appear below the "Unpublished" text. */
+}
+
+/*
+ * Drupal admin tables
+ */
+tr.even th,
+tr.even td,
+tr.odd th,
+tr.odd td {
+  border-bottom: 1px solid #ccc; /* IE doesn't display borders on table rows */
+}
+
+/* Microsite IE7 Specific fixes */
+.microsite #block-locale-language ul li{
+  display: inline;
+}
+.microsite #block-menu-menu-microsite ul li ul,
+.microsite #block-menu-menu-microsite-espanol ul li ul {
+    background: url("../images/bg_mssm.png") no-repeat scroll center bottom transparent;
+    display: none;
+    left: -8px;
+    padding: 0 0 9px;
+    position: absolute;
+    top: 40px;
+    width: 266px;
+}
+.microsite fieldset legend {
+    color: #2671B8;
+    display: block;
+    font: 14px "Myriad Pro",tahoma,sans-serif;
+    margin: 0px 0px 20px -7px;
+    padding: 10px 0 0 0;
+    position: relative;
+}
+
+#webform-component-contact-information #webform-component-contact-information--address-2{
+    width: 250px;
+    margin: 0px 37px 25px 0px;
+    float: left;
+}
+#webform-component-contact-information #webform-component-contact-information--middle-initial{
+    width: 90px;
+    float: left;
+    margin: 0px 30px 25px 0px;
+}
+body.page-rebates-finder .chzn-container-single {
+    position: relative;
+    z-index: 300000000;
+}
+
+/*Responsive Structure Overrides*/
+/*IE 7 has 99 problems and rounding pixels is one.*/
+
+.region-sidebar-first {
+  width: 24.5%;
+}
+
+  .region-main {
+    width: 74.5%;
+  }
+  
+  .front .homepage-carousel .slide .slide-copy-wrapper {
+    width: 49.5%;
+  }
+  
+  /*Homepage News & Events*/
+  .front #block-views-news-and-events-block {
+    width: 66%;
+  }
+  
+  /*Homepage Sections*/
+  .front .block-nodeblock {
+    width: 49.5%;
+  }
+  
+  /*Customer Service*/
+  .front #block-nodeblock-3384 {
+    width: 33%;
+  }
+
+/* Footer */
+.region-footer .block {
+  float: left;
+  width: 19.8%;
+}
+
+/*RESPONSIVE*/
+
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+  .region-sidebar-first {
+    width: 32.5%;
+  }
+  
+  .region-main {
+    width: 66.5%;
+  }
+}
+
+/*Grid Views*/
+
+@media only screen and (min-width: 481px) and (max-width: 800px) {
+  html .grid-block {
+    width: 49.5%;
+  }
+}
+
+html input[type=text],
+html .form-textarea-wrapper textarea, 
+html input[type=password],
+html input[type=email] {
+  padding: 0.5em 1em;
+  width: auto;
+  border: 1px solid #606060;
+}
+
+/*Inline Block Fix*/
+
+.inline-block {
+  *display: inline-block;
+  *zoom: 1;
+}

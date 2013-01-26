@@ -1,0 +1,686 @@
+@import "base";
+
+/*STYLE.BASE.CSS*/
+
+/*FONTS*/
+
+body {
+  font-family: $body_font;
+  font-size: 90%; /*Set base font size.  Use em units after this.*/
+  line-height: 1 * panda-gn(1); /*using ratios means they are relative to each element, not to the parent value*/
+  margin: 0;
+}
+
+p {
+  margin: 1em 0em;
+}
+
+blockquote {
+  margin: 1em * panda-gn(1);
+  padding: 1em * panda-gn(1);
+  border: 1px solid #DEDEDE;
+  
+  p {
+    margin-top: 0;
+  }
+}
+
+.legal {
+  color: #A3A3A3;
+  font-size:  1em * panda-gn(-1); /* 10px */
+}
+
+img {
+  border: 0;
+  max-width: 100%;
+  display: block;
+}
+
+iframe {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+object {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+// disable margin on block titles by default
+div.block-title > h3 {
+  margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, pre, ul, ol, dl, hr, table, fieldset {
+  margin: 1em 0;
+}
+
+/*HEADERS*/
+
+h1, h2, h3, h4, h5, h6 {
+  margin: (1em * panda-gn(-1)) 0;
+  font-weight: normal;
+  font-family: $header_font;
+  line-height: panda-gn-med(1);
+  clear: left;
+}
+
+
+h1 {
+  //margin-top: 0;
+  font-size: 2em;
+  color: $color_pri;
+  text-transform: capitalize;
+  margin: 0 0 0.4em 0;
+}
+
+h2 {
+  font-size: 1em * panda-gn(1);
+  color: $color_sec;
+}
+
+h3, h4, h5 {
+  font-size: 1.25em;
+  color: $color_sec
+}
+
+h3 {
+  //color: $color_sec;
+}
+
+h4 {
+  //color: $color_sec;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
+  color: inherit;
+}
+
+/*LINKS*/
+a {
+  color: $color_pri;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+a:hover {
+  color: $color_pri;
+}
+
+/*Drupal Links*/
+
+// drupal override
+ul.inline li {
+  padding: 0;
+}
+
+ul.links a,
+ul.links a:hover,
+.form-actions input{
+  color: white;
+  @include panda-linear-gradient($color_pri_light, $color_pri);
+  border: 1px solid $color_pri;
+  border-radius: 2px;
+  font-weight: normal;
+  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+  padding: 0.2em 1.5em;
+  margin: 0.5em 1em 0.5em 0;
+  
+  display: inline-block;
+  
+  .comments & {
+    font-size: 0.62em;
+  }
+}
+
+// EXT Links override
+
+html body span.ext {
+  background: url('/sites/all/themes/panda/images/extlink.png') right center no-repeat;
+  @include image-2x('/sites/all/themes/panda/images/extlink-2x.png', 10px, 10px);
+  padding-right: 12px;
+}
+
+/*LIST ITEMS*/
+ul, ol, li {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none; 
+}
+
+li {
+  //list-style-type: none;
+}
+
+.region-content-main, .fancybox-overlay {
+  
+  ul,
+  ol {
+    padding-left: 2em; /* LTR */
+    margin-bottom: 1em;
+  }
+  
+  li > ul,
+  li > ol {
+    margin: 0;  
+  }
+  
+  ul {
+    list-style-image: url('/sites/all/themes/panda/images/li-swirl.png');
+    
+    ul {
+      //list-style-image: url('/sites/all/themes/panda/images/list-icon-2.png');
+    }
+    
+    ul {
+      //list-style-image: url('/sites/all/themes/panda/images/list-icon-3.png');
+    }
+  }
+  
+  ol {
+    list-style-type: decimal;
+    
+    ol {
+      list-style-type: lower-alpha;
+      
+      ol {
+        list-style-type: lower-roman;
+      }
+    }
+  }
+}
+
+/*LI OVERRIDES*/
+
+.item-list ul /* Drupal overrides */ {
+  margin: 1.5em 0;
+  padding: 0 0 0 2em; /* LTR */
+}
+
+.item-list ul ul, .item-list ul ol,
+.item-list ol ol, .item-list ol ul {
+  margin: 0;
+}
+
+.item-list ul li,
+ul.menu li,
+li.expanded,
+li.collapsed,
+li.leaf /* Drupal override */ {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  list-style-image: none;
+}
+
+/*Selections*/
+
+::selection {
+  background-color: $color_pri_light;
+  color: white;
+}
+
+/*fancybox overrides*/
+.fancybox-overlay ul li {
+  list-style-image: inherit; 
+}
+
+/*TABLES*/
+
+table {
+  width: 100%;
+  border: none;
+  border-collapse: collapse;
+}
+
+table .active { /* system theme override */
+  background: none
+}
+
+thead {
+  border: 1px solid #0097DB;
+  
+  tr {
+    @include panda-linear-gradient(#01b5f4, #0079c2);
+    
+    th {
+      padding: 1em * panda-gn(-2) 0.8em;
+      border-top: none;
+      border-bottom: none;
+      border-right: 2px solid #1275b4;
+      border-left: 2px solid #109ded;
+      
+      font-weight: normal;
+      
+      text-decoration: none;
+      color: #FFFFFF;
+      
+      &:first-child {
+        border-left: none;
+      }
+      
+      &:last-child {
+        border-right: none;
+      }
+      
+      img {
+        margin: 0 0 0 10px;
+      }
+    }
+    
+    th.active a,
+    th a,
+    th a:hover,
+    th a:visited {
+      text-decoration: none;
+      color: #FFFFFF;
+      
+      font-weight: normal;
+    }
+  }
+}
+
+tbody {
+  background: #fff;
+  //border: 1px solid #D0D0D0;
+  color: #606060;
+}
+
+tr,
+tr.even,
+tr.odd {
+  padding: 0;
+  background: url('/sites/all/themes/panda/images/table-row-bottom-border.png') center bottom no-repeat #fff;
+  border: none;
+}
+
+tbody tr:last-child {
+  background: none;
+}
+
+td {
+  padding: 1em * panda-gn(-1) 1em;
+  //color: #585858;
+  border: none;
+}
+
+td.active {
+  color: #0193D5;
+}
+
+/*FORMS*/
+
+.element-invisible {
+  padding: 0px;
+  margin: 0px;
+}
+
+form {
+  margin: 1em 0;
+  padding: 0;
+}
+
+fieldset {
+  padding: 1em;
+  border: 1px solid #A0A0A0;
+  border-radius: 2px;
+  margin: 1em 0;
+  
+  &.collapsed {
+    border: none;
+  }
+}
+
+/*
+ * 1. Corrects font size not being inherited in all browsers.
+ * 2. Addresses margins set differently in IE 6/7, Firefox 3+, Safari 5,
+ *    and Chrome.
+ * 3. Improves appearance and consistency in all browsers.
+ */
+
+button,
+input,
+select,
+textarea {
+    font-size: 100%; /* 1 */
+    margin: 0; /* 2 */
+    vertical-align: baseline; /* 3 */
+    *vertical-align: middle; /* 3 */
+}
+
+/*
+ * 1. Addresses `appearance` set to `searchfield` in Safari 5 and Chrome.
+ * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
+ *    (include `-moz` to future-proof).
+ */
+
+input[type="search"] {
+    -webkit-appearance: textfield; /* 1 */
+    -moz-box-sizing: content-box;
+    -webkit-box-sizing: content-box; /* 2 */
+    box-sizing: content-box;
+}
+
+/*
+ * Removes inner padding and search cancel button in Safari 5 and Chrome
+ * on OS X.
+ */
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+    -webkit-appearance: none;
+}
+
+/*
+ * 1. Removes default vertical scrollbar in IE 6/7/8/9.
+ * 2. Improves readability and alignment in all browsers.
+ */
+
+textarea {
+    overflow: auto; /* 1 */
+    vertical-align: top; /* 2 */
+}
+
+// remove grippie from being shown (drupal UI)
+.resizable-textarea .grippie {
+  display: none;
+}
+
+div.text-wrap {
+  background: #FFFFFF;
+  border: 1px solid #D0D0D0;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
+  border-radius: 2px;
+  padding: 0.2rem 0.5rem;
+  margin: 0.5rem 0 0.5rem;
+  width: auto;
+  max-width: 400px;
+
+  -webkit-transition: border linear 0.3s, box-shadow linear 0.3s;
+     -moz-transition: border linear 0.3s, box-shadow linear 0.3s;
+      -ms-transition: border linear 0.3s, box-shadow linear 0.3s;
+       -o-transition: border linear 0.3s, box-shadow linear 0.3s;
+          transition: border linear 0.3s, box-shadow linear 0.3s;
+  
+  &.focused {
+    box-shadow: 0 0 7px 1px rgba(10, 147, 213, 0.6);
+    border: 1px solid #0193D5;
+  }
+}
+
+input[type=text],
+input[type=search],
+textarea, 
+input[type=password],
+input[type=email] {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  outline: none;
+  border: none;
+  
+  font-size: 100%;
+  line-height: 1.618em;
+}
+
+label {
+  display: block;
+  color: #17396C;
+  font-size: 1.1em;
+  font-weight: normal;
+  margin: 0.5em 0;
+}
+
+div.form-item label /* The label for a form element */ {
+  display: block;
+  font-weight: normal;
+  margin: 1em 0;
+  text-transform: capitalize;
+  color: #525252;
+}
+
+.form-item label.option /* The label for a radio button or checkbox */ {
+  display: inline;
+  font-weight: normal;
+  color: #525252;
+}
+
+.views-exposed-form .views-exposed-widget .form-submit {
+  margin-top: 2.7em;
+}
+
+div.form-item input.form-radio {
+  vertical-align: top;
+}
+
+.form-required /* The part of the label that indicates a required field */ {
+  color: $color_hl1;
+}
+
+.form-item .description /* The descriptive help text (separate from the label) */ {
+  font-size: 0.85em;
+  color:#999;
+}
+
+.form-checkboxes .form-item,
+.form-radios .form-item /* Pack groups of checkboxes and radio buttons closer together */ {
+  margin: 0; /* Drupal core uses "0.4em 0" */
+}
+
+form.webform-client-form input#edit-submit.form-submit /* The submit button */ {
+  border-radius: 4px;
+}
+
+.container-inline div,
+.container-inline label /* Inline labels and form divs */ {
+  display: inline;
+}
+
+.label-inline {
+  font-weight: bold;
+  display: inline;
+}
+
+/**
+ * ezMark jQuery Plugin
+ **/
+
+.ez-hide {
+    opacity: 0;
+    filter: alpha(opacity=0);
+  }
+.ez-checkbox,
+.ez-radio {
+	display: inline-block;
+  margin-bottom: -4px; /*for win*/
+  vertical-align: top; /*for osx*/
+  height: 15px;
+  width: 15px;
+  
+  border: 1px solid #D0D0D0;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
+}
+
+.ez-checkbox {
+  border-radius: 2px;
+}
+
+.ez-radio {
+  border-radius: 15px;
+}
+
+.ez-checked,
+.ez-selected {
+  border: 1px solid #0193D5;
+  //@include panda-linear-gradient(#64C8F0, #01b5f4);
+  
+  //write out the Filter Less code below since IE can't draw the filter with the rounded area
+  background: #32bef2;
+  background: -moz-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #64c8f0), color-stop(100%, #01b5f4));
+  background: -webkit-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+  background: -o-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+  background: -ms-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+  background: linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+}
+
+/*View Grids*/
+
+.grid-block{
+  width: 33%;
+  float: left;
+  
+  h1, h2, h3, h4, h5, h6 {
+    margin-top: 1em;
+  }
+  
+  & > .content {
+    padding: 1em * panda-gn(1);
+    
+    img {
+      border-radius: 2px;
+      box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
+    }
+  }
+}
+
+.grid-block-wide{
+  width: 50%;
+  float: left;
+  
+  & > .content {
+    padding: 1em * panda-gn(1);
+  }
+}
+
+/*Modals*/
+.fancybox-skin {
+  border-radius: 0;
+  margin: 2em 0 3.5em 0; //at really small sizes, the box doesn't fit super well.
+  
+  .fancybox-title {
+    //position: absolute;
+    //top: 0;
+    
+    font-family: $header_font;
+    font-size: 1em * panda-gn(1);
+    color: #17396C;
+    margin-right: 40px;
+  }
+  
+  .fancybox-outer {
+    margin-top: 2em;
+  }
+  
+  .fancybox-nav {
+    width: 55px;
+  }
+  
+  .fancybox-close,
+  .fancybox-prev span,
+  .fancybox-next span {
+    //background-image: url('/sites/all/themes/panda/images/fancybox_sprite.png');
+  }
+  
+  .fancybox-close {
+    top: -4px;
+    right: 11px;
+  }
+  
+  .fancybox-nav span {
+    visibility: visible;
+  }
+  
+  .fancybox-prev {
+    left: -65px;
+  }
+  
+  .fancybox-next {
+    right: -65px;
+  }
+  
+}
+
+.modal-popup-wrapper {
+  display: none;
+}
+
+//views
+
+.views-row {
+  padding: 1em;
+  
+  background-image: url("/sites/all/themes/panda/images/diode-divider-yellow-4px.png");
+  background-repeat: repeat-x;
+  background-position: bottom;
+    
+  &.views-row-odd {
+    background-color: #F9F9F9;
+  }
+  
+  &.views-row-even {
+    background-color: #FFFCF1;
+  }
+  
+  &.views-row-first {
+    
+  }
+  
+  &.views-row-last {
+    background-image: none;
+  }
+}
+
+.view-header, .view-footer {
+  .views-row {
+    padding: 0;
+
+    background: none;
+
+    &.views-row-odd {
+      background: none;
+    }
+
+    &.views-row-even {
+      background: none;
+    }
+  }
+}
+
+
+/*Admin Editing*/
+
+.region-main ul.primary {
+  border: none;
+  padding-left: 0;
+  position: fixed;
+  z-index: 4;
+  top: 4em;
+  right: 2em;
+  
+  li a,
+  li.active a,
+  li a:hover,
+  li.active a:hover {
+    background: none;
+    color: white;
+    @include panda-linear-gradient(#909090, #606060);
+    border: 1px solid #606060;
+    border-radius: 2px;
+    font-weight: normal;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+    padding: 0.2em 1.5em;
+  }
+  
+  li.active a {
+    display: none;
+  }
+}
+
+.filter-wrapper {
+  display: none;
+}
+  
