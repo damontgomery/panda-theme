@@ -1,8 +1,5 @@
 //Colors File, imported by _base.scss
 
-$header_font : 'Rambla', sans-serif;
-$body_font : 'Open Sans', sans-serif;
-
 //Example of a color
 $white : #FFFFFF;
 $color_pri : #A60000;
@@ -18,3 +15,16 @@ $color_hl1 : #909090;
 //CA1A55	A62F57	980D3C	EB5E8E	EB92B0
 //Secondary Color B:
 //52209B	4E2C80	391075	9363DA	AD8FDA
+
+
+//Fonts
+
+$header_font : 'Rambla', sans-serif;
+$body_font : 'Open Sans', sans-serif;
+
+// Padding Rules
+
+@mixin panda-content-margin(){
+  margin: 0.5em;
+  margin: 0.5rem;
+}

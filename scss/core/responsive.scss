@@ -7,13 +7,16 @@ html {
   // Slide Pane Menus
 
   #admin-menu {
+    // Reset, not sure why this is absolute.
     position: fixed;
   }
 
   #page-wrapper {
+    //functional value
     padding-top: 50px;
   }
 
+  //Functional Styling
   .navbar {
     width: 100%;
     position: fixed;
@@ -37,15 +40,9 @@ html {
   .main-pane-inner {
     position: relative;
     width: 100%;
-    //transform: translate(0, 0);
-    //-webkit-transform: translate(0, 0);
-    //-moz-transform: translate(0, 0);
 
-    transition: 200ms ease;
-    -webkit-transition: 200ms ease;
-    -moz-transition: 200ms ease;
+    @include panda-transition(200ms ease);
 
-    //left: 0 !important;
     left: 0;
   }
 
@@ -67,15 +64,12 @@ html {
       overflow: hidden;
       width: 280px;
       padding: 75px 0 0 0;
-      //background: $color_pri;
 
       & > .content {
-        transition: 200ms ease;
-        -webkit-transition: 200ms ease;
-        -moz-transition: 200ms ease;
+        @include panda-transition(200ms ease);
+
         left: -100%;
         position: absolute;
-        //width: 100%;
         padding: 0.5rem;
       }
     //}    
@@ -86,9 +80,6 @@ html {
   //@media #{$mq-not-desktop} {
     .js-nav {
       .main-pane-inner{
-        //transform: translate(280px, 0);
-        //-webkit-transform: translate(280px, 0);
-        //-moz-transform: translate(280px, 0);
         left: 280px; //this is because fixed pos items on a translated block have issues (they aren't fixed)
       }
 
@@ -96,20 +87,12 @@ html {
         left: 0;
         z-index: 5;
 
-        //transform: translate(-100%, 0);
-        //-webkit-transform: translate(-100%, 0);
-        //-moz-transform: translate(-100%, 0);
-
         & > .content {
           left: 0;
         }
         
 
         #block-system-main-menu > .content > ul.menu li {
-          //transition: 500ms ease;
-          //-webkit-transition: 500ms ease;
-          //-moz-transition: 500ms ease;
-
           width: 100%;
         }
       }
@@ -139,25 +122,6 @@ html {
       display: block;
     }
 
-    .mini-menu {
-      display: block;
-    }
-    
-    .region-navigation {
-      //display: none;
-    }
-
-    .region-content-navigation {
-      li.depth-1 a {
-        padding: 1em * panda-gn(-1) 1em * panda-gn(1) !important;
-        font: normal 1em "Interstate" !important;
-      }
-
-      li.expanded:hover > ul {
-        display: none;
-      }
-    }
-
     .region-sidebar-first {
       width: 100%;
     }
@@ -174,80 +138,6 @@ html {
 
     .region-navigation {
       clear: left;
-    }
-
-    .region-content-navigation li {
-      //min-width: 100%;
-    }
-    
-    .mini-menu > div {
-      position: relative;
-      padding-left : 2em;
-      
-      &:after {
-        position: absolute;
-        content: url('/sites/all/themes/panda/images/expand-icon-white.png');
-        left: 0.7em;
-      }
-      
-      &.active:after {
-        content: url('/sites/all/themes/panda/images/contract-icon-2.png');
-        top: 0.4em;
-      }
-    }
-    
-    .responsive-mobile #block-menu-block-1 {
-      margin-top: 1em;
-      width: 100%;
-      background-color: #0097DB;
-      
-      & > .content {
-        padding: 0;
-      }
-      
-      .menu-block-wrapper > ul {
-        background: none;
-        
-        & > li {
-          //@include panda-border-bottom-dotted-white();
-          
-          a {
-            padding: 0.5em 0.5em 0.5em 2em;
-            margin: 0;
-            color: #FFFFFF;
-            display: block;
-          }
-          
-          ul {
-            @include panda-linear-gradient(#01B5F4, #0079C2);
-            box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.5) inset;
-
-            padding: 1em 0;
-          }
-          
-          &.last {
-            background: none;  
-          }
-        }
-        
-        li {
-          position: relative;
-          
-          &.expanded:after {
-            position: absolute;
-            content: url('/sites/all/themes/panda_zen_responsive/images/expand-icon-white.png');
-            top: 0.5em;
-            left: 0.7em;
-          }
-          
-          &.expanded.active:after {
-            //content: url('/sites/all/themes/panda_zen_responsive/images/contract-icon-2.png');
-            content: '';
-            //top: 0.2em;
-          }
-        }
-        
-      }
     }
     
     /*Disable Flash*/

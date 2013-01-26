@@ -11,6 +11,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start-color}', endColorstr='#{$end-color}',GradientType=0 );
 }
 
+//Prefix hell for transitions
+@mixin panda-transition($options){
+  transition: $options;
+  -webkit-transition: $options;
+  -moz-transition: $options;
+  -o-transition: $options;
+}
+
 @function panda-base10-to-hex($d){
   @if ($d == 10) {$d : 'A';}
   @if ($d == 11) {$d : 'B';}

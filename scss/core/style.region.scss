@@ -4,12 +4,12 @@
 
 body {
   background-color : $color_pri;
-  background-image : url('/sites/all/themes/panda/images/tissue-paper.png');
+  //background-image : url('/sites/all/themes/panda/images/tissue-paper.png');
 }
 
 #page-wrapper {
   background: #FFFFFF;
-  background-image : url('/sites/all/themes/panda/images/tissue-paper-50.png');
+  //background-image : url('/sites/all/themes/panda/images/tissue-paper-50.png');
 }
 
 #page-content {
@@ -17,44 +17,13 @@ body {
 }
 
 .region-header {
-  background: white;
-  background-image : url('/sites/all/themes/panda/images/tissue-paper-50.png');
+  background: #FFFFFF;
 }
 
 .region-content-header {
   margin: 0 auto;
   max-width: 1024px;
-  //background: #FFFFFF;
   padding-top: 1px; // This makes the header go all the way to the top, otherwise the content inside may push the whole div down.
-}
-
-.region-navigation {
-  //background: #FFFFFF;
-  //background-image : url('/sites/all/themes/panda/images/tissue-paper-50.png');
-  //box-shadow: 0 0 6em 0 rgba(0, 0, 0, 0.1);
-}
-
-#page {
-  //background-color: #FFFFFF;
-}
-
-#page-wrapper {
-  .block > .content {
-    //commented out since it's white on white
-    //padding: 0.5 * 1em * panda-gn(1);
-    //margin: 0.5 * 1em * panda-gn(1);
-    
-    //background: #FFFFFF;
-    //border: 1px solid #E9E9E9;
-  }
-}
-
-#page-wrapper-content {
-  
-}
-
-.front #block-system-main {
-  //display: none;
 }
 
 #footer-wrapper {

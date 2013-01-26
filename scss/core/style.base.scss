@@ -7,7 +7,8 @@
 body {
   font-family: $body_font;
   font-size: 90%; /*Set base font size.  Use em units after this.*/
-  line-height: 1 * panda-gn(1); /*using ratios means they are relative to each element, not to the parent value*/
+  //line-height: 1 * panda-gn(1); /*using ratios means they are relative to each element, not to the parent value*/
+  line-height: 2;
   margin: 0;
 }
 
