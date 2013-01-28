@@ -38,42 +38,6 @@ tr.odd td {
 }
 
 /* Microsite IE7 Specific fixes */
-.microsite #block-locale-language ul li{
-  display: inline;
-}
-.microsite #block-menu-menu-microsite ul li ul,
-.microsite #block-menu-menu-microsite-espanol ul li ul {
-    background: url("../images/bg_mssm.png") no-repeat scroll center bottom transparent;
-    display: none;
-    left: -8px;
-    padding: 0 0 9px;
-    position: absolute;
-    top: 40px;
-    width: 266px;
-}
-.microsite fieldset legend {
-    color: #2671B8;
-    display: block;
-    font: 14px "Myriad Pro",tahoma,sans-serif;
-    margin: 0px 0px 20px -7px;
-    padding: 10px 0 0 0;
-    position: relative;
-}
-
-#webform-component-contact-information #webform-component-contact-information--address-2{
-    width: 250px;
-    margin: 0px 37px 25px 0px;
-    float: left;
-}
-#webform-component-contact-information #webform-component-contact-information--middle-initial{
-    width: 90px;
-    float: left;
-    margin: 0px 30px 25px 0px;
-}
-body.page-rebates-finder .chzn-container-single {
-    position: relative;
-    z-index: 300000000;
-}
 
 /*Responsive Structure Overrides*/
 /*IE 7 has 99 problems and rounding pixels is one.*/
@@ -84,25 +48,6 @@ body.page-rebates-finder .chzn-container-single {
 
   .region-main {
     width: 74.5%;
-  }
-  
-  .front .homepage-carousel .slide .slide-copy-wrapper {
-    width: 49.5%;
-  }
-  
-  /*Homepage News & Events*/
-  .front #block-views-news-and-events-block {
-    width: 66%;
-  }
-  
-  /*Homepage Sections*/
-  .front .block-nodeblock {
-    width: 49.5%;
-  }
-  
-  /*Customer Service*/
-  .front #block-nodeblock-3384 {
-    width: 33%;
   }
 
 /* Footer */
