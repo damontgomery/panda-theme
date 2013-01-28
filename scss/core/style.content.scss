@@ -129,21 +129,28 @@ ul.inline li.comment-add {
 
 .comment {
   position: relative;
-  padding: 0.62em;
-  padding: 0.62rem;
+
+  //box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.2);
+  //border-radius: 2px;
 
   &.odd {
-    background: #F0F0F0;
   }
 
   .user {
-    //width: 100px;
-    //float: left;
+    padding: 0.5em;
+    padding: 0.5rem;
+
+    background: #F0F0F0;
+
     .user-picture {
       float: left;
       max-width: 100px;
       margin-right: 1em;
       margin-right: 1rem;
+
+      //box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.15) inset;
+      //border-radius: 2px;
+      padding: 4px;
     }
 
     .username {
@@ -154,11 +161,20 @@ ul.inline li.comment-add {
 
   .timestamp {
     float: right;
+    color: #909090;
+
+    margin: 0.5em;
+    margin: 0.5rem;
+
+    border-bottom: 1px solid #DEDEDE;
+    padding-left: 2em;
+    padding-left: 2rem;
   }
 
   .body {
-    //margin-left: 100px;
-    //float: left;
+    //padding: 0.5em;
+    //padding: 0.5rem;
+
     clear: both;
 
     .main,

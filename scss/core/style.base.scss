@@ -120,16 +120,17 @@ li a.active {
   color: $color_pri;
 }
 
+.more-link {
+  display: none;
+}
+
 ul.links a,
 ul.links a:hover,
 .form-actions input,
 .more-link a {
   color: white;
-  @include panda-linear-gradient($color_pri_light, $color_pri);
-  border: 1px solid $color_pri;
-  border-radius: 2px;
+  background: $color_pri;
   font-weight: normal;
-  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
   padding: 0.1em 0.8em;
   padding: 0.1rem 0.8rem;
   margin: 0.5em 0.5em 0 0;
@@ -137,6 +138,7 @@ ul.links a:hover,
   font-size: 0.7em;
   font-size: 0.7rem;
   text-transform: capitalize;
+  border: none;
   
   display: inline-block;
   
