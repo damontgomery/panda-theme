@@ -19,7 +19,7 @@ $color_hl1 : #909090;
 
 //Fonts
 
-$header_font : 'Rambla', sans-serif;
+$header_font : 'Raleway', sans-serif;
 $body_font : 'Open Sans', sans-serif;
 
 // Padding Rules
@@ -28,3 +28,6 @@ $body_font : 'Open Sans', sans-serif;
   margin: 0.5em;
   margin: 0.5rem;
 }
+
+// Structure
+$max_width : 1350px;

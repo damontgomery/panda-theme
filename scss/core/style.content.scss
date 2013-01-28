@@ -79,7 +79,35 @@ li.expanded:hover > ul {
 
 }
 
+//hide conditional comment button
+ul.inline li.comment-add {
+  display: none;
+}
+
+//Sidebar
+
+.region-sidebar-first,
+.region-sidebar-second {
+  .item-list ul li {
+    //border: 1px solid $color_pri;
+    //border-radius: 2px;
+    padding: 0.4em;
+    padding: 0.4rem;
+    //margin: 0.5em 0;
+    //margin: 0.5rem 0;
+    line-height: 1em;
+    line-height: 1rem;
+
+    &:nth-child(even){
+      background-color: #F0F0F0;
+    }
+  }
+} 
+
+//Forum
+
 //Comments
+
 .comment-form {
   display: none;
 }
@@ -92,11 +120,51 @@ li.expanded:hover > ul {
   
   ul.inline li.comment-add {
     display: block;
+
+    .not-logged-in & {
+      display: none;
+    }
   }
 }
 
-//hide conditional comment button
-ul.inline li.comment-add {
-  display: none;
-}
+.comment {
+  position: relative;
+  padding: 0.62em;
+  padding: 0.62rem;
 
+  &.odd {
+    background: #F0F0F0;
+  }
+
+  .user {
+    //width: 100px;
+    //float: left;
+    .user-picture {
+      float: left;
+      max-width: 100px;
+      margin-right: 1em;
+      margin-right: 1rem;
+    }
+
+    .username {
+      float: left;
+    }
+
+  }
+
+  .timestamp {
+    float: right;
+  }
+
+  .body {
+    //margin-left: 100px;
+    //float: left;
+    clear: both;
+
+    .main,
+    .signature {
+      margin: 1em;
+      margin: 1rem;
+    }
+  }
+}

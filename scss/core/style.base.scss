@@ -102,6 +102,7 @@ a {
   color: $color_pri;
   cursor: pointer;
   text-decoration: none;
+  font-famliy: $header_font;
 }
 
 a:hover {
@@ -113,6 +114,10 @@ a:hover {
 // drupal override
 ul.inline li {
   padding: 0;
+}
+
+li a.active {
+  color: $color_pri;
 }
 
 ul.links a,
@@ -203,8 +208,9 @@ li {
 /*LI OVERRIDES*/
 
 .item-list ul /* Drupal overrides */ {
-  margin: 1.5em 0;
-  padding: 0 0 0 2em; /* LTR */
+  margin: 1em 0;
+  margin: 1rem 0;
+  //padding: 0 0 0 2em; /* LTR */
 }
 
 .item-list ul ul, .item-list ul ol,
@@ -413,8 +419,10 @@ div.text-wrap {
           transition: border linear 0.3s, box-shadow linear 0.3s;
   
   &.focused {
-    box-shadow: 0 0 7px 1px rgba(10, 147, 213, 0.6);
-    border: 1px solid #0193D5;
+    //box-shadow: 0 0 7px 1px rgba(10, 147, 213, 0.6);
+    //border: 1px solid #0193D5;
+    box-shadow: 0 0 7px 1px $color_pri;
+    border: 1px solid #color_pri;
   }
 }
 
@@ -512,7 +520,6 @@ form.webform-client-form input#edit-submit.form-submit /* The submit button */ {
 }
 
 .ez-checkbox {
-  border-radius: 2px;
 }
 
 .ez-radio {
@@ -521,17 +528,8 @@ form.webform-client-form input#edit-submit.form-submit /* The submit button */ {
 
 .ez-checked,
 .ez-selected {
-  border: 1px solid #0193D5;
-  //@include panda-linear-gradient(#64C8F0, #01b5f4);
-  
-  //write out the Filter Less code below since IE can't draw the filter with the rounded area
-  background: #32bef2;
-  background: -moz-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #64c8f0), color-stop(100%, #01b5f4));
-  background: -webkit-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
-  background: -o-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
-  background: -ms-linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
-  background: linear-gradient(top, #64c8f0 0%, #01b5f4 100%);
+  border: 1px solid $color_pri;
+  @include panda-linear-gradient($color_pri_light, $color_pri);
 }
 
 /*View Grids*/

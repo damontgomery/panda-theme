@@ -85,7 +85,8 @@
 
     //Comment Forms
     
-    $('.comment-add').click(function(){
+    $('.comment-add').click(function(event){
+      event.preventDefault();
       $('.comment-add').hide();
       $('.comment-form').slideDown();
     });

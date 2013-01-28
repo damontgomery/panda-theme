@@ -39,7 +39,7 @@ li.expanded > ul {
 }
 /* line 44, ../../scss/core/style.content.scss */
 .region-content-navigation #block-system-main-menu > .content > ul.menu li a, .region-content-navigation #block-user-login > .content > ul.menu li a, .region-content-navigation #block-system-user-menu > .content > ul.menu li a {
-  font-family: "Rambla", sans-serif;
+  font-family: "Raleway", sans-serif;
   color: white;
   font-weight: normal;
   font-size: 1rem;
@@ -53,22 +53,76 @@ li.expanded > ul {
 }
 
 /* line 83, ../../scss/core/style.content.scss */
+ul.inline li.comment-add {
+  display: none;
+}
+
+/* line 91, ../../scss/core/style.content.scss */
+.region-sidebar-first .item-list ul li,
+.region-sidebar-second .item-list ul li {
+  padding: 0.4em;
+  padding: 0.4rem;
+  line-height: 1em;
+  line-height: 1rem;
+}
+/* line 101, ../../scss/core/style.content.scss */
+.region-sidebar-first .item-list ul li:nth-child(even),
+.region-sidebar-second .item-list ul li:nth-child(even) {
+  background-color: #F0F0F0;
+}
+
+/* line 111, ../../scss/core/style.content.scss */
 .comment-form {
   display: none;
 }
 
-/* line 88, ../../scss/core/style.content.scss */
+/* line 116, ../../scss/core/style.content.scss */
 #comments {
   margin-top: 0;
   padding-top: 1em;
   clear: left;
 }
-/* line 93, ../../scss/core/style.content.scss */
+/* line 121, ../../scss/core/style.content.scss */
 #comments ul.inline li.comment-add {
   display: block;
 }
-
-/* line 99, ../../scss/core/style.content.scss */
-ul.inline li.comment-add {
+/* line 124, ../../scss/core/style.content.scss */
+.not-logged-in #comments ul.inline li.comment-add {
   display: none;
+}
+
+/* line 130, ../../scss/core/style.content.scss */
+.comment {
+  position: relative;
+  padding: 0.62em;
+  padding: 0.62rem;
+}
+/* line 135, ../../scss/core/style.content.scss */
+.comment.odd {
+  background: #F0F0F0;
+}
+/* line 142, ../../scss/core/style.content.scss */
+.comment .user .user-picture {
+  float: left;
+  max-width: 100px;
+  margin-right: 1em;
+  margin-right: 1rem;
+}
+/* line 149, ../../scss/core/style.content.scss */
+.comment .user .username {
+  float: left;
+}
+/* line 155, ../../scss/core/style.content.scss */
+.comment .timestamp {
+  float: right;
+}
+/* line 159, ../../scss/core/style.content.scss */
+.comment .body {
+  clear: both;
+}
+/* line 165, ../../scss/core/style.content.scss */
+.comment .body .main,
+.comment .body .signature {
+  margin: 1em;
+  margin: 1rem;
 }

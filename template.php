@@ -18,8 +18,8 @@ function panda_preprocess_block(&$variables, $hook) {
 function panda_preprocess_html(&$variables, $hook){
   
   // Add webfonts
-  drupal_add_css('http://fonts.googleapis.com/css?family=Rambla:400,700,400italic,700italic');
-  
+  drupal_add_css('http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700|Raleway:400,700,200');
+
   //fix intranet using IE7 Compatibility Mode
   drupal_add_http_header('X-UA-Compatible', 'IE=edge');
   

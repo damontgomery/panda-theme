@@ -13,7 +13,7 @@ body {
   position: relative;
   
   .responsive-full-page & .region-content-header {
-    width: 1024px;
+    width: $max_width;
   }
   
   #block-search-form, {
@@ -28,7 +28,7 @@ body {
   //z-index: 5;
   
   .responsive-full-page & {
-    min-width: 1024px;
+    min-width: $max_width;
   }
 }
 
@@ -37,11 +37,11 @@ body {
 }
 
   .region-content-navigation {
-    max-width: 1024px;
+    max-width: $max_width;
     margin: 0 auto;
     
     .responsive-full-page & {
-      width: 1024px;
+      width: $max_width;
     }
     
     #block-system-main-menu {
@@ -60,12 +60,12 @@ body {
   
 #page {
   margin: 0 auto; /*Used for positioning*/
-  max-width: 1024px;
+  max-width: $max_width;
   position: relative;
   
   
   .responsive-full-page & {
-    width: 1024px;
+    width: $max_width;
   }
 }
   
@@ -124,11 +124,11 @@ body {
 
 .region-footer {
   margin: 0 auto; /*Used for positioning*/
-  max-width: 1024px;
+  max-width: $max_width;
   position: relative;
   
   .responsive-full-page & {
-    width: 1024px;
+    width: $max_width;
   }
   
   & > .content {

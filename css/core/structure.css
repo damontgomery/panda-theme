@@ -10,7 +10,7 @@ body {
 }
 /* line 15, ../../scss/core/structure.scss */
 .responsive-full-page .region-header .region-content-header {
-  width: 1024px;
+  width: 1350px;
 }
 /* line 19, ../../scss/core/structure.scss */
 .region-header #block-search-form {
@@ -25,7 +25,7 @@ body {
 }
 /* line 30, ../../scss/core/structure.scss */
 .responsive-full-page .region-navigation {
-  min-width: 1024px;
+  min-width: 1350px;
 }
 
 /* line 35, ../../scss/core/structure.scss */
@@ -35,12 +35,12 @@ body {
 
 /* line 39, ../../scss/core/structure.scss */
 .region-content-navigation {
-  max-width: 1024px;
+  max-width: 1350px;
   margin: 0 auto;
 }
 /* line 43, ../../scss/core/structure.scss */
 .responsive-full-page .region-content-navigation {
-  width: 1024px;
+  width: 1350px;
 }
 /* line 47, ../../scss/core/structure.scss */
 .region-content-navigation #block-system-main-menu {
@@ -61,12 +61,12 @@ body {
 #page {
   margin: 0 auto;
   /*Used for positioning*/
-  max-width: 1024px;
+  max-width: 1350px;
   position: relative;
 }
 /* line 67, ../../scss/core/structure.scss */
 .responsive-full-page #page {
-  width: 1024px;
+  width: 1350px;
 }
 
 /* line 72, ../../scss/core/structure.scss */
@@ -137,12 +137,12 @@ body {
 .region-footer {
   margin: 0 auto;
   /*Used for positioning*/
-  max-width: 1024px;
+  max-width: 1350px;
   position: relative;
 }
 /* line 130, ../../scss/core/structure.scss */
 .responsive-full-page .region-footer {
-  width: 1024px;
+  width: 1350px;
 }
 /* line 134, ../../scss/core/structure.scss */
 .region-footer > .content {
