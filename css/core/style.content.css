@@ -94,14 +94,14 @@ ul.inline li.comment-add {
 /* line 130, ../../scss/core/style.content.scss */
 .comment {
   position: relative;
+  border-top: 1px solid #DEDEDE;
 }
-/* line 139, ../../scss/core/style.content.scss */
+/* line 140, ../../scss/core/style.content.scss */
 .comment .user {
   padding: 0.5em;
   padding: 0.5rem;
-  background: #F0F0F0;
 }
-/* line 145, ../../scss/core/style.content.scss */
+/* line 146, ../../scss/core/style.content.scss */
 .comment .user .user-picture {
   float: left;
   max-width: 100px;
@@ -109,25 +109,23 @@ ul.inline li.comment-add {
   margin-right: 1rem;
   padding: 4px;
 }
-/* line 156, ../../scss/core/style.content.scss */
+/* line 157, ../../scss/core/style.content.scss */
 .comment .user .username {
   float: left;
 }
-/* line 162, ../../scss/core/style.content.scss */
+/* line 163, ../../scss/core/style.content.scss */
 .comment .timestamp {
   float: right;
   color: #909090;
-  margin: 0.5em;
-  margin: 0.5rem;
   border-bottom: 1px solid #DEDEDE;
   padding-left: 2em;
   padding-left: 2rem;
 }
-/* line 174, ../../scss/core/style.content.scss */
+/* line 175, ../../scss/core/style.content.scss */
 .comment .body {
   clear: both;
 }
-/* line 181, ../../scss/core/style.content.scss */
+/* line 182, ../../scss/core/style.content.scss */
 .comment .body .main,
 .comment .body .signature {
   margin: 1em;

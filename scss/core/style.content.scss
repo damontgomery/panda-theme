@@ -129,6 +129,7 @@ ul.inline li.comment-add {
 
 .comment {
   position: relative;
+  border-top: 1px solid #DEDEDE;
 
   //box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.2);
   //border-radius: 2px;
@@ -140,7 +141,7 @@ ul.inline li.comment-add {
     padding: 0.5em;
     padding: 0.5rem;
 
-    background: #F0F0F0;
+    //background: #F0F0F0;
 
     .user-picture {
       float: left;
@@ -163,8 +164,8 @@ ul.inline li.comment-add {
     float: right;
     color: #909090;
 
-    margin: 0.5em;
-    margin: 0.5rem;
+    //margin: 0.5em;
+    //margin: 0.5rem;
 
     border-bottom: 1px solid #DEDEDE;
     padding-left: 2em;
