@@ -98,8 +98,10 @@ ul.inline li.comment-add {
     line-height: 1em;
     line-height: 1rem;
 
+    border-bottom: 1px solid #DEDEDE;
+
     &:nth-child(even){
-      background-color: #F0F0F0;
+      //background-color: #F0F0F0;
     }
   }
 } 
@@ -129,10 +131,22 @@ ul.inline li.comment-add {
 
 .comment {
   position: relative;
-  border-top: 1px solid #DEDEDE;
+  //border-top: 1px solid #DEDEDE;
 
-  //box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.2);
-  //border-radius: 2px;
+  box-shadow: 0 0 3px 0 rgba(0,0,0,0.2) inset;
+  border-radius: 2px;
+  margin-bottom: 0.5em;
+  margin-bottom: 0.5rem;
+  padding: 0.5em;
+  padding: 0.5rem;
+
+  &:before {
+    content: url('/sites/all/themes/panda/images/comment-arrow.png');
+    position: absolute;
+    top: 1.62em;
+    top: 1.62rem;
+    left: -12px;
+  }
 
   &.odd {
   }
@@ -175,6 +189,9 @@ ul.inline li.comment-add {
   .body {
     //padding: 0.5em;
     //padding: 0.5rem;
+    
+    border-top: 1px solid #E5E5E5;
+    //background: url('/sites/all/themes/panda/images/tissue-paper-50.png');
 
     clear: both;
 
