@@ -37,7 +37,7 @@ li.expanded > ul {
   float: left;
   position: relative;
 }
-/* line 44, ../../scss/core/style.content.scss */
+/* line 43, ../../scss/core/style.content.scss */
 .region-content-navigation #block-system-main-menu > .content > ul.menu li a, .region-content-navigation #block-user-login > .content > ul.menu li a, .region-content-navigation #block-system-user-menu > .content > ul.menu li a {
   font-family: "Raleway", sans-serif;
   color: white;
@@ -47,70 +47,89 @@ li.expanded > ul {
   display: inline-block;
 }
 
-/* line 77, ../../scss/core/style.content.scss */
+/* line 72, ../../scss/core/style.content.scss */
 .region-content-navigation #block-user-login {
   background: #FFFFFF;
 }
 
-/* line 83, ../../scss/core/style.content.scss */
+/* line 78, ../../scss/core/style.content.scss */
 ul.inline li.comment-add {
   display: none;
 }
 
-/* line 91, ../../scss/core/style.content.scss */
+/* line 86, ../../scss/core/style.content.scss */
 .region-sidebar-first .item-list ul li,
 .region-sidebar-second .item-list ul li {
   padding: 0.4em;
   padding: 0.4rem;
   line-height: 1em;
   line-height: 1rem;
-  border-bottom: 1px solid #DEDEDE;
+  border-bottom: 1px solid #dedede;
 }
 
-/* line 113, ../../scss/core/style.content.scss */
+/* line 103, ../../scss/core/style.content.scss */
+.region-main .node-forum .hero {
+  margin: 1em 0;
+  margin: 1rem 0;
+  position: relative;
+}
+/* line 108, ../../scss/core/style.content.scss */
+.region-main .node-forum .hero .caption {
+  padding: 0.2em 0.5em;
+  padding: 0.2rem 0.5rem;
+  background: #606060;
+  color: white;
+  text-transform: uppercase;
+  font-style: italic;
+  text-align: right;
+  font-size: 0.7em;
+  font-size: 0.7rem;
+}
+
+/* line 125, ../../scss/core/style.content.scss */
 .comment-form {
   display: none;
 }
 
-/* line 118, ../../scss/core/style.content.scss */
+/* line 130, ../../scss/core/style.content.scss */
 #comments {
   margin-top: 0;
   padding-top: 1em;
   clear: left;
 }
-/* line 123, ../../scss/core/style.content.scss */
+/* line 135, ../../scss/core/style.content.scss */
 #comments ul.inline li.comment-add {
   display: block;
 }
-/* line 126, ../../scss/core/style.content.scss */
+/* line 138, ../../scss/core/style.content.scss */
 .not-logged-in #comments ul.inline li.comment-add {
   display: none;
 }
 
-/* line 132, ../../scss/core/style.content.scss */
+/* line 144, ../../scss/core/style.content.scss */
 .comment {
   position: relative;
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
+  border: 1px solid #dedede;
   border-radius: 2px;
   margin-bottom: 0.5em;
   margin-bottom: 0.5rem;
   padding: 0.5em;
   padding: 0.5rem;
 }
-/* line 143, ../../scss/core/style.content.scss */
+/* line 154, ../../scss/core/style.content.scss */
 .comment:before {
   content: url("/sites/all/themes/panda/images/comment-arrow.png");
   position: absolute;
   top: 1.62em;
   top: 1.62rem;
-  left: -12px;
+  left: -13px;
 }
-/* line 154, ../../scss/core/style.content.scss */
+/* line 165, ../../scss/core/style.content.scss */
 .comment .user {
   padding: 0.5em;
   padding: 0.5rem;
 }
-/* line 160, ../../scss/core/style.content.scss */
+/* line 169, ../../scss/core/style.content.scss */
 .comment .user .user-picture {
   float: left;
   max-width: 100px;
@@ -118,24 +137,22 @@ ul.inline li.comment-add {
   margin-right: 1rem;
   padding: 4px;
 }
-/* line 171, ../../scss/core/style.content.scss */
+/* line 177, ../../scss/core/style.content.scss */
 .comment .user .username {
   float: left;
 }
-/* line 177, ../../scss/core/style.content.scss */
+/* line 183, ../../scss/core/style.content.scss */
 .comment .timestamp {
   float: right;
-  color: #909090;
-  border-bottom: 1px solid #DEDEDE;
-  padding-left: 2em;
-  padding-left: 2rem;
+  margin: 0.5em;
+  margin: 0.5rem;
 }
 /* line 189, ../../scss/core/style.content.scss */
 .comment .body {
-  border-top: 1px solid #E5E5E5;
+  border-top: 1px solid #dedede;
   clear: both;
 }
-/* line 199, ../../scss/core/style.content.scss */
+/* line 194, ../../scss/core/style.content.scss */
 .comment .body .main,
 .comment .body .signature {
   margin: 1em;

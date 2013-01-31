@@ -39,7 +39,6 @@ li.expanded:hover > ul {
         li {
           float: left;
           position: relative;
-          //width: 100%;
 
           a {
             font-family: $header_font;
@@ -48,7 +47,6 @@ li.expanded:hover > ul {
             font-size: 1rem;
 
             padding: 0.2em 1.5em;
-            //margin: 0.5em 1em 0.5em 0;
             display: inline-block;
           }
         }
@@ -57,14 +55,11 @@ li.expanded:hover > ul {
     
     width: 100%;
     float: left;
-    //@include panda-linear-gradient($color_pri_light, $color_pri);
-    //border: 1px solid $color_pri;
     border-radius: 2px;
     box-sizing: border-box;
     box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.5);
     
     background: $color_pri;
-    //background-image: url(/sites/all/themes/panda/images/tissue-paper.png);
     
   }
 }
@@ -89,16 +84,12 @@ ul.inline li.comment-add {
 .region-sidebar-first,
 .region-sidebar-second {
   .item-list ul li {
-    //border: 1px solid $color_pri;
-    //border-radius: 2px;
     padding: 0.4em;
     padding: 0.4rem;
-    //margin: 0.5em 0;
-    //margin: 0.5rem 0;
     line-height: 1em;
     line-height: 1rem;
 
-    border-bottom: 1px solid #DEDEDE;
+    border-bottom: 1px solid $color_light_gray;
 
     &:nth-child(even){
       //background-color: #F0F0F0;
@@ -107,6 +98,27 @@ ul.inline li.comment-add {
 } 
 
 //Forum
+
+.region-main .node-forum {
+  .hero {
+    margin: 1em 0;
+    margin: 1rem 0;
+    position: relative;
+
+    .caption {
+      padding: 0.2em 0.5em;
+      padding: 0.2rem 0.5rem;
+
+      background: $color_sec;
+      color: white;
+      text-transform: uppercase;
+      font-style: italic;
+      text-align: right;
+      font-size: 0.7em;
+      font-size: 0.7rem;
+    }
+  }
+}
 
 //Comments
 
@@ -131,9 +143,8 @@ ul.inline li.comment-add {
 
 .comment {
   position: relative;
-  //border-top: 1px solid #DEDEDE;
-
-  box-shadow: 0 0 3px 0 rgba(0,0,0,0.2) inset;
+  
+  border: 1px solid $color_light_gray;
   border-radius: 2px;
   margin-bottom: 0.5em;
   margin-bottom: 0.5rem;
@@ -145,7 +156,7 @@ ul.inline li.comment-add {
     position: absolute;
     top: 1.62em;
     top: 1.62rem;
-    left: -12px;
+    left: -13px;
   }
 
   &.odd {
@@ -155,16 +166,11 @@ ul.inline li.comment-add {
     padding: 0.5em;
     padding: 0.5rem;
 
-    //background: #F0F0F0;
-
     .user-picture {
       float: left;
       max-width: 100px;
       margin-right: 1em;
       margin-right: 1rem;
-
-      //box-shadow: 1px 1px 3px 0px rgba(0,0,0,0.15) inset;
-      //border-radius: 2px;
       padding: 4px;
     }
 
@@ -176,23 +182,12 @@ ul.inline li.comment-add {
 
   .timestamp {
     float: right;
-    color: #909090;
-
-    //margin: 0.5em;
-    //margin: 0.5rem;
-
-    border-bottom: 1px solid #DEDEDE;
-    padding-left: 2em;
-    padding-left: 2rem;
+    margin: 0.5em;
+    margin: 0.5rem;
   }
 
   .body {
-    //padding: 0.5em;
-    //padding: 0.5rem;
-    
-    border-top: 1px solid #E5E5E5;
-    //background: url('/sites/all/themes/panda/images/tissue-paper-50.png');
-
+    border-top: 1px solid $color_light_gray;
     clear: both;
 
     .main,

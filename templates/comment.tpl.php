@@ -4,7 +4,7 @@
 
   <div class="content" <?php print $content_attributes; ?>>
     
-    <div class="timestamp">
+    <div class="timestamp meta-label">
       <?php print date('M j, Y H:i a T', $node->created); ?>
     </div>
     

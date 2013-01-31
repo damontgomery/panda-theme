@@ -96,8 +96,16 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
 }
 
+/* line 102, ../../scss/core/style.base.scss */
+.meta-label {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-size: 0.7rem;
+  color: #909090;
+}
+
 /*LINKS*/
-/* line 101, ../../scss/core/style.base.scss */
+/* line 110, ../../scss/core/style.base.scss */
 a {
   color: #a60000;
   cursor: pointer;
@@ -105,28 +113,28 @@ a {
   font-famliy: "Raleway", sans-serif;
 }
 
-/* line 108, ../../scss/core/style.base.scss */
+/* line 117, ../../scss/core/style.base.scss */
 a:hover {
   color: #a60000;
 }
 
 /*Drupal Links*/
-/* line 115, ../../scss/core/style.base.scss */
+/* line 124, ../../scss/core/style.base.scss */
 ul.inline li {
   padding: 0;
 }
 
-/* line 119, ../../scss/core/style.base.scss */
+/* line 128, ../../scss/core/style.base.scss */
 li a.active {
   color: #a60000;
 }
 
-/* line 123, ../../scss/core/style.base.scss */
+/* line 132, ../../scss/core/style.base.scss */
 .more-link {
   display: none;
 }
 
-/* line 130, ../../scss/core/style.base.scss */
+/* line 139, ../../scss/core/style.base.scss */
 ul.links a,
 ul.links a:hover,
 .form-actions input,
@@ -144,7 +152,7 @@ ul.links a:hover,
   border: none;
   display: inline-block;
 }
-/* line 145, ../../scss/core/style.base.scss */
+/* line 154, ../../scss/core/style.base.scss */
 .comments ul.links a, .comments
 ul.links a:hover, .comments
 .form-actions input, .comments
@@ -152,13 +160,13 @@ ul.links a:hover, .comments
   font-size: 0.62em;
 }
 
-/* line 152, ../../scss/core/style.base.scss */
+/* line 161, ../../scss/core/style.base.scss */
 html body span.ext {
   background: url("/sites/all/themes/panda/images/extlink.png") right center no-repeat;
   padding-right: 12px;
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 152, ../../scss/core/style.base.scss */
+  /* line 161, ../../scss/core/style.base.scss */
   html body span.ext {
     /* on retina, use image that's scaled by 2 */
     background-image: url("/sites/all/themes/panda/images/extlink-2x.png");
@@ -167,18 +175,18 @@ html body span.ext {
 }
 
 /*LIST ITEMS*/
-/* line 159, ../../scss/core/style.base.scss */
+/* line 168, ../../scss/core/style.base.scss */
 ul, ol, li {
   padding: 0;
   margin: 0;
 }
 
-/* line 164, ../../scss/core/style.base.scss */
+/* line 173, ../../scss/core/style.base.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 175, ../../scss/core/style.base.scss */
+/* line 184, ../../scss/core/style.base.scss */
 .region-content-main ul,
 .region-content-main ol, .fancybox-overlay ul,
 .fancybox-overlay ol {
@@ -186,43 +194,43 @@ ul {
   /* LTR */
   margin-bottom: 1em;
 }
-/* line 181, ../../scss/core/style.base.scss */
+/* line 190, ../../scss/core/style.base.scss */
 .region-content-main li > ul,
 .region-content-main li > ol, .fancybox-overlay li > ul,
 .fancybox-overlay li > ol {
   margin: 0;
 }
-/* line 185, ../../scss/core/style.base.scss */
+/* line 194, ../../scss/core/style.base.scss */
 .region-content-main ul, .fancybox-overlay ul {
   list-style-image: url("/sites/all/themes/panda/images/li-swirl.png");
 }
-/* line 197, ../../scss/core/style.base.scss */
+/* line 206, ../../scss/core/style.base.scss */
 .region-content-main ol, .fancybox-overlay ol {
   list-style-type: decimal;
 }
-/* line 200, ../../scss/core/style.base.scss */
+/* line 209, ../../scss/core/style.base.scss */
 .region-content-main ol ol, .fancybox-overlay ol ol {
   list-style-type: lower-alpha;
 }
-/* line 203, ../../scss/core/style.base.scss */
+/* line 212, ../../scss/core/style.base.scss */
 .region-content-main ol ol ol, .fancybox-overlay ol ol ol {
   list-style-type: lower-roman;
 }
 
 /*LI OVERRIDES*/
-/* line 212, ../../scss/core/style.base.scss */
+/* line 221, ../../scss/core/style.base.scss */
 .item-list ul {
   margin: 1em 0;
   margin: 1rem 0;
 }
 
-/* line 219, ../../scss/core/style.base.scss */
+/* line 228, ../../scss/core/style.base.scss */
 .item-list ul ul, .item-list ul ol,
 .item-list ol ol, .item-list ol ul {
   margin: 0;
 }
 
-/* line 227, ../../scss/core/style.base.scss */
+/* line 236, ../../scss/core/style.base.scss */
 .item-list ul li,
 ul.menu li,
 li.expanded,
@@ -235,37 +243,37 @@ li.leaf {
 }
 
 /*Selections*/
-/* line 236, ../../scss/core/style.base.scss */
+/* line 245, ../../scss/core/style.base.scss */
 ::selection {
   background-color: #cf5050;
   color: white;
 }
 
 /*fancybox overrides*/
-/* line 242, ../../scss/core/style.base.scss */
+/* line 251, ../../scss/core/style.base.scss */
 .fancybox-overlay ul li {
   list-style-image: inherit;
 }
 
 /*TABLES*/
-/* line 248, ../../scss/core/style.base.scss */
+/* line 257, ../../scss/core/style.base.scss */
 table {
   width: 100%;
   border: none;
   border-collapse: collapse;
 }
 
-/* line 254, ../../scss/core/style.base.scss */
+/* line 263, ../../scss/core/style.base.scss */
 table .active {
   /* system theme override */
   background: none;
 }
 
-/* line 258, ../../scss/core/style.base.scss */
+/* line 267, ../../scss/core/style.base.scss */
 thead {
   border: 1px solid #0097DB;
 }
-/* line 261, ../../scss/core/style.base.scss */
+/* line 270, ../../scss/core/style.base.scss */
 thead tr {
   background: #0097db;
   background: -moz-linear-gradient(top, #01b5f4 0%, #0079c2 100%);
@@ -276,7 +284,7 @@ thead tr {
   background: linear-gradient(top, #01b5f4 0%, #0079c2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01b5f4', endColorstr='#0079c2',GradientType=0 );
 }
-/* line 264, ../../scss/core/style.base.scss */
+/* line 273, ../../scss/core/style.base.scss */
 thead tr th {
   padding: 0.38198em 0.8em;
   border-top: none;
@@ -287,19 +295,19 @@ thead tr th {
   text-decoration: none;
   color: #FFFFFF;
 }
-/* line 276, ../../scss/core/style.base.scss */
+/* line 285, ../../scss/core/style.base.scss */
 thead tr th:first-child {
   border-left: none;
 }
-/* line 280, ../../scss/core/style.base.scss */
+/* line 289, ../../scss/core/style.base.scss */
 thead tr th:last-child {
   border-right: none;
 }
-/* line 284, ../../scss/core/style.base.scss */
+/* line 293, ../../scss/core/style.base.scss */
 thead tr th img {
   margin: 0 0 0 10px;
 }
-/* line 292, ../../scss/core/style.base.scss */
+/* line 301, ../../scss/core/style.base.scss */
 thead tr th.active a,
 thead tr th a,
 thead tr th a:hover,
@@ -309,13 +317,13 @@ thead tr th a:visited {
   font-weight: normal;
 }
 
-/* line 301, ../../scss/core/style.base.scss */
+/* line 310, ../../scss/core/style.base.scss */
 tbody {
   background: #fff;
   color: #606060;
 }
 
-/* line 309, ../../scss/core/style.base.scss */
+/* line 318, ../../scss/core/style.base.scss */
 tr,
 tr.even,
 tr.odd {
@@ -324,43 +332,43 @@ tr.odd {
   border: none;
 }
 
-/* line 315, ../../scss/core/style.base.scss */
+/* line 324, ../../scss/core/style.base.scss */
 tbody tr:last-child {
   background: none;
 }
 
-/* line 319, ../../scss/core/style.base.scss */
+/* line 328, ../../scss/core/style.base.scss */
 td {
   padding: 0.61805em 1em;
   border: none;
 }
 
-/* line 325, ../../scss/core/style.base.scss */
+/* line 334, ../../scss/core/style.base.scss */
 td.active {
   color: #0193D5;
 }
 
 /*FORMS*/
-/* line 331, ../../scss/core/style.base.scss */
+/* line 340, ../../scss/core/style.base.scss */
 .element-invisible {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 336, ../../scss/core/style.base.scss */
+/* line 345, ../../scss/core/style.base.scss */
 form {
   margin: 1em 0;
   padding: 0;
 }
 
-/* line 341, ../../scss/core/style.base.scss */
+/* line 350, ../../scss/core/style.base.scss */
 fieldset {
   padding: 1em;
   border: 1px solid #A0A0A0;
   border-radius: 2px;
   margin: 1em 0;
 }
-/* line 347, ../../scss/core/style.base.scss */
+/* line 356, ../../scss/core/style.base.scss */
 fieldset.collapsed {
   border: none;
 }
@@ -371,7 +379,7 @@ fieldset.collapsed {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-/* line 362, ../../scss/core/style.base.scss */
+/* line 371, ../../scss/core/style.base.scss */
 button,
 input,
 select,
@@ -391,7 +399,7 @@ textarea {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 375, ../../scss/core/style.base.scss */
+/* line 384, ../../scss/core/style.base.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -405,7 +413,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 388, ../../scss/core/style.base.scss */
+/* line 397, ../../scss/core/style.base.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -415,7 +423,7 @@ input[type="search"]::-webkit-search-decoration {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 397, ../../scss/core/style.base.scss */
+/* line 406, ../../scss/core/style.base.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -423,12 +431,12 @@ textarea {
   /* 2 */
 }
 
-/* line 403, ../../scss/core/style.base.scss */
+/* line 412, ../../scss/core/style.base.scss */
 .resizable-textarea .grippie {
   display: none;
 }
 
-/* line 407, ../../scss/core/style.base.scss */
+/* line 416, ../../scss/core/style.base.scss */
 div.text-wrap {
   background: #FFFFFF;
   border: 1px solid #D0D0D0;
@@ -443,13 +451,13 @@ div.text-wrap {
   -o-transition: border linear 0.3s, box-shadow linear 0.3s;
   transition: border linear 0.3s, box-shadow linear 0.3s;
 }
-/* line 422, ../../scss/core/style.base.scss */
+/* line 431, ../../scss/core/style.base.scss */
 div.text-wrap.focused {
   box-shadow: 0 0 7px 1px #a60000;
   border: 1px solid #color_pri;
 }
 
-/* line 434, ../../scss/core/style.base.scss */
+/* line 443, ../../scss/core/style.base.scss */
 input[type=text],
 input[type=search],
 textarea,
@@ -464,7 +472,7 @@ input[type=email] {
   line-height: 1.618em;
 }
 
-/* line 445, ../../scss/core/style.base.scss */
+/* line 454, ../../scss/core/style.base.scss */
 label {
   display: block;
   color: #17396C;
@@ -473,7 +481,7 @@ label {
   margin: 0.5em 0;
 }
 
-/* line 453, ../../scss/core/style.base.scss */
+/* line 462, ../../scss/core/style.base.scss */
 div.form-item label {
   display: block;
   font-weight: normal;
@@ -482,53 +490,53 @@ div.form-item label {
   color: #525252;
 }
 
-/* line 461, ../../scss/core/style.base.scss */
+/* line 470, ../../scss/core/style.base.scss */
 .form-item label.option {
   display: inline;
   font-weight: normal;
   color: #525252;
 }
 
-/* line 467, ../../scss/core/style.base.scss */
+/* line 476, ../../scss/core/style.base.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 2.7em;
 }
 
-/* line 471, ../../scss/core/style.base.scss */
+/* line 480, ../../scss/core/style.base.scss */
 div.form-item input.form-radio {
   vertical-align: top;
 }
 
-/* line 475, ../../scss/core/style.base.scss */
+/* line 484, ../../scss/core/style.base.scss */
 .form-required {
   color: #909090;
 }
 
-/* line 479, ../../scss/core/style.base.scss */
+/* line 488, ../../scss/core/style.base.scss */
 .form-item .description {
   font-size: 0.85em;
   color: #999;
 }
 
-/* line 485, ../../scss/core/style.base.scss */
+/* line 494, ../../scss/core/style.base.scss */
 .form-checkboxes .form-item,
 .form-radios .form-item {
   margin: 0;
   /* Drupal core uses "0.4em 0" */
 }
 
-/* line 489, ../../scss/core/style.base.scss */
+/* line 498, ../../scss/core/style.base.scss */
 form.webform-client-form input#edit-submit.form-submit {
   border-radius: 4px;
 }
 
-/* line 494, ../../scss/core/style.base.scss */
+/* line 503, ../../scss/core/style.base.scss */
 .container-inline div,
 .container-inline label {
   display: inline;
 }
 
-/* line 498, ../../scss/core/style.base.scss */
+/* line 507, ../../scss/core/style.base.scss */
 .label-inline {
   font-weight: bold;
   display: inline;
@@ -537,13 +545,13 @@ form.webform-client-form input#edit-submit.form-submit {
 /**
  * ezMark jQuery Plugin
  **/
-/* line 507, ../../scss/core/style.base.scss */
+/* line 516, ../../scss/core/style.base.scss */
 .ez-hide {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
-/* line 512, ../../scss/core/style.base.scss */
+/* line 521, ../../scss/core/style.base.scss */
 .ez-checkbox,
 .ez-radio {
   display: inline-block;
@@ -557,12 +565,12 @@ form.webform-client-form input#edit-submit.form-submit {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 526, ../../scss/core/style.base.scss */
+/* line 535, ../../scss/core/style.base.scss */
 .ez-radio {
   border-radius: 15px;
 }
 
-/* line 531, ../../scss/core/style.base.scss */
+/* line 540, ../../scss/core/style.base.scss */
 .ez-checked,
 .ez-selected {
   border: 1px solid #a60000;
@@ -577,115 +585,115 @@ form.webform-client-form input#edit-submit.form-submit {
 }
 
 /*View Grids*/
-/* line 538, ../../scss/core/style.base.scss */
+/* line 547, ../../scss/core/style.base.scss */
 .grid-block {
   width: 33%;
   float: left;
 }
-/* line 542, ../../scss/core/style.base.scss */
+/* line 551, ../../scss/core/style.base.scss */
 .grid-block h1, .grid-block h2, .grid-block h3, .grid-block h4, .grid-block h5, .grid-block h6 {
   margin-top: 1em;
 }
-/* line 546, ../../scss/core/style.base.scss */
+/* line 555, ../../scss/core/style.base.scss */
 .grid-block > .content {
   padding: 1.618em;
 }
-/* line 549, ../../scss/core/style.base.scss */
+/* line 558, ../../scss/core/style.base.scss */
 .grid-block > .content img {
   border-radius: 2px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 556, ../../scss/core/style.base.scss */
+/* line 565, ../../scss/core/style.base.scss */
 .grid-block-wide {
   width: 50%;
   float: left;
 }
-/* line 560, ../../scss/core/style.base.scss */
+/* line 569, ../../scss/core/style.base.scss */
 .grid-block-wide > .content {
   padding: 1.618em;
 }
 
 /*Modals*/
-/* line 566, ../../scss/core/style.base.scss */
+/* line 575, ../../scss/core/style.base.scss */
 .fancybox-skin {
   border-radius: 0;
   margin: 2em 0 3.5em 0;
 }
-/* line 570, ../../scss/core/style.base.scss */
+/* line 579, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-title {
   font-family: "Raleway", sans-serif;
   font-size: 1.618em;
   color: #17396C;
   margin-right: 40px;
 }
-/* line 580, ../../scss/core/style.base.scss */
+/* line 589, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-outer {
   margin-top: 2em;
 }
-/* line 584, ../../scss/core/style.base.scss */
+/* line 593, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-nav {
   width: 55px;
 }
-/* line 594, ../../scss/core/style.base.scss */
+/* line 603, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-close {
   top: -4px;
   right: 11px;
 }
-/* line 599, ../../scss/core/style.base.scss */
+/* line 608, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-nav span {
   visibility: visible;
 }
-/* line 603, ../../scss/core/style.base.scss */
+/* line 612, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-prev {
   left: -65px;
 }
-/* line 607, ../../scss/core/style.base.scss */
+/* line 616, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-next {
   right: -65px;
 }
 
-/* line 613, ../../scss/core/style.base.scss */
+/* line 622, ../../scss/core/style.base.scss */
 .modal-popup-wrapper {
   display: none;
 }
 
-/* line 619, ../../scss/core/style.base.scss */
+/* line 628, ../../scss/core/style.base.scss */
 .views-row {
   padding: 1em;
   background-image: url("/sites/all/themes/panda/images/diode-divider-yellow-4px.png");
   background-repeat: repeat-x;
   background-position: bottom;
 }
-/* line 626, ../../scss/core/style.base.scss */
+/* line 635, ../../scss/core/style.base.scss */
 .views-row.views-row-odd {
   background-color: #F9F9F9;
 }
-/* line 630, ../../scss/core/style.base.scss */
+/* line 639, ../../scss/core/style.base.scss */
 .views-row.views-row-even {
   background-color: #FFFCF1;
 }
-/* line 638, ../../scss/core/style.base.scss */
+/* line 647, ../../scss/core/style.base.scss */
 .views-row.views-row-last {
   background-image: none;
 }
 
-/* line 644, ../../scss/core/style.base.scss */
+/* line 653, ../../scss/core/style.base.scss */
 .view-header .views-row, .view-footer .views-row {
   padding: 0;
   background: none;
 }
-/* line 649, ../../scss/core/style.base.scss */
+/* line 658, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-odd, .view-footer .views-row.views-row-odd {
   background: none;
 }
-/* line 653, ../../scss/core/style.base.scss */
+/* line 662, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-even, .view-footer .views-row.views-row-even {
   background: none;
 }
 
 /*Admin Editing*/
-/* line 662, ../../scss/core/style.base.scss */
+/* line 671, ../../scss/core/style.base.scss */
 .region-main ul.primary {
   border: none;
   padding-left: 0;
@@ -694,7 +702,7 @@ form.webform-client-form input#edit-submit.form-submit {
   top: 4em;
   right: 2em;
 }
-/* line 673, ../../scss/core/style.base.scss */
+/* line 682, ../../scss/core/style.base.scss */
 .region-main ul.primary li a,
 .region-main ul.primary li.active a,
 .region-main ul.primary li a:hover,
@@ -715,12 +723,12 @@ form.webform-client-form input#edit-submit.form-submit {
   box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
   padding: 0.2em 1.5em;
 }
-/* line 684, ../../scss/core/style.base.scss */
+/* line 693, ../../scss/core/style.base.scss */
 .region-main ul.primary li.active a {
   display: none;
 }
 
-/* line 689, ../../scss/core/style.base.scss */
+/* line 698, ../../scss/core/style.base.scss */
 .filter-wrapper {
   display: none;
 }

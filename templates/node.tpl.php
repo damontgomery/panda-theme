@@ -10,17 +10,16 @@
     <div class="unpublished"><?php print t('Unpublished'); ?></div>
   <?php endif; ?>
 
-  <?php if ($display_submitted): ?>
-    <div class="submitted">
-      <?php print $submitted; ?>
-    </div>
-  <?php endif; ?>
+  <div class="user clearfix">
+    <span class="meta-label">by</span> <?php print $name; ?> <span class="meta-label">on <?php print $date; ?></span>
+  </div>
 
   <div class="content"<?php print $content_attributes; ?>>
     <?php
       // We hide the comments and links now so that we can render them later.
       hide($content['comments']);
       hide($content['links']);
+      hide($content['taxonomy_forums']); //temporary
       print render($content);
       print render($content['comments']);
     ?>
