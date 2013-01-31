@@ -91,6 +91,10 @@
       $('.comment-form').slideDown();
     });
 
+    //Temporary styling things for comps
+    
+    $('.node-forum > .user').appendTo($('.node-forum .hero'));
+
 
   });//end of document ready
 
