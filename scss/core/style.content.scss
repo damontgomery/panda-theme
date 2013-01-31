@@ -138,21 +138,69 @@ ul.inline li.comment-add {
       max-width: 66%;
     }
 
-    .easy_social_box {
+    .comment-count {
       position: absolute;
-      top: 3em;
-      top: 3rem;
+      top: -1.62em;
+      top: -1.62rem;
+      right: 3em;
+      right: 3rem;
+      
+      float: right;
 
-      .easy_social-widget {
-        display: none;
-        clear: left;
-        margin: 0 1em 1em 1em;
-        margin: 0 1rem 1rem 1rem;
+      span {
+        border-bottom: 1px solid $color_light_gray;
       }
     }
 
-    &:hover .easy_social_box .easy_social-widget {
-      display: block;
+    .social-links {
+      position: relative;
+      //float: right;
+
+      .social-icon {
+        position: absolute;
+        top: -1.62em;
+        top: -1.62rem;
+        right: 0;
+        cursor: pointer;
+
+        span {
+          color: $color_pri;
+
+          border-bottom: 1px solid $color_pri;
+        }
+      }
+
+      .easy_social_box {
+        display: none;
+
+        height: auto; //override module default
+        position: absolute;
+        top: 0.5em;
+        top: 0.5rem;
+        right: -0.62em;
+        right: -0.62rem;
+        z-index: 10;
+
+        padding: 1em;
+        padding: 1rem;
+
+        background: rgba($color_sec, 0.7);
+
+        .easy_social-widget {
+          clear: right;
+          float: right;
+          margin-bottom: 1em;
+          margin-bottom: 1rem;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      &:hover .easy_social_box {
+        //display: block;
+      }
     }
   }
 }

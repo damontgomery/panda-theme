@@ -103,44 +103,82 @@ ul.inline li.comment-add {
   max-width: 66%;
 }
 /* line 141, ../../scss/core/style.content.scss */
-.region-main .node-forum .hero .easy_social_box {
+.region-main .node-forum .hero .comment-count {
   position: absolute;
-  top: 3em;
-  top: 3rem;
+  top: -1.62em;
+  top: -1.62rem;
+  right: 3em;
+  right: 3rem;
+  float: right;
 }
-/* line 146, ../../scss/core/style.content.scss */
-.region-main .node-forum .hero .easy_social_box .easy_social-widget {
+/* line 150, ../../scss/core/style.content.scss */
+.region-main .node-forum .hero .comment-count span {
+  border-bottom: 1px solid #dedede;
+}
+/* line 155, ../../scss/core/style.content.scss */
+.region-main .node-forum .hero .social-links {
+  position: relative;
+}
+/* line 159, ../../scss/core/style.content.scss */
+.region-main .node-forum .hero .social-links .social-icon {
+  position: absolute;
+  top: -1.62em;
+  top: -1.62rem;
+  right: 0;
+  cursor: pointer;
+}
+/* line 166, ../../scss/core/style.content.scss */
+.region-main .node-forum .hero .social-links .social-icon span {
+  color: #a60000;
+  border-bottom: 1px solid #a60000;
+}
+/* line 173, ../../scss/core/style.content.scss */
+.region-main .node-forum .hero .social-links .easy_social_box {
   display: none;
-  clear: left;
-  margin: 0 1em 1em 1em;
-  margin: 0 1rem 1rem 1rem;
+  height: auto;
+  position: absolute;
+  top: 0.5em;
+  top: 0.5rem;
+  right: -0.62em;
+  right: -0.62rem;
+  z-index: 10;
+  padding: 1em;
+  padding: 1rem;
+  background: rgba(96, 96, 96, 0.7);
 }
-/* line 154, ../../scss/core/style.content.scss */
-.region-main .node-forum .hero:hover .easy_social_box .easy_social-widget {
-  display: block;
+/* line 189, ../../scss/core/style.content.scss */
+.region-main .node-forum .hero .social-links .easy_social_box .easy_social-widget {
+  clear: right;
+  float: right;
+  margin-bottom: 1em;
+  margin-bottom: 1rem;
+}
+/* line 195, ../../scss/core/style.content.scss */
+.region-main .node-forum .hero .social-links .easy_social_box .easy_social-widget:last-child {
+  margin-bottom: 0;
 }
 
-/* line 162, ../../scss/core/style.content.scss */
+/* line 210, ../../scss/core/style.content.scss */
 .comment-form {
   display: none;
 }
 
-/* line 167, ../../scss/core/style.content.scss */
+/* line 215, ../../scss/core/style.content.scss */
 #comments {
   margin-top: 0;
   padding-top: 1em;
   clear: left;
 }
-/* line 172, ../../scss/core/style.content.scss */
+/* line 220, ../../scss/core/style.content.scss */
 #comments ul.inline li.comment-add {
   display: block;
 }
-/* line 175, ../../scss/core/style.content.scss */
+/* line 223, ../../scss/core/style.content.scss */
 .not-logged-in #comments ul.inline li.comment-add {
   display: none;
 }
 
-/* line 181, ../../scss/core/style.content.scss */
+/* line 229, ../../scss/core/style.content.scss */
 .comment {
   position: relative;
   border-top: 1px solid #dedede;
@@ -155,12 +193,12 @@ ul.inline li.comment-add {
     left: -13px;
   }*/
 }
-/* line 202, ../../scss/core/style.content.scss */
+/* line 250, ../../scss/core/style.content.scss */
 .comment .user {
   padding: 0.5em;
   padding: 0.5rem;
 }
-/* line 206, ../../scss/core/style.content.scss */
+/* line 254, ../../scss/core/style.content.scss */
 .comment .user .user-picture {
   float: left;
   max-width: 100px;
@@ -168,22 +206,22 @@ ul.inline li.comment-add {
   margin-right: 1rem;
   padding: 4px;
 }
-/* line 214, ../../scss/core/style.content.scss */
+/* line 262, ../../scss/core/style.content.scss */
 .comment .user .username {
   float: left;
 }
-/* line 220, ../../scss/core/style.content.scss */
+/* line 268, ../../scss/core/style.content.scss */
 .comment .timestamp {
   float: right;
   margin: 0.5em;
   margin: 0.5rem;
 }
-/* line 226, ../../scss/core/style.content.scss */
+/* line 274, ../../scss/core/style.content.scss */
 .comment .body {
   border-top: 1px solid #dedede;
   clear: both;
 }
-/* line 231, ../../scss/core/style.content.scss */
+/* line 279, ../../scss/core/style.content.scss */
 .comment .body .main,
 .comment .body .signature {
   margin: 1em;
