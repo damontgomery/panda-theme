@@ -137,6 +137,23 @@ ul.inline li.comment-add {
       position: absolute;
       max-width: 66%;
     }
+
+    .easy_social_box {
+      position: absolute;
+      top: 3em;
+      top: 3rem;
+
+      .easy_social-widget {
+        display: none;
+        clear: left;
+        margin: 0 1em 1em 1em;
+        margin: 0 1rem 1rem 1rem;
+      }
+    }
+
+    &:hover .easy_social_box .easy_social-widget {
+      display: block;
+    }
   }
 }
 
@@ -171,13 +188,13 @@ ul.inline li.comment-add {
   //padding: 0.5em;
   //padding: 0.5rem;
 
-  &:before {
+  /*&:before {
     content: url('/sites/all/themes/panda/images/comment-arrow.png');
     position: absolute;
     top: 1.62em;
     top: 1.62rem;
     left: -13px;
-  }
+  }*/
 
   &.odd {
   }

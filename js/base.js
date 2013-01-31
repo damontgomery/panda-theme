@@ -94,6 +94,7 @@
     //Temporary styling things for comps
     
     $('.node-forum > .user').appendTo($('.node-forum .hero'));
+    $('.node-forum > .content > .easy_social_box').appendTo($('.node-forum .hero'));
 
 
   });//end of document ready
