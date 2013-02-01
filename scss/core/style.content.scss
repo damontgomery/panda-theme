@@ -203,6 +203,23 @@ ul.inline li.comment-add {
       }
     }
   }
+
+  // article end marker
+  .field-name-body p:last-child:after {
+    content: '';
+    display: inline-block;
+    
+    width: 0.62em;
+    width: 0.62rem;
+    height: 0.62em;
+    height: 0.62rem;
+    
+    border-radius: 0px;
+    
+    background: $color_sec;
+    margin-left: 0.5em;
+    margin-left: 0.5rem;  
+  }
 }
 
 //Comments
@@ -250,17 +267,51 @@ ul.inline li.comment-add {
   .user {
     padding: 0.5em;
     padding: 0.5rem;
+    position: relative;
+    min-height: 100px;
 
     .user-picture {
       float: left;
-      max-width: 100px;
+      max-width: 84px;
       margin-right: 1em;
       margin-right: 1rem;
       padding: 4px;
     }
 
-    .username {
+    .user-labels {
+      //position: absolute;
+      //bottom: 0.62em;
+      //bottom: 0.62rem;
+      //left: 115px;
       float: left;
+    }
+
+    .username {
+      line-height: 1em;
+      line-height: 1rem;
+    }
+
+
+    .user-tag,
+    .user-location {
+      @extend .username;
+
+      font-size: 0.7em;
+      font-size: 0.7rem;
+    }
+    
+    .user-location {
+      margin-top: 0.2em;
+      margin-top: 0.2rem;
+    }
+
+    .user-accounts {
+      & > div {
+        display: inline;
+
+        font-size: 0.7em;
+        font-size: 0.7rem;
+      }
     }
 
   }

@@ -157,28 +157,41 @@ ul.inline li.comment-add {
 .region-main .node-forum .hero .social-links .easy_social_box .easy_social-widget:last-child {
   margin-bottom: 0;
 }
+/* line 208, ../../scss/core/style.content.scss */
+.region-main .node-forum .field-name-body p:last-child:after {
+  content: '';
+  display: inline-block;
+  width: 0.62em;
+  width: 0.62rem;
+  height: 0.62em;
+  height: 0.62rem;
+  border-radius: 0px;
+  background: #606060;
+  margin-left: 0.5em;
+  margin-left: 0.5rem;
+}
 
-/* line 210, ../../scss/core/style.content.scss */
+/* line 227, ../../scss/core/style.content.scss */
 .comment-form {
   display: none;
 }
 
-/* line 215, ../../scss/core/style.content.scss */
+/* line 232, ../../scss/core/style.content.scss */
 #comments {
   margin-top: 0;
   padding-top: 1em;
   clear: left;
 }
-/* line 220, ../../scss/core/style.content.scss */
+/* line 237, ../../scss/core/style.content.scss */
 #comments ul.inline li.comment-add {
   display: block;
 }
-/* line 223, ../../scss/core/style.content.scss */
+/* line 240, ../../scss/core/style.content.scss */
 .not-logged-in #comments ul.inline li.comment-add {
   display: none;
 }
 
-/* line 229, ../../scss/core/style.content.scss */
+/* line 246, ../../scss/core/style.content.scss */
 .comment {
   position: relative;
   border-top: 1px solid #dedede;
@@ -193,35 +206,60 @@ ul.inline li.comment-add {
     left: -13px;
   }*/
 }
-/* line 250, ../../scss/core/style.content.scss */
+/* line 267, ../../scss/core/style.content.scss */
 .comment .user {
   padding: 0.5em;
   padding: 0.5rem;
+  position: relative;
+  min-height: 100px;
 }
-/* line 254, ../../scss/core/style.content.scss */
+/* line 273, ../../scss/core/style.content.scss */
 .comment .user .user-picture {
   float: left;
-  max-width: 100px;
+  max-width: 84px;
   margin-right: 1em;
   margin-right: 1rem;
   padding: 4px;
 }
-/* line 262, ../../scss/core/style.content.scss */
-.comment .user .username {
+/* line 281, ../../scss/core/style.content.scss */
+.comment .user .user-labels {
   float: left;
 }
-/* line 268, ../../scss/core/style.content.scss */
+/* line 289, ../../scss/core/style.content.scss */
+.comment .user .username, .comment .user .user-tag,
+.comment .user .user-location {
+  line-height: 1em;
+  line-height: 1rem;
+}
+/* line 296, ../../scss/core/style.content.scss */
+.comment .user .user-tag,
+.comment .user .user-location {
+  font-size: 0.7em;
+  font-size: 0.7rem;
+}
+/* line 303, ../../scss/core/style.content.scss */
+.comment .user .user-location {
+  margin-top: 0.2em;
+  margin-top: 0.2rem;
+}
+/* line 309, ../../scss/core/style.content.scss */
+.comment .user .user-accounts > div {
+  display: inline;
+  font-size: 0.7em;
+  font-size: 0.7rem;
+}
+/* line 319, ../../scss/core/style.content.scss */
 .comment .timestamp {
   float: right;
   margin: 0.5em;
   margin: 0.5rem;
 }
-/* line 274, ../../scss/core/style.content.scss */
+/* line 325, ../../scss/core/style.content.scss */
 .comment .body {
   border-top: 1px solid #dedede;
   clear: both;
 }
-/* line 279, ../../scss/core/style.content.scss */
+/* line 330, ../../scss/core/style.content.scss */
 .comment .body .main,
 .comment .body .signature {
   margin: 1em;
