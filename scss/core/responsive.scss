@@ -11,11 +11,6 @@ html {
     position: fixed;
   }
 
-  #page-wrapper {
-    //functional value
-    padding-top: 50px;
-  }
-
   //Functional Styling
   .navbar {
     width: 100%;
@@ -24,6 +19,11 @@ html {
     left: 0;
     top: 0;
     height: 50px;
+    display: none;
+
+    @media #{$mq-not-desktop} {
+      display: block;
+    }
 
     .content {
       padding: 1rem;
@@ -51,9 +51,9 @@ html {
     //-webkit-transition: 200ms ease;
     //-moz-transition: 200ms ease;
 
-    padding-top: 3rem;
+    box-sizing: border-box;
 
-    //@media #{$mq-not-desktop} {
+    @media #{$mq-not-desktop} {
       display: none;
 
       display: block;
@@ -72,12 +72,17 @@ html {
         position: absolute;
         padding: 0.5rem;
       }
-    //}    
+    }    
   }
 
   // Menu Is Active
 
-  //@media #{$mq-not-desktop} {
+  @media #{$mq-not-desktop} {
+
+    #page-wrapper {
+      padding-top: 50px;
+    }
+
     .js-nav {
       .main-pane-inner{
         left: 280px; //this is because fixed pos items on a translated block have issues (they aren't fixed)
@@ -86,6 +91,7 @@ html {
       .region-navigation {
         left: 0;
         z-index: 5;
+        background: none;
 
         & > .content {
           left: 0;
@@ -97,7 +103,7 @@ html {
         }
       }
     }
-  //}
+  }
 
   @media #{$mq-not-desktop} {
     

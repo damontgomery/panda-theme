@@ -26,7 +26,7 @@ li.expanded:hover > ul {
 .region-content-navigation {
   
   
-  #block-system-main-menu, #block-user-login, #block-system-user-menu {
+  #block-system-main-menu, #block-system-user-menu {
   
     h3 {
       display: none;
@@ -71,6 +71,68 @@ li.expanded:hover > ul {
 
 .region-content-navigation #block-user-login {
   background: #FFFFFF;
+  padding-top: 1px; // push the margin off the top
+
+  position: relative;
+  float: right;
+  margin: 0.5em;
+  margin: 0.5rem;
+
+  h3 {
+    //display: none;
+    cursor: pointer;
+    margin-right: 0.62em;
+    margin-right: 0.62rem;
+    
+    @extend .meta-label;
+    color: $color_pri;
+  }
+
+  &.active form {
+    display: block;
+  }
+
+  form {
+    display: none;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    margin: 2rem 0 0 0;
+    background: white;
+    padding: 1rem;
+    border-radius: 2px;
+    z-index: 10;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+  }
+
+  .form-item, .form-actions {
+    margin: 0.5em 0;
+    margin: 0.5rem 0;
+    padding: 0;
+
+    .form-submit {
+      margin: 0;
+    }
+  }
+
+  .text-wrap {
+    //display: inline-block;
+    width: 12em;
+    width: 12rem;
+    margin: 0 1em 0 0;
+    margin: 0 1rem 0 0;
+    padding: 0em 0.4em;
+    padding: 0rem 0.4rem;
+
+    &.focused {
+      box-shadow: 0 0 2px 1px rgba($color_pri, 0.5);
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
 
 }
 

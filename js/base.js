@@ -83,13 +83,22 @@
     // ezMark checkbox / radio
     $('input[type="checkbox"], input[type="radio"]').ezMark();
 
-    //Comment Forms
-    
-    $('.comment-add').click(function(event){
-      event.preventDefault();
-      $('.comment-add').hide();
-      $('.comment-form').slideDown();
+    //replace labels with placeholders
+    //need to add modernizr check for this
+    $('label').each(function(){
+      var $e = $(this);
+
+      var label = $e.html().replace(/<span.*<\/span>/g, '');
+
+      $e.next('.text-wrap').children('input')
+        .attr('placeholder', label);
+
     });
+
+    //user login
+    $('.region-content-navigation #block-user-login h3').click(function(){
+      $('.region-content-navigation #block-user-login').toggleClass('active');
+    })
 
     //Temporary styling things for comps
     

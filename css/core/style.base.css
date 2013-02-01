@@ -1,3 +1,11 @@
+/* line 38, ../../scss/core/_colors.scss */
+.meta-label {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-size: 0.7rem;
+  color: #909090;
+}
+
 /*STYLE.BASE.CSS*/
 /*FONTS*/
 /* line 7, ../../scss/core/style.base.scss */
@@ -457,7 +465,13 @@ div.text-wrap.focused {
   border: 1px solid #color_pri;
 }
 
-/* line 443, ../../scss/core/style.base.scss */
+/* line 440, ../../scss/core/style.base.scss */
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  border: none;
+  color: #a60000;
+}
+
+/* line 449, ../../scss/core/style.base.scss */
 input[type=text],
 input[type=search],
 textarea,
@@ -472,71 +486,83 @@ input[type=email] {
   line-height: 1.618em;
 }
 
-/* line 454, ../../scss/core/style.base.scss */
+/* line 460, ../../scss/core/style.base.scss */
 label {
-  display: block;
+  display: none;
   color: #17396C;
   font-size: 1.1em;
   font-weight: normal;
   margin: 0.5em 0;
 }
 
-/* line 462, ../../scss/core/style.base.scss */
+/* line 472, ../../scss/core/style.base.scss */
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {
+  color: #606060;
+  font-size: 0.7em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
+/* line 479, ../../scss/core/style.base.scss */
 div.form-item label {
   display: block;
+  display: none;
   font-weight: normal;
   margin: 1em 0;
   text-transform: capitalize;
   color: #525252;
 }
 
-/* line 470, ../../scss/core/style.base.scss */
+/* line 488, ../../scss/core/style.base.scss */
 .form-item label.option {
   display: inline;
   font-weight: normal;
   color: #525252;
 }
 
-/* line 476, ../../scss/core/style.base.scss */
+/* line 494, ../../scss/core/style.base.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 2.7em;
 }
 
-/* line 480, ../../scss/core/style.base.scss */
+/* line 498, ../../scss/core/style.base.scss */
 div.form-item input.form-radio {
   vertical-align: top;
 }
 
-/* line 484, ../../scss/core/style.base.scss */
+/* line 502, ../../scss/core/style.base.scss */
 .form-required {
   color: #909090;
 }
 
-/* line 488, ../../scss/core/style.base.scss */
+/* line 506, ../../scss/core/style.base.scss */
 .form-item .description {
   font-size: 0.85em;
   color: #999;
 }
 
-/* line 494, ../../scss/core/style.base.scss */
+/* line 512, ../../scss/core/style.base.scss */
 .form-checkboxes .form-item,
 .form-radios .form-item {
   margin: 0;
   /* Drupal core uses "0.4em 0" */
 }
 
-/* line 498, ../../scss/core/style.base.scss */
+/* line 516, ../../scss/core/style.base.scss */
 form.webform-client-form input#edit-submit.form-submit {
   border-radius: 4px;
 }
 
-/* line 503, ../../scss/core/style.base.scss */
+/* line 521, ../../scss/core/style.base.scss */
 .container-inline div,
 .container-inline label {
   display: inline;
 }
 
-/* line 507, ../../scss/core/style.base.scss */
+/* line 525, ../../scss/core/style.base.scss */
 .label-inline {
   font-weight: bold;
   display: inline;
@@ -545,13 +571,13 @@ form.webform-client-form input#edit-submit.form-submit {
 /**
  * ezMark jQuery Plugin
  **/
-/* line 516, ../../scss/core/style.base.scss */
+/* line 534, ../../scss/core/style.base.scss */
 .ez-hide {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
-/* line 521, ../../scss/core/style.base.scss */
+/* line 539, ../../scss/core/style.base.scss */
 .ez-checkbox,
 .ez-radio {
   display: inline-block;
@@ -565,12 +591,12 @@ form.webform-client-form input#edit-submit.form-submit {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 535, ../../scss/core/style.base.scss */
+/* line 553, ../../scss/core/style.base.scss */
 .ez-radio {
   border-radius: 15px;
 }
 
-/* line 540, ../../scss/core/style.base.scss */
+/* line 558, ../../scss/core/style.base.scss */
 .ez-checked,
 .ez-selected {
   border: 1px solid #a60000;
@@ -585,115 +611,115 @@ form.webform-client-form input#edit-submit.form-submit {
 }
 
 /*View Grids*/
-/* line 547, ../../scss/core/style.base.scss */
+/* line 565, ../../scss/core/style.base.scss */
 .grid-block {
   width: 33%;
   float: left;
 }
-/* line 551, ../../scss/core/style.base.scss */
+/* line 569, ../../scss/core/style.base.scss */
 .grid-block h1, .grid-block h2, .grid-block h3, .grid-block h4, .grid-block h5, .grid-block h6 {
   margin-top: 1em;
 }
-/* line 555, ../../scss/core/style.base.scss */
+/* line 573, ../../scss/core/style.base.scss */
 .grid-block > .content {
   padding: 1.618em;
 }
-/* line 558, ../../scss/core/style.base.scss */
+/* line 576, ../../scss/core/style.base.scss */
 .grid-block > .content img {
   border-radius: 2px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 565, ../../scss/core/style.base.scss */
+/* line 583, ../../scss/core/style.base.scss */
 .grid-block-wide {
   width: 50%;
   float: left;
 }
-/* line 569, ../../scss/core/style.base.scss */
+/* line 587, ../../scss/core/style.base.scss */
 .grid-block-wide > .content {
   padding: 1.618em;
 }
 
 /*Modals*/
-/* line 575, ../../scss/core/style.base.scss */
+/* line 593, ../../scss/core/style.base.scss */
 .fancybox-skin {
   border-radius: 0;
   margin: 2em 0 3.5em 0;
 }
-/* line 579, ../../scss/core/style.base.scss */
+/* line 597, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-title {
   font-family: "Raleway", sans-serif;
   font-size: 1.618em;
   color: #17396C;
   margin-right: 40px;
 }
-/* line 589, ../../scss/core/style.base.scss */
+/* line 607, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-outer {
   margin-top: 2em;
 }
-/* line 593, ../../scss/core/style.base.scss */
+/* line 611, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-nav {
   width: 55px;
 }
-/* line 603, ../../scss/core/style.base.scss */
+/* line 621, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-close {
   top: -4px;
   right: 11px;
 }
-/* line 608, ../../scss/core/style.base.scss */
+/* line 626, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-nav span {
   visibility: visible;
 }
-/* line 612, ../../scss/core/style.base.scss */
+/* line 630, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-prev {
   left: -65px;
 }
-/* line 616, ../../scss/core/style.base.scss */
+/* line 634, ../../scss/core/style.base.scss */
 .fancybox-skin .fancybox-next {
   right: -65px;
 }
 
-/* line 622, ../../scss/core/style.base.scss */
+/* line 640, ../../scss/core/style.base.scss */
 .modal-popup-wrapper {
   display: none;
 }
 
-/* line 628, ../../scss/core/style.base.scss */
+/* line 646, ../../scss/core/style.base.scss */
 .views-row {
   padding: 1em;
   background-image: url("/sites/all/themes/panda/images/diode-divider-yellow-4px.png");
   background-repeat: repeat-x;
   background-position: bottom;
 }
-/* line 635, ../../scss/core/style.base.scss */
+/* line 653, ../../scss/core/style.base.scss */
 .views-row.views-row-odd {
   background-color: #F9F9F9;
 }
-/* line 639, ../../scss/core/style.base.scss */
+/* line 657, ../../scss/core/style.base.scss */
 .views-row.views-row-even {
   background-color: #FFFCF1;
 }
-/* line 647, ../../scss/core/style.base.scss */
+/* line 665, ../../scss/core/style.base.scss */
 .views-row.views-row-last {
   background-image: none;
 }
 
-/* line 653, ../../scss/core/style.base.scss */
+/* line 671, ../../scss/core/style.base.scss */
 .view-header .views-row, .view-footer .views-row {
   padding: 0;
   background: none;
 }
-/* line 658, ../../scss/core/style.base.scss */
+/* line 676, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-odd, .view-footer .views-row.views-row-odd {
   background: none;
 }
-/* line 662, ../../scss/core/style.base.scss */
+/* line 680, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-even, .view-footer .views-row.views-row-even {
   background: none;
 }
 
 /*Admin Editing*/
-/* line 671, ../../scss/core/style.base.scss */
+/* line 689, ../../scss/core/style.base.scss */
 .region-main ul.primary {
   border: none;
   padding-left: 0;
@@ -702,7 +728,7 @@ form.webform-client-form input#edit-submit.form-submit {
   top: 4em;
   right: 2em;
 }
-/* line 682, ../../scss/core/style.base.scss */
+/* line 700, ../../scss/core/style.base.scss */
 .region-main ul.primary li a,
 .region-main ul.primary li.active a,
 .region-main ul.primary li a:hover,
@@ -723,12 +749,12 @@ form.webform-client-form input#edit-submit.form-submit {
   box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
   padding: 0.2em 1.5em;
 }
-/* line 693, ../../scss/core/style.base.scss */
+/* line 711, ../../scss/core/style.base.scss */
 .region-main ul.primary li.active a {
   display: none;
 }
 
-/* line 698, ../../scss/core/style.base.scss */
+/* line 716, ../../scss/core/style.base.scss */
 .filter-wrapper {
   display: none;
 }

@@ -32,3 +32,12 @@ $body_font : 'Open Sans', sans-serif;
 
 // Structure
 $max_width : 1350px;
+
+// This style is used for the parts of content that label the item
+// example: by {person} or comments {#};
+.meta-label {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-size: 0.7rem;
+  color: #909090;
+}

@@ -436,6 +436,12 @@ div.text-wrap {
   }
 }
 
+//form errors
+.form-item input.error, .form-item textarea.error, .form-item select.error {
+  border: none;
+  color: $color_pri;
+}
+
 input[type=text],
 input[type=search],
 textarea, 
@@ -452,15 +458,27 @@ input[type=email] {
 }
 
 label {
-  display: block;
+  //display: block;
+  display: none; //using placeholder instead need to add modernizr check for this
   color: #17396C;
   font-size: 1.1em;
   font-weight: normal;
   margin: 0.5em 0;
 }
 
+input::-webkit-input-placeholder,
+input:-moz-placeholder,
+input::-moz-placeholder,
+input:-ms-input-placeholder {  
+  color: $color_sec;
+  font-size: 0.7em;
+  font-size: 0.7rem;
+  text-transform: uppercase;
+}
+
 div.form-item label /* The label for a form element */ {
   display: block;
+  display: none; //using placeholder instead need to add modernizr check for this
   font-weight: normal;
   margin: 1em 0;
   text-transform: capitalize;
