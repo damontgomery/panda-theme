@@ -183,11 +183,12 @@ ul.inline li.comment-add {
 
 .region-sidebar-first {
   background-color: rgb(218, 218, 218);
-  margin-left: -1.5rem;
-  margin-right: 1.5rem;
+  margin-right: -1.5rem;
+  margin-left: 1.5rem;
   margin-top: 2rem;
   background-image: url('/sites/all/themes/panda/images/tissue-paper-50.png');
   border-radius: 2px;
+  float: right;
 }
 
 .region-sidebar-first,
