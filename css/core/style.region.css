@@ -12,29 +12,39 @@ body {
   background-color: #a60000;
 }
 
-/* line 10, ../../scss/core/style.region.scss */
-#page-wrapper {
-  background: #FFFFFF;
+/* line 11, ../../scss/core/style.region.scss */
+#page-wrapper,
+.region-navigation {
+  background: #F0F0F0;
+  background-image: url("/sites/all/themes/panda/images/tissue-paper-50.png");
+}
+/* line 16, ../../scss/core/style.region.scss */
+#page-wrapper > #page-wrapper-content, #page-wrapper > .content,
+.region-navigation > #page-wrapper-content,
+.region-navigation > .content {
+  max-width: 1350px;
+  background-color: #FFFFFF;
+  margin: 0 auto;
 }
 
-/* line 15, ../../scss/core/style.region.scss */
+/* line 23, ../../scss/core/style.region.scss */
 #page-content {
   padding: 0.809em;
 }
 
-/* line 19, ../../scss/core/style.region.scss */
+/* line 27, ../../scss/core/style.region.scss */
 .region-header {
   background: #FFFFFF;
 }
 
-/* line 23, ../../scss/core/style.region.scss */
+/* line 31, ../../scss/core/style.region.scss */
 .region-content-header {
   margin: 0 auto;
   max-width: 1024px;
   padding-top: 1px;
 }
 
-/* line 29, ../../scss/core/style.region.scss */
+/* line 37, ../../scss/core/style.region.scss */
 #footer-wrapper {
   padding: 3em 0em;
   color: #FFFFFF;

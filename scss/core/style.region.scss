@@ -7,9 +7,17 @@ body {
   //background-image : url('/sites/all/themes/panda/images/tissue-paper.png');
 }
 
-#page-wrapper {
-  background: #FFFFFF;
-  //background-image : url('/sites/all/themes/panda/images/tissue-paper-50.png');
+#page-wrapper,
+.region-navigation {
+  background: #F0F0F0;
+  background-image : url('/sites/all/themes/panda/images/tissue-paper-50.png');
+
+  & > #page-wrapper-content,
+  & > .content {
+    max-width: $max_width;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+  }
 }
 
 #page-content {

@@ -27,18 +27,14 @@ li.expanded > ul {
 .region-content-navigation #block-system-main-menu, .region-content-navigation #block-system-user-menu {
   width: 100%;
   float: left;
-  border-radius: 2px;
   box-sizing: border-box;
-  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.5);
-  background: #a60000;
+  background: #404040;
+  margin-top: 100px;
+  position: relative;
 }
 /* line 31, ../../scss/core/style.content.scss */
 .region-content-navigation #block-system-main-menu h3, .region-content-navigation #block-system-user-menu h3 {
   display: none;
-}
-/* line 35, ../../scss/core/style.content.scss */
-.region-content-navigation #block-system-main-menu > .content, .region-content-navigation #block-system-user-menu > .content {
-  padding: 0.5rem 1rem;
 }
 /* line 39, ../../scss/core/style.content.scss */
 .region-content-navigation #block-system-main-menu > .content > ul.menu li, .region-content-navigation #block-system-user-menu > .content > ul.menu li {
@@ -54,75 +50,111 @@ li.expanded > ul {
   padding: 0.2em 1.5em;
   display: inline-block;
 }
+/* line 68, ../../scss/core/style.content.scss */
+.region-content-navigation #block-system-main-menu:before, .region-content-navigation #block-system-user-menu:before {
+  content: url("/sites/all/themes/panda/images/home.png");
+  position: absolute;
+  top: -114px;
+  left: 1em;
+  left: 1rem;
+}
 
-/* line 72, ../../scss/core/style.content.scss */
+/* line 84, ../../scss/core/style.content.scss */
+.region-content-navigation {
+  position: relative;
+}
+
+/* line 88, ../../scss/core/style.content.scss */
 .region-content-navigation #block-user-login {
   background: #FFFFFF;
   padding-top: 1px;
-  position: relative;
-  float: right;
-  margin: 0.5em;
-  margin: 0.5rem;
+  position: absolute;
+  right: 1rem;
+  top: 75px;
 }
-/* line 81, ../../scss/core/style.content.scss */
+/* line 102, ../../scss/core/style.content.scss */
 .region-content-navigation #block-user-login h3 {
   cursor: pointer;
   margin-right: 0.62em;
   margin-right: 0.62rem;
   color: #a60000;
 }
-/* line 91, ../../scss/core/style.content.scss */
+/* line 112, ../../scss/core/style.content.scss */
 .region-content-navigation #block-user-login.active form {
   display: block;
 }
-/* line 95, ../../scss/core/style.content.scss */
+/* line 116, ../../scss/core/style.content.scss */
 .region-content-navigation #block-user-login form {
   display: none;
   position: absolute;
   right: -5px;
   top: 0;
   margin: 2rem 0 0 0;
-  background: white;
-  padding: 1rem;
+  background: #303030;
   border-radius: 2px;
   z-index: 10;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
-/* line 108, ../../scss/core/style.content.scss */
-.region-content-navigation #block-user-login .form-item, .region-content-navigation #block-user-login .form-actions {
-  margin: 0.5em 0;
-  margin: 0.5rem 0;
+/* line 128, ../../scss/core/style.content.scss */
+.region-content-navigation #block-user-login form a {
+  color: #DEDEDE;
+}
+/* line 133, ../../scss/core/style.content.scss */
+.region-content-navigation #block-user-login .form-item, .region-content-navigation #block-user-login .item-list {
+  margin: 1em;
+  margin: 1rem;
   padding: 0;
 }
-/* line 113, ../../scss/core/style.content.scss */
-.region-content-navigation #block-user-login .form-item .form-submit, .region-content-navigation #block-user-login .form-actions .form-submit {
+/* line 139, ../../scss/core/style.content.scss */
+.region-content-navigation #block-user-login .form-actions {
   margin: 0;
 }
-/* line 118, ../../scss/core/style.content.scss */
+/* line 142, ../../scss/core/style.content.scss */
+.region-content-navigation #block-user-login .form-actions .form-submit {
+  margin: 0;
+  width: 100%;
+  background: #F5F5F5;
+  color: #606060;
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-size: 0.8rem;
+  padding: 0.5em;
+  padding: 0.5rem;
+  cursor: pointer;
+}
+/* line 156, ../../scss/core/style.content.scss */
 .region-content-navigation #block-user-login .text-wrap {
   width: 12em;
   width: 12rem;
-  margin: 0 1em 0 0;
-  margin: 0 1rem 0 0;
   padding: 0em 0.4em;
   padding: 0rem 0.4rem;
 }
-/* line 127, ../../scss/core/style.content.scss */
+/* line 165, ../../scss/core/style.content.scss */
 .region-content-navigation #block-user-login .text-wrap.focused {
   box-shadow: 0 0 2px 1px rgba(166, 0, 0, 0.5);
 }
-/* line 132, ../../scss/core/style.content.scss */
+/* line 170, ../../scss/core/style.content.scss */
 .region-content-navigation #block-user-login ul {
   padding: 0;
   margin: 0;
 }
 
-/* line 140, ../../scss/core/style.content.scss */
+/* line 178, ../../scss/core/style.content.scss */
 ul.inline li.comment-add {
   display: none;
 }
 
-/* line 148, ../../scss/core/style.content.scss */
+/* line 184, ../../scss/core/style.content.scss */
+.region-sidebar-first {
+  background-color: #dadada;
+  margin-left: -1.5rem;
+  margin-right: 1.5rem;
+  margin-top: 2rem;
+  background-image: url("/sites/all/themes/panda/images/tissue-paper-50.png");
+  border-radius: 2px;
+}
+
+/* line 195, ../../scss/core/style.content.scss */
 .region-sidebar-first .item-list ul li,
 .region-sidebar-second .item-list ul li {
   padding: 0.4em;
@@ -132,17 +164,17 @@ ul.inline li.comment-add {
   border-bottom: 1px solid #dedede;
 }
 
-/* line 165, ../../scss/core/style.content.scss */
+/* line 212, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero {
   margin: 0 0 1em 0;
   margin: 0 0 1rem 0;
   position: relative;
 }
-/* line 170, ../../scss/core/style.content.scss */
+/* line 217, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero img {
   border-radius: 2px;
 }
-/* line 174, ../../scss/core/style.content.scss */
+/* line 221, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .user {
   padding: 0.2em 0.5em;
   padding: 0.2rem 0.5rem;
@@ -151,7 +183,7 @@ ul.inline li.comment-add {
   border-radius: 0 0 2px 0;
   background: #FFFFFF;
 }
-/* line 185, ../../scss/core/style.content.scss */
+/* line 232, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .caption {
   padding: 0.2em 0.5em;
   padding: 0.2rem 0.5rem;
@@ -167,7 +199,7 @@ ul.inline li.comment-add {
   position: absolute;
   max-width: 66%;
 }
-/* line 203, ../../scss/core/style.content.scss */
+/* line 250, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .comment-count {
   position: absolute;
   top: -1.62em;
@@ -176,15 +208,15 @@ ul.inline li.comment-add {
   right: 3rem;
   float: right;
 }
-/* line 212, ../../scss/core/style.content.scss */
+/* line 259, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .comment-count span {
   border-bottom: 1px solid #dedede;
 }
-/* line 217, ../../scss/core/style.content.scss */
+/* line 264, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .social-links {
   position: relative;
 }
-/* line 221, ../../scss/core/style.content.scss */
+/* line 268, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .social-links .social-icon {
   position: absolute;
   top: -1.62em;
@@ -192,12 +224,12 @@ ul.inline li.comment-add {
   right: 0;
   cursor: pointer;
 }
-/* line 228, ../../scss/core/style.content.scss */
+/* line 275, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .social-links .social-icon span {
   color: #a60000;
   border-bottom: 1px solid #a60000;
 }
-/* line 235, ../../scss/core/style.content.scss */
+/* line 282, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .social-links .easy_social_box {
   display: none;
   height: auto;
@@ -211,18 +243,18 @@ ul.inline li.comment-add {
   padding: 1rem;
   background: rgba(96, 96, 96, 0.7);
 }
-/* line 251, ../../scss/core/style.content.scss */
+/* line 298, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .social-links .easy_social_box .easy_social-widget {
   clear: right;
   float: right;
   margin-bottom: 1em;
   margin-bottom: 1rem;
 }
-/* line 257, ../../scss/core/style.content.scss */
+/* line 304, ../../scss/core/style.content.scss */
 .region-main .node-forum .hero .social-links .easy_social_box .easy_social-widget:last-child {
   margin-bottom: 0;
 }
-/* line 270, ../../scss/core/style.content.scss */
+/* line 317, ../../scss/core/style.content.scss */
 .region-main .node-forum .field-name-body p:last-child:after {
   content: '';
   display: inline-block;
@@ -236,27 +268,27 @@ ul.inline li.comment-add {
   margin-left: 0.5rem;
 }
 
-/* line 289, ../../scss/core/style.content.scss */
+/* line 336, ../../scss/core/style.content.scss */
 .comment-form {
   display: none;
 }
 
-/* line 294, ../../scss/core/style.content.scss */
+/* line 341, ../../scss/core/style.content.scss */
 #comments {
   margin-top: 0;
   padding-top: 1em;
   clear: left;
 }
-/* line 299, ../../scss/core/style.content.scss */
+/* line 346, ../../scss/core/style.content.scss */
 #comments ul.inline li.comment-add {
   display: block;
 }
-/* line 302, ../../scss/core/style.content.scss */
+/* line 349, ../../scss/core/style.content.scss */
 .not-logged-in #comments ul.inline li.comment-add {
   display: none;
 }
 
-/* line 308, ../../scss/core/style.content.scss */
+/* line 355, ../../scss/core/style.content.scss */
 .comment {
   position: relative;
   border-top: 1px solid #dedede;
@@ -271,14 +303,14 @@ ul.inline li.comment-add {
     left: -13px;
   }*/
 }
-/* line 329, ../../scss/core/style.content.scss */
+/* line 376, ../../scss/core/style.content.scss */
 .comment .user {
   padding: 0.5em;
   padding: 0.5rem;
   position: relative;
   min-height: 100px;
 }
-/* line 335, ../../scss/core/style.content.scss */
+/* line 382, ../../scss/core/style.content.scss */
 .comment .user .user-picture {
   float: left;
   max-width: 84px;
@@ -286,45 +318,45 @@ ul.inline li.comment-add {
   margin-right: 1rem;
   padding: 4px;
 }
-/* line 343, ../../scss/core/style.content.scss */
+/* line 390, ../../scss/core/style.content.scss */
 .comment .user .user-labels {
   float: left;
 }
-/* line 351, ../../scss/core/style.content.scss */
+/* line 398, ../../scss/core/style.content.scss */
 .comment .user .username, .comment .user .user-tag,
 .comment .user .user-location {
   line-height: 1em;
   line-height: 1rem;
 }
-/* line 358, ../../scss/core/style.content.scss */
+/* line 405, ../../scss/core/style.content.scss */
 .comment .user .user-tag,
 .comment .user .user-location {
   font-size: 0.7em;
   font-size: 0.7rem;
 }
-/* line 365, ../../scss/core/style.content.scss */
+/* line 412, ../../scss/core/style.content.scss */
 .comment .user .user-location {
   margin-top: 0.2em;
   margin-top: 0.2rem;
 }
-/* line 371, ../../scss/core/style.content.scss */
+/* line 418, ../../scss/core/style.content.scss */
 .comment .user .user-accounts > div {
   display: inline;
   font-size: 0.7em;
   font-size: 0.7rem;
 }
-/* line 381, ../../scss/core/style.content.scss */
+/* line 428, ../../scss/core/style.content.scss */
 .comment .timestamp {
   float: right;
   margin: 0.5em;
   margin: 0.5rem;
 }
-/* line 387, ../../scss/core/style.content.scss */
+/* line 434, ../../scss/core/style.content.scss */
 .comment .body {
   border-top: 1px solid #dedede;
   clear: both;
 }
-/* line 392, ../../scss/core/style.content.scss */
+/* line 439, ../../scss/core/style.content.scss */
 .comment .body .main,
 .comment .body .signature {
   margin: 1em;

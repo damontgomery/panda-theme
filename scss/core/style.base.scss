@@ -16,6 +16,23 @@ p {
   margin: 1em 0em;
 }
 
+.pull-quote {
+  float: left;
+  display: block;
+  border-top: 1px solid $color_light_gray;
+  border-bottom: 1px solid $color_light_gray;
+  padding: 1em;
+  padding: 1rem;
+  margin: 1em 1.5em 1em 0;
+  margin: 1rem 1.5rem 1rem 0;
+  width: 33%;
+  box-sizing: border-box;
+  font-size: 1.2em;
+  font-size: 1.2rem;
+  font-family: $header_font;
+  font-style: italic;
+}
+
 blockquote {
   margin: 1em * panda-gn(1);
   padding: 1em * panda-gn(1);
