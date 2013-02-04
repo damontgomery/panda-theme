@@ -61,10 +61,10 @@
 
                 <?php print render($page['content']); ?>
                   
-                <?php print render($content['comments']); ?>
+                <?php //print render($content['comments']); ?>
               </div>
             </div>
-
+            <?php print render(comment_node_page_additions($node)); ?>
             <?php print render($page['sidebar_second']); ?>
             <?php print render($page['content_under']); ?>
             

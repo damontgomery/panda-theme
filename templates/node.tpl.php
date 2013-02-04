@@ -41,9 +41,11 @@
 
     <?php
       print render($content);
-      print render($content['comments']);
+      //print render($content['comments']);
     ?>
   </div>
 
   <?php print render($content['links']); ?>
 </div><!-- /.node -->
+
+<?php //print render($content['comments']); ?>

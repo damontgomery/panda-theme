@@ -269,11 +269,6 @@ ul.inline li.comment-add {
   margin-left: 0.5rem;
 }
 
-/* line 337, ../../scss/core/style.content.scss */
-.comment-form {
-  display: none;
-}
-
 /* line 342, ../../scss/core/style.content.scss */
 #comments {
   margin-top: 0;
@@ -292,7 +287,6 @@ ul.inline li.comment-add {
 /* line 356, ../../scss/core/style.content.scss */
 .comment {
   position: relative;
-  border-top: 1px solid #dedede;
   border-radius: 2px;
   margin-bottom: 0.5em;
   margin-bottom: 0.5rem;
@@ -304,62 +298,138 @@ ul.inline li.comment-add {
     left: -13px;
   }*/
 }
-/* line 377, ../../scss/core/style.content.scss */
+/* line 359, ../../scss/core/style.content.scss */
+.comment.comment-num-1 {
+  border-top: 1px solid #dedede;
+}
+/* line 380, ../../scss/core/style.content.scss */
 .comment .user {
   padding: 0.5em;
   padding: 0.5rem;
   position: relative;
   min-height: 100px;
+  width: 115px;
+  float: left;
 }
-/* line 383, ../../scss/core/style.content.scss */
+/* line 388, ../../scss/core/style.content.scss */
 .comment .user .user-picture {
-  float: left;
   max-width: 84px;
-  margin-right: 1em;
-  margin-right: 1rem;
-  padding: 4px;
+  padding: 4px 0;
+  margin: 0 auto;
 }
-/* line 391, ../../scss/core/style.content.scss */
+/* line 397, ../../scss/core/style.content.scss */
 .comment .user .user-labels {
-  float: left;
+  clear: left;
 }
-/* line 399, ../../scss/core/style.content.scss */
+/* line 401, ../../scss/core/style.content.scss */
 .comment .user .username, .comment .user .user-tag,
 .comment .user .user-location {
   line-height: 1em;
   line-height: 1rem;
 }
-/* line 406, ../../scss/core/style.content.scss */
+/* line 408, ../../scss/core/style.content.scss */
 .comment .user .user-tag,
 .comment .user .user-location {
   font-size: 0.7em;
   font-size: 0.7rem;
 }
-/* line 413, ../../scss/core/style.content.scss */
+/* line 415, ../../scss/core/style.content.scss */
 .comment .user .user-location {
   margin-top: 0.2em;
   margin-top: 0.2rem;
 }
-/* line 419, ../../scss/core/style.content.scss */
+/* line 420, ../../scss/core/style.content.scss */
+.comment .user .user-accounts {
+  text-align: center;
+}
+/* line 423, ../../scss/core/style.content.scss */
 .comment .user .user-accounts > div {
   display: inline;
   font-size: 0.7em;
   font-size: 0.7rem;
 }
-/* line 429, ../../scss/core/style.content.scss */
+/* line 433, ../../scss/core/style.content.scss */
 .comment .timestamp {
-  float: right;
-  margin: 0.5em;
-  margin: 0.5rem;
-}
-/* line 435, ../../scss/core/style.content.scss */
-.comment .body {
-  border-top: 1px solid #dedede;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.5rem 2rem;
+  border-color: #dedede;
+  border-style: solid;
+  border-width: 1px 0;
+  text-align: right;
   clear: both;
 }
-/* line 440, ../../scss/core/style.content.scss */
+/* line 444, ../../scss/core/style.content.scss */
+.comment .body {
+  margin-left: 115px;
+}
+/* line 450, ../../scss/core/style.content.scss */
 .comment .body .main,
 .comment .body .signature {
   margin: 1em;
   margin: 1rem;
+  padding: 0 1em;
+  padding: 0 1rem;
+}
+
+/* line 461, ../../scss/core/style.content.scss */
+.user-location:before {
+  content: '';
+  background-image: url("/sites/all/themes/panda/images/logobuttons.png");
+  height: 25px;
+  width: 23px;
+  display: none;
+  background-position: -143px 25px;
+  vertical-align: bottom;
+}
+
+/* line 472, ../../scss/core/style.content.scss */
+.user-accounts > div {
+  position: relative;
+}
+/* line 475, ../../scss/core/style.content.scss */
+.user-accounts > div:before {
+  content: '';
+  background-image: url("/sites/all/themes/panda/images/logobuttons.png");
+  height: 23px;
+  width: 23px;
+  display: inline-block;
+  vertical-align: bottom;
+  background-position-y: 26px;
+}
+/* line 485, ../../scss/core/style.content.scss */
+.user-accounts > div:hover:before {
+  background-position-y: -1px;
+}
+/* line 489, ../../scss/core/style.content.scss */
+.user-accounts > div.xbox:before {
+  background-position-x: -72px;
+}
+/* line 493, ../../scss/core/style.content.scss */
+.user-accounts > div.psn:before {
+  background-position-x: -119px;
+}
+/* line 497, ../../scss/core/style.content.scss */
+.user-accounts > div.wii:before {
+  background-position-x: -95px;
+}
+/* line 501, ../../scss/core/style.content.scss */
+.user-accounts > div.steam:before {
+  background-position-x: -47px;
+}
+/* line 505, ../../scss/core/style.content.scss */
+.user-accounts > div .account {
+  display: none;
+  position: absolute;
+  top: -39px;
+  left: -10px;
+  padding: 0.5em 1em;
+  padding: 0.5rem 1rem;
+  background: #404040;
+  color: white;
+  border-radius: 2px;
+}
+/* line 518, ../../scss/core/style.content.scss */
+.user-accounts > div:hover .account {
+  display: block;
 }

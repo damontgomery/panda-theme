@@ -44,12 +44,8 @@
   <?php endif; ?>
 
   <?php print render($content['comments']); ?>
-
-  <ul class="links inline"><li class="comment-add first last active"><a href="#" class="active inline-block">Add comment</a></li>
-</ul>
     
   <?php if ($content['comment_form']): ?>
-    <h2 class="title comment-form"><?php print t('Your comment'); ?></h2>
     <?php print render($content['comment_form']); ?>
   <?php endif; ?>
 </div>

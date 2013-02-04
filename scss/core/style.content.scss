@@ -335,7 +335,7 @@ ul.inline li.comment-add {
 //Comments
 
 .comment-form {
-  display: none;
+  //display: none;
 }
 
 //show new comment button
@@ -356,7 +356,10 @@ ul.inline li.comment-add {
 .comment {
   position: relative;
   
-  border-top: 1px solid $color_light_gray;
+  &.comment-num-1 {
+    border-top: 1px solid $color_light_gray;
+  }
+
   border-radius: 2px;
   margin-bottom: 0.5em;
   margin-bottom: 0.5rem;
@@ -379,21 +382,20 @@ ul.inline li.comment-add {
     padding: 0.5rem;
     position: relative;
     min-height: 100px;
+    width: 115px;
+    float: left;
 
     .user-picture {
-      float: left;
+      
       max-width: 84px;
-      margin-right: 1em;
-      margin-right: 1rem;
-      padding: 4px;
+      //margin-right: 1em;
+      //margin-right: 1rem;
+      padding: 4px 0;
+      margin: 0 auto;
     }
 
     .user-labels {
-      //position: absolute;
-      //bottom: 0.62em;
-      //bottom: 0.62rem;
-      //left: 115px;
-      float: left;
+      clear: left;
     }
 
     .username {
@@ -416,6 +418,8 @@ ul.inline li.comment-add {
     }
 
     .user-accounts {
+      text-align: center;
+
       & > div {
         display: inline;
 
@@ -427,19 +431,91 @@ ul.inline li.comment-add {
   }
 
   .timestamp {
-    float: right;
-    margin: 0.5em;
-    margin: 0.5rem;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 0.5rem 2rem;
+    border-color: #dedede;
+    border-style: solid;
+    border-width: 1px 0;
+    text-align: right;
+    clear: both;
   }
 
   .body {
-    border-top: 1px solid $color_light_gray;
-    clear: both;
+    //border-top: 1px solid $color_light_gray;
+    //clear: both;
+    margin-left: 115px;
 
     .main,
     .signature {
       margin: 1em;
       margin: 1rem;
+      padding: 0 1em;
+      padding: 0 1rem;
     }
+  }
+}
+
+//sprites
+
+.user-location:before {
+  content: '';
+  background-image: url('/sites/all/themes/panda/images/logobuttons.png');
+  height: 25px;
+  width: 23px;
+  //display: inline-block;
+  display: none;
+  background-position: -143px 25px;
+  vertical-align: bottom;
+}
+
+.user-accounts > div {
+  position: relative;
+
+  &:before {
+    content: '';
+    background-image: url('/sites/all/themes/panda/images/logobuttons.png');
+    height: 23px;
+    width: 23px;
+    display: inline-block;
+    vertical-align: bottom;
+    background-position-y: 26px;
+  }
+
+  &:hover:before {
+    background-position-y: -1px;
+  }
+
+  &.xbox:before {
+    background-position-x: -72px;
+  }
+
+  &.psn:before {
+    background-position-x: -119px;
+  }
+
+  &.wii:before {
+    background-position-x: -95px;
+  }
+
+  &.steam:before {
+    background-position-x: -47px;
+  }
+
+  .account {
+    display: none;
+    position: absolute;
+    top: -39px;
+    left: -10px;
+
+    padding: 0.5em 1em;
+    padding: 0.5rem 1rem;
+    background: #404040;
+    color: white;
+    border-radius: 2px;
+  }
+
+  &:hover .account {
+    display:block;
   }
 }
