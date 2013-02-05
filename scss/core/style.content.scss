@@ -524,3 +524,13 @@ ul.inline li.comment-add {
     display:block;
   }
 }
+
+// This style is used for the parts of content that label the item
+// example: by {person} or comments {#};
+.meta-label {
+  text-transform: uppercase;
+  font-size: 0.7em;
+  font-size: 0.7rem;
+  color: #909090;
+}
+
