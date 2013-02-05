@@ -316,19 +316,19 @@ ul.inline li.comment-add {
 
   // article end marker
   .field-name-body p:last-child:after {
-    content: '';
+    content: 'l';
     display: inline-block;
-    
-    width: 0.62em;
-    width: 0.62rem;
-    height: 0.62em;
-    height: 0.62rem;
-    
-    border-radius: 0px;
-    
-    background: $color_sec;
     margin-left: 0.5em;
-    margin-left: 0.5rem;  
+    margin-left: 0.5rem;
+    font-family: PandaIcons;
+    line-height: 1em;
+    line-height: 1rem;
+    font-size: 2.5em;
+    font-size: 2.5rem;
+    vertical-align: top;
+    color: #404040;
+    margin-top: -0.3em;
+    margin-top: -0.3rem;
   }
 }
 
@@ -430,20 +430,30 @@ ul.inline li.comment-add {
 
   }
 
-  .timestamp {
+  .comment-footer {
     width: 100%;
     box-sizing: border-box;
+    padding: 0.5em 2em;
     padding: 0.5rem 2rem;
     border-color: #dedede;
     border-style: solid;
     border-width: 1px 0;
     text-align: right;
     clear: both;
+
+    .comment-actions {
+      display: inline-block;
+      vertical-align: top;
+      margin-right: 1em;
+      margin-right: 1rem;
+    }
+  }
+
+  .timestamp {
+    display: inline;
   }
 
   .body {
-    //border-top: 1px solid $color_light_gray;
-    //clear: both;
     margin-left: 115px;
 
     .main,
@@ -458,64 +468,59 @@ ul.inline li.comment-add {
 
 //sprites
 
-.user-location:before {
-  content: '';
-  background-image: url('/sites/all/themes/panda/images/logobuttons.png');
-  height: 25px;
-  width: 23px;
-  //display: inline-block;
-  display: none;
-  background-position: -143px 25px;
-  vertical-align: bottom;
-}
-
-.user-accounts > div {
+.icon {
   position: relative;
+  display: inline;
 
   &:before {
-    content: '';
-    background-image: url('/sites/all/themes/panda/images/logobuttons.png');
-    height: 23px;
-    width: 23px;
-    display: inline-block;
-    vertical-align: bottom;
-    background-position-y: 26px;
+    font-family: PandaIcons;
+    font-size: 2.5em;
+    font-size: 2.5rem;
+    line-height: 1em;
+    line-height: 1rem;
+    -webkit-font-smoothing: antialiased;
+    color: $color_light_gray;
+    @include panda-transition(500ms ease);
   }
 
   &:hover:before {
-    background-position-y: -1px;
+    color: $color_sec;
   }
 
-  &.xbox:before {
-    background-position-x: -72px;
-  }
+  &.xbox:before {content: 'b';}
 
-  &.psn:before {
-    background-position-x: -119px;
-  }
+  &.psn:before {content: 'd';}
 
-  &.wii:before {
-    background-position-x: -95px;
-  }
+  &.wii:before {content: 'c';}
 
-  &.steam:before {
-    background-position-x: -47px;
-  }
+  &.steam:before {content: 'a';}
 
-  .account {
+  &.quote:before {content: 'u';}
+
+  &.flag:before {content: 'x';}
+
+  &.reply:before {content: 't';}
+
+  &.bookmark:before {content: 'z';}
+
+  .tooltip {
     display: none;
     position: absolute;
-    top: -39px;
+    top: -45px;
     left: -10px;
+    z-index: 10;
 
-    padding: 0.5em 1em;
-    padding: 0.5rem 1rem;
+    padding: 0em 0.5em;
+    padding: 0rem 0.5rem;
+
+    font-size: 0.9em;
+    font-size: 0.9rem;
     background: #404040;
     color: white;
     border-radius: 2px;
   }
 
-  &:hover .account {
+  &:hover .tooltip {
     display:block;
   }
 }

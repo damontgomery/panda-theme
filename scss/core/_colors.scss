@@ -23,6 +23,14 @@ $color_light_gray : #DEDEDE;
 $header_font : 'Raleway', sans-serif;
 $body_font : 'Open Sans', sans-serif;
 
+// Font based iconset (by Dan)
+@font-face {
+  font-family: 'PandaIcons';
+  src: url('/sites/all/themes/panda/images/PandaIcons-Regular.otf');
+  font-weight: normal;
+  font-style: normal;
+}
+
 // Padding Rules
 
 @mixin panda-content-margin(){

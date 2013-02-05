@@ -19,10 +19,10 @@
       
       <div class="user-labels">
         <div class="user-accounts">
-          <div class="xbox"><div class="account">PandaEskimo</div></div>
-          <div class="psn"><div class="account">PandaEskimo</div></div>
-          <div class="wii"><div class="account">PandaEskimo</div></div>
-          <div class="steam"><div class="account">PandaEskimo</div></div>
+          <div class="xbox icon"><div class="tooltip">PandaEskimo</div></div>
+          <div class="psn icon"><div class="tooltip">PandaEskimo</div></div>
+          <div class="wii icon"><div class="tooltip">PandaEskimo</div></div>
+          <div class="steam icon"><div class="tooltip">PandaEskimo</div></div>
         </div>
 
         <div class="user-location">
@@ -42,9 +42,26 @@
       
     </div>
 
-    <div class="timestamp meta-label">
-      <?php print date('M j, Y H:i a T', $node->created); ?>
+    <div class="comment-footer">
+      <div class="comment-actions">
+        <div class="icon quote">
+          <div class="tooltip">Quote</div>
+        </div>
+        <div class="icon flag">
+          <div class="tooltip">Flag</div>
+        </div>
+        <div class="icon reply">
+          <div class="tooltip">Reply</div>
+        </div>
+        <div class="icon bookmark">
+          <div class="tooltip">Bookmark</div>
+        </div>
+      </div>
+      <div class="timestamp meta-label">
+        <?php print date('M j, Y H:i a T', $node->created); ?>
+      </div>  
     </div>
+    
     
   </div>
   <?php //print render($content['links']) ?>

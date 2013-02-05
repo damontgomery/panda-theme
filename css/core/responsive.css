@@ -1,4 +1,11 @@
-/* line 38, ../../scss/core/_colors.scss */
+@font-face {
+  font-family: 'PandaIcons';
+  src: url("/sites/all/themes/panda/images/PandaIcons-Regular.otf");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* line 46, ../../scss/core/_colors.scss */
 .meta-label {
   text-transform: uppercase;
   font-size: 0.7em;
