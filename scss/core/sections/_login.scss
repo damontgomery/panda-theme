@@ -1,0 +1,91 @@
+// ==================
+//     User Login
+// ==================
+
+.region-content-navigation {
+  position: relative;
+}
+
+.region-content-navigation #block-user-login {
+  background: #FFFFFF;
+  padding-top: 1px; // push the margin off the top
+
+  //temp
+  position: absolute;
+  right: 1rem;
+  top: 75px;
+
+  h3 {
+    //display: none;
+    cursor: pointer;
+    margin-right: 0.62em;
+    margin-right: 0.62rem;
+    
+    @extend .meta-label;
+    color: $color_pri;
+  }
+
+  &.active form {
+    display: block;
+  }
+
+  form {
+    display: none;
+    position: absolute;
+    right: -5px;
+    top: 0;
+    margin: 2rem 0 0 0;
+    background: #303030;
+    //padding: 1rem;
+    border-radius: 2px;
+    z-index: 10;
+    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
+
+    a {
+      color: #DEDEDE;
+    }
+  }
+
+  .form-item, .item-list {
+    margin: 1em;
+    margin: 1rem;
+    padding: 0;
+  }
+
+  .form-actions {
+    margin: 0;
+
+    .form-submit {
+      margin: 0;
+      width: 100%;
+      background: #F5F5F5;
+      color: $color_sec;
+      text-transform: uppercase;
+      font-size: 0.8em;
+      font-size: 0.8rem;
+      padding: 0.5em;
+      padding: 0.5rem;
+      cursor: pointer;
+    }
+  }
+
+  .text-wrap {
+    //display: inline-block;
+    width: 12em;
+    width: 12rem;
+    //margin: 0 1em 0 0;
+    //margin: 0 1rem 0 0;
+    padding: 0em 0.4em;
+    padding: 0rem 0.4rem;
+
+    &.focused {
+      box-shadow: 0 0 2px 1px rgba($color_pri, 0.5);
+    }
+  }
+
+  ul {
+    padding: 0;
+    margin: 0;
+  }
+
+}

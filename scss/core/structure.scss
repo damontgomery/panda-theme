@@ -77,7 +77,7 @@ body {
 
   .region-sidebar-first {
     float: left;
-    width: 25%;
+    width: 33%;
 
     & > .content {
       @include panda-content-margin();
@@ -87,7 +87,7 @@ body {
   
   .region-sidebar-second {
     float: left;
-    width: 25%;
+    width: 33%;
 
     & > .content {
       @include panda-content-margin();
@@ -96,7 +96,7 @@ body {
   
   .region-main {
     float: left;
-    width: 75%;
+    width: 67%;
 
     & > .content {
       @include panda-content-margin();

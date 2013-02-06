@@ -1,0 +1,65 @@
+// ==================
+//      Main Menu
+// ==================
+
+/*Basic Menu Hover feature*/
+li.expanded > ul {
+  display: none;
+}
+
+li.expanded:hover > ul {
+  //display: block;
+}
+
+.region-content-navigation {
+  
+  
+  #block-system-main-menu, #block-system-user-menu {
+  
+    h3 {
+      display: none;
+    }
+    
+    & > .content {
+      //padding: 0.5rem 1rem;
+      
+      & > ul.menu {
+        li {
+          float: left;
+          position: relative;
+
+          a {
+            font-family: $header_font;
+            color: white;
+            font-weight: normal;
+            font-size: 1rem;
+
+            padding: 0.2em 1.5em;
+            display: inline-block;
+          }
+        }
+      }
+    }
+    
+    width: 100%;
+    float: left;
+    //border-radius: 2px;
+    box-sizing: border-box;
+    //box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.5);
+    
+    background: #404040;
+    //@include panda-linear-gradient(#909090, $color_sec);
+
+    margin-top: 100px;
+    position: relative;
+
+    &:before {
+      content: url('/sites/all/themes/panda/images/home.png');
+      position: absolute;
+      top: -114px;
+      left: 1em;
+      left: 1rem;
+    }
+
+  }
+}

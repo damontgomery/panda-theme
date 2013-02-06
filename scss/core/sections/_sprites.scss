@@ -1,0 +1,60 @@
+// ==================
+//      Sprites
+// ==================
+
+.icon {
+  position: relative;
+  display: inline;
+
+  &:before {
+    font-family: PandaIcons;
+    font-size: 2.5em;
+    font-size: 2.5rem;
+    line-height: 1em;
+    line-height: 1rem;
+    -webkit-font-smoothing: antialiased;
+    color: $color_light_gray;
+    @include panda-transition(500ms ease);
+  }
+
+  &:hover:before {
+    color: $color_sec;
+  }
+
+  &.xbox:before {content: 'b';}
+
+  &.psn:before {content: 'd';}
+
+  &.wii:before {content: 'c';}
+
+  &.steam:before {content: 'a';}
+
+  &.quote:before {content: 'u';}
+
+  &.flag:before {content: 'x';}
+
+  &.reply:before {content: 't';}
+
+  &.bookmark:before {content: 'z';}
+
+  .tooltip {
+    display: none;
+    position: absolute;
+    top: -45px;
+    left: -10px;
+    z-index: 10;
+
+    padding: 0em 0.5em;
+    padding: 0rem 0.5rem;
+
+    font-size: 0.9em;
+    font-size: 0.9rem;
+    background: #404040;
+    color: white;
+    border-radius: 2px;
+  }
+
+  &:hover .tooltip {
+    display:block;
+  }
+}
