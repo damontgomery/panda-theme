@@ -22,38 +22,46 @@
   color: #606060;
 }
 /* line 24, ../../scss/core/sections/_sprites.scss */
+.icon.no-hover:hover:before {
+  color: #dedede;
+}
+/* line 28, ../../scss/core/sections/_sprites.scss */
 .icon.xbox:before {
   content: 'b';
 }
-/* line 26, ../../scss/core/sections/_sprites.scss */
+/* line 30, ../../scss/core/sections/_sprites.scss */
 .icon.psn:before {
   content: 'd';
 }
-/* line 28, ../../scss/core/sections/_sprites.scss */
+/* line 32, ../../scss/core/sections/_sprites.scss */
 .icon.wii:before {
   content: 'c';
 }
-/* line 30, ../../scss/core/sections/_sprites.scss */
+/* line 34, ../../scss/core/sections/_sprites.scss */
 .icon.steam:before {
   content: 'a';
 }
-/* line 32, ../../scss/core/sections/_sprites.scss */
+/* line 36, ../../scss/core/sections/_sprites.scss */
 .icon.quote:before {
   content: 'u';
 }
-/* line 34, ../../scss/core/sections/_sprites.scss */
+/* line 38, ../../scss/core/sections/_sprites.scss */
 .icon.flag:before {
   content: 'x';
 }
-/* line 36, ../../scss/core/sections/_sprites.scss */
+/* line 40, ../../scss/core/sections/_sprites.scss */
 .icon.reply:before {
   content: 't';
 }
-/* line 38, ../../scss/core/sections/_sprites.scss */
+/* line 42, ../../scss/core/sections/_sprites.scss */
 .icon.bookmark:before {
   content: 'z';
 }
-/* line 40, ../../scss/core/sections/_sprites.scss */
+/* line 44, ../../scss/core/sections/_sprites.scss */
+.icon.comment:before {
+  content: 'i';
+}
+/* line 46, ../../scss/core/sections/_sprites.scss */
 .icon .tooltip {
   display: none;
   position: absolute;
@@ -68,7 +76,7 @@
   color: white;
   border-radius: 2px;
 }
-/* line 57, ../../scss/core/sections/_sprites.scss */
+/* line 63, ../../scss/core/sections/_sprites.scss */
 .icon:hover .tooltip {
   display: block;
 }
@@ -116,18 +124,13 @@ li.expanded > ul {
   left: 1rem;
 }
 
-/* line 5, ../../scss/core/sections/_featured_blocks.scss */
-.region-sidebar-first {
-  background-color: #dadada;
-  margin-right: -1.5rem;
-  margin-left: 1.5rem;
-  margin-top: 2rem;
-  background-image: url("/sites/all/themes/panda/images/tissue-paper-50.png");
-  border-radius: 2px;
-  float: right;
+/* line 8, ../../scss/core/sections/_featured_blocks.scss */
+.region-sidebar-first > .content,
+.region-sidebar-second > .content {
+  padding: 1em;
+  padding: 1rem;
 }
-
-/* line 17, ../../scss/core/sections/_featured_blocks.scss */
+/* line 13, ../../scss/core/sections/_featured_blocks.scss */
 .region-sidebar-first .item-list ul li,
 .region-sidebar-second .item-list ul li {
   padding: 0.4em;
@@ -138,26 +141,67 @@ li.expanded > ul {
 }
 
 /* line 5, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero {
+.region-main .node-article .hero {
   margin: 0 0 1em 0;
   margin: 0 0 1rem 0;
   position: relative;
+  min-height: 7em;
+  min-height: 7rem;
 }
-/* line 10, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero img {
+/* line 12, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero img {
   border-radius: 2px;
 }
-/* line 14, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .user {
-  padding: 0.2em 0.5em;
-  padding: 0.2rem 0.5rem;
+/* line 16, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .title-block {
+  width: 66%;
   position: absolute;
-  top: 0;
-  border-radius: 0 0 2px 0;
-  background: #FFFFFF;
+  bottom: -1em;
+  bottom: -1rem;
+  left: 0;
 }
-/* line 25, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .caption {
+/* line 24, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .title-block > .content {
+  padding: 0.5em 0.5em 0.5em 0;
+  padding: 0.5rem 0.5rem 0.5rem 0;
+  background: #FFFFFF;
+  border-radius: 0 2px 0 0;
+}
+/* line 31, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .title-block .section {
+  font-size: 1.2em;
+  font-size: 1.2rem;
+  color: #909090;
+}
+/* line 37, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .title-block h1 {
+  margin: 0;
+  color: #606060;
+}
+/* line 42, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .title-block .by-line {
+  font-size: 1.2em;
+  font-size: 1.2rem;
+}
+/* line 47, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .title-block .comment-count {
+  position: absolute;
+  top: 0.5em;
+  top: 0.5rem;
+  right: 0.5em;
+  right: 0.5rem;
+}
+/* line 54, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .title-block .comment-count .count {
+  color: #909090;
+  font-size: 1.2em;
+  font-size: 1.2rem;
+  line-height: 1em;
+  line-height: 1rem;
+  vertical-align: top;
+}
+/* line 70, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .caption {
   padding: 0.2em 0.5em;
   padding: 0.2rem 0.5rem;
   background: rgba(96, 96, 96, 0.7);
@@ -172,38 +216,25 @@ li.expanded > ul {
   position: absolute;
   max-width: 66%;
 }
-/* line 43, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .comment-count {
-  position: absolute;
-  top: -1.62em;
-  top: -1.62rem;
-  right: 3em;
-  right: 3rem;
-  float: right;
-}
-/* line 52, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .comment-count span {
-  border-bottom: 1px solid #dedede;
-}
-/* line 57, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .social-links {
+/* line 88, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .social-links {
   position: relative;
 }
-/* line 61, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .social-links .social-icon {
+/* line 92, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .social-links .social-icon {
   position: absolute;
   top: -1.62em;
   top: -1.62rem;
   right: 0;
   cursor: pointer;
 }
-/* line 68, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .social-links .social-icon span {
+/* line 99, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .social-links .social-icon span {
   color: #a60000;
   border-bottom: 1px solid #a60000;
 }
-/* line 75, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .social-links .easy_social_box {
+/* line 106, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .social-links .easy_social_box {
   display: none;
   height: auto;
   position: absolute;
@@ -216,19 +247,19 @@ li.expanded > ul {
   padding: 1rem;
   background: rgba(96, 96, 96, 0.7);
 }
-/* line 91, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .social-links .easy_social_box .easy_social-widget {
+/* line 122, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .social-links .easy_social_box .easy_social-widget {
   clear: right;
   float: right;
   margin-bottom: 1em;
   margin-bottom: 1rem;
 }
-/* line 97, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .hero .social-links .easy_social_box .easy_social-widget:last-child {
+/* line 128, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .hero .social-links .easy_social_box .easy_social-widget:last-child {
   margin-bottom: 0;
 }
-/* line 110, ../../scss/core/sections/_articles.scss */
-.region-main .node-forum .field-name-body p:last-child:after {
+/* line 141, ../../scss/core/sections/_articles.scss */
+.region-main .node-article .field-name-body p:last-child:after {
   content: 'l';
   display: inline-block;
   margin-left: 0.5em;
@@ -449,7 +480,7 @@ li.expanded > ul {
 /* line 28, ../../scss/core/style.content.scss */
 .meta-label, .region-content-navigation #block-user-login h3 {
   text-transform: uppercase;
-  font-size: 0.7em;
-  font-size: 0.7rem;
+  font-size: 0.8em;
+  font-size: 0.8rem;
   color: #909090;
 }

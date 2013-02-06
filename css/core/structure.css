@@ -78,13 +78,13 @@ body {
 
 /* line 78, ../../scss/core/structure.scss */
 .region-sidebar-first {
-  float: left;
+  float: right;
   width: 33%;
 }
 /* line 82, ../../scss/core/structure.scss */
 .region-sidebar-first > .content {
-  margin: 0.5em;
-  margin: 0.5rem;
+  margin: 0.82em;
+  margin: 0.82rem;
 }
 
 /* line 88, ../../scss/core/structure.scss */
@@ -94,8 +94,8 @@ body {
 }
 /* line 92, ../../scss/core/structure.scss */
 .region-sidebar-second > .content {
-  margin: 0.5em;
-  margin: 0.5rem;
+  margin: 0.82em;
+  margin: 0.82rem;
 }
 
 /* line 97, ../../scss/core/structure.scss */
@@ -105,8 +105,8 @@ body {
 }
 /* line 101, ../../scss/core/structure.scss */
 .region-main > .content {
-  margin: 0.5em;
-  margin: 0.5rem;
+  margin: 0.82em;
+  margin: 0.82rem;
 }
 
 /* line 106, ../../scss/core/structure.scss */

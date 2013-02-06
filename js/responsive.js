@@ -15,13 +15,7 @@
     $('.navbar').click(function(){
       $('body').toggleClass('js-nav');
     });
-
-    // Hero
-     
-    $('.social-links .social-icon').click(function(){
-      $('.easy_social_box').responsive_toggle();
-    });
-
+    
   });//end of document ready
 
   $(window).load(function(){

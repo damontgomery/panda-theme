@@ -20,23 +20,30 @@ body {
 }
 
 /* line 23, ../../scss/core/style.region.scss */
+.region-sidebar-first > .content {
+  background-color: #dadada;
+  background-image: url("/sites/all/themes/panda/images/tissue-paper-50.png");
+  border-radius: 2px;
+}
+
+/* line 29, ../../scss/core/style.region.scss */
 #page-content {
   padding: 0.809em;
 }
 
-/* line 27, ../../scss/core/style.region.scss */
+/* line 33, ../../scss/core/style.region.scss */
 .region-header {
   background: #FFFFFF;
 }
 
-/* line 31, ../../scss/core/style.region.scss */
+/* line 37, ../../scss/core/style.region.scss */
 .region-content-header {
   margin: 0 auto;
   max-width: 1024px;
   padding-top: 1px;
 }
 
-/* line 37, ../../scss/core/style.region.scss */
+/* line 43, ../../scss/core/style.region.scss */
 #footer-wrapper {
   padding: 3em 0em;
   color: #FFFFFF;

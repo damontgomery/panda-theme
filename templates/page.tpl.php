@@ -51,17 +51,7 @@
                   <ul class="action-links"><?php print render($action_links); ?></ul>
                 <?php endif; ?>
 
-                <?php print render($title_prefix); ?>
-                <?php if ($title): ?>
-                  <h1 class="title" id="page-title">
-                    <?php print $title; ?>
-                  </h1>
-                <?php endif; ?>
-                <?php print render($title_suffix); ?>
-
                 <?php print render($page['content']); ?>
-                  
-                <?php //print render($content['comments']); ?>
               </div>
             </div>
             <?php print render(comment_node_page_additions($node)); ?>

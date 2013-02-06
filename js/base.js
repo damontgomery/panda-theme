@@ -100,6 +100,13 @@
       $('.region-content-navigation #block-user-login').toggleClass('active');
     })
 
+    // social links
+     
+    $('.social-links .social-icon').click(function(){
+      $('.easy_social_box').responsive_toggle();
+    });
+
+
     //Temporary styling things for comps
     
 

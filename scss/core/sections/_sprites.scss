@@ -21,6 +21,10 @@
     color: $color_sec;
   }
 
+  &.no-hover:hover:before {
+    color: $color_light_gray;
+  }
+
   &.xbox:before {content: 'b';}
 
   &.psn:before {content: 'd';}
@@ -36,6 +40,8 @@
   &.reply:before {content: 't';}
 
   &.bookmark:before {content: 'z';}
+
+  &.comment:before {content: 'i';}
 
   .tooltip {
     display: none;

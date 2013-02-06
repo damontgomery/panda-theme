@@ -1,26 +1,71 @@
 // ==================
 //       Articles!
 // ==================
-.region-main .node-forum {
+.region-main .node-article {
   .hero {
     margin: 0 0 1em 0;
     margin: 0 0 1rem 0;
     position: relative;
+    min-height: 7em;
+    min-height: 7rem;
 
     img {
       border-radius: 2px;
     }
 
-    .user {
-      padding: 0.2em 0.5em;
-      padding: 0.2rem 0.5rem;
+    .title-block {
 
+      width: 66%;
       position: absolute;
-      top: 0;
+      bottom: -1em;
+      bottom: -1rem;
+      left: 0;
 
-      border-radius: 0 0 2px 0;
-      background: #FFFFFF;
-    }
+      & > .content {
+        padding: 0.5em 0.5em 0.5em 0;
+        padding: 0.5rem 0.5rem 0.5rem 0;
+        background: #FFFFFF;
+        border-radius: 0 2px 0 0;
+      }
+
+      .section {
+        font-size: 1.2em;
+        font-size: 1.2rem;
+        color: $color_sec_light;
+      }
+
+      h1 {
+        margin: 0;
+        color: $color_sec;
+      }
+
+      .by-line {
+        font-size: 1.2em;
+        font-size: 1.2rem;
+      }
+
+      .comment-count {
+        position: absolute;
+        top: 0.5em;
+        top: 0.5rem;
+        right: 0.5em;
+        right: 0.5rem;
+
+        .count {
+          color: $color_sec_light;
+          font-size: 1.2em;
+          font-size: 1.2rem;
+          line-height: 1em;
+          line-height: 1rem;
+          vertical-align: top;
+        }
+
+        span {
+          //border-bottom: 1px solid $color_light_gray;
+        }
+      }
+
+    } // end: title-block
 
     .caption {
       padding: 0.2em 0.5em;
@@ -38,20 +83,6 @@
       bottom: 33%;
       position: absolute;
       max-width: 66%;
-    }
-
-    .comment-count {
-      position: absolute;
-      top: -1.62em;
-      top: -1.62rem;
-      right: 3em;
-      right: 3rem;
-      
-      float: right;
-
-      span {
-        border-bottom: 1px solid $color_light_gray;
-      }
     }
 
     .social-links {
@@ -104,7 +135,7 @@
         //display: block;
       }
     }
-  }
+  } // end: hero
 
   // article end marker
   .field-name-body p:last-child:after {
