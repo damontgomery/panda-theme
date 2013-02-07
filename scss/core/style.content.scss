@@ -32,3 +32,13 @@
   color: #909090;
 }
 
+.node-teaser {
+  border-bottom: 1px solid $color_light_gray;
+  margin-bottom: 1em;
+  margin-bottom: 1rem;
+
+  ul.links {
+    display: none;
+  }
+}
+

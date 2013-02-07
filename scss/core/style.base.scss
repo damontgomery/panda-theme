@@ -680,18 +680,19 @@ form.webform-client-form input#edit-submit.form-submit /* The submit button */ {
 //views
 
 .views-row {
-  padding: 1em;
-  
+  margin: 1em 0;
+  margin: 1rem 0;
+
   background-image: url("/sites/all/themes/panda/images/diode-divider-yellow-4px.png");
   background-repeat: repeat-x;
   background-position: bottom;
     
   &.views-row-odd {
-    background-color: #F9F9F9;
+    //background-color: #F9F9F9;
   }
   
   &.views-row-even {
-    background-color: #FFFCF1;
+    //background-color: #FFFCF1;
   }
   
   &.views-row-first {

@@ -710,40 +710,33 @@ form.webform-client-form input#edit-submit.form-submit {
 
 /* line 682, ../../scss/core/style.base.scss */
 .views-row {
-  padding: 1em;
+  margin: 1em 0;
+  margin: 1rem 0;
   background-image: url("/sites/all/themes/panda/images/diode-divider-yellow-4px.png");
   background-repeat: repeat-x;
   background-position: bottom;
 }
-/* line 689, ../../scss/core/style.base.scss */
-.views-row.views-row-odd {
-  background-color: #F9F9F9;
-}
-/* line 693, ../../scss/core/style.base.scss */
-.views-row.views-row-even {
-  background-color: #FFFCF1;
-}
-/* line 701, ../../scss/core/style.base.scss */
+/* line 702, ../../scss/core/style.base.scss */
 .views-row.views-row-last {
   background-image: none;
 }
 
-/* line 707, ../../scss/core/style.base.scss */
+/* line 708, ../../scss/core/style.base.scss */
 .view-header .views-row, .view-footer .views-row {
   padding: 0;
   background: none;
 }
-/* line 712, ../../scss/core/style.base.scss */
+/* line 713, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-odd, .view-footer .views-row.views-row-odd {
   background: none;
 }
-/* line 716, ../../scss/core/style.base.scss */
+/* line 717, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-even, .view-footer .views-row.views-row-even {
   background: none;
 }
 
 /*Admin Editing*/
-/* line 725, ../../scss/core/style.base.scss */
+/* line 726, ../../scss/core/style.base.scss */
 .region-main ul.primary {
   border: none;
   padding-left: 0;
@@ -752,7 +745,7 @@ form.webform-client-form input#edit-submit.form-submit {
   top: 4em;
   right: 2em;
 }
-/* line 736, ../../scss/core/style.base.scss */
+/* line 737, ../../scss/core/style.base.scss */
 .region-main ul.primary li a,
 .region-main ul.primary li.active a,
 .region-main ul.primary li a:hover,
@@ -773,12 +766,12 @@ form.webform-client-form input#edit-submit.form-submit {
   box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
   padding: 0.2em 1.5em;
 }
-/* line 747, ../../scss/core/style.base.scss */
+/* line 748, ../../scss/core/style.base.scss */
 .region-main ul.primary li.active a {
   display: none;
 }
 
-/* line 752, ../../scss/core/style.base.scss */
+/* line 753, ../../scss/core/style.base.scss */
 .filter-wrapper {
   display: none;
 }

@@ -19,13 +19,6 @@ body {
   margin: 0 auto;
 }
 
-/* line 23, ../../scss/core/style.region.scss */
-.region-sidebar-first > .content {
-  background-color: #dadada;
-  background-image: url("/sites/all/themes/panda/images/tissue-paper-50.png");
-  border-radius: 2px;
-}
-
 /* line 29, ../../scss/core/style.region.scss */
 #page-content {
   padding: 0.809em;

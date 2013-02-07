@@ -1,9 +1,9 @@
-/* line 5, ../../scss/core/sections/_sprites.scss */
+/* line 5, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon {
   position: relative;
   display: inline;
 }
-/* line 9, ../../scss/core/sections/_sprites.scss */
+/* line 9, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon:before {
   font-family: PandaIcons;
   font-size: 2.5em;
@@ -17,51 +17,51 @@
   -moz-transition: 500ms ease;
   -o-transition: 500ms ease;
 }
-/* line 20, ../../scss/core/sections/_sprites.scss */
+/* line 20, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon:hover:before {
   color: #606060;
 }
-/* line 24, ../../scss/core/sections/_sprites.scss */
+/* line 24, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.no-hover:hover:before {
   color: #dedede;
 }
-/* line 28, ../../scss/core/sections/_sprites.scss */
+/* line 28, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.xbox:before {
   content: 'b';
 }
-/* line 30, ../../scss/core/sections/_sprites.scss */
+/* line 30, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.psn:before {
   content: 'd';
 }
-/* line 32, ../../scss/core/sections/_sprites.scss */
+/* line 32, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.wii:before {
   content: 'c';
 }
-/* line 34, ../../scss/core/sections/_sprites.scss */
+/* line 34, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.steam:before {
   content: 'a';
 }
-/* line 36, ../../scss/core/sections/_sprites.scss */
+/* line 36, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.quote:before {
   content: 'u';
 }
-/* line 38, ../../scss/core/sections/_sprites.scss */
+/* line 38, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.flag:before {
   content: 'x';
 }
-/* line 40, ../../scss/core/sections/_sprites.scss */
+/* line 40, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.reply:before {
   content: 't';
 }
-/* line 42, ../../scss/core/sections/_sprites.scss */
+/* line 42, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.bookmark:before {
   content: 'z';
 }
-/* line 44, ../../scss/core/sections/_sprites.scss */
+/* line 44, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon.comment:before {
   content: 'i';
 }
-/* line 46, ../../scss/core/sections/_sprites.scss */
+/* line 46, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon .tooltip {
   display: none;
   position: absolute;
@@ -76,19 +76,19 @@
   color: white;
   border-radius: 2px;
 }
-/* line 63, ../../scss/core/sections/_sprites.scss */
+/* line 63, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_sprites.scss */
 .icon:hover .tooltip {
   display: block;
 }
 
 /*STYLE.CONTENT.CSS*/
 /*Basic Menu Hover feature*/
-/* line 6, ../../scss/core/sections/_menus.scss */
+/* line 6, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_menus.scss */
 li.expanded > ul {
   display: none;
 }
 
-/* line 17, ../../scss/core/sections/_menus.scss */
+/* line 17, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_menus.scss */
 .region-content-navigation #block-system-main-menu, .region-content-navigation #block-system-user-menu {
   width: 100%;
   float: left;
@@ -97,16 +97,16 @@ li.expanded > ul {
   margin-top: 100px;
   position: relative;
 }
-/* line 19, ../../scss/core/sections/_menus.scss */
+/* line 19, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_menus.scss */
 .region-content-navigation #block-system-main-menu h3, .region-content-navigation #block-system-user-menu h3 {
   display: none;
 }
-/* line 27, ../../scss/core/sections/_menus.scss */
+/* line 27, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_menus.scss */
 .region-content-navigation #block-system-main-menu > .content > ul.menu li, .region-content-navigation #block-system-user-menu > .content > ul.menu li {
   float: left;
   position: relative;
 }
-/* line 31, ../../scss/core/sections/_menus.scss */
+/* line 31, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_menus.scss */
 .region-content-navigation #block-system-main-menu > .content > ul.menu li a, .region-content-navigation #block-system-user-menu > .content > ul.menu li a {
   font-family: "Raleway", sans-serif;
   color: white;
@@ -115,7 +115,7 @@ li.expanded > ul {
   padding: 0.2em 1.5em;
   display: inline-block;
 }
-/* line 56, ../../scss/core/sections/_menus.scss */
+/* line 56, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_menus.scss */
 .region-content-navigation #block-system-main-menu:before, .region-content-navigation #block-system-user-menu:before {
   content: url("/sites/all/themes/panda/images/home.png");
   position: absolute;
@@ -124,29 +124,13 @@ li.expanded > ul {
   left: 1rem;
 }
 
-/* line 8, ../../scss/core/sections/_featured_blocks.scss */
-.region-sidebar-first > .content,
-.region-sidebar-second > .content {
-  padding: 1em;
-  padding: 1rem;
-}
-/* line 13, ../../scss/core/sections/_featured_blocks.scss */
-.region-sidebar-first .item-list ul li,
-.region-sidebar-second .item-list ul li {
-  padding: 0.4em;
-  padding: 0.4rem;
-  line-height: 1em;
-  line-height: 1rem;
-  border-bottom: 1px solid #dedede;
-}
-
-/* line 23, ../../scss/core/sections/_featured_blocks.scss */
+/* line 23, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_featured_blocks.scss */
 .featured-block {
   position: relative;
   min-height: 5em;
   min-height: 5rem;
 }
-/* line 28, ../../scss/core/sections/_featured_blocks.scss */
+/* line 28, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_featured_blocks.scss */
 .featured-block .section {
   position: absolute;
   top: 0;
@@ -157,26 +141,26 @@ li.expanded > ul {
   background-color: white;
   color: #606060;
 }
-/* line 44, ../../scss/core/sections/_featured_blocks.scss */
+/* line 44, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_featured_blocks.scss */
 .featured-block .title-block {
   width: 100%;
   position: absolute;
   bottom: 0;
 }
-/* line 49, ../../scss/core/sections/_featured_blocks.scss */
+/* line 49, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_featured_blocks.scss */
 .featured-block .title-block > .content {
   padding: 1em;
   padding: 1rem;
   background-color: rgba(0, 0, 0, 0.5);
 }
-/* line 54, ../../scss/core/sections/_featured_blocks.scss */
+/* line 54, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_featured_blocks.scss */
 .featured-block .title-block > .content h3 {
   color: white;
   margin: 0;
   font-size: 1em;
   font-size: 1rem;
 }
-/* line 63, ../../scss/core/sections/_featured_blocks.scss */
+/* line 63, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_featured_blocks.scss */
 .featured-block .comment-count {
   position: absolute;
   top: 0.5em;
@@ -184,7 +168,7 @@ li.expanded > ul {
   right: 0.5em;
   right: 0.5rem;
 }
-/* line 70, ../../scss/core/sections/_featured_blocks.scss */
+/* line 70, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_featured_blocks.scss */
 .featured-block .comment-count .count {
   color: #dedede;
   font-size: 1.2em;
@@ -194,7 +178,7 @@ li.expanded > ul {
   vertical-align: top;
 }
 
-/* line 5, ../../scss/core/sections/_articles.scss */
+/* line 5, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero {
   margin: 0 0 1em 0;
   margin: 0 0 1rem 0;
@@ -202,11 +186,11 @@ li.expanded > ul {
   min-height: 7em;
   min-height: 7rem;
 }
-/* line 12, ../../scss/core/sections/_articles.scss */
+/* line 12, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero img {
   border-radius: 2px;
 }
-/* line 16, ../../scss/core/sections/_articles.scss */
+/* line 16, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .title-block {
   width: 66%;
   position: absolute;
@@ -214,30 +198,30 @@ li.expanded > ul {
   bottom: -1rem;
   left: 0;
 }
-/* line 24, ../../scss/core/sections/_articles.scss */
+/* line 24, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .title-block > .content {
   padding: 0.5em 0.5em 0.5em 0;
   padding: 0.5rem 0.5rem 0.5rem 0;
   background: #FFFFFF;
   border-radius: 0 2px 0 0;
 }
-/* line 31, ../../scss/core/sections/_articles.scss */
+/* line 31, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .title-block .section {
   font-size: 1.2em;
   font-size: 1.2rem;
   color: #909090;
 }
-/* line 37, ../../scss/core/sections/_articles.scss */
+/* line 37, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .title-block h1 {
   margin: 0;
   color: #606060;
 }
-/* line 42, ../../scss/core/sections/_articles.scss */
+/* line 42, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .title-block .by-line {
   font-size: 1.2em;
   font-size: 1.2rem;
 }
-/* line 47, ../../scss/core/sections/_articles.scss */
+/* line 47, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .title-block .comment-count {
   position: absolute;
   top: 0.5em;
@@ -245,7 +229,7 @@ li.expanded > ul {
   right: 0.5em;
   right: 0.5rem;
 }
-/* line 54, ../../scss/core/sections/_articles.scss */
+/* line 54, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .title-block .comment-count .count {
   color: #909090;
   font-size: 1.2em;
@@ -254,7 +238,7 @@ li.expanded > ul {
   line-height: 1rem;
   vertical-align: top;
 }
-/* line 70, ../../scss/core/sections/_articles.scss */
+/* line 70, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .caption {
   padding: 0.2em 0.5em;
   padding: 0.2rem 0.5rem;
@@ -270,11 +254,11 @@ li.expanded > ul {
   position: absolute;
   max-width: 66%;
 }
-/* line 88, ../../scss/core/sections/_articles.scss */
+/* line 88, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .social-links {
   position: relative;
 }
-/* line 92, ../../scss/core/sections/_articles.scss */
+/* line 92, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .social-links .social-icon {
   position: absolute;
   top: -1.62em;
@@ -282,12 +266,12 @@ li.expanded > ul {
   right: 0;
   cursor: pointer;
 }
-/* line 99, ../../scss/core/sections/_articles.scss */
+/* line 99, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .social-links .social-icon span {
   color: #a60000;
   border-bottom: 1px solid #a60000;
 }
-/* line 106, ../../scss/core/sections/_articles.scss */
+/* line 106, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .social-links .easy_social_box {
   display: none;
   height: auto;
@@ -301,18 +285,18 @@ li.expanded > ul {
   padding: 1rem;
   background: rgba(96, 96, 96, 0.7);
 }
-/* line 122, ../../scss/core/sections/_articles.scss */
+/* line 122, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .social-links .easy_social_box .easy_social-widget {
   clear: right;
   float: right;
   margin-bottom: 1em;
   margin-bottom: 1rem;
 }
-/* line 128, ../../scss/core/sections/_articles.scss */
+/* line 128, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .hero .social-links .easy_social_box .easy_social-widget:last-child {
   margin-bottom: 0;
 }
-/* line 141, ../../scss/core/sections/_articles.scss */
+/* line 141, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_articles.scss */
 .region-main .node-article .field-name-body p:last-child:after {
   content: 'l';
   display: inline-block;
@@ -329,33 +313,33 @@ li.expanded > ul {
   margin-top: -0.3rem;
 }
 
-/* line 9, ../../scss/core/sections/_comments.scss */
+/* line 9, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 #comments {
   margin-top: 0;
   padding-top: 1em;
-  clear: left;
+  clear: both;
 }
-/* line 14, ../../scss/core/sections/_comments.scss */
+/* line 14, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 #comments ul.inline li.comment-add {
   display: block;
 }
-/* line 17, ../../scss/core/sections/_comments.scss */
+/* line 17, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .not-logged-in #comments ul.inline li.comment-add {
   display: none;
 }
 
-/* line 23, ../../scss/core/sections/_comments.scss */
+/* line 23, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment {
   position: relative;
   border-radius: 2px;
   margin-bottom: 0.5em;
   margin-bottom: 0.5rem;
 }
-/* line 26, ../../scss/core/sections/_comments.scss */
+/* line 26, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment.comment-num-1 {
   border-top: 1px solid #dedede;
 }
-/* line 37, ../../scss/core/sections/_comments.scss */
+/* line 37, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .user {
   padding: 0.5em;
   padding: 0.5rem;
@@ -364,50 +348,50 @@ li.expanded > ul {
   width: 115px;
   float: left;
 }
-/* line 45, ../../scss/core/sections/_comments.scss */
+/* line 45, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .user .user-picture {
   max-width: 84px;
   padding: 4px 0;
   margin: 0 auto;
 }
-/* line 51, ../../scss/core/sections/_comments.scss */
+/* line 51, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .user .user-picture img {
   border-radius: 2px;
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
   margin: 5px 0;
 }
-/* line 58, ../../scss/core/sections/_comments.scss */
+/* line 58, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .user .user-labels {
   clear: left;
 }
-/* line 62, ../../scss/core/sections/_comments.scss */
+/* line 62, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .user .username, .comment .user .user-tag,
 .comment .user .user-location {
   line-height: 1em;
   line-height: 1rem;
 }
-/* line 69, ../../scss/core/sections/_comments.scss */
+/* line 69, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .user .user-tag,
 .comment .user .user-location {
   font-size: 0.7em;
   font-size: 0.7rem;
 }
-/* line 76, ../../scss/core/sections/_comments.scss */
+/* line 76, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .user .user-location {
   margin-top: 0.2em;
   margin-top: 0.2rem;
 }
-/* line 81, ../../scss/core/sections/_comments.scss */
+/* line 81, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .user .user-accounts {
   text-align: center;
 }
-/* line 84, ../../scss/core/sections/_comments.scss */
+/* line 84, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .user .user-accounts > div {
   display: inline;
   font-size: 0.7em;
   font-size: 0.7rem;
 }
-/* line 94, ../../scss/core/sections/_comments.scss */
+/* line 94, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .comment-footer {
   width: 100%;
   box-sizing: border-box;
@@ -419,22 +403,22 @@ li.expanded > ul {
   text-align: right;
   clear: both;
 }
-/* line 105, ../../scss/core/sections/_comments.scss */
+/* line 105, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .comment-footer .comment-actions {
   display: inline-block;
   vertical-align: top;
   margin-right: 1em;
   margin-right: 1rem;
 }
-/* line 113, ../../scss/core/sections/_comments.scss */
+/* line 113, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .timestamp {
   display: inline;
 }
-/* line 117, ../../scss/core/sections/_comments.scss */
+/* line 117, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .body {
   margin-left: 115px;
 }
-/* line 121, ../../scss/core/sections/_comments.scss */
+/* line 121, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_comments.scss */
 .comment .body .main,
 .comment .body .signature {
   margin: 1em;
@@ -443,12 +427,12 @@ li.expanded > ul {
   padding: 0 1rem;
 }
 
-/* line 5, ../../scss/core/sections/_login.scss */
+/* line 5, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation {
   position: relative;
 }
 
-/* line 9, ../../scss/core/sections/_login.scss */
+/* line 9, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login {
   background: #FFFFFF;
   padding-top: 1px;
@@ -456,18 +440,18 @@ li.expanded > ul {
   right: 1rem;
   top: 75px;
 }
-/* line 18, ../../scss/core/sections/_login.scss */
+/* line 18, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login h3 {
   cursor: pointer;
   margin-right: 0.62em;
   margin-right: 0.62rem;
   color: #a60000;
 }
-/* line 28, ../../scss/core/sections/_login.scss */
+/* line 28, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login.active form {
   display: block;
 }
-/* line 32, ../../scss/core/sections/_login.scss */
+/* line 32, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login form {
   display: none;
   position: absolute;
@@ -479,21 +463,21 @@ li.expanded > ul {
   z-index: 10;
   box-shadow: 1px 1px 4px 0 rgba(0, 0, 0, 0.3);
 }
-/* line 44, ../../scss/core/sections/_login.scss */
+/* line 44, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login form a {
   color: #DEDEDE;
 }
-/* line 49, ../../scss/core/sections/_login.scss */
+/* line 49, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login .form-item, .region-content-navigation #block-user-login .item-list {
   margin: 1em;
   margin: 1rem;
   padding: 0;
 }
-/* line 55, ../../scss/core/sections/_login.scss */
+/* line 55, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login .form-actions {
   margin: 0;
 }
-/* line 58, ../../scss/core/sections/_login.scss */
+/* line 58, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login .form-actions .form-submit {
   margin: 0;
   width: 100%;
@@ -506,18 +490,18 @@ li.expanded > ul {
   padding: 0.5rem;
   cursor: pointer;
 }
-/* line 72, ../../scss/core/sections/_login.scss */
+/* line 72, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login .text-wrap {
   width: 12em;
   width: 12rem;
   padding: 0em 0.4em;
   padding: 0rem 0.4rem;
 }
-/* line 81, ../../scss/core/sections/_login.scss */
+/* line 81, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login .text-wrap.focused {
   box-shadow: 0 0 2px 1px rgba(166, 0, 0, 0.5);
 }
-/* line 86, ../../scss/core/sections/_login.scss */
+/* line 86, /Users/damontgomery/Sites/gwj/sites/all/themes/panda/scss/core/sections/_login.scss */
 .region-content-navigation #block-user-login ul {
   padding: 0;
   margin: 0;
@@ -537,4 +521,15 @@ li.expanded > ul {
   font-size: 0.8em;
   font-size: 0.8rem;
   color: #909090;
+}
+
+/* line 35, ../../scss/core/style.content.scss */
+.node-teaser {
+  border-bottom: 1px solid #dedede;
+  margin-bottom: 1em;
+  margin-bottom: 1rem;
+}
+/* line 40, ../../scss/core/style.content.scss */
+.node-teaser ul.links {
+  display: none;
 }
