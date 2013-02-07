@@ -24,7 +24,8 @@
     
     <div class="navbar">
       <div class="content">
-        <p></p>
+        <div class="menu icon no-hover"></div>
+        <div class="site-name hat icon no-hover">Gamers With Jobs</div>
       </div>
     </div>
 
@@ -35,7 +36,7 @@
             
             <?php print render($page['help']); ?>
             <?php print render($page['content_over']); ?>
-            <?php print render($page['sidebar_first']); ?>
+            
 
             <?php // We must explicitly print the main content area ?>
 
@@ -54,6 +55,7 @@
                 <?php print render($page['content']); ?>
               </div>
             </div>
+            <?php print render($page['sidebar_first']); ?>
             <?php print render(comment_node_page_additions($node)); ?>
             <?php print render($page['sidebar_second']); ?>
             <?php print render($page['content_under']); ?>

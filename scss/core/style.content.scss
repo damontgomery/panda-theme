@@ -42,3 +42,65 @@
   }
 }
 
+/*Modals*/
+.fancybox-overlay {
+  background: url('/sites/all/themes/panda/images/tissue-paper-50.png'), rgba($color_light_gray,0.7);
+}
+
+.fancybox-skin {
+  border-radius: 0;
+  margin: 2em 0 3.5em 0; //at really small sizes, the box doesn't fit super well.
+  
+  background: #303030;
+  
+  .fancybox-opened & {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+  }
+
+  .fancybox-title {
+    font-family: $header_font;
+    font-size: 1em * panda-gn(1);
+    color: #DEDEDE;
+  }
+  
+  .fancybox-outer {
+    //margin-top: 2em;
+  }
+  
+  .fancybox-nav {
+    width: 55px;
+  }
+  
+  .fancybox-close,
+  .fancybox-prev span,
+  .fancybox-next span {
+    //background-image: url('/sites/all/themes/panda/images/fancybox_sprite.png');
+  }
+  
+  .fancybox-close {
+    top: 2px;
+    right: -8px;
+    background: none;
+    position: absolute;
+
+    @extend .icon;
+    @extend .close;
+  }
+  
+  .fancybox-nav span {
+    visibility: visible;
+  }
+  
+  .fancybox-prev {
+    left: -65px;
+  }
+  
+  .fancybox-next {
+    right: -65px;
+  }
+  
+}
+
+.modal-popup-wrapper {
+  display: none;
+}

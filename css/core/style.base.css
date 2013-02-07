@@ -8,13 +8,12 @@
 }*/
 @font-face {
   font-family: 'PandaIcons';
-  src: url("/sites/all/themes/panda/images/pandaicons-regular-webfont.eot");
-  src: url("/sites/all/themes/panda/images/pandaicons-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/sites/all/themes/panda/images/pandaicons-regular-webfont.woff") format("woff"), url("/sites/all/themes/panda/images/pandaicons-regular-webfont.ttf") format("truetype"), url("/sites/all/themes/panda/images/pandaicons-regular-webfont.svg#pandaiconsregular") format("svg");
+  src: url("/sites/all/themes/panda/images/PandaIcons-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
 
-/* line 26, ../../scss/core/style.base.scss */
+/* line 27, ../../scss/core/style.base.scss */
 body {
   font-family: "Open Sans", sans-serif;
   font-size: 90%;
@@ -23,12 +22,12 @@ body {
   margin: 0;
 }
 
-/* line 34, ../../scss/core/style.base.scss */
+/* line 35, ../../scss/core/style.base.scss */
 p {
   margin: 1em 0em;
 }
 
-/* line 38, ../../scss/core/style.base.scss */
+/* line 39, ../../scss/core/style.base.scss */
 .pull-quote {
   float: left;
   display: block;
@@ -46,55 +45,55 @@ p {
   font-style: italic;
 }
 
-/* line 55, ../../scss/core/style.base.scss */
+/* line 56, ../../scss/core/style.base.scss */
 blockquote {
   margin: 1.618em;
   padding: 1.618em;
   border: 1px solid #DEDEDE;
 }
-/* line 60, ../../scss/core/style.base.scss */
+/* line 61, ../../scss/core/style.base.scss */
 blockquote p {
   margin-top: 0;
 }
 
-/* line 65, ../../scss/core/style.base.scss */
+/* line 66, ../../scss/core/style.base.scss */
 .legal {
   color: #A3A3A3;
   font-size: 0.61805em;
   /* 10px */
 }
 
-/* line 70, ../../scss/core/style.base.scss */
+/* line 71, ../../scss/core/style.base.scss */
 img {
   border: 0;
   max-width: 100%;
   display: block;
 }
 
-/* line 76, ../../scss/core/style.base.scss */
+/* line 77, ../../scss/core/style.base.scss */
 iframe {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 81, ../../scss/core/style.base.scss */
+/* line 82, ../../scss/core/style.base.scss */
 object {
   max-width: 100%;
   max-height: 100%;
 }
 
-/* line 87, ../../scss/core/style.base.scss */
+/* line 88, ../../scss/core/style.base.scss */
 div.block-title > h3 {
   margin: 0;
 }
 
-/* line 91, ../../scss/core/style.base.scss */
+/* line 92, ../../scss/core/style.base.scss */
 h1, h2, h3, h4, h5, h6, pre, ul, ol, dl, hr, table, fieldset {
   margin: 1em 0;
 }
 
 /*HEADERS*/
-/* line 97, ../../scss/core/style.base.scss */
+/* line 98, ../../scss/core/style.base.scss */
 h1, h2, h3, h4, h5, h6 {
   margin: 0.61805em 0;
   font-weight: normal;
@@ -103,7 +102,7 @@ h1, h2, h3, h4, h5, h6 {
   clear: left;
 }
 
-/* line 106, ../../scss/core/style.base.scss */
+/* line 107, ../../scss/core/style.base.scss */
 h1 {
   font-size: 2em;
   color: #a60000;
@@ -111,24 +110,24 @@ h1 {
   margin: 0 0 0.4em 0;
 }
 
-/* line 114, ../../scss/core/style.base.scss */
+/* line 115, ../../scss/core/style.base.scss */
 h2 {
   font-size: 1.618em;
   color: #606060;
 }
 
-/* line 119, ../../scss/core/style.base.scss */
+/* line 120, ../../scss/core/style.base.scss */
 h3, h4, h5 {
   font-size: 1.25em;
   color: #606060;
 }
 
-/* line 132, ../../scss/core/style.base.scss */
+/* line 133, ../../scss/core/style.base.scss */
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
   color: inherit;
 }
 
-/* line 138, ../../scss/core/style.base.scss */
+/* line 139, ../../scss/core/style.base.scss */
 .meta-label {
   text-transform: uppercase;
   font-size: 0.7em;
@@ -137,7 +136,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 }
 
 /*LINKS*/
-/* line 146, ../../scss/core/style.base.scss */
+/* line 147, ../../scss/core/style.base.scss */
 a {
   color: #a60000;
   cursor: pointer;
@@ -145,28 +144,28 @@ a {
   font-famliy: "Raleway", sans-serif;
 }
 
-/* line 153, ../../scss/core/style.base.scss */
+/* line 154, ../../scss/core/style.base.scss */
 a:hover {
   color: #a60000;
 }
 
 /*Drupal Links*/
-/* line 160, ../../scss/core/style.base.scss */
+/* line 161, ../../scss/core/style.base.scss */
 ul.inline li {
   padding: 0;
 }
 
-/* line 164, ../../scss/core/style.base.scss */
+/* line 165, ../../scss/core/style.base.scss */
 li a.active {
   color: #a60000;
 }
 
-/* line 168, ../../scss/core/style.base.scss */
+/* line 169, ../../scss/core/style.base.scss */
 .more-link {
   display: none;
 }
 
-/* line 175, ../../scss/core/style.base.scss */
+/* line 176, ../../scss/core/style.base.scss */
 ul.links a,
 ul.links a:hover,
 .form-actions input,
@@ -184,7 +183,7 @@ ul.links a:hover,
   border: none;
   display: inline-block;
 }
-/* line 190, ../../scss/core/style.base.scss */
+/* line 191, ../../scss/core/style.base.scss */
 .comments ul.links a, .comments
 ul.links a:hover, .comments
 .form-actions input, .comments
@@ -192,13 +191,13 @@ ul.links a:hover, .comments
   font-size: 0.62em;
 }
 
-/* line 197, ../../scss/core/style.base.scss */
+/* line 198, ../../scss/core/style.base.scss */
 html body span.ext {
   background: url("/sites/all/themes/panda/images/extlink.png") right center no-repeat;
   padding-right: 12px;
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
-  /* line 197, ../../scss/core/style.base.scss */
+  /* line 198, ../../scss/core/style.base.scss */
   html body span.ext {
     /* on retina, use image that's scaled by 2 */
     background-image: url("/sites/all/themes/panda/images/extlink-2x.png");
@@ -207,18 +206,18 @@ html body span.ext {
 }
 
 /*LIST ITEMS*/
-/* line 204, ../../scss/core/style.base.scss */
+/* line 205, ../../scss/core/style.base.scss */
 ul, ol, li {
   padding: 0;
   margin: 0;
 }
 
-/* line 209, ../../scss/core/style.base.scss */
+/* line 210, ../../scss/core/style.base.scss */
 ul {
   list-style-type: none;
 }
 
-/* line 220, ../../scss/core/style.base.scss */
+/* line 221, ../../scss/core/style.base.scss */
 .region-content-main ul,
 .region-content-main ol, .fancybox-overlay ul,
 .fancybox-overlay ol {
@@ -226,43 +225,39 @@ ul {
   /* LTR */
   margin-bottom: 1em;
 }
-/* line 226, ../../scss/core/style.base.scss */
+/* line 227, ../../scss/core/style.base.scss */
 .region-content-main li > ul,
 .region-content-main li > ol, .fancybox-overlay li > ul,
 .fancybox-overlay li > ol {
   margin: 0;
 }
-/* line 230, ../../scss/core/style.base.scss */
-.region-content-main ul, .fancybox-overlay ul {
-  list-style-image: url("/sites/all/themes/panda/images/li-swirl.png");
-}
-/* line 242, ../../scss/core/style.base.scss */
+/* line 235, ../../scss/core/style.base.scss */
 .region-content-main ol, .fancybox-overlay ol {
   list-style-type: decimal;
 }
-/* line 245, ../../scss/core/style.base.scss */
+/* line 238, ../../scss/core/style.base.scss */
 .region-content-main ol ol, .fancybox-overlay ol ol {
   list-style-type: lower-alpha;
 }
-/* line 248, ../../scss/core/style.base.scss */
+/* line 241, ../../scss/core/style.base.scss */
 .region-content-main ol ol ol, .fancybox-overlay ol ol ol {
   list-style-type: lower-roman;
 }
 
 /*LI OVERRIDES*/
-/* line 257, ../../scss/core/style.base.scss */
+/* line 250, ../../scss/core/style.base.scss */
 .item-list ul {
   margin: 1em 0;
   margin: 1rem 0;
 }
 
-/* line 264, ../../scss/core/style.base.scss */
+/* line 257, ../../scss/core/style.base.scss */
 .item-list ul ul, .item-list ul ol,
 .item-list ol ol, .item-list ol ul {
   margin: 0;
 }
 
-/* line 272, ../../scss/core/style.base.scss */
+/* line 265, ../../scss/core/style.base.scss */
 .item-list ul li,
 ul.menu li,
 li.expanded,
@@ -275,37 +270,37 @@ li.leaf {
 }
 
 /*Selections*/
-/* line 281, ../../scss/core/style.base.scss */
+/* line 274, ../../scss/core/style.base.scss */
 ::selection {
   background-color: #cf5050;
   color: white;
 }
 
 /*fancybox overrides*/
-/* line 287, ../../scss/core/style.base.scss */
+/* line 280, ../../scss/core/style.base.scss */
 .fancybox-overlay ul li {
   list-style-image: inherit;
 }
 
 /*TABLES*/
-/* line 293, ../../scss/core/style.base.scss */
+/* line 286, ../../scss/core/style.base.scss */
 table {
   width: 100%;
   border: none;
   border-collapse: collapse;
 }
 
-/* line 299, ../../scss/core/style.base.scss */
+/* line 292, ../../scss/core/style.base.scss */
 table .active {
   /* system theme override */
   background: none;
 }
 
-/* line 303, ../../scss/core/style.base.scss */
+/* line 296, ../../scss/core/style.base.scss */
 thead {
   border: 1px solid #0097DB;
 }
-/* line 306, ../../scss/core/style.base.scss */
+/* line 299, ../../scss/core/style.base.scss */
 thead tr {
   background: #0097db;
   background: -moz-linear-gradient(top, #01b5f4 0%, #0079c2 100%);
@@ -316,7 +311,7 @@ thead tr {
   background: linear-gradient(top, #01b5f4 0%, #0079c2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01b5f4', endColorstr='#0079c2',GradientType=0 );
 }
-/* line 309, ../../scss/core/style.base.scss */
+/* line 302, ../../scss/core/style.base.scss */
 thead tr th {
   padding: 0.38198em 0.8em;
   border-top: none;
@@ -327,19 +322,19 @@ thead tr th {
   text-decoration: none;
   color: #FFFFFF;
 }
-/* line 321, ../../scss/core/style.base.scss */
+/* line 314, ../../scss/core/style.base.scss */
 thead tr th:first-child {
   border-left: none;
 }
-/* line 325, ../../scss/core/style.base.scss */
+/* line 318, ../../scss/core/style.base.scss */
 thead tr th:last-child {
   border-right: none;
 }
-/* line 329, ../../scss/core/style.base.scss */
+/* line 322, ../../scss/core/style.base.scss */
 thead tr th img {
   margin: 0 0 0 10px;
 }
-/* line 337, ../../scss/core/style.base.scss */
+/* line 330, ../../scss/core/style.base.scss */
 thead tr th.active a,
 thead tr th a,
 thead tr th a:hover,
@@ -349,13 +344,13 @@ thead tr th a:visited {
   font-weight: normal;
 }
 
-/* line 346, ../../scss/core/style.base.scss */
+/* line 339, ../../scss/core/style.base.scss */
 tbody {
   background: #fff;
   color: #606060;
 }
 
-/* line 354, ../../scss/core/style.base.scss */
+/* line 347, ../../scss/core/style.base.scss */
 tr,
 tr.even,
 tr.odd {
@@ -364,43 +359,43 @@ tr.odd {
   border: none;
 }
 
-/* line 360, ../../scss/core/style.base.scss */
+/* line 353, ../../scss/core/style.base.scss */
 tbody tr:last-child {
   background: none;
 }
 
-/* line 364, ../../scss/core/style.base.scss */
+/* line 357, ../../scss/core/style.base.scss */
 td {
   padding: 0.61805em 1em;
   border: none;
 }
 
-/* line 370, ../../scss/core/style.base.scss */
+/* line 363, ../../scss/core/style.base.scss */
 td.active {
   color: #0193D5;
 }
 
 /*FORMS*/
-/* line 376, ../../scss/core/style.base.scss */
+/* line 369, ../../scss/core/style.base.scss */
 .element-invisible {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 381, ../../scss/core/style.base.scss */
+/* line 374, ../../scss/core/style.base.scss */
 form {
   margin: 1em 0;
   padding: 0;
 }
 
-/* line 386, ../../scss/core/style.base.scss */
+/* line 379, ../../scss/core/style.base.scss */
 fieldset {
   padding: 1em;
   border: 1px solid #A0A0A0;
   border-radius: 2px;
   margin: 1em 0;
 }
-/* line 392, ../../scss/core/style.base.scss */
+/* line 385, ../../scss/core/style.base.scss */
 fieldset.collapsed {
   border: none;
 }
@@ -411,7 +406,7 @@ fieldset.collapsed {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-/* line 407, ../../scss/core/style.base.scss */
+/* line 400, ../../scss/core/style.base.scss */
 button,
 input,
 select,
@@ -431,7 +426,7 @@ textarea {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 420, ../../scss/core/style.base.scss */
+/* line 413, ../../scss/core/style.base.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -445,7 +440,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 433, ../../scss/core/style.base.scss */
+/* line 426, ../../scss/core/style.base.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -455,7 +450,7 @@ input[type="search"]::-webkit-search-decoration {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 442, ../../scss/core/style.base.scss */
+/* line 435, ../../scss/core/style.base.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -463,12 +458,12 @@ textarea {
   /* 2 */
 }
 
-/* line 448, ../../scss/core/style.base.scss */
+/* line 441, ../../scss/core/style.base.scss */
 .resizable-textarea .grippie {
   display: none;
 }
 
-/* line 452, ../../scss/core/style.base.scss */
+/* line 445, ../../scss/core/style.base.scss */
 div.text-wrap {
   background: #FFFFFF;
   border: 1px solid #D0D0D0;
@@ -483,19 +478,19 @@ div.text-wrap {
   -o-transition: border linear 0.3s, box-shadow linear 0.3s;
   transition: border linear 0.3s, box-shadow linear 0.3s;
 }
-/* line 467, ../../scss/core/style.base.scss */
+/* line 460, ../../scss/core/style.base.scss */
 div.text-wrap.focused {
   box-shadow: 0 0 7px 1px #a60000;
   border: 1px solid #color_pri;
 }
 
-/* line 476, ../../scss/core/style.base.scss */
+/* line 469, ../../scss/core/style.base.scss */
 .form-item input.error, .form-item textarea.error, .form-item select.error {
   border: none;
   color: #a60000;
 }
 
-/* line 485, ../../scss/core/style.base.scss */
+/* line 478, ../../scss/core/style.base.scss */
 input[type=text],
 input[type=search],
 textarea,
@@ -510,7 +505,13 @@ input[type=email] {
   line-height: 1.618em;
 }
 
-/* line 496, ../../scss/core/style.base.scss */
+/* line 490, ../../scss/core/style.base.scss */
+input[type=submit] {
+  -webkit-appearance: none;
+  border-radius: none;
+}
+
+/* line 495, ../../scss/core/style.base.scss */
 label {
   display: none;
   color: #17396C;
@@ -519,7 +520,7 @@ label {
   margin: 0.5em 0;
 }
 
-/* line 508, ../../scss/core/style.base.scss */
+/* line 507, ../../scss/core/style.base.scss */
 input::-webkit-input-placeholder,
 input:-moz-placeholder,
 input::-moz-placeholder,
@@ -530,7 +531,7 @@ input:-ms-input-placeholder {
   text-transform: uppercase;
 }
 
-/* line 515, ../../scss/core/style.base.scss */
+/* line 514, ../../scss/core/style.base.scss */
 div.form-item label {
   display: block;
   display: none;
@@ -540,53 +541,53 @@ div.form-item label {
   color: #525252;
 }
 
-/* line 524, ../../scss/core/style.base.scss */
+/* line 523, ../../scss/core/style.base.scss */
 .form-item label.option {
   display: inline;
   font-weight: normal;
   color: #525252;
 }
 
-/* line 530, ../../scss/core/style.base.scss */
+/* line 529, ../../scss/core/style.base.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 2.7em;
 }
 
-/* line 534, ../../scss/core/style.base.scss */
+/* line 533, ../../scss/core/style.base.scss */
 div.form-item input.form-radio {
   vertical-align: top;
 }
 
-/* line 538, ../../scss/core/style.base.scss */
+/* line 537, ../../scss/core/style.base.scss */
 .form-required {
   color: #909090;
 }
 
-/* line 542, ../../scss/core/style.base.scss */
+/* line 541, ../../scss/core/style.base.scss */
 .form-item .description {
   font-size: 0.85em;
   color: #999;
 }
 
-/* line 548, ../../scss/core/style.base.scss */
+/* line 547, ../../scss/core/style.base.scss */
 .form-checkboxes .form-item,
 .form-radios .form-item {
   margin: 0;
   /* Drupal core uses "0.4em 0" */
 }
 
-/* line 552, ../../scss/core/style.base.scss */
+/* line 551, ../../scss/core/style.base.scss */
 form.webform-client-form input#edit-submit.form-submit {
   border-radius: 4px;
 }
 
-/* line 557, ../../scss/core/style.base.scss */
+/* line 556, ../../scss/core/style.base.scss */
 .container-inline div,
 .container-inline label {
   display: inline;
 }
 
-/* line 561, ../../scss/core/style.base.scss */
+/* line 560, ../../scss/core/style.base.scss */
 .label-inline {
   font-weight: bold;
   display: inline;
@@ -595,13 +596,13 @@ form.webform-client-form input#edit-submit.form-submit {
 /**
  * ezMark jQuery Plugin
  **/
-/* line 570, ../../scss/core/style.base.scss */
+/* line 569, ../../scss/core/style.base.scss */
 .ez-hide {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
-/* line 575, ../../scss/core/style.base.scss */
+/* line 574, ../../scss/core/style.base.scss */
 .ez-checkbox,
 .ez-radio {
   display: inline-block;
@@ -615,12 +616,12 @@ form.webform-client-form input#edit-submit.form-submit {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 589, ../../scss/core/style.base.scss */
+/* line 588, ../../scss/core/style.base.scss */
 .ez-radio {
   border-radius: 15px;
 }
 
-/* line 594, ../../scss/core/style.base.scss */
+/* line 593, ../../scss/core/style.base.scss */
 .ez-checked,
 .ez-selected {
   border: 1px solid #a60000;
@@ -635,108 +636,63 @@ form.webform-client-form input#edit-submit.form-submit {
 }
 
 /*View Grids*/
-/* line 601, ../../scss/core/style.base.scss */
+/* line 600, ../../scss/core/style.base.scss */
 .grid-block {
   width: 33%;
   float: left;
 }
-/* line 605, ../../scss/core/style.base.scss */
+/* line 604, ../../scss/core/style.base.scss */
 .grid-block h1, .grid-block h2, .grid-block h3, .grid-block h4, .grid-block h5, .grid-block h6 {
   margin-top: 1em;
 }
-/* line 609, ../../scss/core/style.base.scss */
+/* line 608, ../../scss/core/style.base.scss */
 .grid-block > .content {
   padding: 1.618em;
 }
-/* line 612, ../../scss/core/style.base.scss */
+/* line 611, ../../scss/core/style.base.scss */
 .grid-block > .content img {
   border-radius: 2px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 619, ../../scss/core/style.base.scss */
+/* line 618, ../../scss/core/style.base.scss */
 .grid-block-wide {
   width: 50%;
   float: left;
 }
-/* line 623, ../../scss/core/style.base.scss */
+/* line 622, ../../scss/core/style.base.scss */
 .grid-block-wide > .content {
   padding: 1.618em;
 }
 
-/*Modals*/
 /* line 629, ../../scss/core/style.base.scss */
-.fancybox-skin {
-  border-radius: 0;
-  margin: 2em 0 3.5em 0;
-}
-/* line 633, ../../scss/core/style.base.scss */
-.fancybox-skin .fancybox-title {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.618em;
-  color: #17396C;
-  margin-right: 40px;
-}
-/* line 643, ../../scss/core/style.base.scss */
-.fancybox-skin .fancybox-outer {
-  margin-top: 2em;
-}
-/* line 647, ../../scss/core/style.base.scss */
-.fancybox-skin .fancybox-nav {
-  width: 55px;
-}
-/* line 657, ../../scss/core/style.base.scss */
-.fancybox-skin .fancybox-close {
-  top: -4px;
-  right: 11px;
-}
-/* line 662, ../../scss/core/style.base.scss */
-.fancybox-skin .fancybox-nav span {
-  visibility: visible;
-}
-/* line 666, ../../scss/core/style.base.scss */
-.fancybox-skin .fancybox-prev {
-  left: -65px;
-}
-/* line 670, ../../scss/core/style.base.scss */
-.fancybox-skin .fancybox-next {
-  right: -65px;
-}
-
-/* line 676, ../../scss/core/style.base.scss */
-.modal-popup-wrapper {
-  display: none;
-}
-
-/* line 682, ../../scss/core/style.base.scss */
 .views-row {
   margin: 1em 0;
   margin: 1rem 0;
-  background-image: url("/sites/all/themes/panda/images/diode-divider-yellow-4px.png");
   background-repeat: repeat-x;
   background-position: bottom;
 }
-/* line 702, ../../scss/core/style.base.scss */
+/* line 649, ../../scss/core/style.base.scss */
 .views-row.views-row-last {
   background-image: none;
 }
 
-/* line 708, ../../scss/core/style.base.scss */
+/* line 655, ../../scss/core/style.base.scss */
 .view-header .views-row, .view-footer .views-row {
   padding: 0;
   background: none;
 }
-/* line 713, ../../scss/core/style.base.scss */
+/* line 660, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-odd, .view-footer .views-row.views-row-odd {
   background: none;
 }
-/* line 717, ../../scss/core/style.base.scss */
+/* line 664, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-even, .view-footer .views-row.views-row-even {
   background: none;
 }
 
 /*Admin Editing*/
-/* line 726, ../../scss/core/style.base.scss */
+/*
 .region-main ul.primary {
   border: none;
   padding-left: 0;
@@ -744,34 +700,28 @@ form.webform-client-form input#edit-submit.form-submit {
   z-index: 4;
   top: 4em;
   right: 2em;
-}
-/* line 737, ../../scss/core/style.base.scss */
-.region-main ul.primary li a,
-.region-main ul.primary li.active a,
-.region-main ul.primary li a:hover,
-.region-main ul.primary li.active a:hover {
-  background: none;
-  color: white;
-  background: #787878;
-  background: -moz-linear-gradient(top, #909090 0%, #606060 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #909090), color-stop(100%, #606060));
-  background: -webkit-linear-gradient(top, #909090 0%, #606060 100%);
-  background: -o-linear-gradient(top, #909090 0%, #606060 100%);
-  background: -ms-linear-gradient(top, #909090 0%, #606060 100%);
-  background: linear-gradient(top, #909090 0%, #606060 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#909090', endColorstr='#606060',GradientType=0 );
-  border: 1px solid #606060;
-  border-radius: 2px;
-  font-weight: normal;
-  box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
-  padding: 0.2em 1.5em;
-}
-/* line 748, ../../scss/core/style.base.scss */
-.region-main ul.primary li.active a {
-  display: none;
+  
+  li a,
+  li.active a,
+  li a:hover,
+  li.active a:hover {
+    background: none;
+    color: white;
+    @include panda-linear-gradient(#909090, #606060);
+    border: 1px solid #606060;
+    border-radius: 2px;
+    font-weight: normal;
+    box-shadow: 0 0 3px 0px rgba(0, 0, 0, 0.3);
+    padding: 0.2em 1.5em;
+  }
+  
+  li.active a {
+    display: none;
+  }
 }
 
-/* line 753, ../../scss/core/style.base.scss */
+*/
+/* line 702, ../../scss/core/style.base.scss */
 .filter-wrapper {
   display: none;
 }

@@ -49,16 +49,42 @@
       closeEffect	: 'none',
       nextEffect  : 'none',
       prevEffect  : 'none',
-      margin      : [0,50,0,50], //for outside 'arrows'
+      margin : [0,0,0,0],
+      padding : [0,0,0,0],
       helpers : {
         overlay : {opacity: 0.5},
         title : {
           type : 'inside',
-          position : 'top'
+          position : 'bottom'
         },
         media : {}
       }
     });
+
+    //Log in behavior with callback.
+
+    $('#block-user-login h3').wrap('<a href="#user-login-form" class="user-login-modal" data-fancybox-title="log in">');
+
+    $('.user-login-modal').fancybox({
+      closeClick  : false,
+      openEffect  : 'none',
+      closeEffect : 'none',
+      nextEffect  : 'none',
+      prevEffect  : 'none',
+      margin : [0,0,0,0],
+      padding : [0,0,0,0],
+      helpers : {
+        overlay : {opacity: 0.5},
+        title : {
+          type : 'inside',
+          position : 'bottom'
+        },
+        media : {}
+      },
+      afterShow : function(){$('#edit-name').focus();}
+    });
+
+    
 
     if(!(ie) || (ie >= 8)){
       // Add styling to form elements
@@ -96,9 +122,9 @@
     });
 
     //user login
-    $('.region-content-navigation #block-user-login h3').click(function(){
-      $('.region-content-navigation #block-user-login').toggleClass('active');
-    })
+    //$('.region-content-navigation #block-user-login h3').click(function(){
+    //  $('.region-content-navigation #block-user-login').toggleClass('active');
+    //})
 
     // social links
      

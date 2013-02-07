@@ -6,17 +6,19 @@
   position: relative;
 }
 
-.region-content-navigation #block-user-login {
+#block-user-login {
   background: #FFFFFF;
   padding-top: 1px; // push the margin off the top
 
   //temp
-  position: absolute;
-  right: 1rem;
-  top: 75px;
+  
+  @media #{$mq-desktop} {
+    position: absolute;
+    right: 1rem;
+    top: 75px;
+  }
 
   h3 {
-    //display: none;
     cursor: pointer;
     margin-right: 0.62em;
     margin-right: 0.62rem;
@@ -28,22 +30,18 @@
   &.active form {
     display: block;
   }
+}
 
-  form {
-    display: none;
-    position: absolute;
-    right: -5px;
-    top: 0;
-    margin: 2rem 0 0 0;
-    background: #303030;
-    //padding: 1rem;
-    border-radius: 2px;
-    z-index: 10;
-    box-shadow: 1px 1px 4px 0 rgba(0,0,0,0.3);
-
-    a {
-      color: #DEDEDE;
-    }
+form#user-login-form {
+  display: none;
+  margin: 0;
+  background: #303030;
+  padding-top: 1rem;
+  border-radius: 2px;
+  z-index: 10;
+  
+  a {
+    color: #DEDEDE;
   }
 
   .form-item, .item-list {
@@ -66,6 +64,7 @@
       padding: 0.5em;
       padding: 0.5rem;
       cursor: pointer;
+      border-radius: 0;
     }
   }
 
@@ -87,5 +86,4 @@
     padding: 0;
     margin: 0;
   }
-
 }

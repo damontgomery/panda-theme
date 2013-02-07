@@ -25,23 +25,18 @@
     color: $color_light_gray;
   }
 
-  &.xbox:before {content: 'b';}
-
-  &.psn:before {content: 'd';}
-
-  &.wii:before {content: 'c';}
-
-  &.steam:before {content: 'a';}
-
-  &.quote:before {content: 'u';}
-
-  &.flag:before {content: 'x';}
-
-  &.reply:before {content: 't';}
-
+  &.xbox:before     {content: 'b';}
+  &.psn:before      {content: 'd';}
+  &.wii:before      {content: 'c';}
+  &.steam:before    {content: 'a';}
+  &.quote:before    {content: 'u';}
+  &.flag:before     {content: 'x';}
+  &.reply:before    {content: 't';}
   &.bookmark:before {content: 'z';}
-
-  &.comment:before {content: 'i';}
+  &.comment:before  {content: 'i';}
+  &.menu:before     {content: 'q';}
+  &.hat:before      {content: 'l';}
+  &.close:before      {content: 'p';}
 
   .tooltip {
     display: none;

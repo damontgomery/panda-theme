@@ -11,98 +11,11 @@ html {
     position: fixed;
   }
 
-  //Functional Styling
-  .navbar {
-    width: 100%;
-    position: fixed;
-    z-index: 6;
-    left: 0;
-    top: 0;
-    height: 50px;
-    display: none;
-
-    @media #{$mq-not-desktop} {
-      display: block;
-    }
-
-    .content {
-      padding: 1rem;
-      background: $color_sec;
-    }
-  }
-
-  .main-pane-outer {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-  }
-
-  .main-pane-inner {
-    position: relative;
-    width: 100%;
-
-    @include panda-transition(200ms ease);
-
-    left: 0;
-  }
-
-  .region-navigation {
-    //transition: 200ms ease;
-    //-webkit-transition: 200ms ease;
-    //-moz-transition: 200ms ease;
-
-    box-sizing: border-box;
-
-    @media #{$mq-not-desktop} {
-      display: none;
-
-      display: block;
-      position: fixed;
-      top: 0;
-      left: -280px;
-      height: 100%;
-      overflow-y: auto;
-      width: 280px;
-      padding: 75px 0 0 0;
-
-      & > .content {
-        @include panda-transition(200ms ease);
-
-        left: -100%;
-        position: absolute;
-        padding: 0.5rem;
-      }
-    }    
-  }
 
   // Menu Is Active
 
   @media #{$mq-not-desktop} {
 
-    #page-wrapper {
-      padding-top: 50px;
-    }
-
-    .js-nav {
-      .main-pane-inner{
-        left: 280px; //this is because fixed pos items on a translated block have issues (they aren't fixed)
-      }
-
-      .region-navigation {
-        left: 0;
-        z-index: 5;
-        background: none;
-
-        & > .content {
-          left: 0;
-        }
-        
-
-        #block-system-main-menu > .content > ul.menu li {
-          width: 100%;
-        }
-      }
-    }
   }
 
   @media #{$mq-not-desktop} {

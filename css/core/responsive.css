@@ -9,173 +9,84 @@ html {
 html #admin-menu {
   position: fixed;
 }
-/* line 15, ../../scss/core/responsive.scss */
-html .navbar {
-  width: 100%;
-  position: fixed;
-  z-index: 6;
-  left: 0;
-  top: 0;
-  height: 50px;
-  display: none;
-}
-@media only screen and (max-width: 1023px) {
-  /* line 15, ../../scss/core/responsive.scss */
-  html .navbar {
-    display: block;
-  }
-}
-/* line 28, ../../scss/core/responsive.scss */
-html .navbar .content {
-  padding: 1rem;
-  background: #606060;
-}
-/* line 34, ../../scss/core/responsive.scss */
-html .main-pane-outer {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
-}
-/* line 40, ../../scss/core/responsive.scss */
-html .main-pane-inner {
-  position: relative;
-  width: 100%;
-  transition: 200ms ease;
-  -webkit-transition: 200ms ease;
-  -moz-transition: 200ms ease;
-  -o-transition: 200ms ease;
-  left: 0;
-}
-/* line 49, ../../scss/core/responsive.scss */
-html .region-navigation {
-  box-sizing: border-box;
-}
-@media only screen and (max-width: 1023px) {
-  /* line 49, ../../scss/core/responsive.scss */
-  html .region-navigation {
-    display: none;
-    display: block;
-    position: fixed;
-    top: 0;
-    left: -280px;
-    height: 100%;
-    overflow-y: auto;
-    width: 280px;
-    padding: 75px 0 0 0;
-  }
-  /* line 68, ../../scss/core/responsive.scss */
-  html .region-navigation > .content {
-    transition: 200ms ease;
-    -webkit-transition: 200ms ease;
-    -moz-transition: 200ms ease;
-    -o-transition: 200ms ease;
-    left: -100%;
-    position: absolute;
-    padding: 0.5rem;
-  }
-}
-@media only screen and (max-width: 1023px) {
-  /* line 82, ../../scss/core/responsive.scss */
-  html #page-wrapper {
-    padding-top: 50px;
-  }
-  /* line 87, ../../scss/core/responsive.scss */
-  html .js-nav .main-pane-inner {
-    left: 280px;
-  }
-  /* line 91, ../../scss/core/responsive.scss */
-  html .js-nav .region-navigation {
-    left: 0;
-    z-index: 5;
-    background: none;
-  }
-  /* line 96, ../../scss/core/responsive.scss */
-  html .js-nav .region-navigation > .content {
-    left: 0;
-  }
-  /* line 101, ../../scss/core/responsive.scss */
-  html .js-nav .region-navigation #block-system-main-menu > .content > ul.menu li {
-    width: 100%;
-  }
-}
 @media only screen and (max-width: 480px) {
   /* line 5, ../../scss/core/responsive.scss */
   html {
     /*Disable Flash*/
   }
-  /* line 118, ../../scss/core/responsive.scss */
+  /* line 31, ../../scss/core/responsive.scss */
   html body {
     -webkit-text-size-adjust: none;
   }
-  /* line 123, ../../scss/core/responsive.scss */
+  /* line 36, ../../scss/core/responsive.scss */
   html .responsive-full {
     display: none;
   }
-  /* line 127, ../../scss/core/responsive.scss */
+  /* line 40, ../../scss/core/responsive.scss */
   html .responsive-mobile {
     display: block;
   }
-  /* line 131, ../../scss/core/responsive.scss */
+  /* line 44, ../../scss/core/responsive.scss */
   html .region-sidebar-first {
     width: 100%;
   }
-  /* line 135, ../../scss/core/responsive.scss */
+  /* line 48, ../../scss/core/responsive.scss */
   html .region-main {
     width: 100%;
   }
-  /* line 140, ../../scss/core/responsive.scss */
+  /* line 53, ../../scss/core/responsive.scss */
   html .front #page-wrapper .region-main .block {
     width: 100%;
   }
-  /* line 145, ../../scss/core/responsive.scss */
+  /* line 58, ../../scss/core/responsive.scss */
   html .region-navigation {
     clear: left;
   }
-  /* line 150, ../../scss/core/responsive.scss */
+  /* line 63, ../../scss/core/responsive.scss */
   html object[type="application/x-shockwave-flash"] {
     display: none;
   }
 }
 @media only screen and (max-width: 568px) and (max-height: 320px) {
-  /* line 156, ../../scss/core/responsive.scss */
+  /* line 69, ../../scss/core/responsive.scss */
   html body {
     -webkit-text-size-adjust: none;
   }
 }
 @media only screen and (min-width: 321px) and (max-width: 800px) {
-  /* line 163, ../../scss/core/responsive.scss */
+  /* line 76, ../../scss/core/responsive.scss */
   html .grid-block {
     width: 50%;
   }
 }
 @media only screen and (max-width: 320px) {
-  /* line 163, ../../scss/core/responsive.scss */
+  /* line 76, ../../scss/core/responsive.scss */
   html .grid-block {
     width: 100%;
   }
 }
 @media only screen and (max-width: 800px) {
-  /* line 173, ../../scss/core/responsive.scss */
+  /* line 86, ../../scss/core/responsive.scss */
   html .grid-block-wide {
     width: 100%;
   }
 }
 @media only screen and (min-width: 700px) {
-  /* line 182, ../../scss/core/responsive.scss */
+  /* line 95, ../../scss/core/responsive.scss */
   html .col-2 {
     width: 50%;
     float: left;
   }
-  /* line 186, ../../scss/core/responsive.scss */
+  /* line 99, ../../scss/core/responsive.scss */
   html .col-2 > .content {
     padding: 0 1em;
   }
-  /* line 191, ../../scss/core/responsive.scss */
+  /* line 104, ../../scss/core/responsive.scss */
   html .col-3 {
     width: 33%;
     float: left;
   }
-  /* line 195, ../../scss/core/responsive.scss */
+  /* line 108, ../../scss/core/responsive.scss */
   html .col-3 > .content {
     padding: 0 1em;
   }
