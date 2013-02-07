@@ -109,3 +109,10 @@ function panda_preprocess_image(&$variables) {
     $variables['attributes']['height']
   );
 }
+
+// Use node--view-mode.tpl.php files and node--type--view-mode.tpl.php files
+
+function panda_preprocess_node(&$vars) {
+  $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['view_mode'];
+  $vars['theme_hook_suggestions'][] = 'node__' . $vars['view_mode'];
+}
