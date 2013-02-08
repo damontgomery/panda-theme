@@ -2,19 +2,23 @@
 //      Sprites
 // ==================
 
+@mixin icon-style() {
+  font-family: PandaIcons;
+  font-size: 2.5em;
+  font-size: 2.5rem;
+  line-height: 1em;
+  line-height: 1rem;
+  -webkit-font-smoothing: antialiased;
+  color: $color_light_gray;
+  @include panda-transition(500ms ease);
+}
+
 .icon {
   position: relative;
   display: inline;
 
   &:before {
-    font-family: PandaIcons;
-    font-size: 2.5em;
-    font-size: 2.5rem;
-    line-height: 1em;
-    line-height: 1rem;
-    -webkit-font-smoothing: antialiased;
-    color: $color_light_gray;
-    @include panda-transition(500ms ease);
+    @include icon-style();
   }
 
   &:hover:before {
@@ -42,6 +46,7 @@
   &.door:before     {content: 'B';}
   &.gear:before     {content: 'C';}
   &.mail:before     {content: 'D';}
+  &.more:before     {content: 'E';}
 
   .tooltip {
     display: none;

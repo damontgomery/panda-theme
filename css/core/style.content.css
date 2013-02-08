@@ -1,9 +1,9 @@
-/* line 5, ../../scss/core/sections/_sprites.scss */
+/* line 16, ../../scss/core/sections/_sprites.scss */
 .icon, .region-content-navigation #block-system-user-menu a[href='/user'], .region-content-navigation #block-system-user-menu a[href='/messages'], .region-content-navigation #block-system-user-menu a[href='/user/logout'], #block-user-login h3, .fancybox-skin .fancybox-close {
   position: relative;
   display: inline;
 }
-/* line 9, ../../scss/core/sections/_sprites.scss */
+/* line 20, ../../scss/core/sections/_sprites.scss */
 .icon:before, .region-content-navigation #block-system-user-menu a[href='/user']:before, .region-content-navigation #block-system-user-menu a[href='/messages']:before, .region-content-navigation #block-system-user-menu a[href='/user/logout']:before, #block-user-login h3:before, .fancybox-skin .fancybox-close:before {
   font-family: PandaIcons;
   font-size: 2.5em;
@@ -17,83 +17,87 @@
   -moz-transition: 500ms ease;
   -o-transition: 500ms ease;
 }
-/* line 20, ../../scss/core/sections/_sprites.scss */
+/* line 24, ../../scss/core/sections/_sprites.scss */
 .icon:hover:before, .region-content-navigation #block-system-user-menu a[href='/user']:hover:before, .region-content-navigation #block-system-user-menu a[href='/messages']:hover:before, .region-content-navigation #block-system-user-menu a[href='/user/logout']:hover:before, #block-user-login h3:hover:before, .fancybox-skin .fancybox-close:hover:before {
   color: #606060;
 }
-/* line 24, ../../scss/core/sections/_sprites.scss */
+/* line 28, ../../scss/core/sections/_sprites.scss */
 .icon.no-hover:hover:before, .region-content-navigation #block-system-user-menu a.no-hover[href='/user']:hover:before, .region-content-navigation #block-system-user-menu a.no-hover[href='/messages']:hover:before, .region-content-navigation #block-system-user-menu a.no-hover[href='/user/logout']:hover:before, #block-user-login h3.no-hover:hover:before, .fancybox-skin .no-hover.fancybox-close:hover:before {
   color: #dedede;
 }
-/* line 28, ../../scss/core/sections/_sprites.scss */
+/* line 32, ../../scss/core/sections/_sprites.scss */
 .icon.xbox:before, .region-content-navigation #block-system-user-menu a.xbox[href='/user']:before, .region-content-navigation #block-system-user-menu a.xbox[href='/messages']:before, .region-content-navigation #block-system-user-menu a.xbox[href='/user/logout']:before, #block-user-login h3.xbox:before, .fancybox-skin .xbox.fancybox-close:before {
   content: 'b';
 }
-/* line 29, ../../scss/core/sections/_sprites.scss */
+/* line 33, ../../scss/core/sections/_sprites.scss */
 .icon.psn:before, .region-content-navigation #block-system-user-menu a.psn[href='/user']:before, .region-content-navigation #block-system-user-menu a.psn[href='/messages']:before, .region-content-navigation #block-system-user-menu a.psn[href='/user/logout']:before, #block-user-login h3.psn:before, .fancybox-skin .psn.fancybox-close:before {
   content: 'd';
 }
-/* line 30, ../../scss/core/sections/_sprites.scss */
+/* line 34, ../../scss/core/sections/_sprites.scss */
 .icon.wii:before, .region-content-navigation #block-system-user-menu a.wii[href='/user']:before, .region-content-navigation #block-system-user-menu a.wii[href='/messages']:before, .region-content-navigation #block-system-user-menu a.wii[href='/user/logout']:before, #block-user-login h3.wii:before, .fancybox-skin .wii.fancybox-close:before {
   content: 'c';
 }
-/* line 31, ../../scss/core/sections/_sprites.scss */
+/* line 35, ../../scss/core/sections/_sprites.scss */
 .icon.steam:before, .region-content-navigation #block-system-user-menu a.steam[href='/user']:before, .region-content-navigation #block-system-user-menu a.steam[href='/messages']:before, .region-content-navigation #block-system-user-menu a.steam[href='/user/logout']:before, #block-user-login h3.steam:before, .fancybox-skin .steam.fancybox-close:before {
   content: 'a';
 }
-/* line 32, ../../scss/core/sections/_sprites.scss */
+/* line 36, ../../scss/core/sections/_sprites.scss */
 .icon.quote:before, .region-content-navigation #block-system-user-menu a.quote[href='/user']:before, .region-content-navigation #block-system-user-menu a.quote[href='/messages']:before, .region-content-navigation #block-system-user-menu a.quote[href='/user/logout']:before, #block-user-login h3.quote:before, .fancybox-skin .quote.fancybox-close:before {
   content: 'u';
 }
-/* line 33, ../../scss/core/sections/_sprites.scss */
+/* line 37, ../../scss/core/sections/_sprites.scss */
 .icon.flag:before, .region-content-navigation #block-system-user-menu a.flag[href='/user']:before, .region-content-navigation #block-system-user-menu a.flag[href='/messages']:before, .region-content-navigation #block-system-user-menu a.flag[href='/user/logout']:before, #block-user-login h3.flag:before, .fancybox-skin .flag.fancybox-close:before {
   content: 'x';
 }
-/* line 34, ../../scss/core/sections/_sprites.scss */
+/* line 38, ../../scss/core/sections/_sprites.scss */
 .icon.reply:before, .region-content-navigation #block-system-user-menu a.reply[href='/user']:before, .region-content-navigation #block-system-user-menu a.reply[href='/messages']:before, .region-content-navigation #block-system-user-menu a.reply[href='/user/logout']:before, #block-user-login h3.reply:before, .fancybox-skin .reply.fancybox-close:before {
   content: 't';
 }
-/* line 35, ../../scss/core/sections/_sprites.scss */
+/* line 39, ../../scss/core/sections/_sprites.scss */
 .icon.bookmark:before, .region-content-navigation #block-system-user-menu a.bookmark[href='/user']:before, .region-content-navigation #block-system-user-menu a.bookmark[href='/messages']:before, .region-content-navigation #block-system-user-menu a.bookmark[href='/user/logout']:before, #block-user-login h3.bookmark:before, .fancybox-skin .bookmark.fancybox-close:before {
   content: 'z';
 }
-/* line 36, ../../scss/core/sections/_sprites.scss */
+/* line 40, ../../scss/core/sections/_sprites.scss */
 .icon.comment:before, .region-content-navigation #block-system-user-menu a.comment[href='/user']:before, .region-content-navigation #block-system-user-menu a.comment[href='/messages']:before, .region-content-navigation #block-system-user-menu a.comment[href='/user/logout']:before, #block-user-login h3.comment:before, .fancybox-skin .comment.fancybox-close:before {
   content: 'i';
 }
-/* line 37, ../../scss/core/sections/_sprites.scss */
+/* line 41, ../../scss/core/sections/_sprites.scss */
 .icon.menu:before, .region-content-navigation #block-system-user-menu a.menu[href='/user']:before, .region-content-navigation #block-system-user-menu a.menu[href='/messages']:before, .region-content-navigation #block-system-user-menu a.menu[href='/user/logout']:before, #block-user-login h3.menu:before, .fancybox-skin .menu.fancybox-close:before {
   content: 'q';
 }
-/* line 38, ../../scss/core/sections/_sprites.scss */
+/* line 42, ../../scss/core/sections/_sprites.scss */
 .icon.hat:before, .region-content-navigation #block-system-user-menu a.hat[href='/user']:before, .region-content-navigation #block-system-user-menu a.hat[href='/messages']:before, .region-content-navigation #block-system-user-menu a.hat[href='/user/logout']:before, #block-user-login h3.hat:before, .fancybox-skin .hat.fancybox-close:before {
   content: 'l';
 }
-/* line 39, ../../scss/core/sections/_sprites.scss */
+/* line 43, ../../scss/core/sections/_sprites.scss */
 .icon.close:before, .region-content-navigation #block-system-user-menu a.close[href='/user']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a[href='/user'].fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a[href='/user'].fancybox-close:before, .region-content-navigation #block-system-user-menu a.close[href='/messages']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a[href='/messages'].fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a[href='/messages'].fancybox-close:before, .region-content-navigation #block-system-user-menu a.close[href='/user/logout']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a[href='/user/logout'].fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a[href='/user/logout'].fancybox-close:before, #block-user-login h3.close:before, #block-user-login .fancybox-skin h3.fancybox-close:before, .fancybox-skin #block-user-login h3.fancybox-close:before, .fancybox-skin .fancybox-close:before {
   content: 'p';
 }
-/* line 40, ../../scss/core/sections/_sprites.scss */
+/* line 44, ../../scss/core/sections/_sprites.scss */
 .icon.star:before, .region-content-navigation #block-system-user-menu a.star[href='/user']:before, .region-content-navigation #block-system-user-menu a.star[href='/messages']:before, .region-content-navigation #block-system-user-menu a.star[href='/user/logout']:before, #block-user-login h3.star:before, .fancybox-skin .star.fancybox-close:before {
   content: 'v';
 }
-/* line 41, ../../scss/core/sections/_sprites.scss */
+/* line 45, ../../scss/core/sections/_sprites.scss */
 .icon.lock:before, .region-content-navigation #block-system-user-menu a.lock[href='/user']:before, .region-content-navigation #block-system-user-menu a.lock[href='/messages']:before, .region-content-navigation #block-system-user-menu a.lock[href='/user/logout']:before, #block-user-login h3:before, .fancybox-skin .lock.fancybox-close:before, .fancybox-skin #block-user-login h3.fancybox-close:before, #block-user-login .fancybox-skin h3.fancybox-close:before {
   content: 'A';
 }
-/* line 42, ../../scss/core/sections/_sprites.scss */
+/* line 46, ../../scss/core/sections/_sprites.scss */
 .icon.door:before, .region-content-navigation #block-system-user-menu a.door[href='/user']:before, .region-content-navigation #block-system-user-menu a[href='/user'][href='/user/logout']:before, .region-content-navigation #block-system-user-menu a.door[href='/messages']:before, .region-content-navigation #block-system-user-menu a[href='/messages'][href='/user/logout']:before, .region-content-navigation #block-system-user-menu a[href='/user/logout']:before, #block-user-login h3.door:before, .fancybox-skin .door.fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a.fancybox-close[href='/user/logout']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a.fancybox-close[href='/user/logout']:before {
   content: 'B';
 }
-/* line 43, ../../scss/core/sections/_sprites.scss */
+/* line 47, ../../scss/core/sections/_sprites.scss */
 .icon.gear:before, .region-content-navigation #block-system-user-menu a[href='/user']:before, .region-content-navigation #block-system-user-menu a.gear[href='/messages']:before, .region-content-navigation #block-system-user-menu a[href='/messages'][href='/user']:before, .region-content-navigation #block-system-user-menu a.gear[href='/user/logout']:before, .region-content-navigation #block-system-user-menu a[href='/user/logout'][href='/user']:before, #block-user-login h3.gear:before, .fancybox-skin .gear.fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a.fancybox-close[href='/user']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a.fancybox-close[href='/user']:before {
   content: 'C';
 }
-/* line 44, ../../scss/core/sections/_sprites.scss */
+/* line 48, ../../scss/core/sections/_sprites.scss */
 .icon.mail:before, .region-content-navigation #block-system-user-menu a.mail[href='/user']:before, .region-content-navigation #block-system-user-menu a[href='/user'][href='/messages']:before, .region-content-navigation #block-system-user-menu a[href='/messages']:before, .region-content-navigation #block-system-user-menu a.mail[href='/user/logout']:before, .region-content-navigation #block-system-user-menu a[href='/user/logout'][href='/messages']:before, #block-user-login h3.mail:before, .fancybox-skin .mail.fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a.fancybox-close[href='/messages']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a.fancybox-close[href='/messages']:before {
   content: 'D';
 }
-/* line 46, ../../scss/core/sections/_sprites.scss */
+/* line 49, ../../scss/core/sections/_sprites.scss */
+.icon.more:before, .region-content-navigation #block-system-user-menu a.more[href='/user']:before, .region-content-navigation #block-system-user-menu a.more[href='/messages']:before, .region-content-navigation #block-system-user-menu a.more[href='/user/logout']:before, #block-user-login h3.more:before, .fancybox-skin .more.fancybox-close:before {
+  content: 'E';
+}
+/* line 51, ../../scss/core/sections/_sprites.scss */
 .icon .tooltip, .region-content-navigation #block-system-user-menu a[href='/user'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/messages'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/user/logout'] .tooltip, #block-user-login h3 .tooltip, .fancybox-skin .fancybox-close .tooltip {
   display: none;
   position: absolute;
@@ -108,7 +112,7 @@
   color: white;
   border-radius: 2px;
 }
-/* line 63, ../../scss/core/sections/_sprites.scss */
+/* line 68, ../../scss/core/sections/_sprites.scss */
 .icon:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/user']:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/messages']:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/user/logout']:hover .tooltip, #block-user-login h3:hover .tooltip, .fancybox-skin .fancybox-close:hover .tooltip {
   display: block;
 }
@@ -465,21 +469,41 @@ html .region-navigation {
 .region-main .node-article .hero .social-links .easy_social_box .easy_social-widget:last-child {
   margin-bottom: 0;
 }
+
 /* line 141, ../../scss/core/sections/_articles.scss */
-.region-main .node-article .field-name-body p:last-child:after {
-  content: 'l';
-  display: inline-block;
-  margin-left: 0.5em;
-  margin-left: 0.5rem;
+.node.teaser .field-name-body p:last-child:after {
   font-family: PandaIcons;
-  line-height: 1em;
-  line-height: 1rem;
   font-size: 2.5em;
   font-size: 2.5rem;
-  vertical-align: top;
-  color: #404040;
-  margin-top: -0.3em;
-  margin-top: -0.3rem;
+  line-height: 1em;
+  line-height: 1rem;
+  -webkit-font-smoothing: antialiased;
+  color: #dedede;
+  transition: 500ms ease;
+  -webkit-transition: 500ms ease;
+  -moz-transition: 500ms ease;
+  -o-transition: 500ms ease;
+  content: 'E';
+  color: #606060;
+  margin-left: 0.3em;
+}
+
+/* line 148, ../../scss/core/sections/_articles.scss */
+.node.full .field-name-body p:last-child:after {
+  font-family: PandaIcons;
+  font-size: 2.5em;
+  font-size: 2.5rem;
+  line-height: 1em;
+  line-height: 1rem;
+  -webkit-font-smoothing: antialiased;
+  color: #dedede;
+  transition: 500ms ease;
+  -webkit-transition: 500ms ease;
+  -moz-transition: 500ms ease;
+  -o-transition: 500ms ease;
+  content: 'l';
+  color: #606060;
+  margin-left: 0.3em;
 }
 
 /* line 9, ../../scss/core/sections/_comments.scss */
