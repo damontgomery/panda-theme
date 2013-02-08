@@ -1,10 +1,10 @@
 /* line 5, ../../scss/core/sections/_sprites.scss */
-.icon, .fancybox-skin .fancybox-close {
+.icon, .region-content-navigation #block-system-user-menu a[href='/user'], .region-content-navigation #block-system-user-menu a[href='/messages'], .region-content-navigation #block-system-user-menu a[href='/user/logout'], #block-user-login h3, .fancybox-skin .fancybox-close {
   position: relative;
   display: inline;
 }
 /* line 9, ../../scss/core/sections/_sprites.scss */
-.icon:before, .fancybox-skin .fancybox-close:before {
+.icon:before, .region-content-navigation #block-system-user-menu a[href='/user']:before, .region-content-navigation #block-system-user-menu a[href='/messages']:before, .region-content-navigation #block-system-user-menu a[href='/user/logout']:before, #block-user-login h3:before, .fancybox-skin .fancybox-close:before {
   font-family: PandaIcons;
   font-size: 2.5em;
   font-size: 2.5rem;
@@ -18,63 +18,83 @@
   -o-transition: 500ms ease;
 }
 /* line 20, ../../scss/core/sections/_sprites.scss */
-.icon:hover:before, .fancybox-skin .fancybox-close:hover:before {
+.icon:hover:before, .region-content-navigation #block-system-user-menu a[href='/user']:hover:before, .region-content-navigation #block-system-user-menu a[href='/messages']:hover:before, .region-content-navigation #block-system-user-menu a[href='/user/logout']:hover:before, #block-user-login h3:hover:before, .fancybox-skin .fancybox-close:hover:before {
   color: #606060;
 }
 /* line 24, ../../scss/core/sections/_sprites.scss */
-.icon.no-hover:hover:before, .fancybox-skin .no-hover.fancybox-close:hover:before {
+.icon.no-hover:hover:before, .region-content-navigation #block-system-user-menu a.no-hover[href='/user']:hover:before, .region-content-navigation #block-system-user-menu a.no-hover[href='/messages']:hover:before, .region-content-navigation #block-system-user-menu a.no-hover[href='/user/logout']:hover:before, #block-user-login h3.no-hover:hover:before, .fancybox-skin .no-hover.fancybox-close:hover:before {
   color: #dedede;
 }
 /* line 28, ../../scss/core/sections/_sprites.scss */
-.icon.xbox:before, .fancybox-skin .xbox.fancybox-close:before {
+.icon.xbox:before, .region-content-navigation #block-system-user-menu a.xbox[href='/user']:before, .region-content-navigation #block-system-user-menu a.xbox[href='/messages']:before, .region-content-navigation #block-system-user-menu a.xbox[href='/user/logout']:before, #block-user-login h3.xbox:before, .fancybox-skin .xbox.fancybox-close:before {
   content: 'b';
 }
 /* line 29, ../../scss/core/sections/_sprites.scss */
-.icon.psn:before, .fancybox-skin .psn.fancybox-close:before {
+.icon.psn:before, .region-content-navigation #block-system-user-menu a.psn[href='/user']:before, .region-content-navigation #block-system-user-menu a.psn[href='/messages']:before, .region-content-navigation #block-system-user-menu a.psn[href='/user/logout']:before, #block-user-login h3.psn:before, .fancybox-skin .psn.fancybox-close:before {
   content: 'd';
 }
 /* line 30, ../../scss/core/sections/_sprites.scss */
-.icon.wii:before, .fancybox-skin .wii.fancybox-close:before {
+.icon.wii:before, .region-content-navigation #block-system-user-menu a.wii[href='/user']:before, .region-content-navigation #block-system-user-menu a.wii[href='/messages']:before, .region-content-navigation #block-system-user-menu a.wii[href='/user/logout']:before, #block-user-login h3.wii:before, .fancybox-skin .wii.fancybox-close:before {
   content: 'c';
 }
 /* line 31, ../../scss/core/sections/_sprites.scss */
-.icon.steam:before, .fancybox-skin .steam.fancybox-close:before {
+.icon.steam:before, .region-content-navigation #block-system-user-menu a.steam[href='/user']:before, .region-content-navigation #block-system-user-menu a.steam[href='/messages']:before, .region-content-navigation #block-system-user-menu a.steam[href='/user/logout']:before, #block-user-login h3.steam:before, .fancybox-skin .steam.fancybox-close:before {
   content: 'a';
 }
 /* line 32, ../../scss/core/sections/_sprites.scss */
-.icon.quote:before, .fancybox-skin .quote.fancybox-close:before {
+.icon.quote:before, .region-content-navigation #block-system-user-menu a.quote[href='/user']:before, .region-content-navigation #block-system-user-menu a.quote[href='/messages']:before, .region-content-navigation #block-system-user-menu a.quote[href='/user/logout']:before, #block-user-login h3.quote:before, .fancybox-skin .quote.fancybox-close:before {
   content: 'u';
 }
 /* line 33, ../../scss/core/sections/_sprites.scss */
-.icon.flag:before, .fancybox-skin .flag.fancybox-close:before {
+.icon.flag:before, .region-content-navigation #block-system-user-menu a.flag[href='/user']:before, .region-content-navigation #block-system-user-menu a.flag[href='/messages']:before, .region-content-navigation #block-system-user-menu a.flag[href='/user/logout']:before, #block-user-login h3.flag:before, .fancybox-skin .flag.fancybox-close:before {
   content: 'x';
 }
 /* line 34, ../../scss/core/sections/_sprites.scss */
-.icon.reply:before, .fancybox-skin .reply.fancybox-close:before {
+.icon.reply:before, .region-content-navigation #block-system-user-menu a.reply[href='/user']:before, .region-content-navigation #block-system-user-menu a.reply[href='/messages']:before, .region-content-navigation #block-system-user-menu a.reply[href='/user/logout']:before, #block-user-login h3.reply:before, .fancybox-skin .reply.fancybox-close:before {
   content: 't';
 }
 /* line 35, ../../scss/core/sections/_sprites.scss */
-.icon.bookmark:before, .fancybox-skin .bookmark.fancybox-close:before {
+.icon.bookmark:before, .region-content-navigation #block-system-user-menu a.bookmark[href='/user']:before, .region-content-navigation #block-system-user-menu a.bookmark[href='/messages']:before, .region-content-navigation #block-system-user-menu a.bookmark[href='/user/logout']:before, #block-user-login h3.bookmark:before, .fancybox-skin .bookmark.fancybox-close:before {
   content: 'z';
 }
 /* line 36, ../../scss/core/sections/_sprites.scss */
-.icon.comment:before, .fancybox-skin .comment.fancybox-close:before {
+.icon.comment:before, .region-content-navigation #block-system-user-menu a.comment[href='/user']:before, .region-content-navigation #block-system-user-menu a.comment[href='/messages']:before, .region-content-navigation #block-system-user-menu a.comment[href='/user/logout']:before, #block-user-login h3.comment:before, .fancybox-skin .comment.fancybox-close:before {
   content: 'i';
 }
 /* line 37, ../../scss/core/sections/_sprites.scss */
-.icon.menu:before, .fancybox-skin .menu.fancybox-close:before {
+.icon.menu:before, .region-content-navigation #block-system-user-menu a.menu[href='/user']:before, .region-content-navigation #block-system-user-menu a.menu[href='/messages']:before, .region-content-navigation #block-system-user-menu a.menu[href='/user/logout']:before, #block-user-login h3.menu:before, .fancybox-skin .menu.fancybox-close:before {
   content: 'q';
 }
 /* line 38, ../../scss/core/sections/_sprites.scss */
-.icon.hat:before, .fancybox-skin .hat.fancybox-close:before {
+.icon.hat:before, .region-content-navigation #block-system-user-menu a.hat[href='/user']:before, .region-content-navigation #block-system-user-menu a.hat[href='/messages']:before, .region-content-navigation #block-system-user-menu a.hat[href='/user/logout']:before, #block-user-login h3.hat:before, .fancybox-skin .hat.fancybox-close:before {
   content: 'l';
 }
 /* line 39, ../../scss/core/sections/_sprites.scss */
-.icon.close:before, .fancybox-skin .fancybox-close:before {
+.icon.close:before, .region-content-navigation #block-system-user-menu a.close[href='/user']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a[href='/user'].fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a[href='/user'].fancybox-close:before, .region-content-navigation #block-system-user-menu a.close[href='/messages']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a[href='/messages'].fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a[href='/messages'].fancybox-close:before, .region-content-navigation #block-system-user-menu a.close[href='/user/logout']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a[href='/user/logout'].fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a[href='/user/logout'].fancybox-close:before, #block-user-login h3.close:before, #block-user-login .fancybox-skin h3.fancybox-close:before, .fancybox-skin #block-user-login h3.fancybox-close:before, .fancybox-skin .fancybox-close:before {
   content: 'p';
 }
+/* line 40, ../../scss/core/sections/_sprites.scss */
+.icon.star:before, .region-content-navigation #block-system-user-menu a.star[href='/user']:before, .region-content-navigation #block-system-user-menu a.star[href='/messages']:before, .region-content-navigation #block-system-user-menu a.star[href='/user/logout']:before, #block-user-login h3.star:before, .fancybox-skin .star.fancybox-close:before {
+  content: 'v';
+}
 /* line 41, ../../scss/core/sections/_sprites.scss */
-.icon .tooltip, .fancybox-skin .fancybox-close .tooltip {
+.icon.lock:before, .region-content-navigation #block-system-user-menu a.lock[href='/user']:before, .region-content-navigation #block-system-user-menu a.lock[href='/messages']:before, .region-content-navigation #block-system-user-menu a.lock[href='/user/logout']:before, #block-user-login h3:before, .fancybox-skin .lock.fancybox-close:before, .fancybox-skin #block-user-login h3.fancybox-close:before, #block-user-login .fancybox-skin h3.fancybox-close:before {
+  content: 'A';
+}
+/* line 42, ../../scss/core/sections/_sprites.scss */
+.icon.door:before, .region-content-navigation #block-system-user-menu a.door[href='/user']:before, .region-content-navigation #block-system-user-menu a[href='/user'][href='/user/logout']:before, .region-content-navigation #block-system-user-menu a.door[href='/messages']:before, .region-content-navigation #block-system-user-menu a[href='/messages'][href='/user/logout']:before, .region-content-navigation #block-system-user-menu a[href='/user/logout']:before, #block-user-login h3.door:before, .fancybox-skin .door.fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a.fancybox-close[href='/user/logout']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a.fancybox-close[href='/user/logout']:before {
+  content: 'B';
+}
+/* line 43, ../../scss/core/sections/_sprites.scss */
+.icon.gear:before, .region-content-navigation #block-system-user-menu a[href='/user']:before, .region-content-navigation #block-system-user-menu a.gear[href='/messages']:before, .region-content-navigation #block-system-user-menu a[href='/messages'][href='/user']:before, .region-content-navigation #block-system-user-menu a.gear[href='/user/logout']:before, .region-content-navigation #block-system-user-menu a[href='/user/logout'][href='/user']:before, #block-user-login h3.gear:before, .fancybox-skin .gear.fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a.fancybox-close[href='/user']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a.fancybox-close[href='/user']:before {
+  content: 'C';
+}
+/* line 44, ../../scss/core/sections/_sprites.scss */
+.icon.mail:before, .region-content-navigation #block-system-user-menu a.mail[href='/user']:before, .region-content-navigation #block-system-user-menu a[href='/user'][href='/messages']:before, .region-content-navigation #block-system-user-menu a[href='/messages']:before, .region-content-navigation #block-system-user-menu a.mail[href='/user/logout']:before, .region-content-navigation #block-system-user-menu a[href='/user/logout'][href='/messages']:before, #block-user-login h3.mail:before, .fancybox-skin .mail.fancybox-close:before, .fancybox-skin .region-content-navigation #block-system-user-menu a.fancybox-close[href='/messages']:before, .region-content-navigation #block-system-user-menu .fancybox-skin a.fancybox-close[href='/messages']:before {
+  content: 'D';
+}
+/* line 46, ../../scss/core/sections/_sprites.scss */
+.icon .tooltip, .region-content-navigation #block-system-user-menu a[href='/user'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/messages'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/user/logout'] .tooltip, #block-user-login h3 .tooltip, .fancybox-skin .fancybox-close .tooltip {
   display: none;
   position: absolute;
   top: -45px;
@@ -88,8 +108,8 @@
   color: white;
   border-radius: 2px;
 }
-/* line 58, ../../scss/core/sections/_sprites.scss */
-.icon:hover .tooltip, .fancybox-skin .fancybox-close:hover .tooltip {
+/* line 63, ../../scss/core/sections/_sprites.scss */
+.icon:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/user']:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/messages']:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/user/logout']:hover .tooltip, #block-user-login h3:hover .tooltip, .fancybox-skin .fancybox-close:hover .tooltip {
   display: block;
 }
 
@@ -152,7 +172,12 @@ li.expanded > ul {
     margin-top: 0.5rem;
   }
 }
-/* line 73, ../../scss/core/sections/_menus.scss */
+/* line 87, ../../scss/core/sections/_menus.scss */
+.region-content-navigation #block-system-user-menu a:before {
+  margin-right: 0.5em;
+  margin-right: 0.5rem;
+}
+/* line 93, ../../scss/core/sections/_menus.scss */
 .region-content-navigation #block-system-main-menu:before {
   content: url("/sites/all/themes/panda/images/home.png");
   position: absolute;
@@ -162,7 +187,7 @@ li.expanded > ul {
 }
 
 /*RESPONSIVE*/
-/* line 88, ../../scss/core/sections/_menus.scss */
+/* line 108, ../../scss/core/sections/_menus.scss */
 html .navbar {
   width: 100%;
   position: fixed;
@@ -173,17 +198,17 @@ html .navbar {
   display: none;
 }
 @media only screen and (max-width: 1023px) {
-  /* line 88, ../../scss/core/sections/_menus.scss */
+  /* line 108, ../../scss/core/sections/_menus.scss */
   html .navbar {
     display: block;
   }
 }
-/* line 101, ../../scss/core/sections/_menus.scss */
+/* line 121, ../../scss/core/sections/_menus.scss */
 html .navbar .content {
   padding: 0.5rem;
   background: #404040;
 }
-/* line 106, ../../scss/core/sections/_menus.scss */
+/* line 126, ../../scss/core/sections/_menus.scss */
 html .navbar .content .site-name {
   color: #DEDEDE;
   font-size: 1.3em;
@@ -193,18 +218,18 @@ html .navbar .content .site-name {
   margin-right: 0.5em;
   margin-right: 0.5rem;
 }
-/* line 115, ../../scss/core/sections/_menus.scss */
+/* line 135, ../../scss/core/sections/_menus.scss */
 html .navbar .content .site-name:before {
   margin-right: 0.5em;
   margin-right: 0.5rem;
 }
-/* line 123, ../../scss/core/sections/_menus.scss */
+/* line 143, ../../scss/core/sections/_menus.scss */
 html .main-pane-outer {
   position: relative;
   width: 100%;
   overflow: hidden;
 }
-/* line 129, ../../scss/core/sections/_menus.scss */
+/* line 149, ../../scss/core/sections/_menus.scss */
 html .main-pane-inner {
   position: relative;
   width: 100%;
@@ -214,12 +239,12 @@ html .main-pane-inner {
   -o-transition: 200ms ease;
   left: 0;
 }
-/* line 138, ../../scss/core/sections/_menus.scss */
+/* line 158, ../../scss/core/sections/_menus.scss */
 html .region-navigation {
   box-sizing: border-box;
 }
 @media only screen and (max-width: 1023px) {
-  /* line 138, ../../scss/core/sections/_menus.scss */
+  /* line 158, ../../scss/core/sections/_menus.scss */
   html .region-navigation {
     display: none;
     display: block;
@@ -231,7 +256,7 @@ html .region-navigation {
     width: 280px;
     padding: 45px 0 0 0;
   }
-  /* line 157, ../../scss/core/sections/_menus.scss */
+  /* line 177, ../../scss/core/sections/_menus.scss */
   html .region-navigation > .content {
     transition: 200ms ease;
     -webkit-transition: 200ms ease;
@@ -243,25 +268,25 @@ html .region-navigation {
   }
 }
 @media only screen and (max-width: 1023px) {
-  /* line 171, ../../scss/core/sections/_menus.scss */
+  /* line 191, ../../scss/core/sections/_menus.scss */
   html #page-wrapper {
     padding-top: 48px;
   }
-  /* line 176, ../../scss/core/sections/_menus.scss */
+  /* line 196, ../../scss/core/sections/_menus.scss */
   html .js-nav .main-pane-inner {
     left: 280px;
   }
-  /* line 180, ../../scss/core/sections/_menus.scss */
+  /* line 200, ../../scss/core/sections/_menus.scss */
   html .js-nav .region-navigation {
     left: 0;
     z-index: 5;
     background: none;
   }
-  /* line 185, ../../scss/core/sections/_menus.scss */
+  /* line 205, ../../scss/core/sections/_menus.scss */
   html .js-nav .region-navigation > .content {
     left: 0;
   }
-  /* line 190, ../../scss/core/sections/_menus.scss */
+  /* line 210, ../../scss/core/sections/_menus.scss */
   html .js-nav .region-navigation #block-system-main-menu > .content > ul.menu li {
     width: 100%;
   }
@@ -586,7 +611,6 @@ html .region-navigation {
   #block-user-login {
     position: absolute;
     right: 1rem;
-    top: 75px;
   }
 }
 /* line 21, ../../scss/core/sections/_login.scss */
@@ -596,12 +620,12 @@ html .region-navigation {
   margin-right: 0.62rem;
   color: #a60000;
 }
-/* line 30, ../../scss/core/sections/_login.scss */
+/* line 32, ../../scss/core/sections/_login.scss */
 #block-user-login.active form {
   display: block;
 }
 
-/* line 35, ../../scss/core/sections/_login.scss */
+/* line 37, ../../scss/core/sections/_login.scss */
 form#user-login-form {
   display: none;
   margin: 0;
@@ -610,21 +634,21 @@ form#user-login-form {
   border-radius: 2px;
   z-index: 10;
 }
-/* line 43, ../../scss/core/sections/_login.scss */
+/* line 45, ../../scss/core/sections/_login.scss */
 form#user-login-form a {
   color: #DEDEDE;
 }
-/* line 47, ../../scss/core/sections/_login.scss */
+/* line 49, ../../scss/core/sections/_login.scss */
 form#user-login-form .form-item, form#user-login-form .item-list {
   margin: 1em;
   margin: 1rem;
   padding: 0;
 }
-/* line 53, ../../scss/core/sections/_login.scss */
+/* line 55, ../../scss/core/sections/_login.scss */
 form#user-login-form .form-actions {
   margin: 0;
 }
-/* line 56, ../../scss/core/sections/_login.scss */
+/* line 58, ../../scss/core/sections/_login.scss */
 form#user-login-form .form-actions .form-submit {
   margin: 0;
   width: 100%;
@@ -638,18 +662,18 @@ form#user-login-form .form-actions .form-submit {
   cursor: pointer;
   border-radius: 0;
 }
-/* line 71, ../../scss/core/sections/_login.scss */
+/* line 73, ../../scss/core/sections/_login.scss */
 form#user-login-form .text-wrap {
   width: 12em;
   width: 12rem;
   padding: 0em 0.4em;
   padding: 0rem 0.4rem;
 }
-/* line 80, ../../scss/core/sections/_login.scss */
+/* line 82, ../../scss/core/sections/_login.scss */
 form#user-login-form .text-wrap.focused {
   box-shadow: 0 0 2px 1px rgba(166, 0, 0, 0.5);
 }
-/* line 85, ../../scss/core/sections/_login.scss */
+/* line 87, ../../scss/core/sections/_login.scss */
 form#user-login-form ul {
   padding: 0;
   margin: 0;

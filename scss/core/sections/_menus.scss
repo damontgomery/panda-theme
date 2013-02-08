@@ -68,6 +68,26 @@ li.expanded:hover > ul {
       margin-top: 0.5em;
       margin-top: 0.5rem;
     }
+
+    a[href='/user'] {
+      @extend .icon;
+      @extend .gear;
+    }
+
+    a[href='/messages'] {
+      @extend .icon;
+      @extend .mail;
+    }
+
+    a[href='/user/logout'] {
+      @extend .icon;
+      @extend .door;
+    }
+
+    a:before {
+      margin-right: 0.5em;
+      margin-right: 0.5rem;
+    }
   }
 
   #block-system-main-menu:before {

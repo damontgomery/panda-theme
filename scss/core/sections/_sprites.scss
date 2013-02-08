@@ -36,7 +36,12 @@
   &.comment:before  {content: 'i';}
   &.menu:before     {content: 'q';}
   &.hat:before      {content: 'l';}
-  &.close:before      {content: 'p';}
+  &.close:before    {content: 'p';}
+  &.star:before     {content: 'v';}
+  &.lock:before     {content: 'A';}
+  &.door:before     {content: 'B';}
+  &.gear:before     {content: 'C';}
+  &.mail:before     {content: 'D';}
 
   .tooltip {
     display: none;

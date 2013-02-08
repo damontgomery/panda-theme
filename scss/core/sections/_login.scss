@@ -15,7 +15,7 @@
   @media #{$mq-desktop} {
     position: absolute;
     right: 1rem;
-    top: 75px;
+    //top: 75px;
   }
 
   h3 {
@@ -24,6 +24,8 @@
     margin-right: 0.62rem;
     
     @extend .meta-label;
+    @extend .icon;
+    @extend .lock;
     color: $color_pri;
   }
 
