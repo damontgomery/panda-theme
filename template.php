@@ -86,18 +86,18 @@ function panda_preprocess_html(&$variables, $hook){
   }
 }
 
-function panda_preprocess_views_view(&$vars) {
-  if (isset($vars['view']->name)) {
-    $function = 'panda_preprocess_views_view__'.$vars['view']->name;
+function panda_preprocess_views_view(&$variables) {
+  if (isset($variables['view']->name)) {
+    $function = 'panda_preprocess_views_view__'.$variables['view']->name;
     if (function_exists($function)) {
-     $function($vars);
+     $function($variables);
     }
   }
   
   //Add the title as a variable ALWAYS.  Not sure why this was removed even though it was in ALL the templates.  Templates can now choose to display the title or not.
-  $view = $vars['view'];
+  $view = $variables['view'];
   
-  $vars['title'] = filter_xss_admin($view->get_title());
+  $variables['title'] = filter_xss_admin($view->get_title());
 }
 
 /*Remove the automatic addition of width and height attributes for images.  This speeds front-end performance, but breaks responsive designs.*/
@@ -112,7 +112,18 @@ function panda_preprocess_image(&$variables) {
 
 // Use node--view-mode.tpl.php files and node--type--view-mode.tpl.php files
 
-function panda_preprocess_node(&$vars) {
-  $vars['theme_hook_suggestions'][] = 'node__' . $vars['node']->type . '__' . $vars['view_mode'];
-  $vars['theme_hook_suggestions'][] = 'node__' . $vars['view_mode'];
+function panda_preprocess_node(&$variables) {
+  $variables['theme_hook_suggestions'][] = 'node__' . $variables['node']->type . '__' . $variables['view_mode'];
+  $variables['theme_hook_suggestions'][] = 'node__' . $variables['view_mode'];
+
+  // add class variables
+  
+  $variables['classes_array'][] = 'node-' . $variables['node']->nid;
+  $variables['classes_array'][] = 'clearfix';
+  $variables['classes_array'][] = str_replace('_', '-', $variables['view_mode']);
+
+  // create by_line variable that is a replacement for $submitted
+  $variables['by_line'] = '<div class="by-line"><span class="meta-label">by</span> ' . $variables['name'] . ' <span class="meta-label">' . $variables['date'] . '</span></div>';
+
+  
 }

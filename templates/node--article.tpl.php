@@ -1,4 +1,4 @@
-<div class="node-<?php print $node->nid; ?> <?php print $classes; ?> <?php print str_replace('_', '-', $view_mode); ?> clearfix"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
   <?php print render($title_prefix); ?>
   <?php print render($title_suffix); ?>
 
@@ -29,7 +29,7 @@
         <div class="content">
           <div class="section"><?php print render($content['field_section']); ?></div>
           <h1<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1>
-          <div class="by-line"><span class="meta-label">by</span> <?php print $name; ?> <span class="meta-label"><?php print $date; ?></span></div>
+          <?php print $by_line; ?>
           <div class="comment-count">
             <div class="comment icon no-hover"></div>
             <span class="count"><?php print $comment_count; ?></span>

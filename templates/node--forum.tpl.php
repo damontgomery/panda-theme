@@ -1,4 +1,4 @@
-<div class="node-<?php print $node->nid; ?> <?php print $classes; ?> <?php print str_replace('_', '-', $view_mode); ?> clearfix"<?php print $attributes; ?>>
+<div class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
   <?php if ($title && !$page): ?>
@@ -18,9 +18,7 @@
       hide($content['taxonomy_forums']); //temporary
       hide($content['easy_social_1']);
     ?>
-    <div class="user clearfix">
-      <span class="meta-label">by</span> <?php print $name; ?> <span class="meta-label">on <?php print $date; ?></span>
-    </div>
+    <?php print $by_line; ?>
 
     <?php
       print render($content);
