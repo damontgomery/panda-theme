@@ -11,20 +11,13 @@
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-    ?>
     
-    <div class="user clearfix">
-      <span class="meta-label">by</span> <?php print $name; ?> <span class="meta-label">on <?php print $date; ?></span>
-    </div>
+    <?php print render($content['by_line']); ?>
 
     <?php
       print render($content);
     ?>
   </div>
 
-  <?php print render($content['links']); ?>
+  <?php // print render($content['links']); ?>
 </div><!-- /.node -->

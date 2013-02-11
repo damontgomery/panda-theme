@@ -11,14 +11,8 @@
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      hide($content['taxonomy_forums']); //temporary
-      hide($content['easy_social_1']);
-    ?>
-    <?php print $by_line; ?>
+
+    <?php print render($content['by_line']); ?>
 
     <?php
       print render($content);

@@ -123,7 +123,17 @@ function panda_preprocess_node(&$variables) {
   $variables['classes_array'][] = str_replace('_', '-', $variables['view_mode']);
 
   // create by_line variable that is a replacement for $submitted
-  $variables['by_line'] = '<div class="by-line"><span class="meta-label">by</span> ' . $variables['name'] . ' <span class="meta-label">' . $variables['date'] . '</span></div>';
+  $variables['content']['by_line'] = array(
+    '#type' => 'markup',
+    '#markup' => '<span class="meta-label">by</span> ' . $variables['name'] . ' <span class="meta-label">' . date('D M j, Y', $variable['node']->created) . '</span>',
+    '#prefix' => '<div class="by-line">',
+    '#suffix' => '</div>',
+  );
 
+  // hide some variables by default
+  
+  hide($variables['content']['comments']);
+  hide($variables['content']['links']);
+  hide($variables['content']['by_line']);
   
 }

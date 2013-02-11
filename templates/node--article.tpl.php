@@ -7,14 +7,6 @@
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    <?php
-      // We hide the comments and links now so that we can render them later.
-      hide($content['comments']);
-      hide($content['links']);
-      hide($content['taxonomy_forums']); //temporary
-      hide($content['easy_social_1']);
-      hide($content['field_hero']);
-    ?>
 
     <div class="social-links">
       <?php // <div class="social-icon"><span class="meta-label">share</span></div> ?>
@@ -29,7 +21,7 @@
         <div class="content">
           <div class="section"><?php print render($content['field_section']); ?></div>
           <h1<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1>
-          <?php print $by_line; ?>
+          <?php print render($content['by_line']); ?>
           <div class="comment-count">
             <div class="comment icon no-hover"></div>
             <span class="count"><?php print $comment_count; ?></span>
@@ -41,6 +33,4 @@
 
     <?php print render($content['body']); ?>
   </div>
-
-  <?php print render($content['links']); ?>
 </div><!-- /.node -->

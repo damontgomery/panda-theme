@@ -58,7 +58,7 @@
         </div>
       </div>
       <div class="timestamp meta-label">
-        <?php print date('M j, Y H:i a T', $node->created); ?>
+        <?php print date('M j, Y g:i a', $node->created); ?>
       </div>  
     </div>
     
