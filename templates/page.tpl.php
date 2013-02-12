@@ -36,25 +36,19 @@
             
             <?php print render($page['help']); ?>
             <?php print render($page['content_over']); ?>
-            
 
-            <?php // We must explicitly print the main content area ?>
+            <?php if (!empty($messages)): ?>
+              <?php print $messages; ?>
+            <?php endif; ?>
+            <?php if ($tabs = render($tabs)): ?>
+              <div class="tabs"><?php print $tabs; ?></div>
+            <?php endif; ?>
+            <?php if ($action_links): ?>
+              <ul class="action-links"><?php print render($action_links); ?></ul>
+            <?php endif; ?>
 
-            <div class="region-main">
-              <div class="content region-content-main">
-                <?php if (!empty($messages)): ?>
-                  <?php print $messages; ?>
-                <?php endif; ?>
-                <?php if ($tabs = render($tabs)): ?>
-                  <div class="tabs"><?php print $tabs; ?></div>
-                <?php endif; ?>
-                <?php if ($action_links): ?>
-                  <ul class="action-links"><?php print render($action_links); ?></ul>
-                <?php endif; ?>
+            <?php print render($page['content']); ?>
 
-                <?php print render($page['content']); ?>
-              </div>
-            </div>
             <?php print render($page['sidebar_first']); ?>
             <?php print render(comment_node_page_additions($node)); ?>
             <?php print render($page['sidebar_second']); ?>

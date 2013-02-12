@@ -99,12 +99,12 @@ body {
 }
 
 /* line 97, ../../scss/core/structure.scss */
-.region-main {
+.region-content {
   float: left;
   width: 67%;
 }
 /* line 101, ../../scss/core/structure.scss */
-.region-main > .content {
+.region-content > .content {
   margin: 0.82em;
   margin: 0.82rem;
 }
