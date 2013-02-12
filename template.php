@@ -86,6 +86,12 @@ function panda_preprocess_html(&$variables, $hook){
   }
 }
 
+function panda_preprocess_page(&$variables) {
+  // add comments as a variable to page.tpl.php
+  $variables['page']['comments'] = comment_node_page_additions($variables['node']);
+  $variables['page']['test'] = 'hello world';
+}
+
 function panda_preprocess_views_view(&$variables) {
   if (isset($variables['view']->name)) {
     $function = 'panda_preprocess_views_view__'.$variables['view']->name;
