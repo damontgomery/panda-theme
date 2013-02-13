@@ -105,7 +105,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 107, ../../scss/core/style.base.scss */
 h1 {
   font-size: 2em;
-  color: #a60000;
+  color: #bf3043;
   text-transform: capitalize;
   margin: 0 0 0.4em 0;
 }
@@ -138,7 +138,7 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /*LINKS*/
 /* line 147, ../../scss/core/style.base.scss */
 a {
-  color: #a60000;
+  color: #bf3043;
   cursor: pointer;
   text-decoration: none;
   font-famliy: "Raleway", sans-serif;
@@ -146,7 +146,7 @@ a {
 
 /* line 154, ../../scss/core/style.base.scss */
 a:hover {
-  color: #a60000;
+  color: #bf3043;
 }
 
 /*Drupal Links*/
@@ -157,7 +157,7 @@ ul.inline li {
 
 /* line 165, ../../scss/core/style.base.scss */
 li a.active {
-  color: #a60000;
+  color: #bf3043;
 }
 
 /* line 169, ../../scss/core/style.base.scss */
@@ -171,7 +171,7 @@ ul.links a:hover,
 .form-actions input,
 .more-link a {
   color: white;
-  background: #a60000;
+  background: #bf3043;
   font-weight: normal;
   padding: 0.1em 0.8em;
   padding: 0.1rem 0.8rem;
@@ -272,7 +272,7 @@ li.leaf {
 /*Selections*/
 /* line 274, ../../scss/core/style.base.scss */
 ::selection {
-  background-color: #cf5050;
+  background-color: #e57382;
   color: white;
 }
 
@@ -480,14 +480,14 @@ div.text-wrap {
 }
 /* line 460, ../../scss/core/style.base.scss */
 div.text-wrap.focused {
-  box-shadow: 0 0 7px 1px #a60000;
+  box-shadow: 0 0 7px 1px #bf3043;
   border: 1px solid #color_pri;
 }
 
 /* line 469, ../../scss/core/style.base.scss */
 .form-item input.error, .form-item textarea.error, .form-item select.error {
   border: none;
-  color: #a60000;
+  color: #bf3043;
 }
 
 /* line 478, ../../scss/core/style.base.scss */
@@ -624,15 +624,15 @@ form.webform-client-form input#edit-submit.form-submit {
 /* line 593, ../../scss/core/style.base.scss */
 .ez-checked,
 .ez-selected {
-  border: 1px solid #a60000;
-  background: #ba2828;
-  background: -moz-linear-gradient(top, #cf5050 0%, #a60000 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #cf5050), color-stop(100%, #a60000));
-  background: -webkit-linear-gradient(top, #cf5050 0%, #a60000 100%);
-  background: -o-linear-gradient(top, #cf5050 0%, #a60000 100%);
-  background: -ms-linear-gradient(top, #cf5050 0%, #a60000 100%);
-  background: linear-gradient(top, #cf5050 0%, #a60000 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#cf5050', endColorstr='#a60000',GradientType=0 );
+  border: 1px solid #bf3043;
+  background: #d25162;
+  background: -moz-linear-gradient(top, #e57382 0%, #bf3043 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #e57382), color-stop(100%, #bf3043));
+  background: -webkit-linear-gradient(top, #e57382 0%, #bf3043 100%);
+  background: -o-linear-gradient(top, #e57382 0%, #bf3043 100%);
+  background: -ms-linear-gradient(top, #e57382 0%, #bf3043 100%);
+  background: linear-gradient(top, #e57382 0%, #bf3043 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#e57382', endColorstr='#bf3043',GradientType=0 );
 }
 
 /*View Grids*/

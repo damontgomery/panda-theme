@@ -1,9 +1,17 @@
 //Colors File, imported by _base.scss
 
+// Set some HSL defaults for easier changing!
+$hsv_s : 75%;
+$hsv_v : 75%;
+//lighter versions
+$hsv_s_light : 50%;
+$hsv_v_light : 90%;
+
 //Example of a color
 $white : #FFFFFF;
-$color_pri : #A60000;
-$color_pri_light : #CF5050;
+$hsv_pri : 352deg;
+$color_pri : hsv($hsv_pri, $hsv_s, $hsv_v);
+$color_pri_light : hsv($hsv_pri, $hsv_s_light, $hsv_v_light);
 $color_sec : #606060;
 $color_sec_light : #909090;
 $color_hl1 : #909090;

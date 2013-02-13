@@ -441,8 +441,8 @@ html .region-navigation {
 }
 /* line 99, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links .social-icon span {
-  color: #a60000;
-  border-bottom: 1px solid #a60000;
+  color: #bf3043;
+  border-bottom: 1px solid #bf3043;
 }
 /* line 106, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links .easy_social_box {
@@ -642,7 +642,7 @@ html .region-navigation {
   cursor: pointer;
   margin-right: 0.62em;
   margin-right: 0.62rem;
-  color: #a60000;
+  color: #bf3043;
 }
 /* line 32, ../../scss/core/sections/_login.scss */
 #block-user-login.active form {
@@ -695,7 +695,7 @@ form#user-login-form .text-wrap {
 }
 /* line 82, ../../scss/core/sections/_login.scss */
 form#user-login-form .text-wrap.focused {
-  box-shadow: 0 0 2px 1px rgba(166, 0, 0, 0.5);
+  box-shadow: 0 0 2px 1px rgba(191, 48, 67, 0.5);
 }
 /* line 87, ../../scss/core/sections/_login.scss */
 form#user-login-form ul {

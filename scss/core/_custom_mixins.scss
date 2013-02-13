@@ -59,3 +59,22 @@
   @return 0.854 * pow(1.618 , $n);
 }
   
+// HSV (Photoshop type) color function
+
+@function hsv($h,$s,$v) {
+  // h stays the same
+  $oh : $h;
+
+  //convert from 0-100% to 0-1
+  $s : $s / 100%;
+  $v : $v / 100%;
+
+  $ol : ((2 - $s) * $v) / 2;
+
+  $os : $s * $v;
+  @if ($ol <= 0.5) {$os : $os / ($ol * 2);}
+  @else {$os : $os / (2 - ($ol * 2));}
+
+  @return hsl($oh, percentage($os), percentage($ol));
+}
+
