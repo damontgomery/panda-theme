@@ -106,8 +106,8 @@
       })
       .addClass('inline-block');
 
-    // ezMark checkbox / radio
-    $('input[type="checkbox"], input[type="radio"]').ezMark();
+    // pandaMark checkbox / radio
+    $('input[type="checkbox"], input[type="radio"]').pandaMark();
 
     //replace labels with placeholders
     //need to add modernizr check for this

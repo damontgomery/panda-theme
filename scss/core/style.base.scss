@@ -558,37 +558,36 @@ form.webform-client-form input#edit-submit.form-submit /* The submit button */ {
 }
 
 /**
- * ezMark jQuery Plugin
+ * pandaMark jQuery Plugin
  **/
 
-.ez-hide {
+.panda-mark-hide {
   opacity: 0;
   filter: alpha(opacity=0);
+  pointer-events: none; // this prevents the checkbox / radio from being clicked on
+
 }
 
-.ez-checkbox,
-.ez-radio {
+.panda-mark-checkbox,
+.panda-mark-radio {
 	display: inline-block;
-  margin-bottom: -2px; /*for win*/
+  margin-bottom: 0px; /*for win*/
   vertical-align: baseline; /*for osx*/
-  height: 1em;
-  width: 1em;
+  height: 0.8em;
+  width: 0.8em;
   
   border: 1px solid #D0D0D0;
-  //box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
-.ez-checkbox {
+.panda-mark-checkbox {
 }
 
-.ez-radio {
+.panda-mark-radio {
   border-radius: 15px;
 }
 
-.ez-checked,
-.ez-selected {
+.panda-mark-active {
   border: 1px solid $color_pri;
-  //@include panda-linear-gradient($color_pri_light, $color_pri);
   background: $color_pri;
 }
 

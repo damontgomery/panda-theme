@@ -569,91 +569,91 @@ form.webform-client-form input#edit-submit.form-submit {
 }
 
 /**
- * ezMark jQuery Plugin
+ * pandaMark jQuery Plugin
  **/
 /* line 564, ../../scss/core/style.base.scss */
-.ez-hide {
+.panda-mark-hide {
   opacity: 0;
   filter: alpha(opacity=0);
+  pointer-events: none;
 }
 
-/* line 570, ../../scss/core/style.base.scss */
-.ez-checkbox,
-.ez-radio {
+/* line 572, ../../scss/core/style.base.scss */
+.panda-mark-checkbox,
+.panda-mark-radio {
   display: inline-block;
-  margin-bottom: -2px;
+  margin-bottom: 0px;
   /*for win*/
   vertical-align: baseline;
   /*for osx*/
-  height: 1em;
-  width: 1em;
+  height: 0.8em;
+  width: 0.8em;
   border: 1px solid #D0D0D0;
 }
 
-/* line 584, ../../scss/core/style.base.scss */
-.ez-radio {
+/* line 585, ../../scss/core/style.base.scss */
+.panda-mark-radio {
   border-radius: 15px;
 }
 
 /* line 589, ../../scss/core/style.base.scss */
-.ez-checked,
-.ez-selected {
+.panda-mark-active {
   border: 1px solid #bf3043;
   background: #bf3043;
 }
 
 /*View Grids*/
-/* line 597, ../../scss/core/style.base.scss */
+/* line 596, ../../scss/core/style.base.scss */
 .grid-block {
   width: 33%;
   float: left;
 }
-/* line 601, ../../scss/core/style.base.scss */
+/* line 600, ../../scss/core/style.base.scss */
 .grid-block h1, .grid-block h2, .grid-block h3, .grid-block h4, .grid-block h5, .grid-block h6 {
   margin-top: 1em;
 }
-/* line 605, ../../scss/core/style.base.scss */
+/* line 604, ../../scss/core/style.base.scss */
 .grid-block > .content {
   padding: 1.618em;
 }
-/* line 608, ../../scss/core/style.base.scss */
+/* line 607, ../../scss/core/style.base.scss */
 .grid-block > .content img {
   border-radius: 2px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 615, ../../scss/core/style.base.scss */
+/* line 614, ../../scss/core/style.base.scss */
 .grid-block-wide {
   width: 50%;
   float: left;
 }
-/* line 619, ../../scss/core/style.base.scss */
+/* line 618, ../../scss/core/style.base.scss */
 .grid-block-wide > .content {
   padding: 1.618em;
 }
 
-/* line 626, ../../scss/core/style.base.scss */
+/* line 625, ../../scss/core/style.base.scss */
 .views-row {
   margin: 1em 0;
   margin: 1rem 0;
   background-repeat: repeat-x;
   background-position: bottom;
 }
-/* line 646, ../../scss/core/style.base.scss */
+/* line 645, ../../scss/core/style.base.scss */
 .views-row.views-row-last {
   background-image: none;
 }
 
-/* line 652, ../../scss/core/style.base.scss */
+/* line 651, ../../scss/core/style.base.scss */
 .view-header .views-row, .view-footer .views-row {
   padding: 0;
   background: none;
 }
-/* line 657, ../../scss/core/style.base.scss */
+/* line 656, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-odd, .view-footer .views-row.views-row-odd {
   background: none;
 }
-/* line 661, ../../scss/core/style.base.scss */
+/* line 660, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-even, .view-footer .views-row.views-row-even {
   background: none;
 }
@@ -688,7 +688,7 @@ form.webform-client-form input#edit-submit.form-submit {
 }
 
 */
-/* line 699, ../../scss/core/style.base.scss */
+/* line 698, ../../scss/core/style.base.scss */
 .filter-wrapper {
   display: none;
 }

@@ -49,7 +49,7 @@ function panda_preprocess_html(&$variables, $hook){
   drupal_add_js('sites/all/libraries/fancybox/jquery.fancybox.js');
   drupal_add_js('sites/all/libraries/fancybox/helpers/jquery.fancybox-media.js');
   
-  drupal_add_js('sites/all/libraries/ezMark/js/jquery.ezmark.js');
+  drupal_add_js(path_to_theme() . '/js/pandaMark.js');
   
   if (!(in_array('responsive-full-page', $variables['classes_array'], true))){
     //drupal_add_css(path_to_theme() . '/css/core/responsive.css');
