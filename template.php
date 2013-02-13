@@ -147,5 +147,6 @@ function panda_preprocess_node(&$variables) {
 // Remove some module CSS files
 function panda_css_alter(&$css) {
   unset($css[drupal_get_path('module', 'system') . '/system.menus.css']);
+  unset($css[drupal_get_path('module', 'system') . '/system.theme.css']);
   unset($css[drupal_get_path('module', 'user') . '/user.css']);
 }
