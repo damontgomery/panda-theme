@@ -152,7 +152,6 @@ a {
 
 a:hover {
   color: $color_pri;
-  border-bottom: 1px solid $color_pri;
 }
 
 /*Drupal Links*/
@@ -447,7 +446,7 @@ div.text-wrap {
   padding: 0.2rem 0.5rem;
   margin: 0.5rem 0 0.5rem;
   width: auto;
-  max-width: 400px;
+  //max-width: 400px;
 
   -webkit-transition: border linear 0.3s, box-shadow linear 0.3s;
      -moz-transition: border linear 0.3s, box-shadow linear 0.3s;
@@ -487,13 +486,8 @@ input[type=submit] {
   border-radius: none;
 }
 
-label {
-  //display: block;
-  display: none; //using placeholder instead need to add modernizr check for this
-  color: #17396C;
-  font-size: 1.1em;
-  font-weight: normal;
-  margin: 0.5em 0;
+input[type=submit] {
+  cursor: pointer;
 }
 
 input::-webkit-input-placeholder,
@@ -506,13 +500,37 @@ input:-ms-input-placeholder {
   text-transform: uppercase;
 }
 
+div.form-item {
+  position: relative;
+}
+
 div.form-item label /* The label for a form element */ {
-  display: block;
-  display: none; //using placeholder instead need to add modernizr check for this
+  display: inline;
+  //display: none; //using placeholder instead need to add modernizr check for this
   font-weight: normal;
   margin: 1em 0;
   text-transform: capitalize;
-  color: #525252;
+  color: $color_sec;
+
+  &.hide {
+    display: none;
+  }
+
+  &.active {
+    display: block;
+    font-size: 0.8em;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -2rem;
+    left: 0px;
+    padding: 0.1em 1em;
+    padding: 0.1rem 1rem;
+    margin: 0;
+    border-radius: 2px;
+
+    background: $color_sec;
+    color: white;
+  }
 }
 
 .form-item label.option /* The label for a radio button or checkbox */ {

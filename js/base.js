@@ -115,11 +115,36 @@
       var $e = $(this);
 
       var label = $e.html().replace(/<span.*<\/span>/g, '');
+      var $inputField = $('#' + $e.attr('for'));
 
-      $e.next('.text-wrap').children('input')
-        .attr('placeholder', label);
+      $inputField.attr('placeholder', label);
+
+      // hide text input fields when there is a placeholder for them and the fields are empty (the placeholder will be visible)
+
+      if ($inputField.is('input[type=text],textarea, input[type=search], input[type=password], input[type=email]') && ($inputField.val() === '')){
+        $e.addClass('hide');
+      }
 
     });
+
+    // make labels into tooltips
+     
+    /*
+    $('label').each(function(){
+      var $e = $(this);
+
+      // skip over checkbox / radio labels
+      if (($e.parents('.form-type-checkbox').length >= 1) || ($e.parents('.form-type-radio') >= 1)) {return;}
+
+      $('#' + $e.attr('for')).parents('.form-item').hover(function(){
+        $e.addClass('active');
+      },
+      function(){
+        $e.removeClass('active');
+      });
+
+    });
+    */
 
     //user login
     //$('.region-content-navigation #block-user-login h3').click(function(){
