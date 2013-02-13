@@ -71,96 +71,102 @@ body {
 }
 
 /* line 73, ../../scss/core/structure.scss */
+div.tabs {
+  margin: 0.82em;
+  margin: 0.82rem;
+}
+
+/* line 77, ../../scss/core/structure.scss */
 .region-over-main {
   float: left;
   width: 100%;
 }
 
-/* line 78, ../../scss/core/structure.scss */
+/* line 82, ../../scss/core/structure.scss */
 .region-sidebar-first {
   float: right;
   width: 33%;
 }
-/* line 82, ../../scss/core/structure.scss */
+/* line 86, ../../scss/core/structure.scss */
 .region-sidebar-first > .content {
   margin: 0.82em;
   margin: 0.82rem;
 }
 
-/* line 88, ../../scss/core/structure.scss */
+/* line 92, ../../scss/core/structure.scss */
 .region-sidebar-second {
   float: left;
   width: 33%;
 }
-/* line 92, ../../scss/core/structure.scss */
+/* line 96, ../../scss/core/structure.scss */
 .region-sidebar-second > .content {
   margin: 0.82em;
   margin: 0.82rem;
 }
 
-/* line 97, ../../scss/core/structure.scss */
+/* line 101, ../../scss/core/structure.scss */
 .region-content {
   float: left;
   width: 67%;
 }
-/* line 101, ../../scss/core/structure.scss */
+/* line 105, ../../scss/core/structure.scss */
 .region-content > .content {
   margin: 0.82em;
   margin: 0.82rem;
 }
 
-/* line 106, ../../scss/core/structure.scss */
+/* line 110, ../../scss/core/structure.scss */
 .no-sidebars .region-main {
   width: 100%;
 }
 
-/* line 110, ../../scss/core/structure.scss */
+/* line 114, ../../scss/core/structure.scss */
 #block-system-main {
   float: none;
 }
 
-/* line 114, ../../scss/core/structure.scss */
+/* line 118, ../../scss/core/structure.scss */
 .region-content-under {
   clear: left;
 }
-/* line 117, ../../scss/core/structure.scss */
+/* line 121, ../../scss/core/structure.scss */
 .region-content-under .block > .content {
   min-height: 15em;
 }
 
 /* Footer */
-/* line 123, ../../scss/core/structure.scss */
+/* line 127, ../../scss/core/structure.scss */
 #footer-wrapper {
   width: 100%;
 }
 
-/* line 127, ../../scss/core/structure.scss */
+/* line 131, ../../scss/core/structure.scss */
 .region-footer {
   margin: 0 auto;
   /*Used for positioning*/
   max-width: 1350px;
   position: relative;
 }
-/* line 132, ../../scss/core/structure.scss */
+/* line 136, ../../scss/core/structure.scss */
 .responsive-full-page .region-footer {
   width: 1350px;
 }
-/* line 136, ../../scss/core/structure.scss */
+/* line 140, ../../scss/core/structure.scss */
 .region-footer > .content {
   padding: 0 1em;
 }
 
 /*RESPONSIVE*/
-/* line 151, ../../scss/core/structure.scss */
+/* line 155, ../../scss/core/structure.scss */
 .responsive-mobile {
   display: none;
 }
-/* line 154, ../../scss/core/structure.scss */
+/* line 158, ../../scss/core/structure.scss */
 .responsive-mobile .block-menu-block {
   display: none;
 }
 
-/* line 159, ../../scss/core/structure.scss */
+/* line 163, ../../scss/core/structure.scss */
 .mini-menu {
   display: none;
 }

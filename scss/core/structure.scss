@@ -70,6 +70,10 @@ body {
   }
 }
   
+div.tabs {
+  @include panda-content-margin();
+}
+
   .region-over-main {
     float: left;
     width: 100%;

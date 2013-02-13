@@ -11,6 +11,25 @@ li.expanded:hover > ul {
   //display: block;
 }
 
+// primary links
+
+.tabs {
+  ul.primary {
+
+    li {
+      display: inline-block;
+      padding: 0 1rem 0 0;
+    }
+
+    a {
+
+      &.active {
+        border-bottom: 1px solid $color_pri;
+      }
+    }
+  }
+}
+
 .region-content-navigation {
   
   

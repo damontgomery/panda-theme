@@ -269,38 +269,43 @@ li.leaf {
   list-style-image: none;
 }
 
-/*Selections*/
 /* line 274, ../../scss/core/style.base.scss */
+dd {
+  margin: 0;
+}
+
+/*Selections*/
+/* line 280, ../../scss/core/style.base.scss */
 ::selection {
   background-color: #e57382;
   color: white;
 }
 
 /*fancybox overrides*/
-/* line 280, ../../scss/core/style.base.scss */
+/* line 286, ../../scss/core/style.base.scss */
 .fancybox-overlay ul li {
   list-style-image: inherit;
 }
 
 /*TABLES*/
-/* line 286, ../../scss/core/style.base.scss */
+/* line 292, ../../scss/core/style.base.scss */
 table {
   width: 100%;
   border: none;
   border-collapse: collapse;
 }
 
-/* line 292, ../../scss/core/style.base.scss */
+/* line 298, ../../scss/core/style.base.scss */
 table .active {
   /* system theme override */
   background: none;
 }
 
-/* line 296, ../../scss/core/style.base.scss */
+/* line 302, ../../scss/core/style.base.scss */
 thead {
   border: 1px solid #0097DB;
 }
-/* line 299, ../../scss/core/style.base.scss */
+/* line 305, ../../scss/core/style.base.scss */
 thead tr {
   background: #0097db;
   background: -moz-linear-gradient(top, #01b5f4 0%, #0079c2 100%);
@@ -311,7 +316,7 @@ thead tr {
   background: linear-gradient(top, #01b5f4 0%, #0079c2 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#01b5f4', endColorstr='#0079c2',GradientType=0 );
 }
-/* line 302, ../../scss/core/style.base.scss */
+/* line 308, ../../scss/core/style.base.scss */
 thead tr th {
   padding: 0.38198em 0.8em;
   border-top: none;
@@ -322,19 +327,19 @@ thead tr th {
   text-decoration: none;
   color: #FFFFFF;
 }
-/* line 314, ../../scss/core/style.base.scss */
+/* line 320, ../../scss/core/style.base.scss */
 thead tr th:first-child {
   border-left: none;
 }
-/* line 318, ../../scss/core/style.base.scss */
+/* line 324, ../../scss/core/style.base.scss */
 thead tr th:last-child {
   border-right: none;
 }
-/* line 322, ../../scss/core/style.base.scss */
+/* line 328, ../../scss/core/style.base.scss */
 thead tr th img {
   margin: 0 0 0 10px;
 }
-/* line 330, ../../scss/core/style.base.scss */
+/* line 336, ../../scss/core/style.base.scss */
 thead tr th.active a,
 thead tr th a,
 thead tr th a:hover,
@@ -344,13 +349,13 @@ thead tr th a:visited {
   font-weight: normal;
 }
 
-/* line 339, ../../scss/core/style.base.scss */
+/* line 345, ../../scss/core/style.base.scss */
 tbody {
   background: #fff;
   color: #606060;
 }
 
-/* line 347, ../../scss/core/style.base.scss */
+/* line 353, ../../scss/core/style.base.scss */
 tr,
 tr.even,
 tr.odd {
@@ -359,43 +364,43 @@ tr.odd {
   border: none;
 }
 
-/* line 353, ../../scss/core/style.base.scss */
+/* line 359, ../../scss/core/style.base.scss */
 tbody tr:last-child {
   background: none;
 }
 
-/* line 357, ../../scss/core/style.base.scss */
+/* line 363, ../../scss/core/style.base.scss */
 td {
   padding: 0.61805em 1em;
   border: none;
 }
 
-/* line 363, ../../scss/core/style.base.scss */
+/* line 369, ../../scss/core/style.base.scss */
 td.active {
   color: #0193D5;
 }
 
 /*FORMS*/
-/* line 369, ../../scss/core/style.base.scss */
+/* line 375, ../../scss/core/style.base.scss */
 .element-invisible {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 374, ../../scss/core/style.base.scss */
+/* line 380, ../../scss/core/style.base.scss */
 form {
   margin: 1em 0;
   padding: 0;
 }
 
-/* line 379, ../../scss/core/style.base.scss */
+/* line 385, ../../scss/core/style.base.scss */
 fieldset {
   padding: 1em;
   border: 1px solid #A0A0A0;
   border-radius: 2px;
   margin: 1em 0;
 }
-/* line 385, ../../scss/core/style.base.scss */
+/* line 391, ../../scss/core/style.base.scss */
 fieldset.collapsed {
   border: none;
 }
@@ -406,7 +411,7 @@ fieldset.collapsed {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-/* line 400, ../../scss/core/style.base.scss */
+/* line 406, ../../scss/core/style.base.scss */
 button,
 input,
 select,
@@ -426,7 +431,7 @@ textarea {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 413, ../../scss/core/style.base.scss */
+/* line 419, ../../scss/core/style.base.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -440,7 +445,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 426, ../../scss/core/style.base.scss */
+/* line 432, ../../scss/core/style.base.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -450,7 +455,7 @@ input[type="search"]::-webkit-search-decoration {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 435, ../../scss/core/style.base.scss */
+/* line 441, ../../scss/core/style.base.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -458,12 +463,12 @@ textarea {
   /* 2 */
 }
 
-/* line 441, ../../scss/core/style.base.scss */
+/* line 447, ../../scss/core/style.base.scss */
 .resizable-textarea .grippie {
   display: none;
 }
 
-/* line 445, ../../scss/core/style.base.scss */
+/* line 451, ../../scss/core/style.base.scss */
 div.text-wrap {
   background: #FFFFFF;
   border: 1px solid #D0D0D0;
@@ -478,19 +483,19 @@ div.text-wrap {
   -o-transition: border linear 0.3s, box-shadow linear 0.3s;
   transition: border linear 0.3s, box-shadow linear 0.3s;
 }
-/* line 460, ../../scss/core/style.base.scss */
+/* line 466, ../../scss/core/style.base.scss */
 div.text-wrap.focused {
   box-shadow: 0 0 7px 1px #bf3043;
   border: 1px solid #color_pri;
 }
 
-/* line 469, ../../scss/core/style.base.scss */
+/* line 475, ../../scss/core/style.base.scss */
 .form-item input.error, .form-item textarea.error, .form-item select.error {
   border: none;
   color: #bf3043;
 }
 
-/* line 478, ../../scss/core/style.base.scss */
+/* line 484, ../../scss/core/style.base.scss */
 input[type=text],
 input[type=search],
 textarea,
@@ -505,13 +510,13 @@ input[type=email] {
   line-height: 1.618em;
 }
 
-/* line 490, ../../scss/core/style.base.scss */
+/* line 496, ../../scss/core/style.base.scss */
 input[type=submit] {
   -webkit-appearance: none;
   border-radius: none;
 }
 
-/* line 495, ../../scss/core/style.base.scss */
+/* line 501, ../../scss/core/style.base.scss */
 label {
   display: none;
   color: #17396C;
@@ -520,7 +525,7 @@ label {
   margin: 0.5em 0;
 }
 
-/* line 507, ../../scss/core/style.base.scss */
+/* line 513, ../../scss/core/style.base.scss */
 input::-webkit-input-placeholder,
 input:-moz-placeholder,
 input::-moz-placeholder,
@@ -531,7 +536,7 @@ input:-ms-input-placeholder {
   text-transform: uppercase;
 }
 
-/* line 514, ../../scss/core/style.base.scss */
+/* line 520, ../../scss/core/style.base.scss */
 div.form-item label {
   display: block;
   display: none;
@@ -541,53 +546,53 @@ div.form-item label {
   color: #525252;
 }
 
-/* line 523, ../../scss/core/style.base.scss */
+/* line 529, ../../scss/core/style.base.scss */
 .form-item label.option {
   display: inline;
   font-weight: normal;
   color: #525252;
 }
 
-/* line 529, ../../scss/core/style.base.scss */
+/* line 535, ../../scss/core/style.base.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 2.7em;
 }
 
-/* line 533, ../../scss/core/style.base.scss */
+/* line 539, ../../scss/core/style.base.scss */
 div.form-item input.form-radio {
   vertical-align: top;
 }
 
-/* line 537, ../../scss/core/style.base.scss */
+/* line 543, ../../scss/core/style.base.scss */
 .form-required {
   color: #909090;
 }
 
-/* line 541, ../../scss/core/style.base.scss */
+/* line 547, ../../scss/core/style.base.scss */
 .form-item .description {
   font-size: 0.85em;
   color: #999;
 }
 
-/* line 547, ../../scss/core/style.base.scss */
+/* line 553, ../../scss/core/style.base.scss */
 .form-checkboxes .form-item,
 .form-radios .form-item {
   margin: 0;
   /* Drupal core uses "0.4em 0" */
 }
 
-/* line 551, ../../scss/core/style.base.scss */
+/* line 557, ../../scss/core/style.base.scss */
 form.webform-client-form input#edit-submit.form-submit {
   border-radius: 4px;
 }
 
-/* line 556, ../../scss/core/style.base.scss */
+/* line 562, ../../scss/core/style.base.scss */
 .container-inline div,
 .container-inline label {
   display: inline;
 }
 
-/* line 560, ../../scss/core/style.base.scss */
+/* line 566, ../../scss/core/style.base.scss */
 .label-inline {
   font-weight: bold;
   display: inline;
@@ -596,13 +601,13 @@ form.webform-client-form input#edit-submit.form-submit {
 /**
  * ezMark jQuery Plugin
  **/
-/* line 569, ../../scss/core/style.base.scss */
+/* line 575, ../../scss/core/style.base.scss */
 .ez-hide {
   opacity: 0;
   filter: alpha(opacity=0);
 }
 
-/* line 574, ../../scss/core/style.base.scss */
+/* line 580, ../../scss/core/style.base.scss */
 .ez-checkbox,
 .ez-radio {
   display: inline-block;
@@ -616,12 +621,12 @@ form.webform-client-form input#edit-submit.form-submit {
   box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2) inset;
 }
 
-/* line 588, ../../scss/core/style.base.scss */
+/* line 594, ../../scss/core/style.base.scss */
 .ez-radio {
   border-radius: 15px;
 }
 
-/* line 593, ../../scss/core/style.base.scss */
+/* line 599, ../../scss/core/style.base.scss */
 .ez-checked,
 .ez-selected {
   border: 1px solid #bf3043;
@@ -636,57 +641,57 @@ form.webform-client-form input#edit-submit.form-submit {
 }
 
 /*View Grids*/
-/* line 600, ../../scss/core/style.base.scss */
+/* line 606, ../../scss/core/style.base.scss */
 .grid-block {
   width: 33%;
   float: left;
 }
-/* line 604, ../../scss/core/style.base.scss */
+/* line 610, ../../scss/core/style.base.scss */
 .grid-block h1, .grid-block h2, .grid-block h3, .grid-block h4, .grid-block h5, .grid-block h6 {
   margin-top: 1em;
 }
-/* line 608, ../../scss/core/style.base.scss */
+/* line 614, ../../scss/core/style.base.scss */
 .grid-block > .content {
   padding: 1.618em;
 }
-/* line 611, ../../scss/core/style.base.scss */
+/* line 617, ../../scss/core/style.base.scss */
 .grid-block > .content img {
   border-radius: 2px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 618, ../../scss/core/style.base.scss */
+/* line 624, ../../scss/core/style.base.scss */
 .grid-block-wide {
   width: 50%;
   float: left;
 }
-/* line 622, ../../scss/core/style.base.scss */
+/* line 628, ../../scss/core/style.base.scss */
 .grid-block-wide > .content {
   padding: 1.618em;
 }
 
-/* line 629, ../../scss/core/style.base.scss */
+/* line 635, ../../scss/core/style.base.scss */
 .views-row {
   margin: 1em 0;
   margin: 1rem 0;
   background-repeat: repeat-x;
   background-position: bottom;
 }
-/* line 649, ../../scss/core/style.base.scss */
+/* line 655, ../../scss/core/style.base.scss */
 .views-row.views-row-last {
   background-image: none;
 }
 
-/* line 655, ../../scss/core/style.base.scss */
+/* line 661, ../../scss/core/style.base.scss */
 .view-header .views-row, .view-footer .views-row {
   padding: 0;
   background: none;
 }
-/* line 660, ../../scss/core/style.base.scss */
+/* line 666, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-odd, .view-footer .views-row.views-row-odd {
   background: none;
 }
-/* line 664, ../../scss/core/style.base.scss */
+/* line 670, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-even, .view-footer .views-row.views-row-even {
   background: none;
 }
@@ -721,7 +726,7 @@ form.webform-client-form input#edit-submit.form-submit {
 }
 
 */
-/* line 702, ../../scss/core/style.base.scss */
+/* line 708, ../../scss/core/style.base.scss */
 .filter-wrapper {
   display: none;
 }

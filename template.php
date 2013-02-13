@@ -143,3 +143,9 @@ function panda_preprocess_node(&$variables) {
   hide($variables['content']['by_line']);
   
 }
+
+// Remove some module CSS files
+function panda_css_alter(&$css) {
+  unset($css[drupal_get_path('module', 'system') . '/system.menus.css']);
+  unset($css[drupal_get_path('module', 'user') . '/user.css']);
+}

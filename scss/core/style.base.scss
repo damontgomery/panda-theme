@@ -269,6 +269,12 @@ li.leaf /* Drupal override */ {
   list-style-image: none;
 }
 
+//webkit and other normalize
+
+dd {
+  margin: 0;
+}
+
 /*Selections*/
 
 ::selection {
