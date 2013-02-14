@@ -150,3 +150,28 @@ function panda_css_alter(&$css) {
   unset($css[drupal_get_path('module', 'system') . '/system.theme.css']);
   unset($css[drupal_get_path('module', 'user') . '/user.css']);
 }
+
+// Add classes, etc to the comment's links. This provides tooltips and icons in place of text links / buttons
+
+function panda_preprocess_comment(&$variables) {
+
+  if (isset($variables['content']['links']['comment']['#links']['comment-delete'])){
+    $variables['content']['links']['comment']['#links']['comment-delete']['attributes']['class'] = array('icon', 'delete');
+    $variables['content']['links']['comment']['#links']['comment-delete']['title'] = '<span class="tooltip">delete</span>';
+  }
+
+  if (isset($variables['content']['links']['comment']['#links']['comment-edit'])){
+    $variables['content']['links']['comment']['#links']['comment-edit']['attributes']['class'] = array('icon', 'edit');
+    $variables['content']['links']['comment']['#links']['comment-edit']['title'] = '<span class="tooltip">edit</span>';
+  }
+
+  if (isset($variables['content']['links']['comment']['#links']['comment-reply'])){
+    $variables['content']['links']['comment']['#links']['comment-reply']['attributes']['class'] = array('icon', 'quote');
+    $variables['content']['links']['comment']['#links']['comment-reply']['title'] = '<span class="tooltip">quote</span>';
+  }
+
+  if (isset($variables['content']['links']['flag']['#links']['flag-report_comment'])){
+    $variables['content']['links']['flag']['#links']['flag-report_comment']['attributes']['class'] = array('icon', 'flag');
+    $variables['content']['links']['flag']['#links']['flag-report_comment']['title'] = '<span class="tooltip">report</span>';
+  }
+}

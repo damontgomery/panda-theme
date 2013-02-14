@@ -97,7 +97,15 @@
 .icon.more:before, .region-content-navigation #block-system-user-menu a.more[href='/user']:before, .region-content-navigation #block-system-user-menu a.more[href='/messages']:before, .region-content-navigation #block-system-user-menu a.more[href='/user/logout']:before, #block-user-login h3.more:before, .fancybox-skin .more.fancybox-close:before {
   content: 'E';
 }
+/* line 50, ../../scss/core/sections/_sprites.scss */
+.icon.edit:before, .region-content-navigation #block-system-user-menu a.edit[href='/user']:before, .region-content-navigation #block-system-user-menu a.edit[href='/messages']:before, .region-content-navigation #block-system-user-menu a.edit[href='/user/logout']:before, #block-user-login h3.edit:before, .fancybox-skin .edit.fancybox-close:before {
+  content: 's';
+}
 /* line 51, ../../scss/core/sections/_sprites.scss */
+.icon.delete:before, .region-content-navigation #block-system-user-menu a.delete[href='/user']:before, .region-content-navigation #block-system-user-menu a.delete[href='/messages']:before, .region-content-navigation #block-system-user-menu a.delete[href='/user/logout']:before, #block-user-login h3.delete:before, .fancybox-skin .delete.fancybox-close:before {
+  content: 'p';
+}
+/* line 53, ../../scss/core/sections/_sprites.scss */
 .icon .tooltip, .region-content-navigation #block-system-user-menu a[href='/user'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/messages'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/user/logout'] .tooltip, #block-user-login h3 .tooltip, .fancybox-skin .fancybox-close .tooltip {
   display: none;
   position: absolute;
@@ -109,10 +117,11 @@
   font-size: 0.9em;
   font-size: 0.9rem;
   background: #404040;
+  text-transform: capitalize;
   color: white;
   border-radius: 2px;
 }
-/* line 68, ../../scss/core/sections/_sprites.scss */
+/* line 72, ../../scss/core/sections/_sprites.scss */
 .icon:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/user']:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/messages']:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/user/logout']:hover .tooltip, #block-user-login h3:hover .tooltip, .fancybox-skin .fancybox-close:hover .tooltip {
   display: block;
 }
@@ -613,15 +622,19 @@ html .region-navigation {
   margin-right: 1em;
   margin-right: 1rem;
 }
-/* line 113, ../../scss/core/sections/_comments.scss */
-.comment .timestamp {
+/* line 111, ../../scss/core/sections/_comments.scss */
+.comment .comment-footer .comment-actions li {
   display: inline;
 }
 /* line 117, ../../scss/core/sections/_comments.scss */
+.comment .timestamp {
+  display: inline;
+}
+/* line 121, ../../scss/core/sections/_comments.scss */
 .comment .body {
   margin-left: 115px;
 }
-/* line 121, ../../scss/core/sections/_comments.scss */
+/* line 125, ../../scss/core/sections/_comments.scss */
 .comment .body .main,
 .comment .body .signature {
   margin: 1em;

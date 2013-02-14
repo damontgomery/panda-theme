@@ -47,6 +47,8 @@
   &.gear:before     {content: 'C';}
   &.mail:before     {content: 'D';}
   &.more:before     {content: 'E';}
+  &.edit:before     {content: 's';}
+  &.delete:before   {content: 'p';}
 
   .tooltip {
     display: none;
@@ -61,6 +63,8 @@
     font-size: 0.9em;
     font-size: 0.9rem;
     background: #404040;
+    text-transform: capitalize;
+
     color: white;
     border-radius: 2px;
   }

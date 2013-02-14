@@ -44,18 +44,9 @@
 
     <div class="comment-footer">
       <div class="comment-actions">
-        <div class="icon quote">
-          <div class="tooltip">Quote</div>
-        </div>
-        <div class="icon flag">
-          <div class="tooltip">Flag</div>
-        </div>
-        <div class="icon reply">
-          <div class="tooltip">Reply</div>
-        </div>
-        <div class="icon bookmark">
-          <div class="tooltip">Bookmark</div>
-        </div>
+
+        <?php print render($content['links']) ?>      
+
       </div>
       <div class="timestamp meta-label">
         <?php print date('M j, Y g:i a', $node->created); ?>
@@ -64,6 +55,5 @@
     
     
   </div>
-  <?php //print render($content['links']) ?>
   
 </div>

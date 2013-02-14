@@ -54,12 +54,23 @@ p {
 }
 
 blockquote {
-  margin: 1em * panda-gn(1);
-  padding: 1em * panda-gn(1);
+  margin: 0.5em;
+  margin: 0.5rem;
+  padding: 1em;
+  padding: 1rem;
+
   border: 1px solid #DEDEDE;
   
   p {
     margin-top: 0;
+  }
+
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  span.author {
+    color : $color_pri;
   }
 }
 
@@ -169,8 +180,6 @@ li a.active {
   display: none;
 }
 
-ul.links a,
-ul.links a:hover,
 .form-actions input,
 .more-link a,
 .region-content input[type=submit] {
@@ -190,10 +199,6 @@ ul.links a:hover,
 
   border: none;
   border-radius: 2px;
-  
-  .comments & {
-    font-size: 0.62em;
-  }
 }
 
 // EXT Links override
