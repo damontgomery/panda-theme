@@ -18,11 +18,11 @@
   -o-transition: 500ms ease;
 }
 /* line 24, ../../scss/core/sections/_sprites.scss */
-.icon:hover:before, .region-content-navigation #block-system-user-menu a[href='/user']:hover:before, .region-content-navigation #block-system-user-menu a[href='/messages']:hover:before, .region-content-navigation #block-system-user-menu a[href='/user/logout']:hover:before, #block-user-login h3:hover:before, .fancybox-skin .fancybox-close:hover:before {
+.icon.active:before, .region-content-navigation #block-system-user-menu a.active[href='/user']:before, .region-content-navigation #block-system-user-menu a.active[href='/messages']:before, .region-content-navigation #block-system-user-menu a.active[href='/user/logout']:before, #block-user-login h3.active:before, .fancybox-skin .active.fancybox-close:before {
   color: #606060;
 }
 /* line 28, ../../scss/core/sections/_sprites.scss */
-.icon.no-hover:hover:before, .region-content-navigation #block-system-user-menu a.no-hover[href='/user']:hover:before, .region-content-navigation #block-system-user-menu a.no-hover[href='/messages']:hover:before, .region-content-navigation #block-system-user-menu a.no-hover[href='/user/logout']:hover:before, #block-user-login h3.no-hover:hover:before, .fancybox-skin .no-hover.fancybox-close:hover:before {
+.icon.no-hover.active:before, .region-content-navigation #block-system-user-menu a.no-hover.active[href='/user']:before, .region-content-navigation #block-system-user-menu a.no-hover.active[href='/messages']:before, .region-content-navigation #block-system-user-menu a.no-hover.active[href='/user/logout']:before, #block-user-login h3.no-hover.active:before, .fancybox-skin .no-hover.active.fancybox-close:before {
   color: #dedede;
 }
 /* line 32, ../../scss/core/sections/_sprites.scss */
@@ -109,20 +109,36 @@
 .icon .tooltip, .region-content-navigation #block-system-user-menu a[href='/user'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/messages'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/user/logout'] .tooltip, #block-user-login h3 .tooltip, .fancybox-skin .fancybox-close .tooltip {
   display: none;
   position: absolute;
-  top: -45px;
+  top: -44px;
   left: -10px;
   z-index: 10;
-  padding: 0em 0.5em;
-  padding: 0rem 0.5rem;
+  padding: 0.1em 0.5em;
+  padding: 0.1rem 0.5rem;
   font-size: 0.9em;
   font-size: 0.9rem;
   background: #404040;
   text-transform: capitalize;
   color: white;
   border-radius: 2px;
+  transition: 500ms ease;
+  -webkit-transition: 500ms ease;
+  -moz-transition: 500ms ease;
+  -o-transition: 500ms ease;
 }
-/* line 72, ../../scss/core/sections/_sprites.scss */
-.icon:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/user']:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/messages']:hover .tooltip, .region-content-navigation #block-system-user-menu a[href='/user/logout']:hover .tooltip, #block-user-login h3:hover .tooltip, .fancybox-skin .fancybox-close:hover .tooltip {
+/* line 73, ../../scss/core/sections/_sprites.scss */
+.icon .tooltip:before, .region-content-navigation #block-system-user-menu a[href='/user'] .tooltip:before, .region-content-navigation #block-system-user-menu a[href='/messages'] .tooltip:before, .region-content-navigation #block-system-user-menu a[href='/user/logout'] .tooltip:before, #block-user-login h3 .tooltip:before, .fancybox-skin .fancybox-close .tooltip:before {
+  position: absolute;
+  content: '';
+  width: 0px;
+  height: 0px;
+  bottom: -12px;
+  left: 15px;
+  border-style: solid;
+  border-color: #404040 transparent transparent transparent;
+  border-width: 6px;
+}
+/* line 86, ../../scss/core/sections/_sprites.scss */
+.icon.active .tooltip, .region-content-navigation #block-system-user-menu a.active[href='/user'] .tooltip, .region-content-navigation #block-system-user-menu a.active[href='/messages'] .tooltip, .region-content-navigation #block-system-user-menu a.active[href='/user/logout'] .tooltip, #block-user-login h3.active .tooltip, .fancybox-skin .active.fancybox-close .tooltip {
   display: block;
 }
 

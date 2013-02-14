@@ -43,6 +43,17 @@ function panda_preprocess_html(&$variables, $hook){
       'every_page' => TRUE,
       'weight' => -24,
     ));
+
+  //dev version of modernizr
+  drupal_add_js('http://modernizr.com/downloads/modernizr-latest.js',
+    array(
+      'type' => 'external',
+      'scope' => 'header',
+      'group' => JS_LIBRARY,
+      'preprocess' => FALSE,
+      'every_page' => TRUE,
+      'weight' => -30,
+    ));
   
   //added here for load order
   drupal_add_css('sites/all/libraries/fancybox/jquery.fancybox.css');

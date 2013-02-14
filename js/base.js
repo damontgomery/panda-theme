@@ -4,6 +4,36 @@
   // on document ready
   $(document).ready(function(){
 
+    // this function replaces the CSS Hover with an 'active' class that is toggled.
+    // for non-touch devices, this emulates the hover state
+    // for touch devices, this emulates iOS emulation of hover. This means a single tap triggers the 'active' state, and a second tap triggers a 'click'.
+    // on touch devices, clicking off of the target does NOT remove the 'active' state, only clicking on another member of the group
+    $.fn.touchHover = function () {
+      elements = this;
+
+      // touch devices
+      $(elements, 'html.touch').click(function(e){
+        if (!($(this).hasClass('active'))) {
+          e.preventDefault();
+          $(elements).removeClass('active');
+          $(this).addClass('active');
+        }
+        else {
+          $(this).removeClass('active');
+        }
+      });
+
+      // non touch devices
+      $(elements, 'html:not(touch)').hover(
+        function(){
+          $(this).addClass('active');
+        },function(){
+          $(this).removeClass('active');
+      });
+
+      return elements;
+    }
+
     // check version of ie 
     // ----------------------------------------------------------
     // A short snippet for detecting versions of IE in JavaScript
@@ -157,9 +187,8 @@
       $('.easy_social_box').responsive_toggle();
     });
 
-
-    //Temporary styling things for comps
-    
+    // create a touch / hover action using the custom function
+    $('.icon').touchHover();
 
 
   });//end of document ready
