@@ -63,7 +63,7 @@ blockquote p:last-child {
 }
 /* line 72, ../../scss/core/style.base.scss */
 blockquote span.author {
-  color: #bf3043;
+  color: #bf394b;
 }
 
 /* line 77, ../../scss/core/style.base.scss */
@@ -115,7 +115,7 @@ h1, h2, h3, h4, h5, h6 {
 /* line 118, ../../scss/core/style.base.scss */
 h1 {
   font-size: 2em;
-  color: #bf3043;
+  color: #bf394b;
   text-transform: capitalize;
   margin: 0 0 0.4em 0;
 }
@@ -148,14 +148,14 @@ h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
 /*LINKS*/
 /* line 158, ../../scss/core/style.base.scss */
 a {
-  color: #bf3043;
+  color: #bf394b;
   cursor: pointer;
   text-decoration: none;
 }
 
 /* line 164, ../../scss/core/style.base.scss */
 a:hover {
-  color: #bf3043;
+  color: #bf394b;
 }
 
 /*Drupal Links*/
@@ -166,7 +166,7 @@ ul.inline li {
 
 /* line 175, ../../scss/core/style.base.scss */
 li a.active {
-  color: #bf3043;
+  color: #bf394b;
 }
 
 /* line 179, ../../scss/core/style.base.scss */
@@ -179,7 +179,7 @@ li a.active {
 .more-link a,
 .region-content input[type=submit] {
   color: white;
-  background: #bf3043;
+  background: #bf394b;
   display: inline-block;
   padding: 0.5em 1em;
   margin: 0.5em 0.5em 0 0;
@@ -454,13 +454,13 @@ div.text-wrap {
 }
 /* line 462, ../../scss/core/style.base.scss */
 div.text-wrap.focused {
-  box-shadow: 0 0 2px 1px #bf3043;
+  box-shadow: 0 0 2px 1px #bf394b;
 }
 
 /* line 468, ../../scss/core/style.base.scss */
 .form-item input.error, .form-item textarea.error, .form-item select.error {
   border: none;
-  color: #bf3043;
+  color: #bf394b;
 }
 
 /* line 477, ../../scss/core/style.base.scss */
@@ -615,8 +615,8 @@ form.webform-client-form input#edit-submit.form-submit {
 
 /* line 612, ../../scss/core/style.base.scss */
 .panda-mark-active {
-  border: 1px solid #bf3043;
-  background: #bf3043;
+  border: 1px solid #bf394b;
+  background: #bf394b;
 }
 
 /*View Grids*/

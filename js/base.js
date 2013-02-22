@@ -191,6 +191,14 @@
     $('.icon').touchHover();
 
 
+    //temporarily set featured block colors randomly
+    var color_highlights = ['red', 'blue', 'green', 'orange', 'purple', 'brown'];
+
+    $('.featured-block').each(function(){
+      $(this).addClass('color-' + color_highlights[Math.floor(Math.random() * color_highlights.length)]);
+    });
+
+
   });//end of document ready
 
 })(jQuery_current);

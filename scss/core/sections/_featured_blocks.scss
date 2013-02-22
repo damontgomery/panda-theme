@@ -28,52 +28,78 @@
   .section {
     position: absolute;
     top: 0;
-    left: 0;
-    padding: 0 0.5em;
-    padding: 0 0.5rem;
-    border-radius: 0 0 2px 0;
+    right: 0;
+    padding: 0.2em 0.7em;
+    border-radius: 0 0 0 2px;
     background-color: white;
-    color: $color_sec;
-
+    
+    font-size: 1em;
+    font-size: 1rem;
   }
+
+  &.color-red .section {color: $color_accent_red;}
+  &.color-blue .section {color: $color_accent_blue;}
+  &.color-yellow .section {color: $color_accent_yellow;}
+  &.color-green .section {color: $color_accent_green;}
+  &.color-orange .section {color: $color_accent_orange;}
+  &.color-purple .section {color: $color_accent_purple;}
+  &.color-brown .section {color: $color_accent_brown;}
 
   .hero {
 
   }
 
+  .field-name-field-hero {
+    img {
+      border-radius: 2px 2px 0 0;
+    }
+  }
+
   .title-block {
     width: 100%;
-    position: absolute;
-    bottom: 0;
 
     & > .content {
       padding: 1em;
       padding: 1rem;
-      background-color: rgba(0,0,0,0.5);
+
+      border-radius: 0 0 2px 2px;
 
       h3 {
-        color: white;
+        color: #FFFFFF;
         margin: 0;
         font-size: 1em;
         font-size: 1rem;
+
+        a,
+        a:hover {
+          color: #FFFFFF;
+        }
       }
     }
   }
 
+  &.color-red .title-block > .content {background-color: $color_accent_red;}
+  &.color-blue .title-block > .content {background-color: $color_accent_blue;}
+  &.color-yellow .title-block > .content {background-color: $color_accent_yellow;}
+  &.color-green .title-block > .content {background-color: $color_accent_green;}
+  &.color-orange .title-block > .content {background-color: $color_accent_orange;}
+  &.color-purple .title-block > .content {background-color: $color_accent_purple;}
+  &.color-brown .title-block > .content {background-color: $color_accent_brown;}
+
   .comment-count {
-    position: absolute;
-    top: 0.5em;
-    top: 0.5rem;
-    right: 0.5em;
-    right: 0.5rem;
+    float: right;
 
     .count {
-      color: $color_light_gray;
+      color: #FFFFFF;
       font-size: 1.2em;
       font-size: 1.2rem;
       line-height: 1em;
       line-height: 1rem;
       vertical-align: top;
+    }
+
+    .comment.icon:before {
+      color: #FFFFFF;
     }
   }
 

@@ -14,13 +14,13 @@
 
       <div class="section"><?php print 'Article'; //render($content['field_section']); ?></div>
 
-      <div class="comment-count">
+      
+      <div class="title-block">
+        <div class="content">
+          <div class="comment-count">
             <div class="comment icon no-hover"></div>
             <span class="count"><?php print $comment_count; ?></span>
           </div>
-
-      <div class="title-block">
-        <div class="content">
           <h3<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h3>
         </div>
       </div>

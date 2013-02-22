@@ -156,7 +156,7 @@ li.expanded > ul {
 }
 /* line 26, ../../scss/core/sections/_menus.scss */
 .tabs ul.primary a.active {
-  border-bottom: 1px solid #bf3043;
+  border-bottom: 1px solid #bf394b;
 }
 
 /* line 36, ../../scss/core/sections/_menus.scss */
@@ -342,48 +342,111 @@ html .region-navigation {
 .featured-block .section {
   position: absolute;
   top: 0;
-  left: 0;
-  padding: 0 0.5em;
-  padding: 0 0.5rem;
-  border-radius: 0 0 2px 0;
+  right: 0;
+  padding: 0.2em 0.7em;
+  border-radius: 0 0 0 2px;
   background-color: white;
-  color: #606060;
+  font-size: 1em;
+  font-size: 1rem;
+}
+/* line 40, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-red .section {
+  color: #bf3950;
+}
+/* line 41, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-blue .section {
+  color: #397cbf;
+}
+/* line 42, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-yellow .section {
+  color: #e5e600;
+}
+/* line 43, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-green .section {
+  color: #39bf5b;
 }
 /* line 44, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-orange .section {
+  color: #e6ac00;
+}
+/* line 45, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-purple .section {
+  color: #7c39bf;
+}
+/* line 46, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-brown .section {
+  color: #bf7139;
+}
+/* line 53, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block .field-name-field-hero img {
+  border-radius: 2px 2px 0 0;
+}
+/* line 58, ../../scss/core/sections/_featured_blocks.scss */
 .featured-block .title-block {
   width: 100%;
-  position: absolute;
-  bottom: 0;
 }
-/* line 49, ../../scss/core/sections/_featured_blocks.scss */
+/* line 61, ../../scss/core/sections/_featured_blocks.scss */
 .featured-block .title-block > .content {
   padding: 1em;
   padding: 1rem;
-  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 0 0 2px 2px;
 }
-/* line 54, ../../scss/core/sections/_featured_blocks.scss */
+/* line 67, ../../scss/core/sections/_featured_blocks.scss */
 .featured-block .title-block > .content h3 {
-  color: white;
+  color: #FFFFFF;
   margin: 0;
   font-size: 1em;
   font-size: 1rem;
 }
-/* line 63, ../../scss/core/sections/_featured_blocks.scss */
-.featured-block .comment-count {
-  position: absolute;
-  top: 0.5em;
-  top: 0.5rem;
-  right: 0.5em;
-  right: 0.5rem;
+/* line 74, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block .title-block > .content h3 a,
+.featured-block .title-block > .content h3 a:hover {
+  color: #FFFFFF;
 }
-/* line 70, ../../scss/core/sections/_featured_blocks.scss */
+/* line 81, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-red .title-block > .content {
+  background-color: #bf3950;
+}
+/* line 82, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-blue .title-block > .content {
+  background-color: #397cbf;
+}
+/* line 83, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-yellow .title-block > .content {
+  background-color: #e5e600;
+}
+/* line 84, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-green .title-block > .content {
+  background-color: #39bf5b;
+}
+/* line 85, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-orange .title-block > .content {
+  background-color: #e6ac00;
+}
+/* line 86, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-purple .title-block > .content {
+  background-color: #7c39bf;
+}
+/* line 87, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block.color-brown .title-block > .content {
+  background-color: #bf7139;
+}
+/* line 89, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block .comment-count {
+  float: right;
+}
+/* line 92, ../../scss/core/sections/_featured_blocks.scss */
 .featured-block .comment-count .count {
-  color: #dedede;
+  color: #FFFFFF;
   font-size: 1.2em;
   font-size: 1.2rem;
   line-height: 1em;
   line-height: 1rem;
   vertical-align: top;
+}
+/* line 101, ../../scss/core/sections/_featured_blocks.scss */
+.featured-block .comment-count .comment.icon:before, .featured-block .comment-count .region-content-navigation #block-system-user-menu a.comment[href='/user']:before, .region-content-navigation #block-system-user-menu .featured-block .comment-count a.comment[href='/user']:before, .featured-block .comment-count .region-content-navigation #block-system-user-menu a.comment[href='/messages']:before, .region-content-navigation #block-system-user-menu .featured-block .comment-count a.comment[href='/messages']:before, .featured-block .comment-count .region-content-navigation #block-system-user-menu a.comment[href='/user/logout']:before, .region-content-navigation #block-system-user-menu .featured-block .comment-count a.comment[href='/user/logout']:before, .featured-block .comment-count #block-user-login h3.comment:before, #block-user-login .featured-block .comment-count h3.comment:before, .featured-block .comment-count .fancybox-skin .comment.fancybox-close:before, .fancybox-skin .featured-block .comment-count .comment.fancybox-close:before {
+  color: #FFFFFF;
 }
 
 /* line 5, ../../scss/core/sections/_articles.scss */
@@ -476,8 +539,8 @@ html .region-navigation {
 }
 /* line 99, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links .social-icon span {
-  color: #bf3043;
-  border-bottom: 1px solid #bf3043;
+  color: #bf394b;
+  border-bottom: 1px solid #bf394b;
 }
 /* line 106, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links .easy_social_box {
@@ -681,7 +744,7 @@ html .region-navigation {
   cursor: pointer;
   margin-right: 0.62em;
   margin-right: 0.62rem;
-  color: #bf3043;
+  color: #bf394b;
 }
 /* line 32, ../../scss/core/sections/_login.scss */
 #block-user-login.active form {
@@ -734,7 +797,7 @@ form#user-login-form .text-wrap {
 }
 /* line 82, ../../scss/core/sections/_login.scss */
 form#user-login-form .text-wrap.focused {
-  box-shadow: 0 0 2px 1px rgba(191, 48, 67, 0.5);
+  box-shadow: 0 0 2px 1px rgba(191, 57, 75, 0.5);
 }
 /* line 87, ../../scss/core/sections/_login.scss */
 form#user-login-form ul {
