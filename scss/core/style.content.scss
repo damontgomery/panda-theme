@@ -42,6 +42,32 @@
   }
 }
 
+/*Pager*/
+
+ul.pager {
+  text-align: center;
+
+  li {
+    display: inline;
+    padding: 0.2em 0.5em;
+
+    .icon:before {
+      font-size: 1.5em;
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: $color_sec;
+    }
+  }
+
+  .pager-current {
+    background-color: $color_sec;
+    border-radius: 2px;
+    color: #FFFFFF;
+  }
+}
+
 /*Modals*/
 .fancybox-overlay {
   background: url('/sites/all/themes/panda/images/tissue-paper-50.png'), rgba($color_light_gray,0.7);

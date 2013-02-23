@@ -187,9 +187,15 @@
       $('.easy_social_box').responsive_toggle();
     });
 
+    // pager hack since the pager template functions are a challenge!
+    
+    $('.pager .pager-first > a').html('<div class="icon first"></div>');
+    $('.pager .pager-previous > a').html('<div class="icon prev"></div>');
+    $('.pager .pager-next > a').html('<div class="icon next"></div>');
+    $('.pager .pager-last > a').html('<div class="icon last"></div>');
+
     // create a touch / hover action using the custom function
     $('.icon').touchHover();
-
 
     //temporarily set featured block colors randomly
     var color_highlights = ['red', 'blue', 'green', 'orange', 'purple', 'brown'];
@@ -197,7 +203,6 @@
     $('.featured-block').each(function(){
       $(this).addClass('color-' + color_highlights[Math.floor(Math.random() * color_highlights.length)]);
     });
-
 
   });//end of document ready
 

@@ -49,6 +49,10 @@
   &.more:before     {content: 'E';}
   &.edit:before     {content: 's';}
   &.delete:before   {content: 'p';}
+  &.first:before    {content: 'P';}
+  &.prev:before     {content: 'Q';}
+  &.next:before     {content: 'S';}
+  &.last:before     {content: 'R';}
 
   .tooltip {
     display: none;

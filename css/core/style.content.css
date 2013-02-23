@@ -105,7 +105,23 @@
 .icon.delete:before, .region-content-navigation #block-system-user-menu a.delete[href='/user']:before, .region-content-navigation #block-system-user-menu a.delete[href='/messages']:before, .region-content-navigation #block-system-user-menu a.delete[href='/user/logout']:before, #block-user-login h3.delete:before, .fancybox-skin .delete.fancybox-close:before {
   content: 'p';
 }
+/* line 52, ../../scss/core/sections/_sprites.scss */
+.icon.first:before, .region-content-navigation #block-system-user-menu a.first[href='/user']:before, .region-content-navigation #block-system-user-menu a.first[href='/messages']:before, .region-content-navigation #block-system-user-menu a.first[href='/user/logout']:before, #block-user-login h3.first:before, .fancybox-skin .first.fancybox-close:before {
+  content: 'P';
+}
 /* line 53, ../../scss/core/sections/_sprites.scss */
+.icon.prev:before, .region-content-navigation #block-system-user-menu a.prev[href='/user']:before, .region-content-navigation #block-system-user-menu a.prev[href='/messages']:before, .region-content-navigation #block-system-user-menu a.prev[href='/user/logout']:before, #block-user-login h3.prev:before, .fancybox-skin .prev.fancybox-close:before {
+  content: 'Q';
+}
+/* line 54, ../../scss/core/sections/_sprites.scss */
+.icon.next:before, .region-content-navigation #block-system-user-menu a.next[href='/user']:before, .region-content-navigation #block-system-user-menu a.next[href='/messages']:before, .region-content-navigation #block-system-user-menu a.next[href='/user/logout']:before, #block-user-login h3.next:before, .fancybox-skin .next.fancybox-close:before {
+  content: 'S';
+}
+/* line 55, ../../scss/core/sections/_sprites.scss */
+.icon.last:before, .region-content-navigation #block-system-user-menu a.last[href='/user']:before, .region-content-navigation #block-system-user-menu a.last[href='/messages']:before, .region-content-navigation #block-system-user-menu a.last[href='/user/logout']:before, #block-user-login h3.last:before, .fancybox-skin .last.fancybox-close:before {
+  content: 'R';
+}
+/* line 57, ../../scss/core/sections/_sprites.scss */
 .icon .tooltip, .region-content-navigation #block-system-user-menu a[href='/user'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/messages'] .tooltip, .region-content-navigation #block-system-user-menu a[href='/user/logout'] .tooltip, #block-user-login h3 .tooltip, .fancybox-skin .fancybox-close .tooltip {
   display: none;
   position: absolute;
@@ -125,7 +141,7 @@
   -moz-transition: 500ms ease;
   -o-transition: 500ms ease;
 }
-/* line 73, ../../scss/core/sections/_sprites.scss */
+/* line 77, ../../scss/core/sections/_sprites.scss */
 .icon .tooltip:before, .region-content-navigation #block-system-user-menu a[href='/user'] .tooltip:before, .region-content-navigation #block-system-user-menu a[href='/messages'] .tooltip:before, .region-content-navigation #block-system-user-menu a[href='/user/logout'] .tooltip:before, #block-user-login h3 .tooltip:before, .fancybox-skin .fancybox-close .tooltip:before {
   position: absolute;
   content: '';
@@ -137,7 +153,7 @@
   border-color: #404040 transparent transparent transparent;
   border-width: 6px;
 }
-/* line 86, ../../scss/core/sections/_sprites.scss */
+/* line 90, ../../scss/core/sections/_sprites.scss */
 .icon.active .tooltip, .region-content-navigation #block-system-user-menu a.active[href='/user'] .tooltip, .region-content-navigation #block-system-user-menu a.active[href='/messages'] .tooltip, .region-content-navigation #block-system-user-menu a.active[href='/user/logout'] .tooltip, #block-user-login h3.active .tooltip, .fancybox-skin .active.fancybox-close .tooltip {
   display: block;
 }
@@ -832,53 +848,79 @@ form#user-login-form ul {
   display: none;
 }
 
+/*Pager*/
+/* line 47, ../../scss/core/style.content.scss */
+ul.pager {
+  text-align: center;
+}
+/* line 50, ../../scss/core/style.content.scss */
+ul.pager li {
+  display: inline;
+  padding: 0.2em 0.5em;
+}
+/* line 54, ../../scss/core/style.content.scss */
+ul.pager li .icon:before, ul.pager li .region-content-navigation #block-system-user-menu a[href='/user']:before, .region-content-navigation #block-system-user-menu ul.pager li a[href='/user']:before, ul.pager li .region-content-navigation #block-system-user-menu a[href='/messages']:before, .region-content-navigation #block-system-user-menu ul.pager li a[href='/messages']:before, ul.pager li .region-content-navigation #block-system-user-menu a[href='/user/logout']:before, .region-content-navigation #block-system-user-menu ul.pager li a[href='/user/logout']:before, ul.pager li #block-user-login h3:before, #block-user-login ul.pager li h3:before, ul.pager li .fancybox-skin .fancybox-close:before, .fancybox-skin ul.pager li .fancybox-close:before {
+  font-size: 1.5em;
+  font-size: 1.5rem;
+}
+/* line 59, ../../scss/core/style.content.scss */
+ul.pager li a {
+  color: #606060;
+}
+/* line 64, ../../scss/core/style.content.scss */
+ul.pager .pager-current {
+  background-color: #606060;
+  border-radius: 2px;
+  color: #FFFFFF;
+}
+
 /*Modals*/
-/* line 46, ../../scss/core/style.content.scss */
+/* line 72, ../../scss/core/style.content.scss */
 .fancybox-overlay {
   background: url("/sites/all/themes/panda/images/tissue-paper-50.png"), rgba(222, 222, 222, 0.7);
 }
 
-/* line 50, ../../scss/core/style.content.scss */
+/* line 76, ../../scss/core/style.content.scss */
 .fancybox-skin {
   border-radius: 0;
   margin: 2em 0 3.5em 0;
   background: #303030;
 }
-/* line 56, ../../scss/core/style.content.scss */
+/* line 82, ../../scss/core/style.content.scss */
 .fancybox-opened .fancybox-skin {
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
-/* line 60, ../../scss/core/style.content.scss */
+/* line 86, ../../scss/core/style.content.scss */
 .fancybox-skin .fancybox-title {
   font-family: "Raleway", sans-serif;
   font-size: 1.618em;
   color: #DEDEDE;
 }
-/* line 70, ../../scss/core/style.content.scss */
+/* line 96, ../../scss/core/style.content.scss */
 .fancybox-skin .fancybox-nav {
   width: 55px;
 }
-/* line 80, ../../scss/core/style.content.scss */
+/* line 106, ../../scss/core/style.content.scss */
 .fancybox-skin .fancybox-close {
   top: 2px;
   right: -8px;
   background: none;
   position: absolute;
 }
-/* line 90, ../../scss/core/style.content.scss */
+/* line 116, ../../scss/core/style.content.scss */
 .fancybox-skin .fancybox-nav span {
   visibility: visible;
 }
-/* line 94, ../../scss/core/style.content.scss */
+/* line 120, ../../scss/core/style.content.scss */
 .fancybox-skin .fancybox-prev {
   left: -65px;
 }
-/* line 98, ../../scss/core/style.content.scss */
+/* line 124, ../../scss/core/style.content.scss */
 .fancybox-skin .fancybox-next {
   right: -65px;
 }
 
-/* line 104, ../../scss/core/style.content.scss */
+/* line 130, ../../scss/core/style.content.scss */
 .modal-popup-wrapper {
   display: none;
 }
