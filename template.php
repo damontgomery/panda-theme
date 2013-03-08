@@ -99,8 +99,9 @@ function panda_preprocess_html(&$variables, $hook){
 
 function panda_preprocess_page(&$variables) {
   // add comments as a variable to page.tpl.php
-  $variables['page']['comments'] = comment_node_page_additions($variables['node']);
-  $variables['page']['test'] = 'hello world';
+  if (isset($variables['node'])) {
+    $variables['page']['comments'] = comment_node_page_additions($variables['node']);
+  }
 }
 
 function panda_preprocess_views_view(&$variables) {
@@ -142,7 +143,7 @@ function panda_preprocess_node(&$variables) {
   // create by_line variable that is a replacement for $submitted
   $variables['content']['by_line'] = array(
     '#type' => 'markup',
-    '#markup' => '<span class="meta-label">by</span> ' . $variables['name'] . ' <span class="meta-label">' . date('D M j, Y', $variable['node']->created) . '</span>',
+    '#markup' => '<span class="meta-label">by</span> ' . $variables['name'] . ' <span class="meta-label">' . date('D M j, Y', $variables['node']->created) . '</span>',
     '#prefix' => '<div class="by-line">',
     '#suffix' => '</div>',
   );
