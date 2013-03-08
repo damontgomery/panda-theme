@@ -2,6 +2,9 @@
 //       Articles!
 // ==================
 .region-content .node-article {
+
+  line-height: 1.5;
+
   .hero {
     margin: 0 0 1em 0;
     margin: 0 0 1rem 0;
@@ -22,6 +25,7 @@
       left: 0;
 
       & > .content {
+        line-height: 1.5;
         padding: 0.5em 0.5em 0.5em 0;
         padding: 0.5rem 0.5rem 0.5rem 0;
         background: #FFFFFF;
@@ -36,7 +40,9 @@
 
       h1 {
         margin: 0;
-        color: $color_sec;
+        //color: $color_sec;
+        color: #303030;
+        font-weight: 600;
       }
 
       .by-line {

@@ -26,10 +26,11 @@
 
 body {
   font-family: $body_font;
-  font-size: 90%; /*Set base font size.  Use em units after this.*/
+  font-size: 100%; /*Set base font size.  Use em units after this.*/
   //line-height: 1 * panda-gn(1); /*using ratios means they are relative to each element, not to the parent value*/
   line-height: 1.8;
   margin: 0;
+  color: #505050;
 }
 
 p {
@@ -112,6 +113,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: $header_font;
   line-height: panda-gn-med(1);
   clear: left;
+  letter-spacing: 1px;
 }
 
 

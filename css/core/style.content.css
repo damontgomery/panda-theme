@@ -465,7 +465,11 @@ html .region-navigation {
   color: #FFFFFF;
 }
 
-/* line 5, ../../scss/core/sections/_articles.scss */
+/* line 4, ../../scss/core/sections/_articles.scss */
+.region-content .node-article {
+  line-height: 1.5;
+}
+/* line 8, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero {
   margin: 0 0 1em 0;
   margin: 0 0 1rem 0;
@@ -473,11 +477,11 @@ html .region-navigation {
   min-height: 7em;
   min-height: 7rem;
 }
-/* line 12, ../../scss/core/sections/_articles.scss */
+/* line 15, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero img {
   border-radius: 2px;
 }
-/* line 16, ../../scss/core/sections/_articles.scss */
+/* line 19, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .title-block {
   width: 66%;
   position: absolute;
@@ -485,30 +489,32 @@ html .region-navigation {
   bottom: -1rem;
   left: 0;
 }
-/* line 24, ../../scss/core/sections/_articles.scss */
+/* line 27, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .title-block > .content {
+  line-height: 1.5;
   padding: 0.5em 0.5em 0.5em 0;
   padding: 0.5rem 0.5rem 0.5rem 0;
   background: #FFFFFF;
   border-radius: 0 2px 0 0;
 }
-/* line 31, ../../scss/core/sections/_articles.scss */
+/* line 35, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .title-block .section {
   font-size: 1.2em;
   font-size: 1.2rem;
   color: #909090;
 }
-/* line 37, ../../scss/core/sections/_articles.scss */
+/* line 41, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .title-block h1 {
   margin: 0;
-  color: #606060;
+  color: #303030;
+  font-weight: 600;
 }
-/* line 42, ../../scss/core/sections/_articles.scss */
+/* line 48, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .title-block .by-line {
   font-size: 1.2em;
   font-size: 1.2rem;
 }
-/* line 47, ../../scss/core/sections/_articles.scss */
+/* line 53, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .title-block .comment-count {
   position: absolute;
   top: 0.5em;
@@ -516,7 +522,7 @@ html .region-navigation {
   right: 0.5em;
   right: 0.5rem;
 }
-/* line 54, ../../scss/core/sections/_articles.scss */
+/* line 60, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .title-block .comment-count .count {
   color: #909090;
   font-size: 1.2em;
@@ -525,7 +531,7 @@ html .region-navigation {
   line-height: 1rem;
   vertical-align: top;
 }
-/* line 70, ../../scss/core/sections/_articles.scss */
+/* line 76, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .caption {
   padding: 0.2em 0.5em;
   padding: 0.2rem 0.5rem;
@@ -541,11 +547,11 @@ html .region-navigation {
   position: absolute;
   max-width: 66%;
 }
-/* line 88, ../../scss/core/sections/_articles.scss */
+/* line 94, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links {
   position: relative;
 }
-/* line 92, ../../scss/core/sections/_articles.scss */
+/* line 98, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links .social-icon {
   position: absolute;
   top: -1.62em;
@@ -553,12 +559,12 @@ html .region-navigation {
   right: 0;
   cursor: pointer;
 }
-/* line 99, ../../scss/core/sections/_articles.scss */
+/* line 105, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links .social-icon span {
   color: #bf394b;
   border-bottom: 1px solid #bf394b;
 }
-/* line 106, ../../scss/core/sections/_articles.scss */
+/* line 112, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links .easy_social_box {
   display: none;
   height: auto;
@@ -572,19 +578,19 @@ html .region-navigation {
   padding: 1rem;
   background: rgba(96, 96, 96, 0.7);
 }
-/* line 122, ../../scss/core/sections/_articles.scss */
+/* line 128, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links .easy_social_box .easy_social-widget {
   clear: right;
   float: right;
   margin-bottom: 1em;
   margin-bottom: 1rem;
 }
-/* line 128, ../../scss/core/sections/_articles.scss */
+/* line 134, ../../scss/core/sections/_articles.scss */
 .region-content .node-article .hero .social-links .easy_social_box .easy_social-widget:last-child {
   margin-bottom: 0;
 }
 
-/* line 141, ../../scss/core/sections/_articles.scss */
+/* line 147, ../../scss/core/sections/_articles.scss */
 .node.teaser .field-name-body p:last-child:after {
   font-family: PandaIcons;
   font-size: 2.5em;
@@ -602,7 +608,7 @@ html .region-navigation {
   margin-left: 0.3em;
 }
 
-/* line 148, ../../scss/core/sections/_articles.scss */
+/* line 154, ../../scss/core/sections/_articles.scss */
 .node.full .field-name-body p:last-child:after {
   font-family: PandaIcons;
   font-size: 2.5em;
