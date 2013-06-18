@@ -166,7 +166,45 @@ function panda_css_alter(&$css) {
 // Add classes, etc to the comment's links. This provides tooltips and icons in place of text links / buttons
 
 function panda_preprocess_comment(&$variables) {
+  // We need to get all the user data in the comment.
+  $author_entity = user_load($variables['elements']['#comment']->uid);
+  
+  // set up some view options to hide labels!
+  $field_view_options = array(
+    'label' => 'hidden',
+  );
 
+  // Get the rank
+  $rank->items = field_get_items('user', $author_entity, 'field_rank');
+  $rank->term = taxonomy_term_load($rank->items[0]['tid']);
+  $variables['author_details']['rank']['#markup'] = $rank->term->name;
+
+  // Get the Custom Rank
+  $rank_custom = field_view_field('user', $author_entity, 'field_custom_rank', $field_view_options);
+
+  // If a custom rank is set, swap it out!
+  if ($rank_custom[0]['#markup'] !== ''){
+    $variables['author_details']['rank']['#markup'] = $rank_custom[0]['#markup'];
+  }
+
+  // Get the location
+  $variables['author_details']['location'] = field_view_field('user', $author_entity, 'field_location', $field_view_options);
+
+  // Get the Gaming Services (I think we need to rework this to avoid field collections)
+  //$game_ids->one = field_view_value('user', $author_entity, 'field_gaming_services', 0, $field_view_options);
+  //$game_ids->items = field_get_items('user', $author_entity, 'field_gaming_services');
+
+  // Get the donation level (we need to upload some doner images to see what to pull from here.)
+  $donate_level->items = field_get_items('user', $author_entity, 'field_donator_level');
+  if ($donate_level->items){
+    $donate_level->term = taxonomy_term_load($donate_level->items[0]['tid']);
+  
+    if (count($donate_level->term->field_image) > 0){
+      $variables['author_details']['donate_level'] = field_view_field('taxonomy_term', $donate_level->term, 'field_image', $field_view_options);
+    }
+  }
+
+  // Add classes to all the actions!
   if (isset($variables['content']['links']['comment']['#links']['comment-delete'])){
     $variables['content']['links']['comment']['#links']['comment-delete']['attributes']['class'] = array('icon', 'delete');
     $variables['content']['links']['comment']['#links']['comment-delete']['title'] = '<span class="tooltip">delete</span>';

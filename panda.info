@@ -64,14 +64,14 @@ stylesheets-conditional[lte IE 7][all][]  = css/ie7.css
 ; add a line line to this file, and then add the new $page['REGION'] variable
 ; to your page.tpl.php template.
 
-regions[page_top]       = Page Top
-regions[help]           = Help
-regions[header]         = Header
-regions[navigation]     = Navigation bar
-regions[navigation_pane] = Navigation Pane
-regions[content_over]   = Content (Over)
-regions[content]        = Content (Main)
-regions[content_under]  = Content (Under)
-regions[sidebar_first]      = Left Rail
-regions[sidebar_second]     = Right Rail
-regions[footer]         = Footer
+regions[page_top]           = Page Top
+regions[help]               = Help
+regions[header]             = Header
+regions[navigation]         = Navigation bar
+regions[navigation_pane]    = Navigation Pane
+regions[content_over]       = Content (Over)
+regions[content]            = Content (Main)
+regions[content_under]      = Content (Under)
+regions[sidebar_first]      = First Sidebar
+regions[sidebar_second]     = Second Sidebar
+regions[footer]             = Footer

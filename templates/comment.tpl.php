@@ -9,10 +9,10 @@
         <?php print str_replace(' (not verified)', '', $author); ?>
       </div>
       <div class="user-tag">
-        Bamboo Igloo
+        <?php print render($author_details['rank']); ?>
       </div>
       <div class="user-donate">
-        <img src="/sites/all/themes/panda/images/cruiseship.gif" alt="">
+        <?php print render($author_details['donate_level']); ?>
       </div>
 
       <?php print $picture ?>
@@ -26,7 +26,7 @@
         </div>
 
         <div class="user-location">
-          Neither here nor there in a world of wonder
+          <?php print render($author_details['location']); ?>
         </div>
 
       </div>
