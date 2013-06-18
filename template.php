@@ -165,82 +165,93 @@ function panda_css_alter(&$css) {
 // Add classes, etc to the comment's links. This provides tooltips and icons in place of text links / buttons
 
 function panda_preprocess_comment(&$variables) {
-  //format the date
-  $variables['created'] = date('M j, Y g:i a', $variables['elements']['#comment']->created);
+  $comment_uid = $variables['elements']['#comment']->uid;
 
-  // We need to get all the user data in the comment.
-  $author_entity = user_load($variables['elements']['#comment']->uid);
-  
-  // set up some view options to hide labels!
-  $field_view_options = array(
-    'label' => 'hidden',
-  );
-
-  // Get the rank
-  $rank->items = field_get_items('user', $author_entity, 'field_rank');
-  $rank->term = taxonomy_term_load($rank->items[0]['tid']);
-  $variables['author_details']['rank']['#markup'] = $rank->term->name;
-
-  // Get the Custom Rank
-  $rank_custom = field_view_field('user', $author_entity, 'field_custom_rank', $field_view_options);
-
-  // If a custom rank is set, swap it out!
-  if ($rank_custom[0]['#markup'] !== ''){
-    $variables['author_details']['rank']['#markup'] = $rank_custom[0]['#markup'];
+  //caching the detailed author information to reduce processing time to about 33% of previous load
+  if($cached_author_data = cache_get('panda_comment_author_data_' . $comment_uid, 'cache'))  {
+    $variables['author_details'] = $cached_author_data->data;
   }
+  else {
+    // We need to get all the user data in the comment.
+    $author_entity = user_load($comment_uid);
+    
+    // set up some view options to hide labels!
+    $field_view_options = array(
+      'label' => 'hidden',
+    );
 
-  // Get the location
-  $variables['author_details']['location'] = field_view_field('user', $author_entity, 'field_location', $field_view_options);
+    // Get the rank
+    $rank->items = field_get_items('user', $author_entity, 'field_rank');
+    $rank->term = taxonomy_term_load($rank->items[0]['tid']);
+    $variables['author_details']['rank']['#markup'] = $rank->term->name;
 
-  // Get the Gaming Services
-  $game_ids->items = field_get_items('user', $author_entity, 'field_gaming_services');
+    // Get the Custom Rank
+    $rank_custom = field_view_field('user', $author_entity, 'field_custom_rank', $field_view_options);
 
-  if ($game_ids->items) {
-
-    $game_id_entity_ids = array();
-    $variables['author_details']['game_ids'] = array();
-
-    foreach($game_ids->items as $game_id) {
-      $game_id_entity_ids[] = $game_id['value'];
+    // If a custom rank is set, swap it out!
+    if ($rank_custom) {
+      $variables['author_details']['rank']['#markup'] = $rank_custom[0]['#markup'];
     }
 
-    $game_ids->field_collections = entity_load('field_collection_item', $game_id_entity_ids);
-    
-    foreach($game_ids->field_collections as $fc) {
-      $id->name = field_view_field('field_collection_item', $fc, 'field_game_service_identity');
-      $id->name = $id->name[0]['#markup'];
+    // Get the location
+    $variables['author_details']['location'] = field_view_field('user', $author_entity, 'field_location', $field_view_options);
 
-      $id->service->items = field_get_items('field_collection_item', $fc, 'field_game_service');
-      $id->service->term = taxonomy_term_load($id->service->items[0]['tid']);
+    // Get the Gaming Services
+    $game_ids->items = field_get_items('user', $author_entity, 'field_gaming_services');
 
-      switch ($id->service->term->name) {
-        case 'PSN':
-          $id->service->name = 'psn';
-          break;
-        case 'Steam':
-          $id->service->name = 'steam';
-          break;
-        case 'Wii':
-          $id->service->name = 'wii';
-          break;
-        case 'XBox Live':
-          $id->service->name = 'xbox';
-          break;
+    if ($game_ids->items) {
+
+      $game_id_entity_ids = array();
+      $variables['author_details']['game_ids'] = array();
+
+      foreach($game_ids->items as $game_id) {
+        $game_id_entity_ids[] = $game_id['value'];
       }
 
-      $variables['author_details']['game_ids'][$id->service->name]['#markup'] = '<div class="' . $id->service->name . ' icon"><div class="tooltip">' . $id->name . '</div></div>';
-    }
-  }
+      $game_ids->field_collections = entity_load('field_collection_item', $game_id_entity_ids);
+      
+      foreach($game_ids->field_collections as $fc) {
+        $id->name = field_view_field('field_collection_item', $fc, 'field_game_service_identity');
+        $id->name = $id->name[0]['#markup'];
 
-  // Get the donation level (we need to upload some doner images to see what to pull from here.)
-  $donate_level->items = field_get_items('user', $author_entity, 'field_donator_level');
-  if ($donate_level->items){
-    $donate_level->term = taxonomy_term_load($donate_level->items[0]['tid']);
-  
-    if (count($donate_level->term->field_image) > 0){
-      $variables['author_details']['donate_level'] = field_view_field('taxonomy_term', $donate_level->term, 'field_image', $field_view_options);
+        $id->service->items = field_get_items('field_collection_item', $fc, 'field_game_service');
+        $id->service->term = taxonomy_term_load($id->service->items[0]['tid']);
+
+        switch ($id->service->term->name) {
+          case 'PSN':
+            $id->service->name = 'psn';
+            break;
+          case 'Steam':
+            $id->service->name = 'steam';
+            break;
+          case 'Wii':
+            $id->service->name = 'wii';
+            break;
+          case 'XBox Live':
+            $id->service->name = 'xbox';
+            break;
+        }
+
+        $variables['author_details']['game_ids'][$id->service->name]['#markup'] = '<div class="' . $id->service->name . ' icon"><div class="tooltip">' . $id->name . '</div></div>';
+      }
     }
+
+    // Get the donation level (we need to upload some doner images to see what to pull from here.)
+    $donate_level->items = field_get_items('user', $author_entity, 'field_donator_level');
+    if ($donate_level->items){
+      $donate_level->term = taxonomy_term_load($donate_level->items[0]['tid']);
+    
+      if (count($donate_level->term->field_image) > 0){
+        $variables['author_details']['donate_level'] = field_view_field('taxonomy_term', $donate_level->term, 'field_image', $field_view_options);
+      }
+    }
+
+    // Set the cache
+    cache_set('panda_comment_author_data_' . $comment_uid, $variables['author_details'], 'cache', CACHE_TEMPORARY);
   }
+  
+  //format the date
+  $variables['created'] = date('M j, Y g:i a', $variables['elements']['#comment']->created);
 
   // Add classes to all the actions!
   if (isset($variables['content']['links']['comment']['#links']['comment-delete'])){
