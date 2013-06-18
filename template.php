@@ -190,9 +190,45 @@ function panda_preprocess_comment(&$variables) {
   // Get the location
   $variables['author_details']['location'] = field_view_field('user', $author_entity, 'field_location', $field_view_options);
 
-  // Get the Gaming Services (I think we need to rework this to avoid field collections)
-  //$game_ids->one = field_view_value('user', $author_entity, 'field_gaming_services', 0, $field_view_options);
-  //$game_ids->items = field_get_items('user', $author_entity, 'field_gaming_services');
+  // Get the Gaming Services
+  $game_ids->items = field_get_items('user', $author_entity, 'field_gaming_services');
+
+  if ($game_ids->items) {
+
+    $game_id_entity_ids = array();
+    $variables['author_details']['game_ids'] = array();
+
+    foreach($game_ids->items as $game_id) {
+      $game_id_entity_ids[] = $game_id['value'];
+    }
+
+    $game_ids->field_collections = entity_load('field_collection_item', $game_id_entity_ids);
+    
+    foreach($game_ids->field_collections as $fc) {
+      $id->name = field_view_field('field_collection_item', $fc, 'field_game_service_identity');
+      $id->name = $id->name[0]['#markup'];
+
+      $id->service->items = field_get_items('field_collection_item', $fc, 'field_game_service');
+      $id->service->term = taxonomy_term_load($id->service->items[0]['tid']);
+
+      switch ($id->service->term->name) {
+        case 'PSN':
+          $id->service->name = 'psn';
+          break;
+        case 'Steam':
+          $id->service->name = 'steam';
+          break;
+        case 'Wii':
+          $id->service->name = 'wii';
+          break;
+        case 'XBox Live':
+          $id->service->name = 'xbox';
+          break;
+      }
+
+      $variables['author_details']['game_ids'][$id->service->name]['#markup'] = '<div class="' . $id->service->name . ' icon"><div class="tooltip">' . $id->name . '</div></div>';
+    }
+  }
 
   // Get the donation level (we need to upload some doner images to see what to pull from here.)
   $donate_level->items = field_get_items('user', $author_entity, 'field_donator_level');

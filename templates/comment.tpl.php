@@ -19,10 +19,7 @@
       
       <div class="user-labels">
         <div class="user-accounts">
-          <div class="xbox icon"><div class="tooltip">PandaEskimo</div></div>
-          <div class="psn icon"><div class="tooltip">PandaEskimo</div></div>
-          <div class="wii icon"><div class="tooltip">PandaEskimo</div></div>
-          <div class="steam icon"><div class="tooltip">PandaEskimo</div></div>
+          <?php print render($author_details['game_ids']); ?>
         </div>
 
         <div class="user-location">
