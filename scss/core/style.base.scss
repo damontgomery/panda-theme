@@ -7,19 +7,19 @@
 // Font based iconset (by Dan)
 /*@font-face {
   font-family: 'PandaIcons';
-  src: url('/sites/all/themes/panda/images/PandaIcons-Regular.otf');
+  src: url('/profiles/gamerswithjobs/themes/panda/images/PandaIcons-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }*/
 
 @font-face {
   font-family: 'PandaIcons';
-  src: url('/sites/all/themes/panda/images/PandaIcons-Regular.otf'); // Dev version of font, use font-squirrel for compatible version
-  //src: url('/sites/all/themes/panda/images/pandaicons-regular-webfont.eot');
-  //src: url('/sites/all/themes/panda/images/pandaicons-regular-webfont.eot?#iefix') format('embedded-opentype'),
-  //     url('/sites/all/themes/panda/images/pandaicons-regular-webfont.woff') format('woff'),
-  //     url('/sites/all/themes/panda/images/pandaicons-regular-webfont.ttf') format('truetype'),
-  //     url('/sites/all/themes/panda/images/pandaicons-regular-webfont.svg#pandaiconsregular') format('svg');
+  src: url('/profiles/gamerswithjobs/themes/panda/images/PandaIcons-Regular.otf'); // Dev version of font, use font-squirrel for compatible version
+  //src: url('/profiles/gamerswithjobs/themes/panda/images/pandaicons-regular-webfont.eot');
+  //src: url('/profiles/gamerswithjobs/themes/panda/images/pandaicons-regular-webfont.eot?#iefix') format('embedded-opentype'),
+  //     url('/profiles/gamerswithjobs/themes/panda/images/pandaicons-regular-webfont.woff') format('woff'),
+  //     url('/profiles/gamerswithjobs/themes/panda/images/pandaicons-regular-webfont.ttf') format('truetype'),
+  //     url('/profiles/gamerswithjobs/themes/panda/images/pandaicons-regular-webfont.svg#pandaiconsregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -206,8 +206,8 @@ li a.active {
 // EXT Links override
 
 html body span.ext {
-  background: url('/sites/all/themes/panda/images/extlink.png') right center no-repeat;
-  @include image-2x('/sites/all/themes/panda/images/extlink-2x.png', 10px, 10px);
+  background: url('/profiles/gamerswithjobs/themes/panda/images/extlink.png') right center no-repeat;
+  @include image-2x('/profiles/gamerswithjobs/themes/panda/images/extlink-2x.png', 10px, 10px);
   padding-right: 12px;
 }
 
@@ -239,7 +239,6 @@ li {
   }
   
   ul {
-    //list-style-image: url('/sites/all/themes/panda/images/li-swirl.png');
   }
   
   ol {
@@ -651,7 +650,6 @@ form.webform-client-form input#edit-submit.form-submit /* The submit button */ {
   margin: 1em 0;
   margin: 1rem 0;
 
-  //background-image: url("/sites/all/themes/panda/images/diode-divider-yellow-4px.png");
   background-repeat: repeat-x;
   background-position: bottom;
     

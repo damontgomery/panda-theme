@@ -234,7 +234,7 @@ li.expanded > ul {
 }
 /* line 112, ../../scss/core/sections/_menus.scss */
 .region-content-navigation #block-system-main-menu:before {
-  content: url("/sites/all/themes/panda/images/home.png");
+  content: url("/profiles/gamerswithjobs/themes/panda/images/home.png");
   position: absolute;
   top: -114px;
   left: 1em;
@@ -883,7 +883,7 @@ ul.pager .pager-current {
 /*Modals*/
 /* line 72, ../../scss/core/style.content.scss */
 .fancybox-overlay {
-  background: url("/sites/all/themes/panda/images/tissue-paper-50.png"), rgba(222, 222, 222, 0.7);
+  background: url("/profiles/gamerswithjobs/themes/panda/images/tissue-paper-50.png"), rgba(222, 222, 222, 0.7);
 }
 
 /* line 76, ../../scss/core/style.content.scss */

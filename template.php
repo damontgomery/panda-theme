@@ -56,9 +56,9 @@ function panda_preprocess_html(&$variables, $hook){
     ));
   
   //added here for load order
-  drupal_add_css('sites/all/libraries/fancybox/jquery.fancybox.css');
-  drupal_add_js('sites/all/libraries/fancybox/jquery.fancybox.js');
-  drupal_add_js('sites/all/libraries/fancybox/helpers/jquery.fancybox-media.js');
+  drupal_add_css('profiles/gamerswithjobs/libraries/fancybox/jquery.fancybox.css');
+  drupal_add_js('profiles/gamerswithjobs/libraries/fancybox/jquery.fancybox.js');
+  drupal_add_js('profiles/gamerswithjobs/libraries/fancybox/helpers/jquery.fancybox-media.js');
   
   drupal_add_js(path_to_theme() . '/js/pandaMark.js');
   

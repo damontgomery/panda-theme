@@ -2,13 +2,13 @@
 /*FONTS*/
 /*@font-face {
   font-family: 'PandaIcons';
-  src: url('/sites/all/themes/panda/images/PandaIcons-Regular.otf');
+  src: url('/profiles/gamerswithjobs/themes/panda/images/PandaIcons-Regular.otf');
   font-weight: normal;
   font-style: normal;
 }*/
 @font-face {
   font-family: 'PandaIcons';
-  src: url("/sites/all/themes/panda/images/PandaIcons-Regular.otf");
+  src: url("/profiles/gamerswithjobs/themes/panda/images/PandaIcons-Regular.otf");
   font-weight: normal;
   font-style: normal;
 }
@@ -197,14 +197,14 @@ li a.active {
 
 /* line 208, ../../scss/core/style.base.scss */
 html body span.ext {
-  background: url("/sites/all/themes/panda/images/extlink.png") right center no-repeat;
+  background: url("/profiles/gamerswithjobs/themes/panda/images/extlink.png") right center no-repeat;
   padding-right: 12px;
 }
 @media (min--moz-device-pixel-ratio: 1.3), (-o-min-device-pixel-ratio: 2.6 / 2), (-webkit-min-device-pixel-ratio: 1.3), (min-device-pixel-ratio: 1.3), (min-resolution: 1.3dppx) {
   /* line 208, ../../scss/core/style.base.scss */
   html body span.ext {
     /* on retina, use image that's scaled by 2 */
-    background-image: url("/sites/all/themes/panda/images/extlink-2x.png");
+    background-image: url("/profiles/gamerswithjobs/themes/panda/images/extlink-2x.png");
     background-size: 10px 10px;
   }
 }
@@ -235,33 +235,33 @@ ul {
 .fancybox-overlay li > ol {
   margin: 0;
 }
-/* line 245, ../../scss/core/style.base.scss */
+/* line 244, ../../scss/core/style.base.scss */
 .region-content-main ol, .fancybox-overlay ol {
   list-style-type: decimal;
 }
-/* line 248, ../../scss/core/style.base.scss */
+/* line 247, ../../scss/core/style.base.scss */
 .region-content-main ol ol, .fancybox-overlay ol ol {
   list-style-type: lower-alpha;
 }
-/* line 251, ../../scss/core/style.base.scss */
+/* line 250, ../../scss/core/style.base.scss */
 .region-content-main ol ol ol, .fancybox-overlay ol ol ol {
   list-style-type: lower-roman;
 }
 
 /*LI OVERRIDES*/
-/* line 260, ../../scss/core/style.base.scss */
+/* line 259, ../../scss/core/style.base.scss */
 .item-list ul {
   margin: 1em 0;
   margin: 1rem 0;
 }
 
-/* line 267, ../../scss/core/style.base.scss */
+/* line 266, ../../scss/core/style.base.scss */
 .item-list ul ul, .item-list ul ol,
 .item-list ol ol, .item-list ol ul {
   margin: 0;
 }
 
-/* line 275, ../../scss/core/style.base.scss */
+/* line 274, ../../scss/core/style.base.scss */
 .item-list ul li,
 ul.menu li,
 li.expanded,
@@ -273,44 +273,44 @@ li.leaf {
   list-style-image: none;
 }
 
-/* line 284, ../../scss/core/style.base.scss */
+/* line 283, ../../scss/core/style.base.scss */
 dd {
   margin: 0;
 }
 
 /*Selections*/
-/* line 290, ../../scss/core/style.base.scss */
+/* line 289, ../../scss/core/style.base.scss */
 ::selection {
   background-color: #e57382;
   color: white;
 }
 
 /*fancybox overrides*/
-/* line 296, ../../scss/core/style.base.scss */
+/* line 295, ../../scss/core/style.base.scss */
 .fancybox-overlay ul li {
   list-style-image: inherit;
 }
 
 /*TABLES*/
-/* line 302, ../../scss/core/style.base.scss */
+/* line 301, ../../scss/core/style.base.scss */
 table {
   width: 100%;
   border: none;
   border-collapse: collapse;
 }
 
-/* line 308, ../../scss/core/style.base.scss */
+/* line 307, ../../scss/core/style.base.scss */
 table .active {
   /* system theme override */
   background: none;
 }
 
-/* line 314, ../../scss/core/style.base.scss */
+/* line 313, ../../scss/core/style.base.scss */
 thead tr {
   background: #606060;
   color: #FFFFFF;
 }
-/* line 318, ../../scss/core/style.base.scss */
+/* line 317, ../../scss/core/style.base.scss */
 thead tr th {
   padding: 0.38198em 0.8em;
   font-weight: normal;
@@ -318,7 +318,7 @@ thead tr th {
   color: #FFFFFF;
   text-align: left;
 }
-/* line 337, ../../scss/core/style.base.scss */
+/* line 336, ../../scss/core/style.base.scss */
 thead tr th.active a,
 thead tr th a,
 thead tr th a:hover,
@@ -327,13 +327,13 @@ thead tr th a:visited {
   color: #FFFFFF;
   font-weight: normal;
 }
-/* line 344, ../../scss/core/style.base.scss */
+/* line 343, ../../scss/core/style.base.scss */
 thead tr th.active img {
   display: inline;
   margin-left: 0.5em;
 }
 
-/* line 356, ../../scss/core/style.base.scss */
+/* line 355, ../../scss/core/style.base.scss */
 tr,
 tr.even,
 tr.odd {
@@ -342,38 +342,38 @@ tr.odd {
   border-bottom: 1px solid #dedede;
 }
 
-/* line 362, ../../scss/core/style.base.scss */
+/* line 361, ../../scss/core/style.base.scss */
 tbody tr:last-child {
   background: none;
 }
 
-/* line 366, ../../scss/core/style.base.scss */
+/* line 365, ../../scss/core/style.base.scss */
 td {
   padding: 0.61805em 1em;
   border: none;
 }
 
 /*FORMS*/
-/* line 373, ../../scss/core/style.base.scss */
+/* line 372, ../../scss/core/style.base.scss */
 .element-invisible {
   padding: 0px;
   margin: 0px;
 }
 
-/* line 378, ../../scss/core/style.base.scss */
+/* line 377, ../../scss/core/style.base.scss */
 form {
   margin: 1em 0;
   padding: 0;
 }
 
-/* line 383, ../../scss/core/style.base.scss */
+/* line 382, ../../scss/core/style.base.scss */
 fieldset {
   padding: 1em;
   border: 1px solid #A0A0A0;
   border-radius: 2px;
   margin: 1em 0;
 }
-/* line 389, ../../scss/core/style.base.scss */
+/* line 388, ../../scss/core/style.base.scss */
 fieldset.collapsed {
   border: none;
 }
@@ -384,7 +384,7 @@ fieldset.collapsed {
  *    and Chrome.
  * 3. Improves appearance and consistency in all browsers.
  */
-/* line 404, ../../scss/core/style.base.scss */
+/* line 403, ../../scss/core/style.base.scss */
 button,
 input,
 select,
@@ -404,7 +404,7 @@ textarea {
  * 2. Addresses `box-sizing` set to `border-box` in Safari 5 and Chrome
  *    (include `-moz` to future-proof).
  */
-/* line 417, ../../scss/core/style.base.scss */
+/* line 416, ../../scss/core/style.base.scss */
 input[type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
@@ -418,7 +418,7 @@ input[type="search"] {
  * Removes inner padding and search cancel button in Safari 5 and Chrome
  * on OS X.
  */
-/* line 430, ../../scss/core/style.base.scss */
+/* line 429, ../../scss/core/style.base.scss */
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-decoration {
   -webkit-appearance: none;
@@ -428,7 +428,7 @@ input[type="search"]::-webkit-search-decoration {
  * 1. Removes default vertical scrollbar in IE 6/7/8/9.
  * 2. Improves readability and alignment in all browsers.
  */
-/* line 439, ../../scss/core/style.base.scss */
+/* line 438, ../../scss/core/style.base.scss */
 textarea {
   overflow: auto;
   /* 1 */
@@ -436,12 +436,12 @@ textarea {
   /* 2 */
 }
 
-/* line 445, ../../scss/core/style.base.scss */
+/* line 444, ../../scss/core/style.base.scss */
 .resizable-textarea .grippie {
   display: none;
 }
 
-/* line 449, ../../scss/core/style.base.scss */
+/* line 448, ../../scss/core/style.base.scss */
 div.text-wrap {
   background: #FFFFFF;
   border: 1px solid #D0D0D0;
@@ -454,18 +454,18 @@ div.text-wrap {
   -o-transition: border linear 0.3s, box-shadow linear 0.3s;
   transition: border linear 0.3s, box-shadow linear 0.3s;
 }
-/* line 464, ../../scss/core/style.base.scss */
+/* line 463, ../../scss/core/style.base.scss */
 div.text-wrap.focused {
   box-shadow: 0 0 2px 1px #bf394b;
 }
 
-/* line 470, ../../scss/core/style.base.scss */
+/* line 469, ../../scss/core/style.base.scss */
 .form-item input.error, .form-item textarea.error, .form-item select.error {
   border: none;
   color: #bf394b;
 }
 
-/* line 479, ../../scss/core/style.base.scss */
+/* line 478, ../../scss/core/style.base.scss */
 input[type=text],
 input[type=search],
 textarea,
@@ -480,18 +480,18 @@ input[type=email] {
   line-height: 1.618em;
 }
 
-/* line 491, ../../scss/core/style.base.scss */
+/* line 490, ../../scss/core/style.base.scss */
 input[type=submit] {
   -webkit-appearance: none;
   border-radius: none;
 }
 
-/* line 496, ../../scss/core/style.base.scss */
+/* line 495, ../../scss/core/style.base.scss */
 input[type=submit] {
   cursor: pointer;
 }
 
-/* line 503, ../../scss/core/style.base.scss */
+/* line 502, ../../scss/core/style.base.scss */
 input::-webkit-input-placeholder,
 input:-moz-placeholder,
 input::-moz-placeholder,
@@ -502,12 +502,12 @@ input:-ms-input-placeholder {
   text-transform: uppercase;
 }
 
-/* line 510, ../../scss/core/style.base.scss */
+/* line 509, ../../scss/core/style.base.scss */
 div.form-item {
   position: relative;
 }
 
-/* line 514, ../../scss/core/style.base.scss */
+/* line 513, ../../scss/core/style.base.scss */
 div.form-item label {
   display: inline;
   font-weight: normal;
@@ -515,11 +515,11 @@ div.form-item label {
   text-transform: capitalize;
   color: #606060;
 }
-/* line 522, ../../scss/core/style.base.scss */
+/* line 521, ../../scss/core/style.base.scss */
 div.form-item label.hide {
   display: none;
 }
-/* line 526, ../../scss/core/style.base.scss */
+/* line 525, ../../scss/core/style.base.scss */
 div.form-item label.active {
   display: block;
   font-size: 0.8em;
@@ -535,53 +535,53 @@ div.form-item label.active {
   color: white;
 }
 
-/* line 543, ../../scss/core/style.base.scss */
+/* line 542, ../../scss/core/style.base.scss */
 .form-item label.option {
   display: inline;
   font-weight: normal;
   color: #525252;
 }
 
-/* line 549, ../../scss/core/style.base.scss */
+/* line 548, ../../scss/core/style.base.scss */
 .views-exposed-form .views-exposed-widget .form-submit {
   margin-top: 2.7em;
 }
 
-/* line 553, ../../scss/core/style.base.scss */
+/* line 552, ../../scss/core/style.base.scss */
 div.form-item input.form-radio {
   vertical-align: top;
 }
 
-/* line 557, ../../scss/core/style.base.scss */
+/* line 556, ../../scss/core/style.base.scss */
 .form-required {
   color: #909090;
 }
 
-/* line 561, ../../scss/core/style.base.scss */
+/* line 560, ../../scss/core/style.base.scss */
 .form-item .description {
   font-size: 0.85em;
   color: #999;
 }
 
-/* line 567, ../../scss/core/style.base.scss */
+/* line 566, ../../scss/core/style.base.scss */
 .form-checkboxes .form-item,
 .form-radios .form-item {
   margin: 0;
   /* Drupal core uses "0.4em 0" */
 }
 
-/* line 571, ../../scss/core/style.base.scss */
+/* line 570, ../../scss/core/style.base.scss */
 form.webform-client-form input#edit-submit.form-submit {
   border-radius: 4px;
 }
 
-/* line 576, ../../scss/core/style.base.scss */
+/* line 575, ../../scss/core/style.base.scss */
 .container-inline div,
 .container-inline label {
   display: inline;
 }
 
-/* line 580, ../../scss/core/style.base.scss */
+/* line 579, ../../scss/core/style.base.scss */
 .label-inline {
   font-weight: bold;
   display: inline;
@@ -590,14 +590,14 @@ form.webform-client-form input#edit-submit.form-submit {
 /**
  * pandaMark jQuery Plugin
  **/
-/* line 589, ../../scss/core/style.base.scss */
+/* line 588, ../../scss/core/style.base.scss */
 .panda-mark-hide {
   opacity: 0;
   filter: alpha(opacity=0);
   pointer-events: none;
 }
 
-/* line 597, ../../scss/core/style.base.scss */
+/* line 596, ../../scss/core/style.base.scss */
 .panda-mark-checkbox,
 .panda-mark-radio {
   display: inline-block;
@@ -610,69 +610,69 @@ form.webform-client-form input#edit-submit.form-submit {
   border: 1px solid #D0D0D0;
 }
 
-/* line 610, ../../scss/core/style.base.scss */
+/* line 609, ../../scss/core/style.base.scss */
 .panda-mark-radio {
   border-radius: 15px;
 }
 
-/* line 614, ../../scss/core/style.base.scss */
+/* line 613, ../../scss/core/style.base.scss */
 .panda-mark-active {
   border: 1px solid #bf394b;
   background: #bf394b;
 }
 
 /*View Grids*/
-/* line 621, ../../scss/core/style.base.scss */
+/* line 620, ../../scss/core/style.base.scss */
 .grid-block {
   width: 33%;
   float: left;
 }
-/* line 625, ../../scss/core/style.base.scss */
+/* line 624, ../../scss/core/style.base.scss */
 .grid-block h1, .grid-block h2, .grid-block h3, .grid-block h4, .grid-block h5, .grid-block h6 {
   margin-top: 1em;
 }
-/* line 629, ../../scss/core/style.base.scss */
+/* line 628, ../../scss/core/style.base.scss */
 .grid-block > .content {
   padding: 1.618em;
 }
-/* line 632, ../../scss/core/style.base.scss */
+/* line 631, ../../scss/core/style.base.scss */
 .grid-block > .content img {
   border-radius: 2px;
   box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.3);
 }
 
-/* line 639, ../../scss/core/style.base.scss */
+/* line 638, ../../scss/core/style.base.scss */
 .grid-block-wide {
   width: 50%;
   float: left;
 }
-/* line 643, ../../scss/core/style.base.scss */
+/* line 642, ../../scss/core/style.base.scss */
 .grid-block-wide > .content {
   padding: 1.618em;
 }
 
-/* line 650, ../../scss/core/style.base.scss */
+/* line 649, ../../scss/core/style.base.scss */
 .views-row {
   margin: 1em 0;
   margin: 1rem 0;
   background-repeat: repeat-x;
   background-position: bottom;
 }
-/* line 670, ../../scss/core/style.base.scss */
+/* line 668, ../../scss/core/style.base.scss */
 .views-row.views-row-last {
   background-image: none;
 }
 
-/* line 676, ../../scss/core/style.base.scss */
+/* line 674, ../../scss/core/style.base.scss */
 .view-header .views-row, .view-footer .views-row {
   padding: 0;
   background: none;
 }
-/* line 681, ../../scss/core/style.base.scss */
+/* line 679, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-odd, .view-footer .views-row.views-row-odd {
   background: none;
 }
-/* line 685, ../../scss/core/style.base.scss */
+/* line 683, ../../scss/core/style.base.scss */
 .view-header .views-row.views-row-even, .view-footer .views-row.views-row-even {
   background: none;
 }
@@ -707,7 +707,7 @@ form.webform-client-form input#edit-submit.form-submit {
 }
 
 */
-/* line 723, ../../scss/core/style.base.scss */
+/* line 721, ../../scss/core/style.base.scss */
 .filter-wrapper {
   display: none;
 }
