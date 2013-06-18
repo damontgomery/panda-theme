@@ -97,13 +97,6 @@ function panda_preprocess_html(&$variables, $hook){
   }
 }
 
-function panda_preprocess_page(&$variables) {
-  // add comments as a variable to page.tpl.php
-  if (isset($variables['node'])) {
-    $variables['page']['comments'] = comment_node_page_additions($variables['node']);
-  }
-}
-
 function panda_preprocess_views_view(&$variables) {
   if (isset($variables['view']->name)) {
     $function = 'panda_preprocess_views_view__'.$variables['view']->name;
@@ -148,8 +141,14 @@ function panda_preprocess_node(&$variables) {
     '#suffix' => '</div>',
   );
 
+  // Send the comments to the page template separately.
+  if (isset($variables['content']['comments'])) {
+    // I couldn't figure out the ordering of the page preprocess functions, etc and the pager was broken when using comment_node_page_additions() in hook_preprocess_page();
+    global $panda_comments;
+    $panda_comments = $variables['content']['comments'];
+  }
+
   // hide some variables by default
-  
   hide($variables['content']['comments']);
   hide($variables['content']['links']);
   hide($variables['content']['by_line']);
@@ -166,6 +165,9 @@ function panda_css_alter(&$css) {
 // Add classes, etc to the comment's links. This provides tooltips and icons in place of text links / buttons
 
 function panda_preprocess_comment(&$variables) {
+  //format the date
+  $variables['created'] = date('M j, Y g:i a', $variables['elements']['#comment']->created);
+
   // We need to get all the user data in the comment.
   $author_entity = user_load($variables['elements']['#comment']->uid);
   

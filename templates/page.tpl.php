@@ -50,7 +50,7 @@
             <?php print render($page['content']); ?>
 
             <?php print render($page['sidebar_first']); ?>
-            <?php print render($page['comments']); ?>
+            <?php global $panda_comments; print render($panda_comments); ?>
             
             <?php print render($page['sidebar_second']); ?>
             <?php print render($page['content_under']); ?>
