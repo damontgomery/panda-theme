@@ -1,0 +1,124 @@
+@import "base"; // always import
+
+/*STYLE.CONTENT.CSS*/
+
+// SECTIONS
+
+@import "sections/menus";
+@import "sections/mediaelementjs";
+
+// ==================
+//      Main Logo
+// ==================
+
+#main-logo {
+  float: left;
+  display: block;
+  padding: 1em;
+  max-width: 160px;
+}
+
+// This style is used for the parts of content that label the item
+// example: by {person} or comments {#};
+.meta-label {
+  text-transform: uppercase;
+  font-size: 0.8em;
+  font-size: 0.8rem;
+  color: #909090;
+}
+
+.node-teaser {
+  border-bottom: 1px solid $color_light_gray;
+  margin-bottom: 1em;
+  margin-bottom: 1rem;
+
+  ul.links {
+    display: none;
+  }
+}
+
+/*Pager*/
+
+ul.pager {
+  text-align: center;
+
+  li {
+    display: inline;
+    padding: 0.2em 0.5em;
+
+    .icon:before {
+      font-size: 1.5em;
+      font-size: 1.5rem;
+    }
+
+    a {
+      color: $color_sec;
+    }
+  }
+
+  .pager-current {
+    background-color: $color_sec;
+    border-radius: 2px;
+    color: #FFFFFF;
+  }
+}
+
+/*Modals*/
+.fancybox-overlay {
+  background: url('/profiles/gamerswithjobs/themes/panda/images/tissue-paper-50.png'), rgba($color_light_gray,0.7);
+}
+
+.fancybox-skin {
+  border-radius: 0;
+  margin: 2em 0 3.5em 0; //at really small sizes, the box doesn't fit super well.
+  
+  background: #303030;
+  
+  .fancybox-opened & {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.3);
+  }
+
+  .fancybox-title {
+    font-family: $header_font;
+    font-size: 1em * panda-gn(1);
+    color: #DEDEDE;
+  }
+  
+  .fancybox-outer {
+    //margin-top: 2em;
+  }
+  
+  .fancybox-nav {
+    width: 55px;
+  }
+  
+  .fancybox-close,
+  .fancybox-prev span,
+  .fancybox-next span {
+    //background-image: url('/profiles/gamerswithjobs/themes/panda/images/fancybox_sprite.png');
+  }
+  
+  .fancybox-close {
+    top: 2px;
+    right: -8px;
+    background: none;
+    position: absolute;
+  }
+  
+  .fancybox-nav span {
+    visibility: visible;
+  }
+  
+  .fancybox-prev {
+    left: -65px;
+  }
+  
+  .fancybox-next {
+    right: -65px;
+  }
+  
+}
+
+.modal-popup-wrapper {
+  display: none;
+}

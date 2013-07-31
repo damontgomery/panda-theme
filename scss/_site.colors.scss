@@ -1,0 +1,50 @@
+//Colors File, imported by _base.scss
+
+// Set some HSL defaults for easier changing!
+$hsv_s : 70%;
+$hsv_v : 75%;
+//lighter versions
+$hsv_s_light : 50%;
+$hsv_v_light : 90%;
+
+//Example of a color
+$white : #FFFFFF;
+$hsv_pri : 210deg;
+$color_pri : hsv($hsv_pri, $hsv_s, $hsv_v);
+$color_pri_light : hsv($hsv_pri, $hsv_s_light, $hsv_v_light);
+$color_sec : hsv(210deg, $hsv_s, $hsv_v);
+$color_sec_light : hsv(210deg, $hsv_s_light, $hsv_v_light);
+$color_hl1 : #909090;
+$color_light_gray : #DEDEDE;
+
+//Accent colors
+$color_accent_red : hsv(350deg, $hsv_s, $hsv_v);
+$color_accent_blue : hsv(210deg, $hsv_s, $hsv_v);
+$color_accent_yellow : hsv(60deg, 100%, 90%);
+$color_accent_green : hsv(135deg, $hsv_s, $hsv_v);
+$color_accent_orange : hsv(45deg, 100%, 90%);
+$color_accent_purple : hsv(270deg, $hsv_s, $hsv_v);
+$color_accent_brown : hsv(25deg, $hsv_s, $hsv_v);
+
+//Primary Color:
+//8D1495	76237B	6A0A71	CF58D8	D287D8
+//Secondary Color A:
+//CA1A55	A62F57	980D3C	EB5E8E	EB92B0
+//Secondary Color B:
+//52209B	4E2C80	391075	9363DA	AD8FDA
+
+
+//Fonts
+
+$header_font : 'Open Sans', sans-serif;
+$body_font : 'Open Sans', sans-serif;
+
+// Padding Rules
+
+@mixin panda-content-margin(){
+  margin: 0.82em;
+  margin: 0.82rem;
+}
+
+// Structure
+$max_width : 1350px;

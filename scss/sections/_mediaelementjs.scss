@@ -1,0 +1,152 @@
+// ==================
+// MediaElement.js Custom Theme
+// ==================
+
+//layout
+
+.audioplayer {
+  position: absolute;
+  bottom: 0;
+  width: 60%;
+  margin-left: 20%;
+  background-color: white;
+  
+  .padding {
+    padding: 1em 1.5em 0 1em;
+    padding: 1rem 1.5rem 0 1rem;
+  }
+
+  .content {
+    display: table;
+    width: 100%;  
+  }
+
+  .play,
+  .pause,
+  .time-container,
+  .mute,
+  .volume-container {
+    display: table-cell;
+  }
+
+  .play,
+  .pause,
+  .progress-track,
+  .mute,
+  .volume-container {
+    cursor: pointer;
+  }
+
+  .play,
+  .pause {
+    width: 2em;
+    padding-right: 1em;
+    padding-right: 1rem;
+    &:before {
+      font-size: 5em;
+      font-size: 5rem;
+    }
+  }
+
+  .mute {
+    width: 1em;
+    padding: 0 1em * panda-gn(-1);
+    padding: 0 1rem * panda-gn(-1);
+
+  }
+
+  .timestamps,
+  .progress-track {
+    width: 100%;
+    clear: left;
+  }
+
+  .timestamps {
+    .current {
+      float: left;
+    }
+     
+    .total {
+      float: right;   
+    }
+  }
+  
+  .progress-bar,
+  .volume-bar {
+    @include panda-transition(500ms ease);
+  }
+
+  //Progress Bars (horizontal)
+  .progress-track,
+  .volume-container.horizontal .volume-track {
+    height: 20px;
+      
+    .progress-bar,
+    .volume-container.horizontal .volume-bar {
+      height: 20px;
+      width: 0;
+    }
+  }
+  
+  //Volume Specifics
+  .volume-container {
+    &.horizontal {
+      width: 60px;
+    }
+    &.vertical {
+      width: 20px;
+    }
+  }
+
+  //Vertical Volume Progress Bar
+  .volume-container.vertical .volume-track {
+    position: relative;
+    width: 20px;
+    height: 40px;
+    
+    .volume-bar {
+      width: 20px;
+      height: 100%;
+      position: absolute;
+      bottom: 0;
+    }
+  }
+  
+
+  //actions
+
+  .play, .pause {
+    display: none;
+    &.show {display: table-cell;}
+  }
+
+  //colors / Style
+
+  .play:before,
+  .play.active:before {
+    color: $color_accent_orange;
+  }
+
+  .pause:before,
+  .pause.active:before {
+    color: $color_accent_orange;
+  }
+
+  .mute:before {
+    color: $color_light_gray;
+  }
+
+  .mute.show:before {
+    color: $color_accent_orange;
+  }
+
+  .progress-track,
+  .volume-track {
+    background: $color_light_gray;
+      
+    .progress-bar,
+    .volume-bar {
+      background: $color_accent_orange;
+    }
+  }
+}

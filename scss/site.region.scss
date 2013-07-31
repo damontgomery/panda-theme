@@ -1,0 +1,51 @@
+@import "base";
+
+/*STYLE.REGION.CSS*/
+
+body {
+  background-color : $color_sec;
+  //background-image : url('/profiles/gamerswithjobs/themes/panda/images/tissue-paper.png');
+}
+
+#page-wrapper,
+.region-navigation {
+  background: #F0F0F0;
+  background-image : url('/profiles/gamerswithjobs/themes/panda/images/tissue-paper-50.png');
+
+  & > #page-wrapper-content,
+  & > .content {
+    max-width: $max_width;
+    margin: 0 auto;
+  }
+}
+
+#page-wrapper > #page-wrapper-content {
+  background-color: #FFFFFF;
+}
+
+.region-sidebar-first > .content {
+  //background-color: rgb(218, 218, 218);
+  //background-image: url('/profiles/gamerswithjobs/themes/panda/images/tissue-paper-50.png');
+  //border-radius: 2px;
+}
+
+#page-content {
+  padding: 0.5 * 1em * panda-gn(1);
+}
+
+.region-header {
+  background: #FFFFFF;
+}
+
+.region-content-header {
+  margin: 0 auto;
+  max-width: 1024px;
+  padding-top: 1px; // This makes the header go all the way to the top, otherwise the content inside may push the whole div down.
+}
+
+#footer-wrapper {
+  padding: 3em 0em;
+  color: #FFFFFF;
+  text-align: left;
+  border-top: 2px solid rgba(0, 0, 0, 0.3)
+}

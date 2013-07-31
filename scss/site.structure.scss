@@ -1,0 +1,155 @@
+@import "base";
+
+/*STRUCTURE.CSS*/
+
+html {
+}
+
+body {
+  margin: 0;
+}
+
+.region-header {
+  position: relative;
+  
+  .responsive-full-page & .region-content-header {
+    width: $max_width;
+  }
+}
+
+.region-navigation {
+  width: 100%;
+  position: relative;
+  background: #FFFFFF;
+  //z-index: 5;
+  
+  .responsive-full-page & {
+    min-width: $max_width;
+  }
+}
+
+.region-navigation-pane {
+  display: none;
+}
+
+  .region-content-navigation {
+    max-width: $max_width;
+    margin: 0 auto;
+    
+    .responsive-full-page & {
+      width: $max_width;
+    }
+    
+    #block-system-main-menu {
+      float: left;
+    }
+  }
+
+#page-wrapper {
+  width: 100%;
+}
+  
+#page {
+  margin: 0 auto; /*Used for positioning*/
+  max-width: $max_width;
+  position: relative;
+  
+  
+  .responsive-full-page & {
+    width: $max_width;
+  }
+}
+  
+div.tabs {
+  @include panda-content-margin();
+}
+
+  .region-over-main {
+    float: left;
+    width: 100%;
+  }
+
+  .region-sidebar-first {
+    float: right;
+    width: 33%;
+
+    & > .content {
+      @include panda-content-margin();
+      //margin-top: 5.5rem;
+    }
+  }
+  
+  .region-sidebar-second {
+    float: left;
+    width: 33%;
+
+    & > .content {
+      @include panda-content-margin();
+    }
+  }
+  
+  .region-content {
+    float: left;
+    width: 67%;
+
+    & > .content {
+      @include panda-content-margin();
+    }
+  }
+  
+  .no-sidebars .region-main {
+    width: 100%;
+  }
+  
+  #block-system-main{
+    float: none;
+  }
+
+.region-content-under {
+  clear: left;
+  
+  .block > .content {
+    min-height: 15em; //temporary sizing for dev
+  }
+}
+  
+/* Footer */
+#footer-wrapper {
+  width: 100%;
+}
+
+.region-footer {
+  margin: 0 auto; /*Used for positioning*/
+  max-width: $max_width;
+  position: relative;
+  
+  .responsive-full-page & {
+    width: $max_width;
+  }
+  
+  & > .content {
+    padding: 0 1em;
+  }
+}
+
+.region {
+  //box-shadow: 0 0 0 1px rgba(200,50,50,0.5) inset; /*Wire Frame*/
+}
+
+.region .region-content{
+  //box-shadow: 0 0 0 0px rgba(200,50,50,0.5) inset; /*Wire Frame*/
+}
+
+/*RESPONSIVE*/
+
+.responsive-mobile {
+  display: none;
+  
+  .block-menu-block {
+    display: none;
+  }
+}
+
+.mini-menu {
+  display: none;
+}

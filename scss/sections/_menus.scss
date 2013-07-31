@@ -1,0 +1,183 @@
+// ==================
+//      Main Menu
+// ==================
+
+/*Basic Menu Hover feature*/
+li.expanded > ul {
+  display: none;
+}
+
+li.expanded:hover > ul {
+  //display: block;
+}
+
+// primary links
+
+.tabs {
+  ul.primary {
+
+    li {
+      display: inline-block;
+      padding: 0 1rem 0 0;
+    }
+
+    a {
+
+      &.active {
+        border-bottom: 1px solid $color_pri;
+      }
+    }
+  }
+}
+
+.region-content-navigation {
+  background: $color_sec;
+
+  #block-panda-theme-support-panda-logo-small {
+    float: left;
+    margin-left: 1em;
+
+    a {
+      color: white;
+    }
+  }
+
+  #block-system-main-menu, #block-system-user-menu {
+    box-sizing: border-box;
+
+    h3 {
+      display: none;
+    }
+    
+    & > .content {
+      
+      & > ul.menu {
+        li {
+          float: left;
+          position: relative;
+
+          @media #{$mq-not-desktop} {
+            //width: 100%;
+          }
+
+          a {
+            font-family: $header_font;
+            color: white;
+            font-weight: normal;
+            font-size: 1rem;
+            
+            line-height: 2.4em; // align with other items with icons
+            padding: 0 0 0 1em;
+            display: inline-block;
+
+            .tooltip {
+              top: 100%;
+              left: -200%;
+
+              &:before {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  #block-system-main-menu {
+    float: left;
+    position: relative;
+  }
+
+  #block-system-user-menu {
+    float: right;
+
+    @media #{$mq-not-desktop} {
+      position: relative;
+      width: 100%;
+      float: left;
+      margin-top: 0.5em;
+      margin-top: 0.5rem;
+    }
+  }
+
+  #block-search-form {
+    padding-top: 4px;
+    float: right;
+    position: relative;
+    margin-right: 1rem;
+  
+    .form-actions {
+      display: none;
+    }
+
+    form {
+      margin: 0;
+    }
+  
+    .icon.spyglass {
+      cursor: pointer;
+      position: absolute;
+      top: 4px;
+      right: 0;
+
+      &:before {
+        color: #404040;
+      }
+    }
+
+  }
+
+}
+
+/*RESPONSIVE*/
+html {
+  
+  // Slide Pane Menus
+
+  .main-pane-outer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .main-pane-inner {
+    position: relative;
+    width: 100%;
+
+    @include panda-transition(200ms ease);
+
+    left: 0;
+  }
+
+  .region-navigation {
+
+    box-sizing: border-box;    
+  }
+
+
+} /*end of HTML wrapper*/
+
+// Action buttons (action_links)
+
+.action-links {
+  position: absolute;
+  right: 33.33%;
+  top: 2em;
+
+  .button {
+    background-color: $color_accent_red;
+    padding: 0.5em 1em;
+    border-radius: 2px;
+    color: white;
+
+    span:before {
+      padding-right: 0.5em;
+      font-size: 1.5em;
+      color: white;
+    }
+    span:hover:before {
+      color: white;
+    }
+  } 
+}
