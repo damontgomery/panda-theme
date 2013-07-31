@@ -1,7 +1,7 @@
 <div class="<?php print $classes; ?>"<?php print $attributes; ?>>
 
   <?php print render($title_prefix); ?>
-  <?php if ($title && !$page): ?>
+  <?php if (isset($title)): ?>
     <h1<?php print $title_attributes; ?>><a href="<?php print $node_url; ?>"><?php print $title; ?></a></h1>
   <?php endif; ?>
   <?php print render($title_suffix); ?>

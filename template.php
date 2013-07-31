@@ -129,6 +129,14 @@ function panda_preprocess_views_view(&$variables) {
   //Add the title as a variable ALWAYS.  Not sure why this was removed even though it was in ALL the templates.  Templates can now choose to display the title or not.
   $view = $variables['view'];
   
+  //mimic the node template $page flag
+  if ($view->current_display === "page"){
+    $variables['page'] = TRUE;
+  }
+  else {
+    $variables['page'] = FALSE;
+  }
+
   $variables['title'] = filter_xss_admin($view->get_title());
 
   panda_extensions_preprocess_views_view($variables);
