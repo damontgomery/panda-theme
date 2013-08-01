@@ -4,7 +4,7 @@ function panda_extensions_preprocess_block(&$variables, $hook) {
   
 } 
 
-function panda_block_view_system_main_alter(&$data, $block) {
+function panda_extensions_block_view_system_main_alter(&$data, $block) {
   
 }
 
