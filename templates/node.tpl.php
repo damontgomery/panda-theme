@@ -11,12 +11,7 @@
   <?php endif; ?>
 
   <div class="content"<?php print $content_attributes; ?>>
-    
-    <?php print render($content['by_line']); ?>
-
-    <?php
-      print render($content);
-    ?>
+    <?php print render($content);?>
   </div>
 
   <?php // print render($content['links']); ?>

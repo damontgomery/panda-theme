@@ -22,6 +22,18 @@ function panda_preprocess_block(&$variables, $hook) {
   }
 
   panda_extensions_preprocess_block($variables, $hook);
+}
+
+// When the view is displayed as a block, render the contextual links for it at the block level, not the page level
+function panda_block_view_system_main_alter(&$data, $block) {
+  if (module_exists('views')) {
+    $view = views_get_page_view();
+    if (!empty($view)) {
+      views_add_contextual_links($data['content'], 'page', $view, $view->current_display);
+    }
+  }
+
+  panda_extensions_block_view_system_main_alter($data, $block);
 } 
 
 function panda_preprocess_html(&$variables, $hook){
@@ -212,3 +224,14 @@ function panda_css_alter(&$css) {
 
   panda_extensions_css_alter($css);
 }
+
+function panda_node_view_alter(&$build) {
+  // add the contextual links to nodes when rendered as pages!
+  // before, this wouldn't happen if it were a page
+  if (!empty($build['#node']->nid) && ($build['#view_mode'] == 'full' && node_is_page($build['#node']))) {
+    $build['#contextual_links']['node'] = array('node', array($build['#node']->nid));
+  }
+
+  panda_extensions_node_view_alter($build);
+}
+
