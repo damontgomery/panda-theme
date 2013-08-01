@@ -33,6 +33,6 @@ function panda_extensions_css_alter(&$css) {
   
 }
 
-function panda_node_view_alter(&$build) {
+function panda_extensions_node_view_alter(&$build) {
 
 }
